@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
+  m_Name: 13
+  m_EditorClassIdentifier: 
+  Level: 13
+  Type: Quiz
+  Theme: "G\xE9ographie"
+  RightAnswer: Asie
+  SpriteWithQuestion: {fileID: 21300000, guid: 09b91ef3ed9229f438a77a05454b31b5, type: 3}
+  ImageScale: 7.51158
+  Clue: "Le Y\xE9men n'est pas situ\xE9 sur le continent Africain."
+  Info: "En 2018, le Y\xE9men \xE9tait class\xE9 178\xE8me sur 189 pays \xE0 l'indice
+    de d\xE9veloppement humain. Le Y\xE9men a une population totale de plus de 28
+    millions d'habitants."
+  NextLevelData: {fileID: 11400000, guid: e29a6912e0fcc7c4a9d0e74fe99817b6, type: 2}
+  Question: "Sur quel continent est situ\xE9 le Yemen ?"
+  FontSizeBtnAnswers: 150
+  Answer1: "Am\xE9rique du Sud"
+  Answer2: Afrique
+  Answer3: Asie
+  Answer4: Europe
+  Difficulty: 
+  NeedText: 0
+  NeedImage: 0
+  NeedBtnListen: 0
+  Sound: {fileID: 0}
+  TextLevel: 
+  OtherAcceptedAnswer1: 
+  OtherAcceptedAnswer2: 
+  OtherAcceptedAnswer3: 

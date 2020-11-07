@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
+  m_Name: 2
+  m_EditorClassIdentifier: 
+  Level: 2
+  Type: Quiz
+  Theme: Histoire
+  RightAnswer: 1492
+  SpriteWithQuestion: {fileID: 21300000, guid: 4be3f102087dd6748ab5beab5aefe1e7, type: 3}
+  ImageScale: 7.51158
+  Clue: "Christophe Colomb a v\xE9cu au XV\xE8me sic\xE8cle"
+  Info: "Christophe Colomb n'aura jamais su qu'il venait de d\xE9couvir un nouveau
+    continent. Il pensait qu'il se trouvait aux Indes."
+  NextLevelData: {fileID: 11400000, guid: 204d91c62fbb25d49805fa33154ae2f8, type: 2}
+  Question: "En quelle ann\xE9e Christophe Colomb a d\xE9couvert l'Am\xE9rique ?"
+  FontSizeBtnAnswers: 250
+  Answer1: 800
+  Answer2: 1492
+  Answer3: 1789
+  Answer4: 1431
+  Difficulty: 
+  NeedText: 0
+  NeedImage: 0
+  NeedBtnListen: 0
+  Sound: {fileID: 0}
+  TextLevel: 
+  OtherAcceptedAnswer1: 
+  OtherAcceptedAnswer2: 
+  OtherAcceptedAnswer3: 

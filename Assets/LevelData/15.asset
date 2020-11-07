@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
+  m_Name: 15
+  m_EditorClassIdentifier: 
+  Level: 15
+  Type: Quiz
+  Theme: "Culture g\xE9n\xE9rale"
+  RightAnswer: Wim Hof
+  SpriteWithQuestion: {fileID: 21300000, guid: 1d012e606fa19a14eb77da2c087896c7, type: 3}
+  ImageScale: 7.383835
+  Clue: "Jean Moulin \xE9tait un  haut fonctionnaire et  r\xE9sistant fran\xE7ais"
+  Info: "Wim Hof est connu pour avoir battu plusieurs recors du Guinness d'exposition
+    au froid extr\xEAme. Il a \xE9galement sa propre m\xE9thode de m\xE9ditation
+    et de ma\xEEtrise de respiration."
+  NextLevelData: {fileID: 11400000, guid: 2416315908bf5994d942b8553582619b, type: 2}
+  Question: "Parmi ces propositions, qui est  surnomm\xE9 \xAB l'homme de glace \xBB
+    ?"
+  FontSizeBtnAnswers: 150
+  Answer1: Jean Moulin
+  Answer2: Mike Horn
+  Answer3: Eddie Hall
+  Answer4: Wim Hof
+  Difficulty: 
+  NeedText: 0
+  NeedImage: 0
+  NeedBtnListen: 0
+  Sound: {fileID: 0}
+  TextLevel: 
+  OtherAcceptedAnswer1: 
+  OtherAcceptedAnswer2: 
+  OtherAcceptedAnswer3: 

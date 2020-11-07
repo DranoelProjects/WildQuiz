@@ -1,0 +1,40 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class PanelUserInfo : MonoBehaviour
+{
+    [SerializeField] Text heartsNumber, coinsNumber;
+    [SerializeField] Image heart;
+    [SerializeField] Sprite redHeart, greyHeart;
+
+    private void Start()
+    {
+        UpdateCoins();
+        UpdateHearts();
+    }
+
+    public void UpdateHearts()
+    {
+        if (!heartsNumber)
+        {
+            heartsNumber = GameObject.Find("HeartsNumber").GetComponent<Text>();
+        }
+        heartsNumber.text = PlayerPrefs.GetInt("HeartsNumber").ToString();
+
+        if (PlayerPrefs.GetInt("HeartsNumber") != 0)
+        {
+            heart.sprite = redHeart;
+        }
+        else
+        {
+            heart.sprite = greyHeart;
+        }
+    }
+
+    public void UpdateCoins()
+    {
+        coinsNumber.text = PlayerPrefs.GetInt("CoinsNumber").ToString();
+    }
+}

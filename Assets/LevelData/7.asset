@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
+  m_Name: 7
+  m_EditorClassIdentifier: 
+  Level: 7
+  Type: Quiz
+  Theme: Histoire
+  RightAnswer: 1789
+  SpriteWithQuestion: {fileID: 21300000, guid: ab13dc1db8c6ad64393ea7cb436243de, type: 3}
+  ImageScale: 7.51158
+  Clue: "1815 : Congr\xE8s de Vienne. Apr\xE8s la d\xE9faite de Napol\xE9on 1er,
+    les pays vainqueurs se r\xE9unissent pour \xE9tablir les conditions de la paix
+    et redessiner les fronti\xE8res."
+  Info: "La R\xE9volution fran\xE7aise a dur\xE9 10 ans du 5 mai 1789 au 9 novembre
+    1799 avec le coup d'\xC9tat de Napol\xE9on Bonaparte. C'est durant cette p\xE9riode
+    que la d\xE9claration des droits de l'homme et du citoyen fut publi\xE9e."
+  NextLevelData: {fileID: 11400000, guid: d2e7c901e36016a4891152724e03b0eb, type: 2}
+  Question: "Quelle ann\xE9e correspond \xE0 la R\xE9volution fran\xE7aise ?"
+  FontSizeBtnAnswers: 150
+  Answer1: 1915
+  Answer2: 1789
+  Answer3: 1815
+  Answer4: 1992
+  Difficulty: 
+  NeedText: 0
+  NeedImage: 0
+  NeedBtnListen: 0
+  Sound: {fileID: 0}
+  TextLevel: 
+  OtherAcceptedAnswer1: 
+  OtherAcceptedAnswer2: 
+  OtherAcceptedAnswer3: 

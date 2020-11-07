@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
+  m_Name: 17
+  m_EditorClassIdentifier: 
+  Level: 17
+  Type: Quiz
+  Theme: Animaux
+  RightAnswer: "Ta\xEFpan du d\xE9sert"
+  SpriteWithQuestion: {fileID: 21300000, guid: fbcc2a4fae17b8f459728dac5e0341a6, type: 3}
+  ImageScale: 7.51158
+  Clue: Le crotale diamantin est environ 100 fois moins toxique que le serpent le
+    plus venimeux du monde.
+  Info: "Le ta\xEFpan du d\xE9sert se trouve en Australie dans des regions arides.
+    Son venin est 100 fois plus toxique que le crotale diamantin et 25 fois plus
+    toxique que le cobra. "
+  NextLevelData: {fileID: 11400000, guid: 451976da03410f444a28f12f63a798f6, type: 2}
+  Question: Quel est le serpent le plus venimeux du monde ?
+  FontSizeBtnAnswers: 150
+  Answer1: Cobra
+  Answer2: "Ta\xEFpan du d\xE9sert"
+  Answer3: Crotale diamantin
+  Answer4: Mamba noir
+  Difficulty: 
+  NeedText: 0
+  NeedImage: 0
+  NeedBtnListen: 0
+  Sound: {fileID: 0}
+  TextLevel: 
+  OtherAcceptedAnswer1: 
+  OtherAcceptedAnswer2: 
+  OtherAcceptedAnswer3: 

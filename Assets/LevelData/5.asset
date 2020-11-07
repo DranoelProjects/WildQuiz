@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
+  m_Name: 5
+  m_EditorClassIdentifier: 
+  Level: 5
+  Type: Quiz
+  Theme: Sport
+  RightAnswer: Allemagne
+  SpriteWithQuestion: {fileID: 21300000, guid: 105b6677cab1c064abca2d7c77767933, type: 3}
+  ImageScale: 7.51158
+  Clue: "Le Br\xE9sil n'a plus gagn\xE9 la coupe du monde de football depuis 2002"
+  Info: "En finale de la coupe du monde de 2014 au Br\xE9sil, l'Allemagne remporte
+    le match face \xE0 l'Argentine 1-0 avec un but en prolongation."
+  NextLevelData: {fileID: 11400000, guid: 5a4cc9df98b27824fa47ffb6f7832a3f, type: 2}
+  Question: "Quelle nation a gagn\xE9 la coupe du monde de football en 2014 ?"
+  FontSizeBtnAnswers: 150
+  Answer1: "Br\xE9sil"
+  Answer2: Espagne
+  Answer3: Allemagne
+  Answer4: Italie
+  Difficulty: 
+  NeedText: 0
+  NeedImage: 0
+  NeedBtnListen: 0
+  Sound: {fileID: 0}
+  TextLevel: 
+  OtherAcceptedAnswer1: 
+  OtherAcceptedAnswer2: 
+  OtherAcceptedAnswer3: 

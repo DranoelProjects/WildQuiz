@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
+  m_Name: 20
+  m_EditorClassIdentifier: 
+  Level: 20
+  Type: TicTacToe
+  Theme: 
+  RightAnswer: 
+  SpriteWithQuestion: {fileID: 0}
+  ImageScale: 7.51158
+  Clue: 
+  Info: 
+  NextLevelData: {fileID: 0}
+  Question: 
+  FontSizeBtnAnswers: 150
+  Answer1: 
+  Answer2: 
+  Answer3: 
+  Answer4: 
+  Difficulty: Medium
+  NeedText: 0
+  NeedImage: 0
+  NeedBtnListen: 0
+  Sound: {fileID: 0}
+  TextLevel: 
+  OtherAcceptedAnswer1: 
+  OtherAcceptedAnswer2: 
+  OtherAcceptedAnswer3: 

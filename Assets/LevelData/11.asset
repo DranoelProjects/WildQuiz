@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
+  m_Name: 11
+  m_EditorClassIdentifier: 
+  Level: 11
+  Type: Quiz
+  Theme: Sciences
+  RightAnswer: Stephen Hawking
+  SpriteWithQuestion: {fileID: 21300000, guid: d22635802993dc144bf60e17ffa57ef3, type: 3}
+  ImageScale: 7.51158
+  Clue: "Stephen King est un \xE9crivain am\xE9ricain. Il a vendu plus de 350 millions
+    d'exemplaires."
+  Info: "Stephen Hawking est d\xE9c\xE9d\xE9 \xE0 76 ans le 14 mars 2018. Depuis
+    20 ans, il \xE9tait atteint d'une forme rare de scl\xE9rose lat\xE9rale amyotrophique."
+  NextLevelData: {fileID: 11400000, guid: edf5387a2aa9e3f49a0ae70931469efd, type: 2}
+  Question: Qui a permis de mieux comprendre le Big Bang et les trous noirs ?
+  FontSizeBtnAnswers: 150
+  Answer1: Adrian Stephen
+  Answer2: Stephen Hawking
+  Answer3: Stephen King
+  Answer4: Albert Einstein
+  Difficulty: 
+  NeedText: 0
+  NeedImage: 0
+  NeedBtnListen: 0
+  Sound: {fileID: 0}
+  TextLevel: 
+  OtherAcceptedAnswer1: 
+  OtherAcceptedAnswer2: 
+  OtherAcceptedAnswer3: 

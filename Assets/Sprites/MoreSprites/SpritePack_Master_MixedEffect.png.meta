@@ -1,0 +1,4520 @@
+fileFormatVersion: 2
+guid: 228ddaddd78ac224a9142a5b53c569ad
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4796591372989750007
+    second: SpritePack_Master_MixedEffect_0
+  - first:
+      213: 8207912931890061408
+    second: SpritePack_Master_MixedEffect_1
+  - first:
+      213: 8949404303845095391
+    second: SpritePack_Master_MixedEffect_2
+  - first:
+      213: 192746816245686804
+    second: SpritePack_Master_MixedEffect_3
+  - first:
+      213: 9038975586761391456
+    second: SpritePack_Master_MixedEffect_4
+  - first:
+      213: 8171367783606904494
+    second: SpritePack_Master_MixedEffect_5
+  - first:
+      213: 6766817592060078788
+    second: SpritePack_Master_MixedEffect_6
+  - first:
+      213: 4158125406061070033
+    second: SpritePack_Master_MixedEffect_7
+  - first:
+      213: 8514028065285319620
+    second: SpritePack_Master_MixedEffect_8
+  - first:
+      213: 4416466127480728583
+    second: SpritePack_Master_MixedEffect_9
+  - first:
+      213: -1064452193857028715
+    second: SpritePack_Master_MixedEffect_10
+  - first:
+      213: -4425906032393787060
+    second: SpritePack_Master_MixedEffect_11
+  - first:
+      213: 6340853816929589712
+    second: SpritePack_Master_MixedEffect_12
+  - first:
+      213: -4069046655498189613
+    second: SpritePack_Master_MixedEffect_13
+  - first:
+      213: 6856001092271469359
+    second: SpritePack_Master_MixedEffect_14
+  - first:
+      213: -2447457693030638863
+    second: SpritePack_Master_MixedEffect_15
+  - first:
+      213: 3763500093604164834
+    second: SpritePack_Master_MixedEffect_16
+  - first:
+      213: 2223726793206484875
+    second: SpritePack_Master_MixedEffect_17
+  - first:
+      213: 2617386479331946923
+    second: SpritePack_Master_MixedEffect_18
+  - first:
+      213: -3038842079878964854
+    second: SpritePack_Master_MixedEffect_19
+  - first:
+      213: -6968378302827244576
+    second: SpritePack_Master_MixedEffect_20
+  - first:
+      213: 413826392140659203
+    second: SpritePack_Master_MixedEffect_21
+  - first:
+      213: 4405633833963132819
+    second: SpritePack_Master_MixedEffect_22
+  - first:
+      213: -1714214149322426088
+    second: SpritePack_Master_MixedEffect_23
+  - first:
+      213: 2191178236013204307
+    second: SpritePack_Master_MixedEffect_24
+  - first:
+      213: 7656422267461792325
+    second: SpritePack_Master_MixedEffect_25
+  - first:
+      213: -3975049823690291842
+    second: SpritePack_Master_MixedEffect_26
+  - first:
+      213: -5397905438318905234
+    second: SpritePack_Master_MixedEffect_27
+  - first:
+      213: -5595318720258419568
+    second: SpritePack_Master_MixedEffect_28
+  - first:
+      213: -5926097773644786301
+    second: SpritePack_Master_MixedEffect_29
+  - first:
+      213: 7602530269477556215
+    second: SpritePack_Master_MixedEffect_30
+  - first:
+      213: 7905115287810058958
+    second: SpritePack_Master_MixedEffect_31
+  - first:
+      213: -5628414615224047027
+    second: SpritePack_Master_MixedEffect_32
+  - first:
+      213: -3965241350464983900
+    second: SpritePack_Master_MixedEffect_33
+  - first:
+      213: -8008434413096690697
+    second: SpritePack_Master_MixedEffect_34
+  - first:
+      213: 4789186068682869291
+    second: SpritePack_Master_MixedEffect_35
+  - first:
+      213: 3314229815593331712
+    second: SpritePack_Master_MixedEffect_36
+  - first:
+      213: -5797464678053046131
+    second: SpritePack_Master_MixedEffect_37
+  - first:
+      213: 3455426986679054494
+    second: SpritePack_Master_MixedEffect_38
+  - first:
+      213: -5525070405925521717
+    second: SpritePack_Master_MixedEffect_39
+  - first:
+      213: -1423846634220802955
+    second: SpritePack_Master_MixedEffect_40
+  - first:
+      213: -7078204632365670410
+    second: SpritePack_Master_MixedEffect_41
+  - first:
+      213: -5416098407295914689
+    second: SpritePack_Master_MixedEffect_42
+  - first:
+      213: -3602759397643942999
+    second: SpritePack_Master_MixedEffect_43
+  - first:
+      213: -7550376824358053980
+    second: SpritePack_Master_MixedEffect_44
+  - first:
+      213: -7894406444788073458
+    second: SpritePack_Master_MixedEffect_45
+  - first:
+      213: 8741871153349261974
+    second: SpritePack_Master_MixedEffect_46
+  - first:
+      213: 2126715426940320134
+    second: SpritePack_Master_MixedEffect_47
+  - first:
+      213: -1286525387362868040
+    second: SpritePack_Master_MixedEffect_48
+  - first:
+      213: -4302397480799064108
+    second: SpritePack_Master_MixedEffect_49
+  - first:
+      213: 2967871841136956809
+    second: SpritePack_Master_MixedEffect_50
+  - first:
+      213: -2028552174954949149
+    second: SpritePack_Master_MixedEffect_51
+  - first:
+      213: 2326380572872175387
+    second: SpritePack_Master_MixedEffect_52
+  - first:
+      213: -8096267677350100623
+    second: SpritePack_Master_MixedEffect_53
+  - first:
+      213: -9074072478010364875
+    second: SpritePack_Master_MixedEffect_54
+  - first:
+      213: 1317471411482076934
+    second: SpritePack_Master_MixedEffect_55
+  - first:
+      213: -84389660300028294
+    second: SpritePack_Master_MixedEffect_56
+  - first:
+      213: -1722499747749062961
+    second: SpritePack_Master_MixedEffect_57
+  - first:
+      213: 4490155989740884942
+    second: SpritePack_Master_MixedEffect_58
+  - first:
+      213: -3436348966233950323
+    second: SpritePack_Master_MixedEffect_59
+  - first:
+      213: 5013396339552131025
+    second: SpritePack_Master_MixedEffect_60
+  - first:
+      213: -5393302370121082797
+    second: SpritePack_Master_MixedEffect_61
+  - first:
+      213: -826518288327255054
+    second: SpritePack_Master_MixedEffect_62
+  - first:
+      213: 1628621164673101761
+    second: SpritePack_Master_MixedEffect_63
+  - first:
+      213: -3202555002975028222
+    second: SpritePack_Master_MixedEffect_64
+  - first:
+      213: 8158772667999366483
+    second: SpritePack_Master_MixedEffect_65
+  - first:
+      213: 3574857802448217801
+    second: SpritePack_Master_MixedEffect_66
+  - first:
+      213: 8310005341380655741
+    second: SpritePack_Master_MixedEffect_67
+  - first:
+      213: -1886250026342170012
+    second: SpritePack_Master_MixedEffect_68
+  - first:
+      213: 1611902917484423236
+    second: SpritePack_Master_MixedEffect_69
+  - first:
+      213: -961763611253929281
+    second: SpritePack_Master_MixedEffect_70
+  - first:
+      213: -6504270629502770748
+    second: SpritePack_Master_MixedEffect_71
+  - first:
+      213: -599681677776354021
+    second: SpritePack_Master_MixedEffect_72
+  - first:
+      213: -756631344396464324
+    second: SpritePack_Master_MixedEffect_73
+  - first:
+      213: -7493684497439040307
+    second: SpritePack_Master_MixedEffect_74
+  - first:
+      213: 3402226483733949745
+    second: SpritePack_Master_MixedEffect_75
+  - first:
+      213: 4086562123987562556
+    second: SpritePack_Master_MixedEffect_76
+  - first:
+      213: -7822546517668443588
+    second: SpritePack_Master_MixedEffect_77
+  - first:
+      213: 3725714474909728647
+    second: SpritePack_Master_MixedEffect_78
+  - first:
+      213: 3663160071521909799
+    second: SpritePack_Master_MixedEffect_79
+  - first:
+      213: -1500183238699809734
+    second: SpritePack_Master_MixedEffect_80
+  - first:
+      213: -3788837544236548937
+    second: SpritePack_Master_MixedEffect_81
+  - first:
+      213: 5853845150398455437
+    second: SpritePack_Master_MixedEffect_82
+  - first:
+      213: -86751509553873853
+    second: SpritePack_Master_MixedEffect_83
+  - first:
+      213: -3722144552754776874
+    second: SpritePack_Master_MixedEffect_84
+  - first:
+      213: 3311449744880762258
+    second: SpritePack_Master_MixedEffect_85
+  - first:
+      213: 6725265600151526900
+    second: SpritePack_Master_MixedEffect_86
+  - first:
+      213: 7727017322596829748
+    second: SpritePack_Master_MixedEffect_87
+  - first:
+      213: 448976127416519622
+    second: SpritePack_Master_MixedEffect_88
+  - first:
+      213: -7029173358617407232
+    second: SpritePack_Master_MixedEffect_89
+  - first:
+      213: 3719322779781316391
+    second: SpritePack_Master_MixedEffect_90
+  - first:
+      213: -557452348425247742
+    second: SpritePack_Master_MixedEffect_91
+  - first:
+      213: 1097437036418480217
+    second: SpritePack_Master_MixedEffect_92
+  - first:
+      213: -3324279290711047005
+    second: SpritePack_Master_MixedEffect_93
+  - first:
+      213: 1161618936743783004
+    second: SpritePack_Master_MixedEffect_94
+  - first:
+      213: 2705840134775584074
+    second: SpritePack_Master_MixedEffect_95
+  - first:
+      213: -933314099826837122
+    second: SpritePack_Master_MixedEffect_96
+  - first:
+      213: -608930986850132438
+    second: SpritePack_Master_MixedEffect_97
+  - first:
+      213: 6469528065894398271
+    second: SpritePack_Master_MixedEffect_98
+  - first:
+      213: 2748527667137301879
+    second: SpritePack_Master_MixedEffect_99
+  - first:
+      213: 3148017408333067376
+    second: SpritePack_Master_MixedEffect_100
+  - first:
+      213: 6741735025042433496
+    second: SpritePack_Master_MixedEffect_101
+  - first:
+      213: -2098535089992753932
+    second: SpritePack_Master_MixedEffect_102
+  - first:
+      213: 1518306980572961131
+    second: SpritePack_Master_MixedEffect_103
+  - first:
+      213: 8579615667084889900
+    second: SpritePack_Master_MixedEffect_104
+  - first:
+      213: -3510832730921180088
+    second: SpritePack_Master_MixedEffect_105
+  - first:
+      213: -8319766087845186696
+    second: SpritePack_Master_MixedEffect_106
+  - first:
+      213: -3367059116726792775
+    second: SpritePack_Master_MixedEffect_107
+  - first:
+      213: -4741351436267399000
+    second: SpritePack_Master_MixedEffect_108
+  - first:
+      213: 4417056522238763444
+    second: SpritePack_Master_MixedEffect_109
+  - first:
+      213: 7574550863194371091
+    second: SpritePack_Master_MixedEffect_110
+  - first:
+      213: -3440741766294095701
+    second: SpritePack_Master_MixedEffect_111
+  - first:
+      213: 728392826744111292
+    second: SpritePack_Master_MixedEffect_112
+  - first:
+      213: 2655304896863403795
+    second: SpritePack_Master_MixedEffect_113
+  - first:
+      213: -1513347187150821241
+    second: SpritePack_Master_MixedEffect_114
+  - first:
+      213: -2158088039425019982
+    second: SpritePack_Master_MixedEffect_115
+  - first:
+      213: -199558941908914996
+    second: SpritePack_Master_MixedEffect_116
+  - first:
+      213: -4647782034814463763
+    second: SpritePack_Master_MixedEffect_117
+  - first:
+      213: -8169876558904408430
+    second: SpritePack_Master_MixedEffect_118
+  - first:
+      213: -6957171155600070768
+    second: SpritePack_Master_MixedEffect_119
+  - first:
+      213: -8600388600943966392
+    second: SpritePack_Master_MixedEffect_120
+  - first:
+      213: 3005717427513402251
+    second: SpritePack_Master_MixedEffect_121
+  - first:
+      213: -8648065754389555804
+    second: SpritePack_Master_MixedEffect_122
+  - first:
+      213: 405087775034854671
+    second: SpritePack_Master_MixedEffect_123
+  - first:
+      213: 3433435648915871870
+    second: SpritePack_Master_MixedEffect_124
+  - first:
+      213: -7994368019454715672
+    second: SpritePack_Master_MixedEffect_125
+  - first:
+      213: -4162066857691013798
+    second: SpritePack_Master_MixedEffect_126
+  - first:
+      213: 3020966077155018331
+    second: SpritePack_Master_MixedEffect_127
+  - first:
+      213: -4722510247304820345
+    second: SpritePack_Master_MixedEffect_128
+  - first:
+      213: -7723539355362969720
+    second: SpritePack_Master_MixedEffect_129
+  - first:
+      213: -1290982663983862105
+    second: SpritePack_Master_MixedEffect_130
+  - first:
+      213: 705727048630549135
+    second: SpritePack_Master_MixedEffect_131
+  - first:
+      213: 5726537587623886823
+    second: SpritePack_Master_MixedEffect_132
+  - first:
+      213: -1653637430303892897
+    second: SpritePack_Master_MixedEffect_133
+  - first:
+      213: -2563923637248981121
+    second: SpritePack_Master_MixedEffect_134
+  - first:
+      213: -3662400260822555276
+    second: SpritePack_Master_MixedEffect_135
+  - first:
+      213: -2580438776262916763
+    second: SpritePack_Master_MixedEffect_136
+  - first:
+      213: -4495448415270434698
+    second: SpritePack_Master_MixedEffect_137
+  - first:
+      213: 3224244049186522786
+    second: SpritePack_Master_MixedEffect_138
+  - first:
+      213: -6323984402436807902
+    second: SpritePack_Master_MixedEffect_139
+  - first:
+      213: 173730143464511322
+    second: SpritePack_Master_MixedEffect_140
+  - first:
+      213: 8671273936441493927
+    second: SpritePack_Master_MixedEffect_141
+  - first:
+      213: -6327295255333758643
+    second: SpritePack_Master_MixedEffect_142
+  - first:
+      213: 2197370688325267376
+    second: SpritePack_Master_MixedEffect_143
+  - first:
+      213: -5091200625099065435
+    second: SpritePack_Master_MixedEffect_144
+  - first:
+      213: 6611879299700383294
+    second: SpritePack_Master_MixedEffect_145
+  - first:
+      213: 1817301446638741394
+    second: SpritePack_Master_MixedEffect_146
+  - first:
+      213: -6712162183765519261
+    second: SpritePack_Master_MixedEffect_147
+  - first:
+      213: -8734614867021956830
+    second: SpritePack_Master_MixedEffect_148
+  - first:
+      213: 9070297153446541766
+    second: SpritePack_Master_MixedEffect_149
+  - first:
+      213: -2741943512689722152
+    second: SpritePack_Master_MixedEffect_150
+  - first:
+      213: 142375474580725730
+    second: SpritePack_Master_MixedEffect_151
+  - first:
+      213: -7272588264440882927
+    second: SpritePack_Master_MixedEffect_152
+  - first:
+      213: 2912806961711133413
+    second: SpritePack_Master_MixedEffect_153
+  - first:
+      213: -2379067443706235572
+    second: SpritePack_Master_MixedEffect_154
+  - first:
+      213: 6319577177684894041
+    second: SpritePack_Master_MixedEffect_155
+  - first:
+      213: -6017260239920163287
+    second: SpritePack_Master_MixedEffect_156
+  - first:
+      213: 4106850180116071964
+    second: SpritePack_Master_MixedEffect_157
+  - first:
+      213: -8060652684172679974
+    second: SpritePack_Master_MixedEffect_158
+  - first:
+      213: -7436302841294730699
+    second: SpritePack_Master_MixedEffect_159
+  - first:
+      213: -7304737441528889261
+    second: SpritePack_Master_MixedEffect_160
+  - first:
+      213: -7454948104792917024
+    second: SpritePack_Master_MixedEffect_161
+  - first:
+      213: -7412352267925184347
+    second: SpritePack_Master_MixedEffect_162
+  - first:
+      213: 3614804431376459359
+    second: SpritePack_Master_MixedEffect_163
+  - first:
+      213: -293160868923922276
+    second: SpritePack_Master_MixedEffect_164
+  - first:
+      213: -3651781865580619563
+    second: SpritePack_Master_MixedEffect_165
+  - first:
+      213: 4179188334492492885
+    second: SpritePack_Master_MixedEffect_166
+  - first:
+      213: -1989888124490280852
+    second: SpritePack_Master_MixedEffect_167
+  - first:
+      213: 6768251297390561975
+    second: SpritePack_Master_MixedEffect_168
+  - first:
+      213: 4264394737560184844
+    second: SpritePack_Master_MixedEffect_169
+  - first:
+      213: 6850998341181576270
+    second: SpritePack_Master_MixedEffect_170
+  - first:
+      213: -7761620578318555000
+    second: SpritePack_Master_MixedEffect_171
+  - first:
+      213: -1484960312416202009
+    second: SpritePack_Master_MixedEffect_172
+  - first:
+      213: -6828251043528758877
+    second: SpritePack_Master_MixedEffect_173
+  - first:
+      213: 3887281894345631676
+    second: SpritePack_Master_MixedEffect_174
+  - first:
+      213: 1588125039506172109
+    second: SpritePack_Master_MixedEffect_175
+  - first:
+      213: -8735619782361245240
+    second: SpritePack_Master_MixedEffect_176
+  - first:
+      213: -8772226212884897836
+    second: SpritePack_Master_MixedEffect_177
+  - first:
+      213: 3312311444702161209
+    second: SpritePack_Master_MixedEffect_178
+  - first:
+      213: -7714776700727347505
+    second: SpritePack_Master_MixedEffect_179
+  - first:
+      213: 3409303729878455590
+    second: SpritePack_Master_MixedEffect_180
+  - first:
+      213: -8957383240202375332
+    second: SpritePack_Master_MixedEffect_181
+  - first:
+      213: 1686862085346933836
+    second: SpritePack_Master_MixedEffect_182
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_0
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 1158
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fad1c7b07ae09240800000000000000
+      internalID: 4796591372989750007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_1
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 1157
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06064acf25d58e170800000000000000
+      internalID: 8207912931890061408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_2
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1156
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7f9026ccba23c70800000000000000
+      internalID: 8949404303845095391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_3
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 1155
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41269e94536cca200800000000000000
+      internalID: 192746816245686804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_4
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 1152
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06d3756d764e07d70800000000000000
+      internalID: 9038975586761391456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_5
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 1152
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea6e5f694b7866170800000000000000
+      internalID: 8171367783606904494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_6
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 1156
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4caea927fb098ed50800000000000000
+      internalID: 6766817592060078788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_7
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 1150
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d60ccfa601a4b930800000000000000
+      internalID: 4158125406061070033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_8
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 1155
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cba9078a67e72670800000000000000
+      internalID: 8514028065285319620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_9
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 1159
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ca8032b807a4d30800000000000000
+      internalID: 4416466127480728583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_10
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 1153
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d34c09e5e4a31f0800000000000000
+      internalID: -1064452193857028715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_11
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 1154
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c49e8e9b9e50492c0800000000000000
+      internalID: -4425906032393787060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_12
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 1161
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d994c283fc3ff750800000000000000
+      internalID: 6340853816929589712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_13
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 1166
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d40a8420a7d787c0800000000000000
+      internalID: -4069046655498189613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_14
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 1154
+        width: 58
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f23f7843ba8652f50800000000000000
+      internalID: 6856001092271469359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_15
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 1062
+        width: 48
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fa9c140232e80ed0800000000000000
+      internalID: -2447457693030638863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_16
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 1054
+        width: 44
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e4fc6f2563aa3430800000000000000
+      internalID: 3763500093604164834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_17
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 1060
+        width: 48
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8f47929cb34cde10800000000000000
+      internalID: 2223726793206484875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_18
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 1055
+        width: 44
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba1bd7ca223d25420800000000000000
+      internalID: 2617386479331946923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_19
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 1055
+        width: 44
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a891e449a3dd3d5d0800000000000000
+      internalID: -3038842079878964854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_20
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1055
+        width: 44
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e351778ad85b4f90800000000000000
+      internalID: -6968378302827244576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_21
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 1046
+        width: 39
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30ab93e39e43eb500800000000000000
+      internalID: 413826392140659203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_22
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 1040
+        width: 47
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39790d341a4f32d30800000000000000
+      internalID: 4405633833963132819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_23
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 940
+        width: 51
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81930b04053e538e0800000000000000
+      internalID: -1714214149322426088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_24
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 1099
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 353522d0ff0a86e10800000000000000
+      internalID: 2191178236013204307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_25
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 1085
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 542737e9c73114a60800000000000000
+      internalID: 7656422267461792325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_26
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 1082
+        width: 58
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e75067efe39c5d8c0800000000000000
+      internalID: -3975049823690291842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_27
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 1053
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e683ad96a99c615b0800000000000000
+      internalID: -5397905438318905234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_28
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 1053
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09457e9e44f6952b0800000000000000
+      internalID: -5595318720258419568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_29
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 1035
+        width: 47
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3855ba1097542cda0800000000000000
+      internalID: -5926097773644786301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_30
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 1036
+        width: 47
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ff4d5a000d918960800000000000000
+      internalID: 7602530269477556215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_31
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 1034
+        width: 44
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecaad6e987c94bd60800000000000000
+      internalID: 7905115287810058958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_32
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 1035
+        width: 42
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4a24f26abad3e1b0800000000000000
+      internalID: -5628414615224047027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_33
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 1023
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ac28d02002a8f8c0800000000000000
+      internalID: -3965241350464983900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_34
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 1032
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb9b50f4535cd090800000000000000
+      internalID: -8008434413096690697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_35
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 1031
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a8713fa5b967240800000000000000
+      internalID: 4789186068682869291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_36
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1000
+        width: 58
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00ce27e25728efd20800000000000000
+      internalID: 3314229815593331712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_37
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 979
+        width: 48
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8816c277944b8fa0800000000000000
+      internalID: -5797464678053046131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_38
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 982
+        width: 44
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e90bd48698424ff20800000000000000
+      internalID: 3455426986679054494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_39
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 979
+        width: 48
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc639c72db10353b0800000000000000
+      internalID: -5525070405925521717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_40
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 982
+        width: 44
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c22a0b70b7d3ce0800000000000000
+      internalID: -1423846634220802955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_41
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 978
+        width: 48
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ffd158836a25cd90800000000000000
+      internalID: -7078204632365670410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_42
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 973
+        width: 48
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d619cb13726d4b0800000000000000
+      internalID: -5416098407295914689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_43
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 970
+        width: 39
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a38b348a6d600ec0800000000000000
+      internalID: -3602759397643942999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_44
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 965
+        width: 39
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a7dbc7284ca73790800000000000000
+      internalID: -7550376824358053980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_45
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 969
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c3ad13a2f617290800000000000000
+      internalID: -7894406444788073458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_46
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 963
+        width: 47
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69afd9f5f7d515970800000000000000
+      internalID: 8741871153349261974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_47
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 957
+        width: 49
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 689fe19b96c938d10800000000000000
+      internalID: 2126715426940320134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_48
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 967
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4e6bbf9f7552ee0800000000000000
+      internalID: -1286525387362868040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_49
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 960
+        width: 47
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dfaf6a4940da44c0800000000000000
+      internalID: -4302397480799064108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_50
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 960
+        width: 40
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9855add07bfff2920800000000000000
+      internalID: 2967871841136956809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_51
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 947
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e5d67b6b8229d3e0800000000000000
+      internalID: -2028552174954949149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_52
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 977
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f6a6a2ec6f84020800000000000000
+      internalID: 2326380572872175387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_53
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 975
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171021d717744af80800000000000000
+      internalID: -8096267677350100623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_54
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 908
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53c2b02682b621280800000000000000
+      internalID: -9074072478010364875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_55
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 908
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6072f1bb449984210800000000000000
+      internalID: 1317471411482076934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_56
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 864
+        width: 85
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a76d9131d0034def0800000000000000
+      internalID: -84389660300028294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_57
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 858
+        width: 80
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc697b90b937818e0800000000000000
+      internalID: -1722499747749062961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_58
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 863
+        width: 81
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec31992351d305e30800000000000000
+      internalID: 4490155989740884942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_59
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 898
+        width: 58
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d87385f52d2af40d0800000000000000
+      internalID: -3436348966233950323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_60
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 919
+        width: 58
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d79f31a869239540800000000000000
+      internalID: 5013396339552131025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_61
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 859
+        width: 35
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35819aeb1142725b0800000000000000
+      internalID: -5393302370121082797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_62
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 859
+        width: 35
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fbd3efeefd9784f0800000000000000
+      internalID: -826518288327255054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_63
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 860
+        width: 35
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cfe50a02560a9610800000000000000
+      internalID: 1628621164673101761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_64
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 859
+        width: 35
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20cf502513d3e83d0800000000000000
+      internalID: -3202555002975028222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_65
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 841
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35da447b388c93170800000000000000
+      internalID: 8158772667999366483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_66
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 838
+        width: 81
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c6a57d1b327c9130800000000000000
+      internalID: 3574857802448217801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_67
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 832
+        width: 85
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7ab79664d1135370800000000000000
+      internalID: 8310005341380655741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_68
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 827
+        width: 85
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 462cd464891b2d5e0800000000000000
+      internalID: -1886250026342170012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_69
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 849
+        width: 58
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4482319c921ae5610800000000000000
+      internalID: 1611902917484423236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_70
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 845
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba0059571127a2f0800000000000000
+      internalID: -961763611253929281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_71
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 751
+        width: 81
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c12b75d2503cb5a0800000000000000
+      internalID: -6504270629502770748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_72
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 743
+        width: 45
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1584d9f0b08da7f0800000000000000
+      internalID: -599681677776354021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_73
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 741
+        width: 45
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f82531dc7ef75f0800000000000000
+      internalID: -756631344396464324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_74
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 744
+        width: 46
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcc5b4f17a5110890800000000000000
+      internalID: -7493684497439040307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_75
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 785
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13d636016f2273f20800000000000000
+      internalID: 3402226483733949745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_76
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 819
+        width: 31
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3038d8a99266b830800000000000000
+      internalID: 4086562123987562556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_77
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 788
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3a4767436bb07390800000000000000
+      internalID: -7822546517668443588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_78
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 790
+        width: 35
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f7683439564b330800000000000000
+      internalID: 3725714474909728647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_79
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 787
+        width: 35
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72c35724da826d230800000000000000
+      internalID: 3663160071521909799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_80
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 784
+        width: 35
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a348d4fea474e2be0800000000000000
+      internalID: -1500183238699809734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_81
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 784
+        width: 35
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bcfd10e3585b6bc0800000000000000
+      internalID: -3788837544236548937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_82
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 780
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8e94a736290d3150800000000000000
+      internalID: 5853845150398455437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_83
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 784
+        width: 35
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34cff4136fbcbcef0800000000000000
+      internalID: -86751509553873853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_84
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 783
+        width: 35
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d475620049485cc0800000000000000
+      internalID: -3722144552754776874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_85
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 788
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29dfc278ff1a4fd20800000000000000
+      internalID: 3311449744880762258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_86
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 745
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd9f2d6e61f45d50800000000000000
+      internalID: 6725265600151526900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_87
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 755
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43a8caeb051eb3b60800000000000000
+      internalID: 7727017322596829748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_88
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 757
+        width: 50
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cbca4bb8651b3600800000000000000
+      internalID: 448976127416519622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_89
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 758
+        width: 43
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00158fe821c537e90800000000000000
+      internalID: -7029173358617407232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_90
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 740
+        width: 35
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72f32e5cc50bd9330800000000000000
+      internalID: 3719322779781316391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_91
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 741
+        width: 35
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 204e7e8ea088348f0800000000000000
+      internalID: -557452348425247742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_92
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 740
+        width: 35
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 958b41f8b21ea3f00800000000000000
+      internalID: 1097437036418480217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_93
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 744
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a40bfe0999cdd1d0800000000000000
+      internalID: -3324279290711047005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_94
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 745
+        width: 35
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5aeaf8b446ee1010800000000000000
+      internalID: 1161618936743783004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_95
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 750
+        width: 35
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a453b4434431d8520800000000000000
+      internalID: 2705840134775584074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_96
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 700
+        width: 44
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7935f765c33c03f0800000000000000
+      internalID: -933314099826837122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_97
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 692
+        width: 35
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2ed1146e74ac87f0800000000000000
+      internalID: -608930986850132438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_98
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 702
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f393e08bf7168c950800000000000000
+      internalID: 6469528065894398271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_99
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 645
+        width: 52
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77d4d07d95bb42620800000000000000
+      internalID: 2748527667137301879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_100
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 658
+        width: 43
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 074307a672100bb20800000000000000
+      internalID: 3148017408333067376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_101
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 660
+        width: 43
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d5a67939447f8d50800000000000000
+      internalID: 6741735025042433496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_102
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 663
+        width: 44
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fc1a44447180e2e0800000000000000
+      internalID: -2098535089992753932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_103
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 676
+        width: 44
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b691c0d872c121510800000000000000
+      internalID: 1518306980572961131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_104
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 666
+        width: 52
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f88f11efae01770800000000000000
+      internalID: 8579615667084889900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_105
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 661
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 844e0af7b34074fc0800000000000000
+      internalID: -3510832730921180088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_106
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 607
+        width: 52
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87375a7b2d04a8c80800000000000000
+      internalID: -8319766087845186696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_107
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 561
+        width: 73
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bd42c1a29dc541d0800000000000000
+      internalID: -3367059116726792775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_108
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 559
+        width: 73
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a85efd4df5533eb0800000000000000
+      internalID: -4741351436267399000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_109
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 560
+        width: 71
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b12dd021898c4d30800000000000000
+      internalID: 4417056522238763444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_110
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 557
+        width: 73
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31434ddd0e53e1960800000000000000
+      internalID: 7574550863194371091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_111
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 557
+        width: 73
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba8b038e7970040d0800000000000000
+      internalID: -3440741766294095701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_112
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 557
+        width: 73
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb0860faa65cb1a00800000000000000
+      internalID: 728392826744111292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_113
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 543
+        width: 43
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31ff5eb3cb989d420800000000000000
+      internalID: 2655304896863403795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_114
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 553
+        width: 52
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 788e90850c28ffae0800000000000000
+      internalID: -1513347187150821241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_115
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 566
+        width: 43
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bf6d08bc5eec02e0800000000000000
+      internalID: -2158088039425019982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_116
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 563
+        width: 52
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc24cb13360b3df0800000000000000
+      internalID: -199558941908914996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_117
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 580
+        width: 43
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de011754dd2cf7fb0800000000000000
+      internalID: -4647782034814463763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_118
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 520
+        width: 52
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29646b73e84ce9e80800000000000000
+      internalID: -8169876558904408430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_119
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 424
+        width: 75
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0972dd4d1b9237f90800000000000000
+      internalID: -6957171155600070768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_120
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 434
+        width: 73
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8478a6e522845a880800000000000000
+      internalID: -8600388600943966392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_121
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 440
+        width: 75
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b83232a431476b920800000000000000
+      internalID: 3005717427513402251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_122
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 469
+        width: 73
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a5d36b0406ebf780800000000000000
+      internalID: -8648065754389555804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_123
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 473
+        width: 73
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0d4ec56f292f9500800000000000000
+      internalID: 405087775034854671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_124
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 477
+        width: 71
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e781bc4188306af20800000000000000
+      internalID: 3433435648915871870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_125
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 419
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e898ac64ac4e0190800000000000000
+      internalID: -7994368019454715672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_126
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 380
+        width: 71
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5d96e79e3e5d36c0800000000000000
+      internalID: -4162066857691013798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_127
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 380
+        width: 71
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b56845334a0ace920800000000000000
+      internalID: 3020966077155018331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_128
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 388
+        width: 71
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 789014573f5467eb0800000000000000
+      internalID: -4722510247304820345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_129
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 380
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88737da90e970d490800000000000000
+      internalID: -7723539355362969720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_130
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 423
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aeed066b12851ee0800000000000000
+      internalID: -1290982663983862105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_131
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 394
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a320af20f3bc900800000000000000
+      internalID: 705727048630549135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_132
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 336
+        width: 73
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ef7e3f689fb87f40800000000000000
+      internalID: 5726537587623886823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_133
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 327
+        width: 75
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a527bb4891d09e0800000000000000
+      internalID: -1653637430303892897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_134
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 343
+        width: 73
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f770c82490d1b6cd0800000000000000
+      internalID: -2563923637248981121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_135
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 309
+        width: 71
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 475af54fd5a8c2dc0800000000000000
+      internalID: -3662400260822555276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_136
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 307
+        width: 73
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5658430da90703cd0800000000000000
+      internalID: -2580438776262916763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_137
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 293
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67886b5fb75fc91c0800000000000000
+      internalID: -4495448415270434698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_138
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 313
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a60ee441e0debc20800000000000000
+      internalID: 3224244049186522786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_139
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 328
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 223a4af11b1bc38a0800000000000000
+      internalID: -6323984402436807902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_140
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 325
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a57daff15a6396200800000000000000
+      internalID: 173730143464511322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_141
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 322
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a9c2bbe3bd865870800000000000000
+      internalID: 8671273936441493927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_142
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 235
+        width: 73
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4911dc1d7ee038a0800000000000000
+      internalID: -6327295255333758643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_143
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 243
+        width: 73
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bfab75bff0ae7e10800000000000000
+      internalID: 2197370688325267376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_144
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 247
+        width: 73
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a739bc710c6859b0800000000000000
+      internalID: -5091200625099065435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_145
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 288
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3e566c113d12cb50800000000000000
+      internalID: 6611879299700383294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_146
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 256
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 297a4b8890a583910800000000000000
+      internalID: 1817301446638741394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_147
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 253
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36498d17e0c99d2a0800000000000000
+      internalID: -6712162183765519261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_148
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 255
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2297f417e0a68c680800000000000000
+      internalID: -8734614867021956830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_149
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 218
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c9fa6e543b20ed70800000000000000
+      internalID: 9070297153446541766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_150
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 249
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dc31f317e8a2f9d0800000000000000
+      internalID: -2741943512689722152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_151
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 250
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ef9c136db1d9f100800000000000000
+      internalID: 142375474580725730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_152
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 225
+        width: 37
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 119935c5183921b90800000000000000
+      internalID: -7272588264440882927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_153
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 149
+        width: 75
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e2b31cbf7e5c6820800000000000000
+      internalID: 2912806961711133413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_154
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 185
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c457139c3cadbfed0800000000000000
+      internalID: -2379067443706235572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_155
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 181
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 951e296e5f5a3b750800000000000000
+      internalID: 6319577177684894041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_156
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 182
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9261a7e41b56e7ca0800000000000000
+      internalID: -6017260239920163287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_157
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 173
+        width: 47
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c164193da767ef830800000000000000
+      internalID: 4106850180116071964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_158
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 173
+        width: 46
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad4a616471fc22090800000000000000
+      internalID: -8060652684172679974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_159
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 167
+        width: 46
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a466e07f1fcc890800000000000000
+      internalID: -7436302841294730699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_160
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 139
+        width: 44
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 350cc24cffb50aa90800000000000000
+      internalID: -7304737441528889261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_161
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 132
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ebb8da5234ba8890800000000000000
+      internalID: -7454948104792917024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_162
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 80
+        width: 45
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0224872e8022990800000000000000
+      internalID: -7412352267925184347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_163
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 81
+        width: 41
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f56a3b07a7d5a2230800000000000000
+      internalID: 3614804431376459359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_164
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 91
+        width: 37
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c98aeb13ebb7eebf0800000000000000
+      internalID: -293160868923922276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_165
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 85
+        width: 45
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d89ad0cdb3425dc0800000000000000
+      internalID: -3651781865580619563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_166
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 68
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 554a1eed5a57ff930800000000000000
+      internalID: 4179188334492492885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_167
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 77
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c601dfc2b4f7264e0800000000000000
+      internalID: -1989888124490280852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_168
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 82
+        width: 44
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba8a8bf1b8aded50800000000000000
+      internalID: 6768251297390561975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_169
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 82
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c08e15a8b6c2e2b30800000000000000
+      internalID: 4264394737560184844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_170
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 69
+        width: 45
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e441be271b2a31f50800000000000000
+      internalID: 6850998341181576270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_171
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 29
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 888e5f3f43f294490800000000000000
+      internalID: -7761620578318555000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_172
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 24
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e211e8a67c546be0800000000000000
+      internalID: -1484960312416202009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_173
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 20
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a927418add2d31a0800000000000000
+      internalID: -6828251043528758877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_174
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 19
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb76746894662f530800000000000000
+      internalID: 3887281894345631676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_175
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 22
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc82ba62f472a0610800000000000000
+      internalID: 1588125039506172109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_176
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 25
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c99b7b5718d4c680800000000000000
+      internalID: -8735619782361245240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_177
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 22
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df10a39cbac24680800000000000000
+      internalID: -8772226212884897836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_178
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 26
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 939eee6a5b1b7fd20800000000000000
+      internalID: 3312311444702161209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_179
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 29
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc6bfaf177b9fe490800000000000000
+      internalID: -7714776700727347505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_180
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 29
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 625d1d6dda7405f20800000000000000
+      internalID: 3409303729878455590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_181
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 23
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5f23bab66bf0b380800000000000000
+      internalID: -8957383240202375332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePack_Master_MixedEffect_182
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 31
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4cbd261120f86710800000000000000
+      internalID: 1686862085346933836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

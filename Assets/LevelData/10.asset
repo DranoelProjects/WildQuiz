@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
+  m_Name: 10
+  m_EditorClassIdentifier: 
+  Level: 10
+  Type: Quiz
+  Theme: "Multim\xE9dia"
+  RightAnswer: Personal computer
+  SpriteWithQuestion: {fileID: 21300000, guid: 98e287a105fdabe488f4aa1389a136ea, type: 3}
+  ImageScale: 7.51158
+  Clue: On parle d'informatique et non pas de politique.
+  Info: "Ordinateur personnel en fran\xE7ais. C'est un ordinateur qui est destin\xE9
+    \xE0 un usage individuel et pouvant tenir sur un bureau."
+  NextLevelData: {fileID: 11400000, guid: 430e7ba61a2f08a4c9bbb2ac7e35723a, type: 2}
+  Question: Que signifie le sigle PC en informatique?
+  FontSizeBtnAnswers: 150
+  Answer1: Portable computer
+  Answer2: Pas compris
+  Answer3: Parti communiste
+  Answer4: Personal computer
+  Difficulty: 
+  NeedText: 0
+  NeedImage: 0
+  NeedBtnListen: 0
+  Sound: {fileID: 0}
+  TextLevel: 
+  OtherAcceptedAnswer1: 
+  OtherAcceptedAnswer2: 
+  OtherAcceptedAnswer3: 
