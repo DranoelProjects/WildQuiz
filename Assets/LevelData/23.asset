@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
+  m_Name: 23
+  m_EditorClassIdentifier: 
+  Level: 23
+  Type: Quiz
+  Theme: "Multim\xE9dia"
+  RightAnswer: Minecraft
+  SpriteWithQuestion: {fileID: 21300000, guid: 881affae65ae76547b6eeb3089f893f7, type: 3}
+  ImageScale: 7.5
+  Clue: Tetris est le second jeu le plus vendu.
+  Info: "Minecraft sorti en 2011 a \xE9t\xE9 vendu 200 millions de fois contre 170
+    millions de fois pour Tetris second jeu le plus vendu."
+  NextLevelData: {fileID: 11400000, guid: 744c6f1bb8b221840a564c46ac65d981, type: 2}
+  Question: "Quel est le jeu vid\xE9o le plus vendu au monde ?"
+  FontSizeBtnAnswers: 150
+  Answer1: Tetris
+  Answer2: Grand Theft Auto V
+  Answer3: Wii Sports
+  Answer4: Minecraft
+  Difficulty: 
+  NeedText: 0
+  NeedImage: 0
+  NeedBtnListen: 0
+  Sound: {fileID: 0}
+  TextLevel: 
+  OtherAcceptedAnswer1: 
+  OtherAcceptedAnswer2: 
+  OtherAcceptedAnswer3: 

@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
-  m_Name: 20
+  m_Name: 28
   m_EditorClassIdentifier: 
-  Level: 20
+  Level: 28
   Type: TicTacToe
   Theme: 
   RightAnswer: 
@@ -20,7 +20,7 @@ MonoBehaviour:
   ImageScale: 7.51158
   Clue: 
   Info: 
-  NextLevelData: {fileID: 11400000, guid: 529bbe29db34b7b46b23bac3319dbd62, type: 2}
+  NextLevelData: {fileID: 0}
   Question: 
   FontSizeBtnAnswers: 150
   Answer1: 

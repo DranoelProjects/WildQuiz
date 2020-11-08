@@ -168,7 +168,10 @@ public class QuizManager : MonoBehaviour
         clue.text = levelData.Info;
         textAnswerWas.text = levelData.RightAnswer;
         textAnswerWas.color = Color.green;
-        ShowCluePanel();
+        if (!cluePanel.gameObject.activeInHierarchy)
+        {
+            ShowCluePanel();
+        }
         StartCoroutine(nextScene());
     }
 

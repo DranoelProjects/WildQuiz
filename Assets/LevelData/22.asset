@@ -10,24 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
-  m_Name: 20
+  m_Name: 22
   m_EditorClassIdentifier: 
-  Level: 20
-  Type: TicTacToe
-  Theme: 
-  RightAnswer: 
-  SpriteWithQuestion: {fileID: 0}
-  ImageScale: 7.51158
-  Clue: 
-  Info: 
-  NextLevelData: {fileID: 11400000, guid: 529bbe29db34b7b46b23bac3319dbd62, type: 2}
-  Question: 
+  Level: 22
+  Type: Quiz
+  Theme: "Math\xE9matiques"
+  RightAnswer: Dividende
+  SpriteWithQuestion: {fileID: 21300000, guid: 847275ccfabbed9499ddda666012701a, type: 3}
+  ImageScale: 6
+  Clue: B est le diviseur.
+  Info: A est le dividende, B le diviseur, C le reste et D le quotient
+  NextLevelData: {fileID: 11400000, guid: 15e6bf9506bca3b4491d8f276288cb57, type: 2}
+  Question: 'Quelle est le nom du nombre a ? '
   FontSizeBtnAnswers: 150
-  Answer1: 
-  Answer2: 
-  Answer3: 
-  Answer4: 
-  Difficulty: Medium
+  Answer1: Diviseur
+  Answer2: Dividende
+  Answer3: Quotient
+  Answer4: Reste
+  Difficulty: 
   NeedText: 0
   NeedImage: 0
   NeedBtnListen: 0

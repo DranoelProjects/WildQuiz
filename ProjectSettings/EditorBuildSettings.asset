@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Taquin.unity
-    guid: 40576d7c9b522fe44909b0db72ee0d21
+    path: Assets/Scenes/LevelMap.unity
+    guid: 2ef4a5497a554d8419e9ec7b55ea4e9e
+  - enabled: 1
+    path: Assets/Scenes/QuizScene.unity
+    guid: 5fb399634bb1db74dbde88ceb18d8f0a
+  - enabled: 1
+    path: Assets/Scenes/TicTacToe.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
