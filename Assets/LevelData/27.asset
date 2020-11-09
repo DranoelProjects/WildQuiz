@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
+  m_Name: 27
+  m_EditorClassIdentifier: 
+  Level: 27
+  Type: Quiz
+  Theme: Sport
+  RightAnswer: Qatar
+  SpriteWithQuestion: {fileID: 21300000, guid: 105b6677cab1c064abca2d7c77767933, type: 3}
+  ImageScale: 7.51158
+  Clue: "La coupe du monde de 2018 s'est d\xE9roul\xE9e en Russie."
+  Info: "Elle se d\xE9roulera au Qatar du 21 novembre au 18 d\xE9cembre 2022. Cette
+    p\xE9riode \xE9tant choisie pour \xE9viter les trop fortes chaleurs du Qatar
+    en \xE9t\xE9."
+  NextLevelData: {fileID: 11400000, guid: d07f6b7f789f07946a2bc957b6074057, type: 2}
+  Question: "O\xF9 se d\xE9roulera la prochaine coupe du monde de football ?"
+  FontSizeBtnAnswers: 150
+  Answer1: Qatar
+  Answer2: Arabie saoudite
+  Answer3: Russie
+  Answer4: "Br\xE9sil"
+  Difficulty: 
+  NeedText: 0
+  NeedImage: 0
+  NeedBtnListen: 0
+  Sound: {fileID: 0}
+  TextLevel: 
+  OtherAcceptedAnswer1: 
+  OtherAcceptedAnswer2: 
+  OtherAcceptedAnswer3: 

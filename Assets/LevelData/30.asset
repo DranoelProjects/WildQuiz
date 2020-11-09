@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
+  m_Name: 30
+  m_EditorClassIdentifier: 
+  Level: 30
+  Type: Quiz
+  Theme: Animaux
+  RightAnswer: Choupisson
+  SpriteWithQuestion: {fileID: 21300000, guid: 86e84549e317eef4da324e25a74ea903, type: 3}
+  ImageScale: 7.51158
+  Clue: "Tiote b\xEAte c'est une blague?"
+  Info: "Le petit du h\xE9risson n'a pas de nom sp\xE9cifique mais certains l'appellent
+    le choupisson ou le h\xE9rissonneau."
+  NextLevelData: {fileID: 11400000, guid: 6ac50840e4fec6a46859b18019a3ce5d, type: 2}
+  Question: "Quel est l\u2019un des noms du petit du h\xE9risson ?"
+  FontSizeBtnAnswers: 150
+  Answer1: "H\xE9rissonno"
+  Answer2: Choupisson
+  Answer3: "Tiote b\xEAte"
+  Answer4: "H\xE9rissonnou"
+  Difficulty: 
+  NeedText: 0
+  NeedImage: 0
+  NeedBtnListen: 0
+  Sound: {fileID: 0}
+  TextLevel: 
+  OtherAcceptedAnswer1: 
+  OtherAcceptedAnswer2: 
+  OtherAcceptedAnswer3: 

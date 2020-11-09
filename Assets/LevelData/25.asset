@@ -10,24 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
-  m_Name: 28
+  m_Name: 25
   m_EditorClassIdentifier: 
-  Level: 28
-  Type: TicTacToe
-  Theme: 
-  RightAnswer: 
-  SpriteWithQuestion: {fileID: 0}
+  Level: 25
+  Type: Quiz
+  Theme: "G\xE9ographie"
+  RightAnswer: 330
+  SpriteWithQuestion: {fileID: 21300000, guid: c4aadf3d2bfa2c743a82d846c9926870, type: 3}
   ImageScale: 7.51158
-  Clue: 
-  Info: 
-  NextLevelData: {fileID: 11400000, guid: e478f7f959c76d741a980767a2caaccc, type: 2}
-  Question: 
+  Clue: "En 1960 la population des \xC9tats-Unis \xE9tait de 181 millions d'habitants"
+  Info: "Depuis 1953 la population des \xC9tats-Unis a doubl\xE9."
+  NextLevelData: {fileID: 11400000, guid: 069aaeb0acd78634d806bcde09c0ac36, type: 2}
+  Question: "Quelle est la population des \xC9tats-Unis en millions d'habitants 
+    ?"
   FontSizeBtnAnswers: 150
-  Answer1: 
-  Answer2: 
-  Answer3: 
-  Answer4: 
-  Difficulty: Medium
+  Answer1: 150
+  Answer2: 220
+  Answer3: 330
+  Answer4: 405
+  Difficulty: 
   NeedText: 0
   NeedImage: 0
   NeedBtnListen: 0

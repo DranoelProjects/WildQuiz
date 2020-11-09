@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
+  m_Name: 29
+  m_EditorClassIdentifier: 
+  Level: 29
+  Type: Quiz
+  Theme: "Culture g\xE9n\xE9rale"
+  RightAnswer: Portugais
+  SpriteWithQuestion: {fileID: 21300000, guid: ea14c8307e259fc4f9643793af058dd7, type: 3}
+  ImageScale: 7.51158
+  Clue: "Le fran\xE7ais n'est que tr\xE8s peu parl\xE9 au Br\xE9sil."
+  Info: "Le portugais br\xE9silien est tr\xE8s proche de celui parl\xE9 au Portugal.
+    Le portugais a \xE9t\xE9 apport\xE9 par les colons du Portugal."
+  NextLevelData: {fileID: 11400000, guid: 1d3d21e881206fe49b98bb4c14f2ac36, type: 2}
+  Question: "Quelle est la langue officielle du Br\xE9sil ? "
+  FontSizeBtnAnswers: 150
+  Answer1: Espagnol
+  Answer2: Anglais
+  Answer3: "Fran\xE7ais"
+  Answer4: Portugais
+  Difficulty: 
+  NeedText: 0
+  NeedImage: 0
+  NeedBtnListen: 0
+  Sound: {fileID: 0}
+  TextLevel: 
+  OtherAcceptedAnswer1: 
+  OtherAcceptedAnswer2: 
+  OtherAcceptedAnswer3: 

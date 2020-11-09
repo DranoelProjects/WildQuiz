@@ -10,24 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
-  m_Name: 28
+  m_Name: 26
   m_EditorClassIdentifier: 
-  Level: 28
-  Type: TicTacToe
-  Theme: 
-  RightAnswer: 
-  SpriteWithQuestion: {fileID: 0}
+  Level: 26
+  Type: Quiz
+  Theme: Sciences
+  RightAnswer: Pascal
+  SpriteWithQuestion: {fileID: 21300000, guid: 1b4c0f1ebff37554da92c4b534dd1ad7, type: 3}
   ImageScale: 7.51158
-  Clue: 
-  Info: 
-  NextLevelData: {fileID: 11400000, guid: e478f7f959c76d741a980767a2caaccc, type: 2}
-  Question: 
+  Clue: "C'est une unit\xE9 de pression."
+  Info: "C'est l'unit\xE9 de pression du syst\xE8me international d'unit\xE9s."
+  NextLevelData: {fileID: 11400000, guid: be3562a7037ce3f4ab012b77d269886f, type: 2}
+  Question: Que signifie le symbole Pa en Physique ?
   FontSizeBtnAnswers: 150
-  Answer1: 
-  Answer2: 
-  Answer3: 
-  Answer4: 
-  Difficulty: Medium
+  Answer1: Pas
+  Answer2: Patrick
+  Answer3: Pascal
+  Answer4: Pression
+  Difficulty: 
   NeedText: 0
   NeedImage: 0
   NeedBtnListen: 0

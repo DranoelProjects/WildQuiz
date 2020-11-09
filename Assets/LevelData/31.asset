@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
+  m_Name: 31
+  m_EditorClassIdentifier: 
+  Level: 31
+  Type: Quiz
+  Theme: Art
+  RightAnswer: Mona Lisa
+  SpriteWithQuestion: {fileID: 21300000, guid: bc91cdf8c0f5a8243bdb5c6920445f18, type: 3}
+  ImageScale: 5.5
+  Clue: L'autre nom de la Joconde n'est certainement pas la Joconde.
+  Info: "Tableau du peintre italien L\xE9onard de Vinci, la Joconde est aussi connue
+    sous le nom de \"Portait de Mona Lisa\". Ce tableau a \xE9t\xE9 r\xE9alis\xE9
+    entre 1503 et 1519. La p\xE9riode r\xE9elle \xE9tant inconnue."
+  NextLevelData: {fileID: 11400000, guid: 545a30fc10d51904489376ba7783ab80, type: 2}
+  Question: "Quel est l\u2019autre nom de la Joconde de L\xE9onard de Vinci ? "
+  FontSizeBtnAnswers: 150
+  Answer1: Isabella
+  Answer2: Mona Lisa
+  Answer3: Joconde
+  Answer4: Frida Kahlo
+  Difficulty: 
+  NeedText: 0
+  NeedImage: 0
+  NeedBtnListen: 0
+  Sound: {fileID: 0}
+  TextLevel: 
+  OtherAcceptedAnswer1: 
+  OtherAcceptedAnswer2: 
+  OtherAcceptedAnswer3: 
