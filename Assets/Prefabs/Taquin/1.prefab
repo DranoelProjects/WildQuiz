@@ -91,7 +91,6 @@ GameObject:
   - component: {fileID: 3564231386764568227}
   - component: {fileID: 1501859894069312524}
   - component: {fileID: 5153389255924441074}
-  - component: {fileID: 3244414679301456260}
   m_Layer: 5
   m_Name: 1
   m_TagString: Untagged
@@ -198,7 +197,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3564231386764568227}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5153389255924441074}
+        m_MethodName: OnClickSwapWithEmpty
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5153389255924441074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,18 +221,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 831f57d6a5e91224eaf1cfea26728b41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  moveDistance: 0.5
---- !u!114 &3244414679301456260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8489863600590428489}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25f8cd64796a82e45b3711174c670bbe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PtController: {fileID: 5153389255924441074}

@@ -48,6 +48,9 @@ public class LevelButton : MonoBehaviour
                 case "TicTacToe":
                     SceneManager.LoadScene("TicTacToe");
                     break;
+                case "Taquin":
+                    SceneManager.LoadScene("Taquin");
+                    break;
                 default:
                     break;
             }    

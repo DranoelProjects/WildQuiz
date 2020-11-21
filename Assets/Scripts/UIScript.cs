@@ -13,23 +13,18 @@ public class UIScript : MonoBehaviour
     AudioSource audioSource;
     [SerializeField] AudioClip sndClick;
 
-    private void Awake()
-    {
-        gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
-    }
-
     public void OnClickShowSettingsPanel()
     {
+        panelSettings.SetActive(!panelSettings.activeSelf);
         audioSource = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
         audioSource.PlayOneShot(sndClick);
-        bool isSettingsPanelActive = !panelSettings.activeInHierarchy;
-        panelSettings.SetActive(isSettingsPanelActive);
         muteToggle.SetIsOnWithoutNotify(PlayerPrefs.GetInt("mute") == 0);
     }
 
 
     public void OnClickMuteToggle()
     {
+        gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
         audioSource = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
         audioSource.PlayOneShot(sndClick);
         if (muteToggle.isOn)

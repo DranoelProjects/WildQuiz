@@ -29,7 +29,7 @@ public class GameManagerScript : MonoBehaviour
         if (PlayerPrefs.GetInt("FirstConnexion") != 1)
         {
             PlayerPrefs.SetInt("FirstConnexion", 1);
-            PlayerPrefs.SetInt("NextLevel", 1);
+            PlayerPrefs.SetInt("NextLevel", 31);
             PlayerPrefs.SetInt("HeartsNumber", 20);
             PlayerPrefs.SetInt("CoinsNumber", 1000);
             PlayerPrefs.SetInt("NumberLostLevels", 0);

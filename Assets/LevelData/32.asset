@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 32
   m_EditorClassIdentifier: 
   Level: 32
-  Type: TicTacToe
+  Type: Taquin
   Theme: 
   RightAnswer: 
   SpriteWithQuestion: {fileID: 0}
