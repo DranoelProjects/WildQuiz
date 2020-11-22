@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: 20
   m_EditorClassIdentifier: 
   Level: 20
-  Type: TicTacToe
-  Theme: 
-  RightAnswer: 
-  SpriteWithQuestion: {fileID: 0}
+  Type: InputQuiz
+  Theme: "R\xE9bus"
+  RightAnswer: Tulipe
+  SpriteWithQuestion: {fileID: 21300000, guid: e415149d3b832f84fb10fb3da807150a, type: 3}
   ImageScale: 7.51158
-  Clue: 
-  Info: 
+  Clue: C'est une fleur.
+  Info: "Il existe environ 75 esp\xE8ces de tulipes et plusieurs milliers de vari\xE9t\xE9s."
   NextLevelData: {fileID: 11400000, guid: 529bbe29db34b7b46b23bac3319dbd62, type: 2}
   Question: 
   FontSizeBtnAnswers: 150
@@ -29,10 +29,10 @@ MonoBehaviour:
   Answer4: 
   Difficulty: Medium
   NeedText: 0
-  NeedImage: 0
+  NeedImage: 1
   NeedBtnListen: 0
   Sound: {fileID: 0}
   TextLevel: 
-  OtherAcceptedAnswer1: 
+  OtherAcceptedAnswer1: tulipes
   OtherAcceptedAnswer2: 
   OtherAcceptedAnswer3: 

@@ -10,17 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
-  m_Name: 24
+  m_Name: 28
   m_EditorClassIdentifier: 
-  Level: 24
-  Type: TicTacToe
-  Theme: 
-  RightAnswer: 
+  Level: 28
+  Type: InputQuiz
+  Theme: "Culture g\xE9n\xE9rale"
+  RightAnswer: Cri Wilhelm
   SpriteWithQuestion: {fileID: 0}
   ImageScale: 7.51158
-  Clue: 
-  Info: 
-  NextLevelData: {fileID: 11400000, guid: b7813206eff13ee40811bb6ee0b09f7c, type: 2}
+  Clue: "Son utilis\xE9 comme bruitage dans de nombreux films."
+  Info: "Ce son a \xE9t\xE9 utilis\xE9 dans la saga Star Wars et la s\xE9rie Indiana
+    Jones. Il a \xE9t\xE9 entendu pour la premi\xE8re fois en 1951. Il est utilis\xE9
+    lorsque quelqu'un est abattu, tombe ou est projet\xE9."
+  NextLevelData: {fileID: 11400000, guid: e478f7f959c76d741a980767a2caaccc, type: 2}
   Question: 
   FontSizeBtnAnswers: 150
   Answer1: 
@@ -30,9 +32,9 @@ MonoBehaviour:
   Difficulty: Medium
   NeedText: 0
   NeedImage: 0
-  NeedBtnListen: 0
-  Sound: {fileID: 0}
+  NeedBtnListen: 1
+  Sound: {fileID: 8300000, guid: cb319e7548362fe4fabf5ce5f3246839, type: 3}
   TextLevel: 
-  OtherAcceptedAnswer1: 
+  OtherAcceptedAnswer1: wilhelm
   OtherAcceptedAnswer2: 
   OtherAcceptedAnswer3: 

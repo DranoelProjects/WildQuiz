@@ -24,7 +24,7 @@ public class QuizManager : MonoBehaviour
     GameManagerScript gameManagerScript;
 
     [Header("Timer")]
-    float timeLeft = 20.0f;
+    float timeLeft = 40.0f;
     bool isTimerActivate = true;
     [SerializeField] Text textTimer;
     AudioSource audioSource;

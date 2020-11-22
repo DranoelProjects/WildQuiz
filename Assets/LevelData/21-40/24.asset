@@ -10,30 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
-  m_Name: 12
+  m_Name: 24
   m_EditorClassIdentifier: 
-  Level: 12
-  Type: InputQuiz
-  Theme: Devinette
-  RightAnswer: dent
+  Level: 24
+  Type: TicTacToe
+  Theme: 
+  RightAnswer: 
   SpriteWithQuestion: {fileID: 0}
   ImageScale: 7.51158
-  Clue: "Je n'habite pas le m\xEAme type de palais qu'un roi ou une reine. "
-  Info: "Le nombre total de dents est en principe de 20 \xE0 32."
-  NextLevelData: {fileID: 11400000, guid: 4a271a3355bdfd44d8ffd203a9283d40, type: 2}
+  Clue: 
+  Info: 
+  NextLevelData: {fileID: 11400000, guid: b7813206eff13ee40811bb6ee0b09f7c, type: 2}
   Question: 
   FontSizeBtnAnswers: 150
   Answer1: 
   Answer2: 
   Answer3: 
   Answer4: 
-  Difficulty: 
-  NeedText: 1
+  Difficulty: Easy
+  NeedText: 0
   NeedImage: 0
   NeedBtnListen: 0
   Sound: {fileID: 0}
-  TextLevel: J'habite un palais. Je peux porter une couronne mais pourtant je ne
-    suis ni une reine ni un roi. Qui suis-je ?
-  OtherAcceptedAnswer1: une dent
+  TextLevel: 
+  OtherAcceptedAnswer1: 
   OtherAcceptedAnswer2: 
   OtherAcceptedAnswer3: 
