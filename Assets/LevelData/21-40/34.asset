@@ -10,24 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
-  m_Name: 32
+  m_Name: 34
   m_EditorClassIdentifier: 
-  Level: 32
-  Type: Taquin
-  Theme: 
-  RightAnswer: 
-  SpriteWithQuestion: {fileID: 0}
+  Level: 34
+  Type: Quiz
+  Theme: Environnement
+  RightAnswer: 71%
+  SpriteWithQuestion: {fileID: 21300000, guid: d2925aecaa83c2f4e995f1750d6ec8cc, type: 3}
   ImageScale: 7.51158
-  Clue: 
-  Info: 
-  NextLevelData: {fileID: 11400000, guid: 911cd8d42b45ef74eb9b38e1aefd08f9, type: 2}
-  Question: 
+  Clue: "C'est plus de la moiti\xE9."
+  Info: "La terre est recouverte \xE0 71% d'eau (des oc\xE9ans et des mers) et 29%
+    de terres \xE9merg\xE9es."
+  NextLevelData: {fileID: 11400000, guid: 97c807e6588a85c4998322e3ab86271b, type: 2}
+  Question: "Quel pourcentage repr\xE9sente l\u2019eau sur la surface de la terre
+    ?"
   FontSizeBtnAnswers: 150
-  Answer1: 
-  Answer2: 
-  Answer3: 
-  Answer4: 
-  Difficulty: Medium
+  Answer1: 71%
+  Answer2: 29%
+  Answer3: 56%
+  Answer4: 44%
+  Difficulty: 
   NeedText: 0
   NeedImage: 0
   NeedBtnListen: 0

@@ -19,7 +19,7 @@ MonoBehaviour:
   SpriteWithQuestion: {fileID: 21300000, guid: 1d012e606fa19a14eb77da2c087896c7, type: 3}
   ImageScale: 7.383835
   Clue: "Jean Moulin \xE9tait un  haut fonctionnaire et  r\xE9sistant fran\xE7ais"
-  Info: "Wim Hof est connu pour avoir battu plusieurs recors du Guinness d'exposition
+  Info: "Wim Hof est connu pour avoir battu plusieurs records du Guinness d'exposition
     au froid extr\xEAme. Il a \xE9galement sa propre m\xE9thode de m\xE9ditation
     et de ma\xEEtrise de respiration."
   NextLevelData: {fileID: 11400000, guid: 2416315908bf5994d942b8553582619b, type: 2}

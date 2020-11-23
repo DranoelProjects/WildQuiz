@@ -10,17 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
-  m_Name: 12
+  m_Name: 36
   m_EditorClassIdentifier: 
-  Level: 12
+  Level: 36
   Type: InputQuiz
   Theme: Devinettes
-  RightAnswer: dent
+  RightAnswer: 0
   SpriteWithQuestion: {fileID: 0}
   ImageScale: 7.51158
-  Clue: "Je n'habite pas le m\xEAme type de palais qu'un roi ou une reine. "
-  Info: "Le nombre total de dents est en principe de 20 \xE0 32."
-  NextLevelData: {fileID: 11400000, guid: 4a271a3355bdfd44d8ffd203a9283d40, type: 2}
+  Clue: Je suis une note.
+  Info: "Le z\xE9ro est le point de d\xE9part des nombres. L'\xE9colier craint le
+    z\xE9ro. Et un z\xE9ro point\xE9 c'est que l'on a pas travaill\xE9."
+  NextLevelData: {fileID: 11400000, guid: e7af12648da586841b7488b4e8b50ccd, type: 2}
   Question: 
   FontSizeBtnAnswers: 150
   Answer1: 
@@ -32,8 +33,9 @@ MonoBehaviour:
   NeedImage: 0
   NeedBtnListen: 0
   Sound: {fileID: 0}
-  TextLevel: J'habite un palais. Je peux porter une couronne mais pourtant je ne
-    suis ni une reine ni un roi. Qui suis-je ?
-  OtherAcceptedAnswer1: une dent
-  OtherAcceptedAnswer2: dents
+  TextLevel: "Je suis un point de d\xE9part sans mener nulle part, je suis la terreur
+    de l'\xE9colier et si je suis point\xE9 c'est que tu n'as pas travaill\xE9. Qui
+    suis-je ?"
+  OtherAcceptedAnswer1: zero
+  OtherAcceptedAnswer2: "z\xE9ro"
   OtherAcceptedAnswer3: 

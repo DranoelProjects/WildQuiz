@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
+  m_Name: 33
+  m_EditorClassIdentifier: 
+  Level: 33
+  Type: Quiz
+  Theme: Histoire
+  RightAnswer: Temps modernes
+  SpriteWithQuestion: {fileID: 21300000, guid: d0c5e3ef31c18df4fbc2b84c01c749b1, type: 3}
+  ImageScale: 7.51158
+  Clue: "Notre \xE9poque actuelle est l'\xE9poque contemporaire."
+  Info: "L'\xE9poque moderne d\xE9bute en 1453 avec la chute de Constantinople ou
+    en 1492 avec la d\xE9couverte de l'Am\xE9rique par Christophe Colomb et se termine
+    en 1792 avec la chute de la monarchie. (R\xE9volution fran\xE7aise)"
+  NextLevelData: {fileID: 11400000, guid: 77f89f83c3c7fd441b0c3e870fec0422, type: 2}
+  Question: "Quel est le nom de la p\xE9riode de l\u2019histoire repr\xE9sentant
+    1492 \xE0 1789 ? "
+  FontSizeBtnAnswers: 130
+  Answer1: Epoque contemporaine
+  Answer2: Temps modernes
+  Answer3: "Moyen-\xE2ge"
+  Answer4: "Antiquit\xE9"
+  Difficulty: 
+  NeedText: 0
+  NeedImage: 0
+  NeedBtnListen: 0
+  Sound: {fileID: 0}
+  TextLevel: 
+  OtherAcceptedAnswer1: 
+  OtherAcceptedAnswer2: 
+  OtherAcceptedAnswer3: 

@@ -10,24 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
-  m_Name: 32
+  m_Name: 35
   m_EditorClassIdentifier: 
-  Level: 32
-  Type: Taquin
-  Theme: 
-  RightAnswer: 
-  SpriteWithQuestion: {fileID: 0}
+  Level: 35
+  Type: Quiz
+  Theme: "Math\xE9matiques"
+  RightAnswer: 7
+  SpriteWithQuestion: {fileID: 21300000, guid: 66b7da534be372249b4bcc0e8d58251c, type: 3}
   ImageScale: 7.51158
-  Clue: 
-  Info: 
-  NextLevelData: {fileID: 11400000, guid: 911cd8d42b45ef74eb9b38e1aefd08f9, type: 2}
-  Question: 
+  Clue: La division est prioritaire.
+  Info: "Si il n'y a pas de parenth\xE8ses, la multiplication et la division sont
+    prioritaires par rapport \xE0 l'addition et la soustraction."
+  NextLevelData: {fileID: 11400000, guid: 4d2513b3c13340049ad39b64bb53909d, type: 2}
+  Question: ' 2 + 10 / 2 ?'
   FontSizeBtnAnswers: 150
-  Answer1: 
-  Answer2: 
-  Answer3: 
-  Answer4: 
-  Difficulty: Medium
+  Answer1: 5
+  Answer2: 6
+  Answer3: 7
+  Answer4: 8
+  Difficulty: 
   NeedText: 0
   NeedImage: 0
   NeedBtnListen: 0

@@ -437,7 +437,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelNextScene: {fileID: 1291248442}
   jokersPanel: {fileID: 846343182365794823}
-  imageShowJokersPanel: {fileID: 1293522108808228568}
+  imageShowJokersPanel: {fileID: 7080449049016773550}
   spriteClose: {fileID: 21300000, guid: e839e6693c344ad40a5952853a891866, type: 3}
   spriteOpen: {fileID: 21300000, guid: fa7715c04f6ef417595dcd8c8f43862d, type: 3}
   sndWin: {fileID: 8300000, guid: f0ccd77f90e5fdb4fa69ba8c70507021, type: 3}

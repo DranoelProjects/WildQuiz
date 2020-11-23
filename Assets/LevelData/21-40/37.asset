@@ -10,24 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
-  m_Name: 32
+  m_Name: 37
   m_EditorClassIdentifier: 
-  Level: 32
-  Type: Taquin
-  Theme: 
-  RightAnswer: 
-  SpriteWithQuestion: {fileID: 0}
+  Level: 37
+  Type: Quiz
+  Theme: "Multim\xE9dia"
+  RightAnswer: 230
+  SpriteWithQuestion: {fileID: 21300000, guid: 5a3061a8ea33fc64daeb84520930630a, type: 3}
   ImageScale: 7.51158
-  Clue: 
-  Info: 
-  NextLevelData: {fileID: 11400000, guid: 911cd8d42b45ef74eb9b38e1aefd08f9, type: 2}
-  Question: 
+  Clue: 120 V est la tension aux USA.
+  Info: "La tension du courant \xE9lectrique en France est de 230 V, contre 120 aux
+    USA et 100 au Japon."
+  NextLevelData: {fileID: 11400000, guid: bfcecae462b43bc4d82089b387dc2a1a, type: 2}
+  Question: "Quelle est la tension du courant \xE9lectrique en France (en volts)
+    ? "
   FontSizeBtnAnswers: 150
-  Answer1: 
-  Answer2: 
-  Answer3: 
-  Answer4: 
-  Difficulty: Medium
+  Answer1: 230
+  Answer2: 120
+  Answer3: 200
+  Answer4: 180
+  Difficulty: 
   NeedText: 0
   NeedImage: 0
   NeedBtnListen: 0
