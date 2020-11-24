@@ -14,19 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Level: 50
   Type: Quiz
-  Theme: 
-  RightAnswer: 
-  SpriteWithQuestion: {fileID: 0}
+  Theme: "Multim\xE9dia"
+  RightAnswer: Calculer
+  SpriteWithQuestion: {fileID: 21300000, guid: 88799ad1d69e8c945b0ea56eb52018fd, type: 3}
   ImageScale: 7.51158
-  Clue: 
-  Info: 
+  Clue: "En anglais le processeur est appel\xE9 CPU pour Central Processing Unit."
+  Info: "C'est une pi\xE8ce d'ordinateur existant depuis les premiers ordinateur.
+    Elle sert \xE0 ex\xE9cuter les instructions machine des programmes informatiques."
   NextLevelData: {fileID: 11400000, guid: 8c99aa07bb5b1f84d998d8eed1bb8a92, type: 2}
-  Question: 
-  FontSizeBtnAnswers: 150
-  Answer1: 
-  Answer2: 
-  Answer3: 
-  Answer4: 
+  Question: "Quel est l\u2019un des principaux r\xF4les du processeur d\u2019un ordinateur
+    ?"
+  FontSizeBtnAnswers: 140
+  Answer1: Stocker
+  Answer2: Calculer
+  Answer3: Afficher
+  Answer4: Interagir avec l'utilisateur
   Difficulty: 
   NeedText: 0
   NeedImage: 0

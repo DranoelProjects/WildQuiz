@@ -14,19 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Level: 49
   Type: Quiz
-  Theme: 
-  RightAnswer: 
-  SpriteWithQuestion: {fileID: 0}
+  Theme: "Math\xE9matiques"
+  RightAnswer: 125
+  SpriteWithQuestion: {fileID: 21300000, guid: 66b7da534be372249b4bcc0e8d58251c, type: 3}
   ImageScale: 7.51158
-  Clue: 
-  Info: 
+  Clue: Regardez bien les nombres ! Ce calcul se simplifie facilement.
+  Info: "La r\xE9ponse \xE9tait bien 125. Il \xE9tait possible de simplifier ce calcul
+    en faisant 9 + 3 = 12 puis 12 - 12 = 0."
   NextLevelData: {fileID: 11400000, guid: ffc097487ebbf8844b72af9256b90687, type: 2}
-  Question: 
+  Question: 3 + 125 - 12 + 9 ?
   FontSizeBtnAnswers: 150
-  Answer1: 
-  Answer2: 
-  Answer3: 
-  Answer4: 
+  Answer1: 125
+  Answer2: 128
+  Answer3: 134
+  Answer4: 137
   Difficulty: 
   NeedText: 0
   NeedImage: 0

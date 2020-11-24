@@ -25,7 +25,7 @@ MonoBehaviour:
   NextLevelData: {fileID: 11400000, guid: 77f89f83c3c7fd441b0c3e870fec0422, type: 2}
   Question: "Quel est le nom de la p\xE9riode de l\u2019histoire repr\xE9sentant
     1492 \xE0 1789 ? "
-  FontSizeBtnAnswers: 130
+  FontSizeBtnAnswers: 120
   Answer1: Epoque contemporaine
   Answer2: Temps modernes
   Answer3: "Moyen-\xE2ge"
