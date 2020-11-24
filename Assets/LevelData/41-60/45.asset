@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
+  m_Name: 45
+  m_EditorClassIdentifier: 
+  Level: 45
+  Type: Quiz
+  Theme: Art
+  RightAnswer: Auguste Rodin
+  SpriteWithQuestion: {fileID: 21300000, guid: 83997fa6a5d3eda49ab7f58e177a1bc5, type: 3}
+  ImageScale: 7.51158
+  Clue: "Son pr\xE9nom commence par un A."
+  Info: "Le penseur est une sculpture en bronze d'Auguste Rodin. R\xE9alis\xE9e en
+    1880 et situ\xE9e au Mus\xE9e Rodin \xE0 Paris."
+  NextLevelData: {fileID: 11400000, guid: a52b9cb4a438a704589e98755f41ed17, type: 2}
+  Question: "Qui a sculpt\xE9 \xAB Le penseur \xBB ?"
+  FontSizeBtnAnswers: 150
+  Answer1: Camille Claudel
+  Answer2: Auguste Bartholdi
+  Answer3: Jean Antoine Houdon
+  Answer4: Auguste Rodin
+  Difficulty: 
+  NeedText: 0
+  NeedImage: 0
+  NeedBtnListen: 0
+  Sound: {fileID: 0}
+  TextLevel: 
+  OtherAcceptedAnswer1: 
+  OtherAcceptedAnswer2: 
+  OtherAcceptedAnswer3: 

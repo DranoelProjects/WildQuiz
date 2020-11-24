@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
+  m_Name: 43
+  m_EditorClassIdentifier: 
+  Level: 43
+  Type: Quiz
+  Theme: Animaux
+  RightAnswer: 15
+  SpriteWithQuestion: {fileID: 21300000, guid: 70c3f4c02b460204eb484dde31111af7, type: 3}
+  ImageScale: 7.51158
+  Clue: "Sa p\xE9riode de gestation est sup\xE9rieure \xE0 celle de l'Homme."
+  Info: "La p\xE9riode de gestation est bien de 15 mois pour une girafe. Ensuite
+    le sevrage se fait en 12 \xE0 16 mois et le girafon reste avec sa m\xE8re jusqu'\xE0
+    l'\xE2ge de deux ans et demi."
+  NextLevelData: {fileID: 11400000, guid: 86db185eb2d1afb4cb858ac9481169d9, type: 2}
+  Question: "Quelle est la dur\xE9e de gestation d'une girafe (en mois)?"
+  FontSizeBtnAnswers: 150
+  Answer1: 5
+  Answer2: 9
+  Answer3: 15
+  Answer4: 20
+  Difficulty: 
+  NeedText: 0
+  NeedImage: 0
+  NeedBtnListen: 0
+  Sound: {fileID: 0}
+  TextLevel: 
+  OtherAcceptedAnswer1: 
+  OtherAcceptedAnswer2: 
+  OtherAcceptedAnswer3: 

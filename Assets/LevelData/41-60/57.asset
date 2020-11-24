@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
-  m_Name: 40
+  m_Name: 57
   m_EditorClassIdentifier: 
-  Level: 40
-  Type: InputQuiz
-  Theme: Orthographe
-  RightAnswer: Accueil
+  Level: 57
+  Type: Quiz
+  Theme: 
+  RightAnswer: 
   SpriteWithQuestion: {fileID: 0}
   ImageScale: 7.51158
-  Clue: Il y a deux C.
-  Info: "L'erreur courrante est d'\xE9crire \"acceuil\"."
-  NextLevelData: {fileID: 11400000, guid: a47e4fa3328901748bd3851b84ced0ed, type: 2}
+  Clue: 
+  Info: 
+  NextLevelData: {fileID: 11400000, guid: 72f8b5abb295084468fa511f1a041da8, type: 2}
   Question: 
   FontSizeBtnAnswers: 150
   Answer1: 
@@ -30,8 +30,8 @@ MonoBehaviour:
   Difficulty: 
   NeedText: 0
   NeedImage: 0
-  NeedBtnListen: 1
-  Sound: {fileID: 8300000, guid: 489cf21d1fc59b54195a9ffd86e3015c, type: 3}
+  NeedBtnListen: 0
+  Sound: {fileID: 0}
   TextLevel: 
   OtherAcceptedAnswer1: 
   OtherAcceptedAnswer2: 

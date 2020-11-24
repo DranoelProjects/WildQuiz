@@ -10,17 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
-  m_Name: 40
+  m_Name: 48
   m_EditorClassIdentifier: 
-  Level: 40
+  Level: 48
   Type: InputQuiz
-  Theme: Orthographe
-  RightAnswer: Accueil
-  SpriteWithQuestion: {fileID: 0}
+  Theme: "R\xE9bus"
+  RightAnswer: "H\xE9licopt\xE8re"
+  SpriteWithQuestion: {fileID: 21300000, guid: 647e28e86ac545648ac9f5c941100269, type: 3}
   ImageScale: 7.51158
-  Clue: Il y a deux C.
-  Info: "L'erreur courrante est d'\xE9crire \"acceuil\"."
-  NextLevelData: {fileID: 11400000, guid: a47e4fa3328901748bd3851b84ced0ed, type: 2}
+  Clue: "Les accents sont pris en consid\xE9ration."
+  Info: "L'h\xE9licopt\xE8re est aujourd'hui indispensable pour le sauvetage et autres
+    missions. Son d\xE9veloppement a \xE9t\xE9 beaucoup plus lent que celui de l'avion."
+  NextLevelData: {fileID: 0}
   Question: 
   FontSizeBtnAnswers: 150
   Answer1: 
@@ -29,10 +30,10 @@ MonoBehaviour:
   Answer4: 
   Difficulty: 
   NeedText: 0
-  NeedImage: 0
-  NeedBtnListen: 1
-  Sound: {fileID: 8300000, guid: 489cf21d1fc59b54195a9ffd86e3015c, type: 3}
+  NeedImage: 1
+  NeedBtnListen: 0
+  Sound: {fileID: 0}
   TextLevel: 
-  OtherAcceptedAnswer1: 
+  OtherAcceptedAnswer1: "h\xE9licopt\xE8res"
   OtherAcceptedAnswer2: 
   OtherAcceptedAnswer3: 

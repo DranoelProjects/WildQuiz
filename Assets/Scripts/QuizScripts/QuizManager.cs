@@ -257,9 +257,9 @@ public class QuizManager : MonoBehaviour
         ShowWinningCoins(false);
         playerAnswer = playerAnswer.ToLower();
         if (levelData.RightAnswer.ToLower() == playerAnswer 
-            || (levelData.OtherAcceptedAnswer1 != "" && levelData.OtherAcceptedAnswer1 == playerAnswer)
-            || (levelData.OtherAcceptedAnswer2 != "" && levelData.OtherAcceptedAnswer2 == playerAnswer) 
-            || (levelData.OtherAcceptedAnswer3 != "" && levelData.OtherAcceptedAnswer3 == playerAnswer))
+            || (levelData.OtherAcceptedAnswer1 != "" && levelData.OtherAcceptedAnswer1.ToLower() == playerAnswer)
+            || (levelData.OtherAcceptedAnswer2 != "" && levelData.OtherAcceptedAnswer2.ToLower() == playerAnswer) 
+            || (levelData.OtherAcceptedAnswer3 != "" && levelData.OtherAcceptedAnswer3.ToLower() == playerAnswer))
         {
             audioSource.PlayOneShot(sndWin);
             if (levelData.Level == PlayerPrefs.GetInt("NextLevel"))

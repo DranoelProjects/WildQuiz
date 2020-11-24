@@ -751,6 +751,15 @@ PrefabInstance:
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnClickMuteToggle
       objectReference: {fileID: 0}
+    - target: {fileID: 991837525137509028, guid: 40a8ad77d38c7b94786bb5a08e5d0c78,
+        type: 3}
+      propertyPath: m_Text
+      value: "Cr\xE9dits\n\nMerci \xE0 Jean Michel pour le son\nMerci \xE0 \tWikip\xE9dia
+        pour les informations.\nMerci \xE0 Jean Michel pour le son\nMerci \xE0 Jean
+        Michel pour le son\nMerci \xE0 Jean Michel pour le son\nMerci \xE0 Jean Michel
+        pour le son\nMerci \xE0 Jean Michel pour le son\nMerci \xE0 Jean Michel pour
+        le son"
+      objectReference: {fileID: 0}
     - target: {fileID: 2314845152634689601, guid: 40a8ad77d38c7b94786bb5a08e5d0c78,
         type: 3}
       propertyPath: m_Name

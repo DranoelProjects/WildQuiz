@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
+  m_Name: 46
+  m_EditorClassIdentifier: 
+  Level: 46
+  Type: Quiz
+  Theme: Histoire
+  RightAnswer: "Trait\xE9 de Versailles"
+  SpriteWithQuestion: {fileID: 21300000, guid: afa6c25aa8caf5f438dde7c08d77deeb, type: 3}
+  ImageScale: 7.51158
+  Clue: "Le trait\xE9 de Verdun date d'ao\xFBt 843, les petits-fils de Charlemagne
+    se partagent ses territoires en trois royaumes."
+  Info: "Sign\xE9 le 28 juin 1919 le trait\xE9 de Versailles d\xE9termine les sanctions
+    prises contre l'Allemagne et ses alli\xE9s."
+  NextLevelData: {fileID: 11400000, guid: 1804f1fb0b097e04f900d7be972d0ffe, type: 2}
+  Question: "Quel est le nom du trait\xE9 sign\xE9 le 28 juin 1919 \xE0 l\u2019issue
+    de la Premi\xE8re Guerre Mondiale ? "
+  FontSizeBtnAnswers: 130
+  Answer1: "Trait\xE9 de Verdun"
+  Answer2: "Trait\xE9 de Paris"
+  Answer3: "Trait\xE9 de S\xE8vres"
+  Answer4: "Trait\xE9 de Versailles"
+  Difficulty: 
+  NeedText: 0
+  NeedImage: 0
+  NeedBtnListen: 0
+  Sound: {fileID: 0}
+  TextLevel: 
+  OtherAcceptedAnswer1: 
+  OtherAcceptedAnswer2: 
+  OtherAcceptedAnswer3: 
