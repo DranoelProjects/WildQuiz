@@ -2739,6 +2739,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameObjectUI
       objectReference: {fileID: 0}
+    - target: {fileID: 3760824522503496132, guid: bd632f24bcfdf824aa404ea0a400e14d,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 98.01332
+      objectReference: {fileID: 0}
+    - target: {fileID: 3760824522503496132, guid: bd632f24bcfdf824aa404ea0a400e14d,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3760824522503496132, guid: bd632f24bcfdf824aa404ea0a400e14d,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3760824522503496132, guid: bd632f24bcfdf824aa404ea0a400e14d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -45.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 3760824522503496132, guid: bd632f24bcfdf824aa404ea0a400e14d,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 800
+      objectReference: {fileID: 0}
     - target: {fileID: 4771730136590364205, guid: bd632f24bcfdf824aa404ea0a400e14d,
         type: 3}
       propertyPath: m_IsActive
