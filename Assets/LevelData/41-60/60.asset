@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 60
   m_EditorClassIdentifier: 
   Level: 60
-  Type: Quiz
+  Type: TicTacToe
   Theme: 
   RightAnswer: 
   SpriteWithQuestion: {fileID: 0}
@@ -27,7 +27,7 @@ MonoBehaviour:
   Answer2: 
   Answer3: 
   Answer4: 
-  Difficulty: 
+  Difficulty: Medium
   NeedText: 0
   NeedImage: 0
   NeedBtnListen: 0

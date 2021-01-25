@@ -14,19 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Level: 59
   Type: Quiz
-  Theme: 
-  RightAnswer: 
-  SpriteWithQuestion: {fileID: 0}
+  Theme: Art
+  RightAnswer: Michel-Ange
+  SpriteWithQuestion: {fileID: 21300000, guid: fb98cf469a9ec764d94965232d8a683a, type: 3}
   ImageScale: 7.51158
-  Clue: 
-  Info: 
+  Clue: "Elle date du 16\xE8me si\xE8cle."
+  Info: "La cr\xE9ation d'Adam est une fresque peinte par Michel-Ange. Elle est l'une
+    des 9 fresques inspir\xE9es du livre de la Gen\xE8se (premier livre de la bible).
+    Elle a \xE9t\xE9 peinte sur la vo\xFBte du plafond de la chapelle Sixtine au
+    Vatican. (Italie)"
   NextLevelData: {fileID: 11400000, guid: e019f2565259b7c4b9115851a3eddf5f, type: 2}
-  Question: 
+  Question: "Qui a peint la fresque \xAB La cr\xE9ation d\u2019Adam \xBB ? "
   FontSizeBtnAnswers: 150
-  Answer1: 
-  Answer2: 
-  Answer3: 
-  Answer4: 
+  Answer1: "L\xE9onard de Vinci"
+  Answer2: Michel-Ange
+  Answer3: Claude Monet
+  Answer4: Van Gogh
   Difficulty: 
   NeedText: 0
   NeedImage: 0

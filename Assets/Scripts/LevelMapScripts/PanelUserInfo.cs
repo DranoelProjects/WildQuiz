@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PanelUserInfo : MonoBehaviour
 {
-    [SerializeField] Text heartsNumber, coinsNumber;
+    [SerializeField] Text heartsNumber, coinsNumber, outputCurrentLvl;
     [SerializeField] Image heart;
     [SerializeField] Sprite redHeart, greyHeart;
 
@@ -13,6 +13,7 @@ public class PanelUserInfo : MonoBehaviour
     {
         UpdateCoins();
         UpdateHearts();
+        UpdateCurrentLvl();
     }
 
     public void UpdateHearts()
@@ -36,5 +37,10 @@ public class PanelUserInfo : MonoBehaviour
     public void UpdateCoins()
     {
         coinsNumber.text = PlayerPrefs.GetInt("CoinsNumber").ToString();
+    }
+
+    public void UpdateCurrentLvl()
+    {
+        outputCurrentLvl.text = PlayerPrefs.GetInt("NextLevel").ToString();
     }
 }

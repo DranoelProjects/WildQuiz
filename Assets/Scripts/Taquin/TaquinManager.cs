@@ -45,10 +45,12 @@ public class TaquinManager : MonoBehaviour
             audioSource.PlayOneShot(sndWin);
             PlayerPrefs.SetInt("CoinsNumber", PlayerPrefs.GetInt("CoinsNumber") - 150);
             PlayerPrefs.SetInt("NumberWonLevels", PlayerPrefs.GetInt("NumberWonLevels") + 1);
-            GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>().UpdateCoins();
+            PanelUserInfo panelUserInfo = GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>();
+            panelUserInfo.UpdateCoins();
             OnClickShowJokersPanel();
             YouWin();
             ShowWinningCoins(false);
+            panelUserInfo.UpdateCurrentLvl();
         }
         else
         {

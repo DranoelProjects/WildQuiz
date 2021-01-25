@@ -168,7 +168,8 @@ public class GameManagerTicTacToe : MonoBehaviour
             audioSource.PlayOneShot(sndWin);
             PlayerPrefs.SetInt("CoinsNumber", PlayerPrefs.GetInt("CoinsNumber") - 150);
             PlayerPrefs.SetInt("NumberWonLevels", PlayerPrefs.GetInt("NumberWonLevels") + 1);
-            GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>().UpdateCoins();
+            PanelUserInfo panelUserInfo = GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>();
+            panelUserInfo.UpdateCoins();
             PanelNextScene.GetComponent<NextSceneScript>().ActiveWinningCoins(false);
             OnClickShowJokersPanel();
             PanelNextScene.GetComponentInChildren<PanelNextScene>().GoToNextLevel = 1;
@@ -178,6 +179,7 @@ public class GameManagerTicTacToe : MonoBehaviour
             {
                 PlayerPrefs.SetInt("NextLevel", nextLevel);
             }
+            panelUserInfo.UpdateCurrentLvl();
         } else
         {
             GameObject.Find("GameObjectUI").GetComponent<UIScript>().PanelNoCoins.SetActive(true);

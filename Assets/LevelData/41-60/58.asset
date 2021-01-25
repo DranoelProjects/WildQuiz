@@ -14,19 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Level: 58
   Type: Quiz
-  Theme: 
-  RightAnswer: 
-  SpriteWithQuestion: {fileID: 0}
+  Theme: Animaux
+  RightAnswer: Cria
+  SpriteWithQuestion: {fileID: 21300000, guid: 654734a9b861dfc4284bedca8fce1b35, type: 3}
   ImageScale: 7.51158
-  Clue: 
-  Info: 
+  Clue: "Le lamentin est un mammif\xE8re aquatique herbivore."
+  Info: "Le petit du lama est appel\xE9 \"cria\". Le lama crache pour sa d\xE9fense
+    sur l'objet de sa col\xE8re (rarement sur l'homme)."
   NextLevelData: {fileID: 11400000, guid: eefa0a6fd346d1c41b0a521c5cd567d1, type: 2}
-  Question: 
+  Question: "Comment s\u2019appel le petit du lama ?"
   FontSizeBtnAnswers: 150
-  Answer1: 
-  Answer2: 
-  Answer3: 
-  Answer4: 
+  Answer1: Lamineau
+  Answer2: Lamentin
+  Answer3: Cria
+  Answer4: Lama
   Difficulty: 
   NeedText: 0
   NeedImage: 0

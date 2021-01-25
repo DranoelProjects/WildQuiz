@@ -13,13 +13,14 @@ MonoBehaviour:
   m_Name: 56
   m_EditorClassIdentifier: 
   Level: 56
-  Type: Quiz
-  Theme: 
-  RightAnswer: 
+  Type: InputQuiz
+  Theme: Devinettes
+  RightAnswer: 3
   SpriteWithQuestion: {fileID: 0}
   ImageScale: 7.51158
-  Clue: 
-  Info: 
+  Clue: Les autres ne sont pas morts.
+  Info: "M\xEAme mort le poisson est rest\xE9 dans le seau, la r\xE9ponse est donc
+    3!"
   NextLevelData: {fileID: 11400000, guid: 629d3f73f2557fe44b7875e9fe7aa1d6, type: 2}
   Question: 
   FontSizeBtnAnswers: 150
@@ -28,11 +29,11 @@ MonoBehaviour:
   Answer3: 
   Answer4: 
   Difficulty: 
-  NeedText: 0
+  NeedText: 1
   NeedImage: 0
   NeedBtnListen: 0
   Sound: {fileID: 0}
-  TextLevel: 
-  OtherAcceptedAnswer1: 
+  TextLevel: 3 poissons sont dans un seau. L'un meurt. Combien en reste-t-il ?
+  OtherAcceptedAnswer1: trois
   OtherAcceptedAnswer2: 
   OtherAcceptedAnswer3: 

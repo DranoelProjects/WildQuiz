@@ -14,19 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Level: 57
   Type: Quiz
-  Theme: 
-  RightAnswer: 
-  SpriteWithQuestion: {fileID: 0}
+  Theme: "Culture g\xE9n\xE9rale"
+  RightAnswer: Ram Nath Kovind
+  SpriteWithQuestion: {fileID: 21300000, guid: 612567ef29dda9649a46395bc4ccf8ac, type: 3}
   ImageScale: 7.51158
-  Clue: 
-  Info: 
+  Clue: Savita Kovind est la femme du chef de l'Etat actuel.
+  Info: "Ram Nath Kovind est pr\xE9sident de l'Inde depuis 2017. C'est un ancien
+    avocat et homme d'Etat indien. Il est n\xE9 le 1er octobre 1945. Son parti est
+    consid\xE9r\xE9 comme \xE9tant de droite nationaliste."
   NextLevelData: {fileID: 11400000, guid: 72f8b5abb295084468fa511f1a041da8, type: 2}
-  Question: 
+  Question: "Qui est le chef de l\u2019Etat de la R\xE9publique de l\u2019Inde depuis
+    2017 ? "
   FontSizeBtnAnswers: 150
-  Answer1: 
-  Answer2: 
-  Answer3: 
-  Answer4: 
+  Answer1: Pranab Mukherjee
+  Answer2: Ram Nath Kovind
+  Answer3: Venkaiah Naidu
+  Answer4: Savita Kovind
   Difficulty: 
   NeedText: 0
   NeedImage: 0

@@ -14,19 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Level: 53
   Type: Quiz
-  Theme: 
-  RightAnswer: 
-  SpriteWithQuestion: {fileID: 0}
+  Theme: "G\xE9ographie"
+  RightAnswer: Chine
+  SpriteWithQuestion: {fileID: 21300000, guid: 5a13986b968f8c54aa93a6b20ac54b4d, type: 3}
   ImageScale: 7.51158
-  Clue: 
-  Info: 
+  Clue: "Ce n'est pas la Ta\xEFwan."
+  Info: "Connue \xE9galement sous les noms de palais ancien et mus\xE9e du palais,
+    la cit\xE9 interdite est situ\xE9e dans la ville de P\xE9kin. Sa construction
+    aura pris 14 ans de 1406 \xE0 1420."
   NextLevelData: {fileID: 11400000, guid: 630de5336c5e40e4e9254c1c0028c642, type: 2}
-  Question: 
+  Question: "Dans quel pays se situe la Cit\xE9 Interdite ?"
   FontSizeBtnAnswers: 150
-  Answer1: 
-  Answer2: 
-  Answer3: 
-  Answer4: 
+  Answer1: Inde
+  Answer2: Chine
+  Answer3: Japon
+  Answer4: "Ta\xEFwan"
   Difficulty: 
   NeedText: 0
   NeedImage: 0

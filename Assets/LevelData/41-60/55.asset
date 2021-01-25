@@ -14,19 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Level: 55
   Type: Quiz
-  Theme: 
-  RightAnswer: 
-  SpriteWithQuestion: {fileID: 0}
+  Theme: Sport
+  RightAnswer: 6
+  SpriteWithQuestion: {fileID: 21300000, guid: 90840e9261a7e764d977694d8e70fafc, type: 3}
   ImageScale: 7.51158
-  Clue: 
-  Info: 
+  Clue: "La France a d\xE9j\xE0 \xE9t\xE9 championne du monde de handball masculin."
+  Info: "C'est bien 6 fois que l'\xE9quipe de france masculine de handball a remport\xE9
+    les championnats du monde de handball : 1995, 2001, 2009, 2011, 2015, 2017."
   NextLevelData: {fileID: 11400000, guid: 4527c30b811beca4b88396f7858e9f23, type: 2}
-  Question: 
+  Question: "Combien de fois l\u2019\xE9quipe de France masculine de handball a-t-elle
+    \xE9t\xE9 championne du monde ?"
   FontSizeBtnAnswers: 150
-  Answer1: 
-  Answer2: 
-  Answer3: 
-  Answer4: 
+  Answer1: 0
+  Answer2: 2
+  Answer3: 4
+  Answer4: 6
   Difficulty: 
   NeedText: 0
   NeedImage: 0

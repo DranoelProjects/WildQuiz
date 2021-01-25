@@ -46,6 +46,7 @@ public class GameManagerScript : MonoBehaviour
         PanelUserInfo panelUserInfo = GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>();
         panelUserInfo.UpdateHearts();
         panelUserInfo.UpdateCoins();
+        panelUserInfo.UpdateCurrentLvl();
 
         Mute(PlayerPrefs.GetInt("mute") == 1);
     }

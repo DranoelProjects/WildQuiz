@@ -291,6 +291,7 @@ public class QuizManager : MonoBehaviour
             WriteResult("Mauvaise réponse !");
         }
         RevealAnswer();
-
+        PanelUserInfo panelUserInfo = GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>();
+        panelUserInfo.UpdateCurrentLvl();
     }
 }
