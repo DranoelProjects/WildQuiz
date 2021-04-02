@@ -18,12 +18,6 @@ public class TaquinManager : MonoBehaviour
         gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
         levelData = gameManagerScript.LevelData;
         audioSource = gameObject.GetComponent<AudioSource>();
-        GameObject.FindGameObjectWithTag("Music").GetComponent<MusicScript>().StopMusic();
-    }
-
-    private void Start()
-    {
-        gameManagerScript.Mute(PlayerPrefs.GetInt("mute") == 1);
     }
 
     public void YouWin()

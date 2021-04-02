@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UIScript : MonoBehaviour
@@ -16,7 +17,7 @@ public class UIScript : MonoBehaviour
     public void OnClickShowSettingsPanel()
     {
         panelSettings.SetActive(!panelSettings.activeSelf);
-        audioSource = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>();
         audioSource.PlayOneShot(sndClick);
         muteToggle.SetIsOnWithoutNotify(PlayerPrefs.GetInt("mute") == 0);
     }
@@ -25,7 +26,7 @@ public class UIScript : MonoBehaviour
     public void OnClickMuteToggle()
     {
         gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
-        audioSource = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>();
         audioSource.PlayOneShot(sndClick);
         if (muteToggle.isOn)
         {

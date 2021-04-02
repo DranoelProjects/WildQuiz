@@ -20,7 +20,7 @@ public class MainCanvas : MonoBehaviour
     private void Start()
     {
         initNextLevelColor();
-        GameObject.FindGameObjectWithTag("Music").GetComponent<MusicScript>().PlayMusic();
+        GameObject.FindGameObjectWithTag("Music").GetComponent<SoundManager>().PlayMusic();
     }
 
     public void SnapTo(RectTransform target)

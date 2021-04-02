@@ -41,14 +41,12 @@ public class QuizManager : MonoBehaviour
         gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
         result = panelNextScene.GetComponentInChildren<Text>();
         levelData = gameManagerScript.LevelData;
-        GameObject.FindGameObjectWithTag("Music").GetComponent<MusicScript>().StopMusic();
         audioSource = gameObject.GetComponent<AudioSource>();
     }
 
     private void Start()
     {
         allButtons = GameObject.Find("PanelAnswersButtons").GetComponentsInChildren<Button>();
-        gameManagerScript.Mute(PlayerPrefs.GetInt("mute") == 1);
         loadLevelData();
     }
 

@@ -23,8 +23,6 @@ public class GameManagerTicTacToe : MonoBehaviour
     private void Awake()
     {
         gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
-        GameObject.FindGameObjectWithTag("Music").GetComponent<MusicScript>().StopMusic();
-        gameManagerScript.Mute(PlayerPrefs.GetInt("mute") == 1);
     }
     private void Start()
     {
