@@ -18,8 +18,9 @@ MonoBehaviour:
   RightAnswer: Coccyx
   SpriteWithQuestion: {fileID: 0}
   ImageScale: 7.51158
-  Clue: 
-  Info: 
+  Clue: Il y a trois "c"
+  Info: "Il faut \xE9crire \"Coccyx\". Plusieurs erreurs sont \xE0 \xE9viter : ne
+    pas oublier les deux \"c\", le \"y\" et le \"x\" \xE0 la fin."
   NextLevelData: {fileID: 11400000, guid: e3687102993cb8243b2c607cb6cacc95, type: 2}
   Question: 
   FontSizeBtnAnswers: 150

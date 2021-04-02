@@ -15,18 +15,20 @@ MonoBehaviour:
   Level: 82
   Type: Quiz
   Theme: "G\xE9ographie"
-  RightAnswer: 
-  SpriteWithQuestion: {fileID: 0}
+  RightAnswer: Mont Fuji
+  SpriteWithQuestion: {fileID: 21300000, guid: cb7cfaf8758650442882564a55d4a2f4, type: 3}
   ImageScale: 7.51158
-  Clue: 
-  Info: 
+  Clue: "Il est situ\xE9 au Japon."
+  Info: "Le Mont Fuji est consid\xE9r\xE9 comme une montagne sacr\xE9e depuis le
+    VII\xE8me si\xE8cle. C'est le point culminant du Japon avec une altitude de 3
+    776 m."
   NextLevelData: {fileID: 11400000, guid: fc55f3143fe7163489d694fd2734d0d3, type: 2}
-  Question: 
+  Question: Quel est le nom de ce Mont ?
   FontSizeBtnAnswers: 150
-  Answer1: 
-  Answer2: 
-  Answer3: 
-  Answer4: 
+  Answer1: Mont Tate
+  Answer2: Mont Fuji
+  Answer3: Mont Haku
+  Answer4: Mont Blanc
   Difficulty: 
   NeedText: 0
   NeedImage: 0

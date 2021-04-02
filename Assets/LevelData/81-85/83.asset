@@ -15,18 +15,20 @@ MonoBehaviour:
   Level: 83
   Type: Quiz
   Theme: Sciences
-  RightAnswer: 
-  SpriteWithQuestion: {fileID: 0}
+  RightAnswer: "9 461 milliards de kilom\xE8tres"
+  SpriteWithQuestion: {fileID: 21300000, guid: 5edde290e31b06c48bc642806e2878ea, type: 3}
   ImageScale: 7.51158
-  Clue: 
-  Info: 
+  Clue: "La r\xE9ponse n'est pas en millions de kilom\xE8tres."
+  Info: "L'ann\xE9e lumi\xE8re est une unit\xE9 astronomique correspondant \xE0 la
+    distance parcourue par la lumi\xE8re en une ann\xE9e. Il faudrait approximativement
+    3 minutes et 2 secondes \xE0 la vitesse de la lumi\xE8re pour aller sur Mars."
   NextLevelData: {fileID: 11400000, guid: 87451b28094ba0f4090bb6bf4c567a49, type: 2}
-  Question: 
+  Question: "A combien de kilom\xE8tres correspond une ann\xE9e lumi\xE8re ? "
   FontSizeBtnAnswers: 150
-  Answer1: 
-  Answer2: 
-  Answer3: 
-  Answer4: 
+  Answer1: "12 340 millions de kilom\xE8tres"
+  Answer2: "9 461 millions de kilom\xE8tres"
+  Answer3: "9 461 milliards de kilom\xE8tres"
+  Answer4: "12 340 milliards de kilom\xE8tres"
   Difficulty: 
   NeedText: 0
   NeedImage: 0

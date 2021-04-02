@@ -15,18 +15,21 @@ MonoBehaviour:
   Level: 85
   Type: Quiz
   Theme: Sport
-  RightAnswer: 
-  SpriteWithQuestion: {fileID: 0}
+  RightAnswer: 2006
+  SpriteWithQuestion: {fileID: 21300000, guid: 105b6677cab1c064abca2d7c77767933, type: 3}
   ImageScale: 7.51158
-  Clue: 
-  Info: 
+  Clue: "La France a gagn\xE9 la coupe du monde de football en 1998."
+  Info: "C'\xE9tait le 9 juillet 2006, il y a quatorze ans que l'Italie s'est imposait
+    face \xE0 la France en finale de la Coupe du monde \xE0 Berlin (1-1, 5-3 aux
+    tirs au but)."
   NextLevelData: {fileID: 0}
-  Question: 
+  Question: "En quelle ann\xE9e l'\xE9quipe de France de football a-t-elle perdu
+    en finale contre l\u2019Italie ?"
   FontSizeBtnAnswers: 150
-  Answer1: 
-  Answer2: 
-  Answer3: 
-  Answer4: 
+  Answer1: 1998
+  Answer2: 2002
+  Answer3: 2006
+  Answer4: 2010
   Difficulty: 
   NeedText: 0
   NeedImage: 0

@@ -13,23 +13,24 @@ MonoBehaviour:
   m_Name: 78
   m_EditorClassIdentifier: 
   Level: 78
-  Type: Quiz
-  Theme: 
-  RightAnswer: 
-  SpriteWithQuestion: {fileID: 0}
+  Type: InputQuiz
+  Theme: "Math\xE9matiques"
+  RightAnswer: 34
+  SpriteWithQuestion: {fileID: 21300000, guid: 37a8a41127a1a6b4686e8b3eac1b862b, type: 3}
   ImageScale: 7.51158
-  Clue: 
-  Info: 
+  Clue: "Faire l'exc\xE9ption pour les deux premiers termes."
+  Info: "Vous l'avez probablement reconnue c'est la suite de Fibonacci. Chaque terme
+    est \xE9gal \xE0 la somme des deux pr\xE9c\xE9dents. La suite est donc infinie."
   NextLevelData: {fileID: 11400000, guid: 140d7dfafe8f40246bc88e3d5e45348c, type: 2}
-  Question: 
+  Question: Quel est le prochain nombre de cette suite ?
   FontSizeBtnAnswers: 150
-  Answer1: 
-  Answer2: 
-  Answer3: 
-  Answer4: 
+  Answer1: 28
+  Answer2: 30
+  Answer3: 34
+  Answer4: 35
   Difficulty: 
   NeedText: 0
-  NeedImage: 0
+  NeedImage: 1
   NeedBtnListen: 0
   Sound: {fileID: 0}
   TextLevel: 

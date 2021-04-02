@@ -15,18 +15,19 @@ MonoBehaviour:
   Level: 79
   Type: Quiz
   Theme: "Multim\xE9dia"
-  RightAnswer: 
-  SpriteWithQuestion: {fileID: 0}
+  RightAnswer: Nintendo Switch
+  SpriteWithQuestion: {fileID: 21300000, guid: 8529044cdd0ec5645b50ca8e4f6c238a, type: 3}
   ImageScale: 7.51158
-  Clue: 
-  Info: 
+  Clue: La Nintendo Switch 2 n'existe pas.
+  Info: "La Nintendo Switch est sortie mondialement le 3 mars 2017. Au total environ
+    80 millions d'exemplaires ont \xE9t\xE9 vendus."
   NextLevelData: {fileID: 11400000, guid: feee97c2f0cebf347bc3ab3bf6e7684d, type: 2}
-  Question: 
+  Question: "Quelle est la derni\xE8re console sortie par Nintendo ?"
   FontSizeBtnAnswers: 150
-  Answer1: 
-  Answer2: 
-  Answer3: 
-  Answer4: 
+  Answer1: Wii
+  Answer2: Nintendo Switch 2
+  Answer3: Wii U
+  Answer4: Nintendo Switch
   Difficulty: 
   NeedText: 0
   NeedImage: 0
