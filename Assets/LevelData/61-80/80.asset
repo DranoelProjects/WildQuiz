@@ -10,29 +10,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
-  m_Name: 60
+  m_Name: 80
   m_EditorClassIdentifier: 
-  Level: 60
-  Type: TicTacToe
-  Theme: 
-  RightAnswer: 
+  Level: 80
+  Type: InputQuiz
+  Theme: Devinettes
+  RightAnswer: et
   SpriteWithQuestion: {fileID: 0}
   ImageScale: 7.51158
-  Clue: 
-  Info: 
-  NextLevelData: {fileID: 11400000, guid: e5f88fee22a69cc4a96851bc0133e8cd, type: 2}
+  Clue: "Ne pas chercher trop compliqu\xE9."
+  Info: "C'est un pi\xE8ge que l'on retrouve souvent dans les devinettes et les jeux
+    de mots."
+  NextLevelData: {fileID: 11400000, guid: a768a4d4d7560314a8f0fe4e14adb7cb, type: 2}
   Question: 
   FontSizeBtnAnswers: 150
   Answer1: 
   Answer2: 
   Answer3: 
   Answer4: 
-  Difficulty: Medium
-  NeedText: 0
+  Difficulty: 
+  NeedText: 1
   NeedImage: 0
   NeedBtnListen: 0
   Sound: {fileID: 0}
-  TextLevel: 
+  TextLevel: Je suis entre 188 et 190, mais je ne suis pas 189. Qui suis-je ?
   OtherAcceptedAnswer1: 
   OtherAcceptedAnswer2: 
   OtherAcceptedAnswer3: 

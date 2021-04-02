@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
+  m_Name: 74
+  m_EditorClassIdentifier: 
+  Level: 74
+  Type: Quiz
+  Theme: Art
+  RightAnswer: "Moli\xE8re"
+  SpriteWithQuestion: {fileID: 21300000, guid: 1b4c0f1ebff37554da92c4b534dd1ad7, type: 3}
+  ImageScale: 7.51158
+  Clue: "Cette com\xE9die a \xE9t\xE9 \xE9crite en 1664-1665"
+  Info: "C'est bien Moli\xE8re qui a \xE9crit Dom Juan en 1664-1665. Cette com\xE9die
+    raconte les trente-six derni\xE8res heures de la vie du jeune dom Juan Tenorio,
+    grand amateur de femmes."
+  NextLevelData: {fileID: 11400000, guid: 8c8638a46c4325e4f8cff4cce5a1445b, type: 2}
+  Question: "Qui a \xE9crit Dom Juan ? "
+  FontSizeBtnAnswers: 150
+  Answer1: Charles Baudelaire
+  Answer2: Emile Zola
+  Answer3: Victor Hugo
+  Answer4: "Moli\xE8re"
+  Difficulty: 
+  NeedText: 0
+  NeedImage: 0
+  NeedBtnListen: 0
+  Sound: {fileID: 0}
+  TextLevel: 
+  OtherAcceptedAnswer1: 
+  OtherAcceptedAnswer2: 
+  OtherAcceptedAnswer3: 

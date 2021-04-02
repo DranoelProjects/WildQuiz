@@ -10,24 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
-  m_Name: 60
+  m_Name: 78
   m_EditorClassIdentifier: 
-  Level: 60
-  Type: TicTacToe
+  Level: 78
+  Type: Quiz
   Theme: 
   RightAnswer: 
   SpriteWithQuestion: {fileID: 0}
   ImageScale: 7.51158
   Clue: 
   Info: 
-  NextLevelData: {fileID: 11400000, guid: e5f88fee22a69cc4a96851bc0133e8cd, type: 2}
+  NextLevelData: {fileID: 11400000, guid: 140d7dfafe8f40246bc88e3d5e45348c, type: 2}
   Question: 
   FontSizeBtnAnswers: 150
   Answer1: 
   Answer2: 
   Answer3: 
   Answer4: 
-  Difficulty: Medium
+  Difficulty: 
   NeedText: 0
   NeedImage: 0
   NeedBtnListen: 0

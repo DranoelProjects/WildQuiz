@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
+  m_Name: 66
+  m_EditorClassIdentifier: 
+  Level: 66
+  Type: Quiz
+  Theme: "Cin\xE9ma"
+  RightAnswer: Emilia Clarke
+  SpriteWithQuestion: {fileID: 21300000, guid: 380262f8e13c86649b3a95c8bdb3767d, type: 3}
+  ImageScale: 7.51158
+  Clue: "Natalie Portman est connue notamment pour avoir jou\xE9 dans Star Wars"
+  Info: "Emilia Clarke est n\xE9e le 23 octobre 1986 \xE0 Londres. Elle est devenue
+    l'une des actrices les plus c\xE9l\xE8bres et les mieux pay\xE9es d'Holywood."
+  NextLevelData: {fileID: 11400000, guid: 517d8e15cbeb6c4449b0bf4269bd193a, type: 2}
+  Question: "Quelle actrice joue le r\xF4le de Daenerys Targaryen dans Game of Thrones
+    ? "
+  FontSizeBtnAnswers: 150
+  Answer1: Natalie Portman
+  Answer2: Emilia Clarke
+  Answer3: Charlize Theron
+  Answer4: Scarlett Johansson
+  Difficulty: 
+  NeedText: 0
+  NeedImage: 0
+  NeedBtnListen: 0
+  Sound: {fileID: 0}
+  TextLevel: 
+  OtherAcceptedAnswer1: 
+  OtherAcceptedAnswer2: 
+  OtherAcceptedAnswer3: 

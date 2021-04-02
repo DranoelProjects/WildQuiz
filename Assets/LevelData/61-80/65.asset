@@ -10,24 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
-  m_Name: 60
+  m_Name: 65
   m_EditorClassIdentifier: 
-  Level: 60
-  Type: TicTacToe
-  Theme: 
-  RightAnswer: 
-  SpriteWithQuestion: {fileID: 0}
+  Level: 65
+  Type: Quiz
+  Theme: "Multim\xE9dia"
+  RightAnswer: 1920 x 1080
+  SpriteWithQuestion: {fileID: 21300000, guid: 0ce579121c94b684f9060c3611f701d1, type: 3}
   ImageScale: 7.51158
-  Clue: 
-  Info: 
-  NextLevelData: {fileID: 11400000, guid: e5f88fee22a69cc4a96851bc0133e8cd, type: 2}
-  Question: 
+  Clue: "2 560 \xD7 1 440 est la QUAD HD."
+  Info: "Full High Definition (full HD) autrement dit 1920x1080 cela repr\xE9sente
+    2 millions de pixels!"
+  NextLevelData: {fileID: 11400000, guid: 8b07553a201d08b4c9cee87d2fcfffac, type: 2}
+  Question: Quel est le format de la full HD en pixels ?
   FontSizeBtnAnswers: 150
-  Answer1: 
-  Answer2: 
-  Answer3: 
-  Answer4: 
-  Difficulty: Medium
+  Answer1: 1280 x 720
+  Answer2: 1600 x 900
+  Answer3: 1920 x 1080
+  Answer4: 2560 x 1440
+  Difficulty: 
   NeedText: 0
   NeedImage: 0
   NeedBtnListen: 0

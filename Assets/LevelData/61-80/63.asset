@@ -10,24 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
-  m_Name: 60
+  m_Name: 63
   m_EditorClassIdentifier: 
-  Level: 60
-  Type: TicTacToe
-  Theme: 
-  RightAnswer: 
-  SpriteWithQuestion: {fileID: 0}
+  Level: 63
+  Type: Quiz
+  Theme: "Math\xE9matiques"
+  RightAnswer: 10
+  SpriteWithQuestion: {fileID: 21300000, guid: 66b7da534be372249b4bcc0e8d58251c, type: 3}
   ImageScale: 7.51158
-  Clue: 
-  Info: 
-  NextLevelData: {fileID: 11400000, guid: e5f88fee22a69cc4a96851bc0133e8cd, type: 2}
-  Question: 
+  Clue: "Il suffit d'\xE9limer un 0 en bas puis un en haut \xE0 chaque fois. Vous
+    aurez ainsi rapidement le r\xE9sultat."
+  Info: Il ne faut pas avoir peur des nombres avec beaucoup de 0!
+  NextLevelData: {fileID: 11400000, guid: fd54187c88ee8314db25742f9e967681, type: 2}
+  Question: 100000 / 10000 ?
   FontSizeBtnAnswers: 150
-  Answer1: 
-  Answer2: 
-  Answer3: 
-  Answer4: 
-  Difficulty: Medium
+  Answer1: 1
+  Answer2: 10
+  Answer3: 100
+  Answer4: 5
+  Difficulty: 
   NeedText: 0
   NeedImage: 0
   NeedBtnListen: 0

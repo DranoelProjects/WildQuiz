@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
+  m_Name: 61
+  m_EditorClassIdentifier: 
+  Level: 61
+  Type: Quiz
+  Theme: Histoire
+  RightAnswer: 800
+  SpriteWithQuestion: {fileID: 21300000, guid: b5390a76c59d8d846b8262aaee49c0bb, type: 3}
+  ImageScale: 5
+  Clue: "Charlemagne appartient \xE0 la dynastie des Carolingiens"
+  Info: "Charlemagne est mort en 814 \xE0 Aix-la-Chapelle. Il est roi des Francs
+    d\xE8s l'an 768. D\xE8s 806 il pr\xE9voit de r\xE9partir son territoire entre
+    ses trois fils mais ce n'est qu'en 843 que son territoire est partag\xE9 entre
+    trois de ses petits-fils."
+  NextLevelData: {fileID: 11400000, guid: 1f8492a940eda9c439cc14d59d5d6449, type: 2}
+  Question: "Quand Charlemagne a-t-il \xE9t\xE9 sacr\xE9 empereur ? "
+  FontSizeBtnAnswers: 150
+  Answer1: 751
+  Answer2: 800
+  Answer3: 941
+  Answer4: 1800
+  Difficulty: 
+  NeedText: 0
+  NeedImage: 0
+  NeedBtnListen: 0
+  Sound: {fileID: 0}
+  TextLevel: 
+  OtherAcceptedAnswer1: 
+  OtherAcceptedAnswer2: 
+  OtherAcceptedAnswer3: 

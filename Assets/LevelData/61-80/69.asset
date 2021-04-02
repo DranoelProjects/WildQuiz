@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
+  m_Name: 69
+  m_EditorClassIdentifier: 
+  Level: 69
+  Type: Quiz
+  Theme: Sciences
+  RightAnswer: 800 000
+  SpriteWithQuestion: {fileID: 21300000, guid: 01a7b7dc43dc8704a98c40dcae52efc1, type: 3}
+  ImageScale: 7.51158
+  Clue: Attention on parle bien des plus gros cumulonimbus.
+  Info: "Un cumulonimbus (nuage d\u2019orage) peut peser de 50 000 \xE0 300 000 tonnes
+    d\u2019eau. Ils peuvent atteindre 800 000 tonnes pour les plus gros."
+  NextLevelData: {fileID: 11400000, guid: e2190a37e614caf4f935718add1b94ad, type: 2}
+  Question: "Combien de tonnes d\u2019eau les plus gros cumulonimbus peuvent-ils
+    contenir ?"
+  FontSizeBtnAnswers: 150
+  Answer1: 200 000
+  Answer2: 400 000
+  Answer3: 600 000
+  Answer4: 800 000
+  Difficulty: 
+  NeedText: 0
+  NeedImage: 0
+  NeedBtnListen: 0
+  Sound: {fileID: 0}
+  TextLevel: 
+  OtherAcceptedAnswer1: 
+  OtherAcceptedAnswer2: 
+  OtherAcceptedAnswer3: 

@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70a954a2507024645b8d1e4b697b5178, type: 3}
+  m_Name: 62
+  m_EditorClassIdentifier: 
+  Level: 62
+  Type: Quiz
+  Theme: Environnement
+  RightAnswer: 4000
+  SpriteWithQuestion: {fileID: 21300000, guid: c47641f0b8147bf4581c4e9ff5501dcd, type: 3}
+  ImageScale: 7.51158
+  Clue: Ce n'est pas 10 000 ans.
+  Info: "A titre de comparaison la d\xE9composition d'une bouteille en plastique
+    est estim\xE9e entre 100 et 1000 ans. La d\xE9composition d'un sac platique elle,
+    est estim\xE9e \xE0 450 ans."
+  NextLevelData: {fileID: 11400000, guid: 2012179db9f2f014dbc396df61d23a5b, type: 2}
+  Question: "A combien de temps est estim\xE9e la d\xE9gradation d\u2019une bouteille
+    en verre ? (en ann\xE9es)"
+  FontSizeBtnAnswers: 150
+  Answer1: 2000
+  Answer2: 4000
+  Answer3: 6000
+  Answer4: 10000
+  Difficulty: 
+  NeedText: 0
+  NeedImage: 0
+  NeedBtnListen: 0
+  Sound: {fileID: 0}
+  TextLevel: 
+  OtherAcceptedAnswer1: 
+  OtherAcceptedAnswer2: 
+  OtherAcceptedAnswer3: 
