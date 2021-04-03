@@ -41,15 +41,32 @@ public class MainCanvas : MonoBehaviour
     {
         MainCanvas mainCanvasScript = gameObject.GetComponent<MainCanvas>();
         //init next level anim
-        nextLevelAnimator = GameObject.Find(PlayerPrefs.GetInt("NextLevel").ToString()).GetComponent<Animator>();
-        nextLevelAnimator.SetBool("isNextLevel", true);
+        int nextLevel = PlayerPrefs.GetInt("NextLevel");
+        if(nextLevel == 86)
+        {
+            nextLevel--;
+            nextLevelAnimator = GameObject.Find((nextLevel).ToString()).GetComponent<Animator>();
+            nextLevelAnimator.SetBool("isNextLevel", false);
 
-        //init next level color
-        nextLevelImage = GameObject.Find(PlayerPrefs.GetInt("NextLevel").ToString()).GetComponent<Image>();
-        nextLevelImage.color = Color.green;
+            //init next level color
+            nextLevelImage = GameObject.Find(nextLevel.ToString()).GetComponent<Image>();
+            nextLevelImage.color = Color.yellow;
 
-        //init scroll rect target
-        scrollRectTarget = GameObject.Find(PlayerPrefs.GetInt("NextLevel").ToString()).GetComponent<RectTransform>();
-        mainCanvasScript.SnapTo(scrollRectTarget);
+            //init scroll rect target
+            scrollRectTarget = GameObject.Find(nextLevel.ToString()).GetComponent<RectTransform>();
+            mainCanvasScript.SnapTo(scrollRectTarget);
+        } else
+        {
+            nextLevelAnimator = GameObject.Find(nextLevel.ToString()).GetComponent<Animator>();
+            nextLevelAnimator.SetBool("isNextLevel", true);
+
+            //init next level color
+            nextLevelImage = GameObject.Find(nextLevel.ToString()).GetComponent<Image>();
+            nextLevelImage.color = Color.green;
+
+            //init scroll rect target
+            scrollRectTarget = GameObject.Find(nextLevel.ToString()).GetComponent<RectTransform>();
+            mainCanvasScript.SnapTo(scrollRectTarget);
+        }
     }
 }

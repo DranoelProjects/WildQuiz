@@ -248,6 +248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winningCoins: {fileID: 6257356787872260133}
+  nextLvlButton: {fileID: 1141990197511649118}
 --- !u!1 &1141990197511649116
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,7 +261,6 @@ GameObject:
   - component: {fileID: 1141990197511649184}
   - component: {fileID: 1141990197511649185}
   - component: {fileID: 1141990197511649118}
-  - component: {fileID: 1943655179093807032}
   m_Layer: 5
   m_Name: ButtonNextLevel
   m_TagString: Untagged
@@ -368,7 +368,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1943655179093807032}
+      - m_Target: {fileID: 642684423721751340}
         m_MethodName: StartNextSceneLevel
         m_Mode: 1
         m_Arguments:
@@ -379,19 +379,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1943655179093807032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1141990197511649116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a51d36c243cd5640b6a9a394163d936, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  winningCoins: {fileID: 0}
 --- !u!1 &1141990197950419707
 GameObject:
   m_ObjectHideFlags: 0
@@ -482,7 +469,6 @@ GameObject:
   - component: {fileID: 1141990198059241784}
   - component: {fileID: 1141990198059241785}
   - component: {fileID: 1141990198059241782}
-  - component: {fileID: 1943655179093807035}
   m_Layer: 5
   m_Name: ButtonMenu
   m_TagString: Untagged
@@ -590,7 +576,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1943655179093807035}
+      - m_Target: {fileID: 642684423721751340}
         m_MethodName: BackToMenu
         m_Mode: 1
         m_Arguments:
@@ -601,19 +587,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1943655179093807035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1141990198059241780}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a51d36c243cd5640b6a9a394163d936, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  winningCoins: {fileID: 0}
 --- !u!1001 &7676033029484982569
 PrefabInstance:
   m_ObjectHideFlags: 0

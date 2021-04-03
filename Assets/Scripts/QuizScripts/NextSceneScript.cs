@@ -2,10 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class NextSceneScript : MonoBehaviour
 {
     [SerializeField] GameObject winningCoins;
+    [SerializeField] Button nextLvlButton;
+    GameManagerScript gameManagerScript;
+
+    public void Start()
+    {
+        gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
+        if (PlayerPrefs.GetInt("NextLevel") == 86 && gameManagerScript.LevelData.Level == 85)
+        {
+            nextLvlButton.interactable = false;
+        }
+    }
     public void ActiveWinningCoins(bool active)
     {
         winningCoins.SetActive(active);
@@ -13,7 +25,7 @@ public class NextSceneScript : MonoBehaviour
 
     public void StartNextSceneLevel()
     {
-        GameManagerScript gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
+        
         LevelData levelData = gameManagerScript.LevelData;
         LevelData nextLevelData = levelData.NextLevelData;
         if (PlayerPrefs.GetInt("HeartsNumber") > 0)
