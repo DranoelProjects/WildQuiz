@@ -62,13 +62,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.990566, g: 0.990566, b: 0.990566, a: 1}
+  m_Color: {r: 1, g: 1, b: 0.2028302, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fa7715c04f6ef417595dcd8c8f43862d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2f70cf197ce9da44088ccc9ae8ee578f, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -144,8 +144,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7d8dbc0f36a1fb46b062d1dcae18247, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jokersPanel: {fileID: 0}
   spriteClose: {fileID: 21300000, guid: e839e6693c344ad40a5952853a891866, type: 3}
-  spriteOpen: {fileID: 21300000, guid: fa7715c04f6ef417595dcd8c8f43862d, type: 3}
+  spriteOpen: {fileID: 21300000, guid: 2f70cf197ce9da44088ccc9ae8ee578f, type: 3}
 --- !u!1 &7033877160738442529
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,7 +208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4339623, g: 0.39402717, b: 0.2804379, a: 0.79607844}
+  m_Color: {r: 0.08103366, g: 0.3490566, b: 0.03457636, a: 0.89411765}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -400,7 +401,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 58b647c5b2ec4184e9a07a561cdf0644, type: 3}
+    m_Font: {fileID: 12800000, guid: 1edbd621502ac5145956f47b04bf50d9, type: 3}
     m_FontSize: 300
     m_FontStyle: 0
     m_BestFit: 0

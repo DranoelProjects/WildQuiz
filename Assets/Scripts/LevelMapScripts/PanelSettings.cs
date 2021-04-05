@@ -28,7 +28,7 @@ public class PanelSettings : MonoBehaviour
             OnClickShowCredits();
         } else
         {
-            btnShowStats.GetComponent<Image>().color = new Color(255/255f, 201/255f, 73/255f);
+            btnShowStats.GetComponent<Image>().color = new Color(255/255f, 255/255f, 255/255f);
             gameObjectStats.SetActive(false);
         }
         isShowingStats = !isShowingStats;
@@ -47,7 +47,7 @@ public class PanelSettings : MonoBehaviour
         }
         else
         {
-            btnShowCredits.GetComponent<Image>().color = new Color(255 / 255f, 201 / 255f, 73 / 255f);
+            btnShowCredits.GetComponent<Image>().color = new Color(255 / 255f, 255 / 255f, 255 / 255f);
             textCredits.SetActive(false);
         }
         isShowingsCredits = !isShowingsCredits;

@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.36078432, g: 0.34509805, b: 0.28627452, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -143,9 +143,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb29edb2db202854684f26b4c71e9bfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sndSardoche: {fileID: 8300000, guid: 4dd379aad5ff6794d8224e33dbdba89f, type: 3}
-  sndWin: {fileID: 8300000, guid: f0ccd77f90e5fdb4fa69ba8c70507021, type: 3}
-  sndWrong: {fileID: 8300000, guid: 5bdfc7883eb179e42b47985b10cfc700, type: 3}
 --- !u!1 &1911705221827971563
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,7 +201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:

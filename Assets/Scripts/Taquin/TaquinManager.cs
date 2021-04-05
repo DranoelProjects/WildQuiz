@@ -68,7 +68,7 @@ public class TaquinManager : MonoBehaviour
         else
         {
             imageShowJokersPanel.sprite = spriteOpen;
-            imageShowJokersPanel.color = Color.white;
+            imageShowJokersPanel.color = new Color(255 / 255f, 255 / 255f, 52 / 255f); ;
         }
     }
 }
