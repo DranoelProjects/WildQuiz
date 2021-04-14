@@ -7,12 +7,28 @@ using UnityEngine.UI;
 public class UIScript : MonoBehaviour
 {
     GameManagerScript gameManagerScript;
+    private LevelData levelData;
     [SerializeField] Toggle muteToggle;
     [SerializeField] GameObject panelSettings;
-    public GameObject PanelNoHeart, PanelNoCoins;
+    public GameObject PanelNoHeart, PanelNoCoins, CurrentLevel;
+    [SerializeField] Text outputCurrentLevel;
 
     AudioSource audioSource;
     [SerializeField] AudioClip sndClick;
+
+    private void Start()
+    {
+        gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
+        levelData = gameManagerScript.LevelData;
+        if (SceneManager.GetActiveScene().name == "LevelMap")
+        {
+            CurrentLevel.SetActive(false);
+        } else
+        {
+            CurrentLevel.SetActive(true);
+            outputCurrentLevel.text = levelData.Level.ToString();
+        }
+    }
 
     public void OnClickShowSettingsPanel()
     {
