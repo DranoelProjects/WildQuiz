@@ -27,18 +27,6 @@ public class GameManagerScript : MonoBehaviour
     }
     void Start()
     {
-        //init hearts and coins
-        if (PlayerPrefs.GetInt("FirstConnexion") != 1)
-        {
-            PlayerPrefs.SetInt("FirstConnexion", 1);
-            PlayerPrefs.SetInt("NextLevel", 31);
-            PlayerPrefs.SetInt("HeartsNumber", 20);
-            PlayerPrefs.SetInt("CoinsNumber", 1000);
-            PlayerPrefs.SetInt("NumberLostLevels", 0);
-            PlayerPrefs.SetInt("NumberWonLevels", 0);
-            PlayerPrefs.SetInt("mute", 0);
-        }
-
         //init music
         if (!GameObject.FindGameObjectWithTag("Music"))
         {

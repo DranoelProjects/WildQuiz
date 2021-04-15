@@ -7,6 +7,7 @@ TagManager:
   - Music
   - Alert
   - Sound Effects
+  - FX
   layers:
   - Default
   - TransparentFX
@@ -16,7 +17,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - FX
   - 
   - 
   - 
@@ -43,4 +44,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: fx
+    uniqueID: 3045653689
     locked: 0
