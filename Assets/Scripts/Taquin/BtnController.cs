@@ -8,13 +8,14 @@ public class BtnController : MonoBehaviour {
     GameObject panel;
     Button[] allButtons;
     TaquinManager taquinManager;
+    public bool InitializingGame = true;
 
     private void Awake()
     {
         emptyBtn = GameObject.Find("16").gameObject.transform;
         panel = GameObject.Find("Panel").gameObject;
         taquinManager = GameObject.Find("Canvas").GetComponent<TaquinManager>();
-        gameObject.transform.SetSiblingIndex(Random.Range(0,16));
+        //gameObject.transform.SetSiblingIndex(Random.Range(0,16));
     }
 
     public void OnClickSwapWithEmpty()
@@ -48,7 +49,8 @@ public class BtnController : MonoBehaviour {
             default:
                 break;
         }
-        checkIfPlayerWon();
+        if(!InitializingGame)
+            checkIfPlayerWon();
     }
 
     void checkIfPlayerWon()

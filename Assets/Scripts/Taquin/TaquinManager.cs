@@ -18,6 +18,7 @@ public class TaquinManager : MonoBehaviour
         gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
         levelData = gameManagerScript.LevelData;
         audioSource = gameObject.GetComponent<AudioSource>();
+        initGame();
     }
 
     public void YouWin()
@@ -69,6 +70,30 @@ public class TaquinManager : MonoBehaviour
         {
             imageShowJokersPanel.sprite = spriteOpen;
             imageShowJokersPanel.color = new Color(255 / 255f, 255 / 255f, 52 / 255f); ;
+        }
+    }
+
+    private void initGame()
+    {
+        Transform emptyBtn = GameObject.Find("16").gameObject.transform;
+        GameObject panel = GameObject.Find("Panel").gameObject; ;
+        Button[] allButtons = panel.GetComponentsInChildren<Button>();
+        int numberOfTransformations = Random.Range(30, 100);
+
+        for(int i=1; i <= numberOfTransformations; i++)
+        {
+            foreach (Button btn in allButtons)
+            {
+                BtnController btnController = btn.GetComponent<BtnController>();
+                if (btnController)
+                    btnController.OnClickSwapWithEmpty();
+            }
+        }
+        foreach (Button btn in allButtons)
+        {
+            BtnController btnController = btn.GetComponent<BtnController>();
+            if (btnController)
+                btnController.InitializingGame = false;
         }
     }
 
