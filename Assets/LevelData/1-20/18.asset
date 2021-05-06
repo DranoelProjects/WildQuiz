@@ -34,6 +34,6 @@ MonoBehaviour:
   NeedBtnListen: 0
   Sound: {fileID: 0}
   TextLevel: 
-  OtherAcceptedAnswer1: 
-  OtherAcceptedAnswer2: 
-  OtherAcceptedAnswer3: 
+  OtherAcceptedAnswer1: E. Delacroix
+  OtherAcceptedAnswer2: Delacroix
+  OtherAcceptedAnswer3: E Delacroix

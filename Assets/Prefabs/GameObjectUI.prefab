@@ -1459,7 +1459,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -66, y: -297.2}
+  m_AnchoredPosition: {x: -66, y: -303.8}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3563462086916802939
@@ -2415,7 +2415,7 @@ PrefabInstance:
     - target: {fileID: 1745566704573688825, guid: 40a8ad77d38c7b94786bb5a08e5d0c78,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.5471698
+      value: 0.8773585
       objectReference: {fileID: 0}
     - target: {fileID: 2314845152634689601, guid: 40a8ad77d38c7b94786bb5a08e5d0c78,
         type: 3}

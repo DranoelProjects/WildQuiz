@@ -34,6 +34,6 @@ MonoBehaviour:
   NeedBtnListen: 0
   Sound: {fileID: 0}
   TextLevel: 
-  OtherAcceptedAnswer1: 
+  OtherAcceptedAnswer1: Switch
   OtherAcceptedAnswer2: 
   OtherAcceptedAnswer3: 

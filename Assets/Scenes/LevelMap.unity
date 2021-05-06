@@ -16641,6 +16641,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5005650087490653334}
     m_Modifications:
+    - target: {fileID: 630101231571287644, guid: bd632f24bcfdf824aa404ea0a400e14d,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 630101231571287644, guid: bd632f24bcfdf824aa404ea0a400e14d,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1694858940940956908, guid: bd632f24bcfdf824aa404ea0a400e14d,
         type: 3}
       propertyPath: m_Name
@@ -16660,6 +16670,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: rewardedVideo
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650905528564581240, guid: bd632f24bcfdf824aa404ea0a400e14d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5775626838095904873, guid: bd632f24bcfdf824aa404ea0a400e14d,
         type: 3}

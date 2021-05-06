@@ -36,6 +36,6 @@ MonoBehaviour:
   NeedBtnListen: 0
   Sound: {fileID: 0}
   TextLevel: 
-  OtherAcceptedAnswer1: 
-  OtherAcceptedAnswer2: 
-  OtherAcceptedAnswer3: 
+  OtherAcceptedAnswer1: Radcliffe
+  OtherAcceptedAnswer2: D Radcliffe
+  OtherAcceptedAnswer3: D. Radcliffe

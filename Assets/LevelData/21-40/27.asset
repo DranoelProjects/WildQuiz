@@ -23,7 +23,7 @@ MonoBehaviour:
     p\xE9riode \xE9tant choisie pour \xE9viter les trop fortes chaleurs du Qatar
     en \xE9t\xE9."
   NextLevelData: {fileID: 11400000, guid: d07f6b7f789f07946a2bc957b6074057, type: 2}
-  Question: "O\xF9 se d\xE9roulera la prochaine coupe du monde de football ?"
+  Question: "O\xF9 se d\xE9roulera la prochaine coupe du monde de football (2022)?"
   FontSizeBtnAnswers: 150
   Answer1: Qatar
   Answer2: Arabie saoudite

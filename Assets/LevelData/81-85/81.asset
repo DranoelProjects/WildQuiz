@@ -35,6 +35,6 @@ MonoBehaviour:
   NeedBtnListen: 0
   Sound: {fileID: 0}
   TextLevel: 
-  OtherAcceptedAnswer1: 
-  OtherAcceptedAnswer2: 
-  OtherAcceptedAnswer3: 
+  OtherAcceptedAnswer1: J. Cameron
+  OtherAcceptedAnswer2: J Cameron
+  OtherAcceptedAnswer3: Cameron

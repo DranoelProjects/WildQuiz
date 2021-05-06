@@ -86,7 +86,7 @@ namespace DailyRewardSystem
             if (string.IsNullOrEmpty(PlayerPrefs.GetString("RewardClaimDatetime")))
             {
                 PlayerPrefs.SetString("RewardClaimDatetime", DateTime.Now.ToString());
-                PlayerPrefs.SetInt("NextLevel", 30);
+                PlayerPrefs.SetInt("NextLevel", 85);
                 PlayerPrefs.SetInt("HeartsNumber", 20);
                 PlayerPrefs.SetInt("CoinsNumber", 1000);
                 PlayerPrefs.SetInt("NumberLostLevels", 0);

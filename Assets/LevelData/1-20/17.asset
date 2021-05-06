@@ -36,6 +36,6 @@ MonoBehaviour:
   NeedBtnListen: 0
   Sound: {fileID: 0}
   TextLevel: 
-  OtherAcceptedAnswer1: 
+  OtherAcceptedAnswer1: "Ta\xEFpan d\xE9sert"
   OtherAcceptedAnswer2: 
   OtherAcceptedAnswer3: 

@@ -110,6 +110,7 @@ public class QuizManager : MonoBehaviour
             imageWithQuestion.GetComponent<RectTransform>().localScale = new Vector3(levelData.ImageScale, levelData.ImageScale, levelData.ImageScale);
         } else if (levelData.Type == "InputQuiz")
         {
+            shouldStartTimer = true;
             panelAnswerMode.SetActive(false);
             questionText.enabled = false;
             panelAnswersButtons.SetActive(false);

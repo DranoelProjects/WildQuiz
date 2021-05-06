@@ -35,6 +35,6 @@ MonoBehaviour:
   NeedBtnListen: 0
   Sound: {fileID: 0}
   TextLevel: 
-  OtherAcceptedAnswer1: 
-  OtherAcceptedAnswer2: 
-  OtherAcceptedAnswer3: 
+  OtherAcceptedAnswer1: 9461 milliards
+  OtherAcceptedAnswer2: 9 461 milliards de km
+  OtherAcceptedAnswer3: 9 461 milliards

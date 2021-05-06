@@ -75,10 +75,9 @@ public class TaquinManager : MonoBehaviour
 
     private void initGame()
     {
-        Transform emptyBtn = GameObject.Find("16").gameObject.transform;
         GameObject panel = GameObject.Find("Panel").gameObject; ;
         Button[] allButtons = panel.GetComponentsInChildren<Button>();
-        int numberOfTransformations = Random.Range(30, 100);
+        int numberOfTransformations = Random.Range(30, 61);
 
         for(int i=1; i <= numberOfTransformations; i++)
         {

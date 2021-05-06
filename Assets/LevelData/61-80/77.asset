@@ -35,6 +35,6 @@ MonoBehaviour:
   NeedBtnListen: 0
   Sound: {fileID: 0}
   TextLevel: 
-  OtherAcceptedAnswer1: 
+  OtherAcceptedAnswer1: Pacifique
   OtherAcceptedAnswer2: 
   OtherAcceptedAnswer3: 

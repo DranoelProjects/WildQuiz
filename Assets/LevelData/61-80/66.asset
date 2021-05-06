@@ -35,6 +35,6 @@ MonoBehaviour:
   NeedBtnListen: 0
   Sound: {fileID: 0}
   TextLevel: 
-  OtherAcceptedAnswer1: 
-  OtherAcceptedAnswer2: 
-  OtherAcceptedAnswer3: 
+  OtherAcceptedAnswer1: E. Clarke
+  OtherAcceptedAnswer2: Clarke
+  OtherAcceptedAnswer3: E Clarke
