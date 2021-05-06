@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,10 +13,12 @@ public class TaquinManager : MonoBehaviour
     [SerializeField] AudioClip sndWin;
     LevelData levelData;
     GameManagerScript gameManagerScript;
+    Transform emptyBtn;
 
     private void Awake()
     {
         gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
+        emptyBtn = GameObject.Find("16").gameObject.transform;
         levelData = gameManagerScript.LevelData;
         audioSource = gameObject.GetComponent<AudioSource>();
         initGame();
@@ -76,23 +79,63 @@ public class TaquinManager : MonoBehaviour
     private void initGame()
     {
         GameObject panel = GameObject.Find("Panel").gameObject; ;
-        Button[] allButtons = panel.GetComponentsInChildren<Button>();
-        int numberOfTransformations = Random.Range(30, 61);
+        Button[] childrens = panel.GetComponentsInChildren<Button>();
+        List<Button> allButtons = new List<Button>();
+        foreach (Button btn in childrens)
+        {
+            if (btn.name != "16")
+            {
+                allButtons.Add(btn);
+            }
+        }
 
-        for(int i=1; i <= numberOfTransformations; i++)
+        int numberOfTransformations = UnityEngine.Random.Range(30, 101);
+
+        for (int i=1; i <= numberOfTransformations; i++)
         {
             foreach (Button btn in allButtons)
             {
                 BtnController btnController = btn.GetComponent<BtnController>();
-                if (btnController)
-                    btnController.OnClickSwapWithEmpty();
+                swapWithEmptyIfPossible(btn);
             }
         }
         foreach (Button btn in allButtons)
         {
             BtnController btnController = btn.GetComponent<BtnController>();
-            if (btnController)
-                btnController.InitializingGame = false;
+            btnController.InitializingGame = false;
+        }
+    }
+
+    private void swapWithEmptyIfPossible(Button btn)
+    {
+        int emptyIndex = emptyBtn.GetSiblingIndex();
+        int btnIndex = btn.transform.GetSiblingIndex();
+        int difference = emptyIndex - btnIndex;
+
+        switch (difference)
+        {
+            case 1:
+                if (btnIndex != 3 && btnIndex != 7 && btnIndex != 11)
+                {
+                    btn.transform.SetSiblingIndex(emptyIndex);
+                }
+                break;
+            case 4:
+                btn.transform.SetSiblingIndex(emptyIndex);
+                emptyBtn.SetSiblingIndex(btnIndex);
+                break;
+            case -1:
+                if (btnIndex != 4 && btnIndex != 8 && btnIndex != 12)
+                {
+                    btn.transform.SetSiblingIndex(emptyIndex);
+                }
+                break;
+            case -4:
+                btn.transform.SetSiblingIndex(emptyIndex);
+                emptyBtn.SetSiblingIndex(btnIndex);
+                break;
+            default:
+                break;
         }
     }
 

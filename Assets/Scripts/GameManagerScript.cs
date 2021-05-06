@@ -21,7 +21,18 @@ public class GameManagerScript : MonoBehaviour
         else
         {
             DontDestroyOnLoad(gameObject);
-        } 
+        }
+
+        if (string.IsNullOrEmpty(PlayerPrefs.GetString("RewardClaimDatetime")))
+        {
+            PlayerPrefs.SetString("RewardClaimDatetime", DateTime.Now.ToString());
+            PlayerPrefs.SetInt("NextLevel", 85);
+            PlayerPrefs.SetInt("HeartsNumber", 20);
+            PlayerPrefs.SetInt("CoinsNumber", 1000);
+            PlayerPrefs.SetInt("NumberLostLevels", 0);
+            PlayerPrefs.SetInt("NumberWonLevels", 0);
+            PlayerPrefs.SetInt("mute", 0);
+        }
     }
     void Start()
     {

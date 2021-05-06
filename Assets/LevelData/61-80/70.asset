@@ -23,8 +23,7 @@ MonoBehaviour:
   Info: "Usain Bolt d\xE9tient le record du monde de sprint sur 100 m avec un temps
     de  9 secondes 58."
   NextLevelData: {fileID: 11400000, guid: 655860c1d3956c64187533f486b51525, type: 2}
-  Question: "Dans ces athl\xE8tes qui est connu pour \xEAtre un sp\xE9cialiste de
-    sprint ? "
+  Question: "Qui est connu pour \xEAtre un sp\xE9cialiste de sprint ? "
   FontSizeBtnAnswers: 150
   Answer1: Haile Gebreselassie
   Answer2: Usain Bolt

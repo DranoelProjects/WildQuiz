@@ -43,4 +43,10 @@ public class PanelUserInfo : MonoBehaviour
     {
         outputCurrentLvl.text = PlayerPrefs.GetInt("NextLevel").ToString();
     }
+
+    //Reward : Heart
+    public void OnClickShowRewardedVideo()
+    {
+        GameObject.Find("GameManager").GetComponent<WatchAd>().ShowRewardedVideo("rewardedVideo");
+    }
 }
