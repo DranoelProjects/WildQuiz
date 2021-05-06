@@ -13,8 +13,6 @@ public class GameManagerScript : MonoBehaviour
 
     private void Awake()
     {
-        //PlayerPrefs.DeleteAll();
-
         int numGameManager = FindObjectsOfType<GameManagerScript>().Length;
         if (numGameManager != 1)
         {

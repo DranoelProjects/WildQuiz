@@ -122,9 +122,9 @@ public class GameManagerTicTacToe : MonoBehaviour
 
     private void colorRed(int c1, int c2, int c3)
     {
-        GameObject.Find(c1.ToString()).GetComponent<Button>().GetComponent<Image>().color = Color.red;
-        GameObject.Find(c2.ToString()).GetComponent<Button>().GetComponent<Image>().color = Color.red;
-        GameObject.Find(c3.ToString()).GetComponent<Button>().GetComponent<Image>().color = Color.red;
+        GameObject.Find(c1.ToString()).GetComponent<Button>().GetComponent<Image>().color = Color.yellow;
+        GameObject.Find(c2.ToString()).GetComponent<Button>().GetComponent<Image>().color = Color.yellow;
+        GameObject.Find(c3.ToString()).GetComponent<Button>().GetComponent<Image>().color = Color.yellow;
     }
 
     public void ColorBlue()
@@ -192,5 +192,9 @@ public class GameManagerTicTacToe : MonoBehaviour
     public void PlayLosingSound()
     {
         audioSource.PlayOneShot(sndLoose);
+    }
+    private void OnDestroy()
+    {
+        GameData.CurrentNumberOfLevelsBeforeAd++;
     }
 }

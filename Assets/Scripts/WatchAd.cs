@@ -9,7 +9,10 @@ public class WatchAd : MonoBehaviour, IUnityAdsListener
     string gameId = "3885299";
     bool testMode = true;
     string rewardedVideoId = "rewardedVideo";
+    string coinsRewardedVideoId = "coinsMultiplierRewardedVideo";
+    string videoAfterXLevelsId = "videoAfterXLevels";
     PanelUserInfo panelUserInfo;
+    NextSceneScript panelNextSceneScript;
 
     void Start()
     {
@@ -18,18 +21,32 @@ public class WatchAd : MonoBehaviour, IUnityAdsListener
         panelUserInfo = GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>();
     }
 
-    public void ShowRewardedVideo()
+    public void ShowRewardedVideo(string type)
+    {
+        StartCoroutine(ShowRewardedAdWhenReady(type));
+    }
+
+    public void ShowVideoAfterXLevels()
     {
         StartCoroutine(ShowAdWhenReady());
     }
 
-    IEnumerator ShowAdWhenReady()
+    IEnumerator ShowRewardedAdWhenReady(string type)
     {
-        while (!Advertisement.IsReady(rewardedVideoId))
+        while (!Advertisement.IsReady(rewardedVideoId) && !Advertisement.IsReady(coinsRewardedVideoId))
         {
             yield return new WaitForSeconds(0.25f);
         }
-        Advertisement.Show(rewardedVideoId);
+        Advertisement.Show(type);
+    }
+
+    IEnumerator ShowAdWhenReady()
+    {
+        while (!Advertisement.IsReady(videoAfterXLevelsId))
+        {
+            yield return new WaitForSeconds(0.25f);
+        }
+        Advertisement.Show(videoAfterXLevelsId);
     }
 
     // Implement IUnityAdsListener interface methods:
@@ -44,6 +61,10 @@ public class WatchAd : MonoBehaviour, IUnityAdsListener
             {
                 PlayerPrefs.SetInt("HeartsNumber", PlayerPrefs.GetInt("HeartsNumber") + 1);
                 panelUserInfo.UpdateHearts();
+            } else if (placementId == coinsRewardedVideoId)
+            {
+                panelNextSceneScript = GameObject.Find("PanelNextScene").GetComponent<NextSceneScript>();
+                panelNextSceneScript.OnAdFinished();
             }
         }
         else if (showResult == ShowResult.Skipped)

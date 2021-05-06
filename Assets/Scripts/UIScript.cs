@@ -9,7 +9,7 @@ public class UIScript : MonoBehaviour
     GameManagerScript gameManagerScript;
     private LevelData levelData;
     [SerializeField] Toggle muteToggle;
-    [SerializeField] GameObject panelSettings;
+    [SerializeField] GameObject panelSettings, dailyRewardPanel, btnOverallRanking;
     public GameObject PanelNoHeart, PanelNoCoins, CurrentLevel;
     [SerializeField] Text outputCurrentLevel;
 
@@ -23,9 +23,12 @@ public class UIScript : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "LevelMap")
         {
             CurrentLevel.SetActive(false);
+            dailyRewardPanel.SetActive(true);
         } else
         {
             CurrentLevel.SetActive(true);
+            dailyRewardPanel.SetActive(false);
+            btnOverallRanking.SetActive(false);
             outputCurrentLevel.text = levelData.Level.ToString();
         }
     }
@@ -37,7 +40,6 @@ public class UIScript : MonoBehaviour
         audioSource.PlayOneShot(sndClick);
         muteToggle.SetIsOnWithoutNotify(PlayerPrefs.GetInt("mute") == 0);
     }
-
 
     public void OnClickMuteToggle()
     {
@@ -58,6 +60,6 @@ public class UIScript : MonoBehaviour
 
     public void ShowRewardedVideo()
     {
-        GameObject.Find("GameManager").GetComponent<WatchAd>().ShowRewardedVideo();
+        GameObject.Find("GameManager").GetComponent<WatchAd>().ShowRewardedVideo("rewardedVideo");
     }
 }

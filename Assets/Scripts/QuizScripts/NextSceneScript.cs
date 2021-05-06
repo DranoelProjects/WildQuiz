@@ -6,9 +6,12 @@ using UnityEngine.UI;
 
 public class NextSceneScript : MonoBehaviour
 {
-    [SerializeField] GameObject winningCoins;
+    [SerializeField] GameObject winningCoins, watchAd;
     [SerializeField] Button nextLvlButton;
+    [SerializeField] Text textOuputCoinsValue, textMultiplier;
     GameManagerScript gameManagerScript;
+    int randomMultiplier = 0;
+    int numberOfCoinsWon = 10;
 
     public void Start()
     {
@@ -18,9 +21,13 @@ public class NextSceneScript : MonoBehaviour
             nextLvlButton.interactable = false;
         }
     }
-    public void ActiveWinningCoins(bool active)
+    public void ActiveWinningCoins(bool active, int value= 10)
     {
+        textOuputCoinsValue.text = "+ " + value.ToString();
         winningCoins.SetActive(active);
+        numberOfCoinsWon = value;
+        randomMultiplier = Random.Range(2, 5);
+        textMultiplier.text = randomMultiplier.ToString();
     }
 
     public void StartNextSceneLevel()
@@ -58,5 +65,17 @@ public class NextSceneScript : MonoBehaviour
     public void BackToMenu()
     {
         SceneManager.LoadScene(0);
+    }
+
+    public void OnClickWatchAd()
+    {
+        watchAd.SetActive(false);
+        GameObject.Find("GameManager").GetComponent<WatchAd>().ShowRewardedVideo("coinsMultiplierRewardedVideo");
+    }
+
+    public void OnAdFinished()
+    {
+        GameData.Coins += numberOfCoinsWon * (randomMultiplier - 1);
+        textOuputCoinsValue.text = (numberOfCoinsWon * randomMultiplier).ToString();
     }
 }

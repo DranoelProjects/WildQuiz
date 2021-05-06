@@ -26,9 +26,14 @@ public class QuizManager : MonoBehaviour
     [Header("Timer")]
     float timeLeft = 40.0f;
     bool isTimerActivate = true;
+    bool shouldStartTimer = false;
     [SerializeField] Text textTimer;
     AudioSource audioSource;
     [SerializeField] AudioClip sndWrong, sndWin, sndSardoche;
+
+    [Header("Answer mode")]
+    [SerializeField] GameObject panelAnswerMode;
+    bool isDirectlyAnswerMode = false;
 
     [Header("InputQuiz")]
     [SerializeField] ListenSound listenSound;
@@ -52,30 +57,33 @@ public class QuizManager : MonoBehaviour
 
     void Update()
     {
-        if (isTimerActivate)
+        if (shouldStartTimer)
         {
-            timeLeft -= Time.deltaTime;
-            textTimer.text = (timeLeft).ToString("0");
-            if (timeLeft < 0)
+            if (isTimerActivate)
             {
-                isTimerActivate = false;
-                audioSource.Stop();
-                ShowWinningCoins(false);
-                if (levelData.Level == PlayerPrefs.GetInt("NextLevel"))
+                timeLeft -= Time.deltaTime;
+                textTimer.text = (timeLeft).ToString("0");
+                if (timeLeft < 0)
                 {
-                    PlayerPrefs.SetInt("NumberLostLevels", PlayerPrefs.GetInt("NumberLostLevels") + 1);
+                    isTimerActivate = false;
+                    audioSource.Stop();
+                    ShowWinningCoins(false);
+                    if (levelData.Level == PlayerPrefs.GetInt("NextLevel"))
+                    {
+                        PlayerPrefs.SetInt("NumberLostLevels", PlayerPrefs.GetInt("NumberLostLevels") + 1);
+                    }
+                    audioSource.PlayOneShot(sndWrong);
+                    PlayerPrefs.SetInt("HeartsNumber", PlayerPrefs.GetInt("HeartsNumber") - 1);
+                    GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>().UpdateHearts();
+                    WriteResult("Temps écoulé !");
+                    RevealAnswer();
                 }
-                audioSource.PlayOneShot(sndWrong);
-                PlayerPrefs.SetInt("HeartsNumber", PlayerPrefs.GetInt("HeartsNumber") - 1);
-                GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>().UpdateHearts();
-                WriteResult("Temps écoulé !");
-                RevealAnswer();
             }
-        }
-        else
-        {
-            timeLeft = 0.0f;
-            textTimer.text = (timeLeft).ToString("0");
+            else
+            {
+                timeLeft = 0.0f;
+                textTimer.text = (timeLeft).ToString("0");
+            }
         }
     }
 
@@ -102,6 +110,7 @@ public class QuizManager : MonoBehaviour
             imageWithQuestion.GetComponent<RectTransform>().localScale = new Vector3(levelData.ImageScale, levelData.ImageScale, levelData.ImageScale);
         } else if (levelData.Type == "InputQuiz")
         {
+            panelAnswerMode.SetActive(false);
             questionText.enabled = false;
             panelAnswersButtons.SetActive(false);
             panelInputAnswer.SetActive(true);
@@ -194,9 +203,9 @@ public class QuizManager : MonoBehaviour
         }
     }
 
-    public void ShowWinningCoins(bool active)
+    public void ShowWinningCoins(bool active, int value=10)
     {
-        panelNextScene.GetComponent<NextSceneScript>().ActiveWinningCoins(active);
+        panelNextScene.GetComponent<NextSceneScript>().ActiveWinningCoins(active, value);
     }
 
     public void WriteResult(string text)
@@ -216,7 +225,7 @@ public class QuizManager : MonoBehaviour
         else
         {
             imageShowJokersPanel.sprite = spriteOpen;
-            imageShowJokersPanel.color = Color.white;
+            imageShowJokersPanel.color = new Color(255/255f, 255/255f, 52/255f);
         }
     }
 
@@ -263,8 +272,16 @@ public class QuizManager : MonoBehaviour
             if (levelData.Level == PlayerPrefs.GetInt("NextLevel"))
             {
                 PlayerPrefs.SetInt("NumberWonLevels", PlayerPrefs.GetInt("NumberWonLevels") + 1);
-                ShowWinningCoins(true);
-                PlayerPrefs.SetInt("CoinsNumber", PlayerPrefs.GetInt("CoinsNumber") + 10);
+                if (isDirectlyAnswerMode)
+                {
+                    ShowWinningCoins(true, 30);
+                    GameData.Coins += 30;
+                }
+                else
+                {
+                    ShowWinningCoins(true);
+                    GameData.Coins += 10;
+                }
                 GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>().UpdateCoins();
             }
             WriteResult("Bonne réponse !");
@@ -291,5 +308,28 @@ public class QuizManager : MonoBehaviour
         RevealAnswer();
         PanelUserInfo panelUserInfo = GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>();
         panelUserInfo.UpdateCurrentLvl();
+    }
+
+    public void OnClickBtnProposals()
+    {
+        shouldStartTimer = true;
+        isDirectlyAnswerMode = false;
+        panelAnswerMode.SetActive(false);
+    }
+
+    public void OnClickBtnDirectly()
+    {
+        shouldStartTimer = true;
+        isDirectlyAnswerMode = true;
+        panelAnswerMode.SetActive(false);
+        panelAnswersButtons.SetActive(false);
+        panelInputAnswer.SetActive(true);
+        btnOneWrong.gameObject.SetActive(false);
+        btnTwoWrongs.gameObject.SetActive(false);
+    }
+
+    private void OnDestroy()
+    {
+        GameData.CurrentNumberOfLevelsBeforeAd++;
     }
 }

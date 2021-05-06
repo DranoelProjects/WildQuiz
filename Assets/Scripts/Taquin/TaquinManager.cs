@@ -71,4 +71,9 @@ public class TaquinManager : MonoBehaviour
             imageShowJokersPanel.color = new Color(255 / 255f, 255 / 255f, 52 / 255f); ;
         }
     }
+
+    private void OnDestroy()
+    {
+        GameData.CurrentNumberOfLevelsBeforeAd++;
+    }
 }

@@ -61,6 +61,7 @@ namespace DailyRewardSystem
         }
         void Start()
         {
+            //PlayerPrefs.DeleteAll();
             initialize();
             //Check for rewards
             StopAllCoroutines();
@@ -85,7 +86,7 @@ namespace DailyRewardSystem
             if (string.IsNullOrEmpty(PlayerPrefs.GetString("RewardClaimDatetime")))
             {
                 PlayerPrefs.SetString("RewardClaimDatetime", DateTime.Now.ToString());
-                PlayerPrefs.SetInt("NextLevel", 31);
+                PlayerPrefs.SetInt("NextLevel", 1);
                 PlayerPrefs.SetInt("HeartsNumber", 20);
                 PlayerPrefs.SetInt("CoinsNumber", 1000);
                 PlayerPrefs.SetInt("NumberLostLevels", 0);
