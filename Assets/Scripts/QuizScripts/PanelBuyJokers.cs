@@ -6,27 +6,30 @@ using UnityEngine.UI;
 public class PanelBuyJokers : MonoBehaviour
 {
     QuizManager quizManager;
+    PanelUserInfo panelUserInfo;
+    UIScript uiScript;
     AudioSource audioSource;
     [SerializeField] AudioClip sndWin;
 
     private void Awake()
     {
         quizManager = GameObject.Find("QuizManager").GetComponent<QuizManager>();
+        panelUserInfo = GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>();
+        uiScript = GameObject.Find("GameObjectUI").GetComponent<UIScript>();
         audioSource = quizManager.GetComponent<AudioSource>();
     }
-
-
+    
     public void BuyDeleteOneWrongJoker()
     {
         if (PlayerPrefs.GetInt("CoinsNumber") >= 20)
         {
             PlayerPrefs.SetInt("CoinsNumber", PlayerPrefs.GetInt("CoinsNumber") - 20);
-            GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>().UpdateCoins();
+            panelUserInfo.UpdateCoins();
             quizManager.DeleteWrongAnswers(1);
             quizManager.DisableBuyButton();
         } else
         {
-            GameObject.Find("GameObjectUI").GetComponent<UIScript>().PanelNoCoins.SetActive(true);
+            uiScript.PanelNoCoins.SetActive(true);
         }
 
     }
@@ -36,12 +39,12 @@ public class PanelBuyJokers : MonoBehaviour
         if (PlayerPrefs.GetInt("CoinsNumber") >= 35)
         {
             PlayerPrefs.SetInt("CoinsNumber", PlayerPrefs.GetInt("CoinsNumber") - 35);
-            GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>().UpdateCoins();
+            panelUserInfo.UpdateCoins();
             quizManager.DeleteWrongAnswers(2);
             quizManager.DisableBuyButton();
         } else
         {
-            GameObject.Find("GameObjectUI").GetComponent<UIScript>().PanelNoCoins.SetActive(true);
+            uiScript.PanelNoCoins.SetActive(true);
         }
     }
 
@@ -53,13 +56,13 @@ public class PanelBuyJokers : MonoBehaviour
             audioSource.PlayOneShot(sndWin);
             PlayerPrefs.SetInt("CoinsNumber", PlayerPrefs.GetInt("CoinsNumber") - 150);
             PlayerPrefs.SetInt("NumberWonLevels", PlayerPrefs.GetInt("NumberWonLevels") + 1);
-            GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>().UpdateCoins();
+            panelUserInfo.UpdateCoins();
             quizManager.ShowWinningCoins(false);
             quizManager.RevealAnswer();
             quizManager.OnClickShowJokersPanel();
         } else
         {
-            GameObject.Find("GameObjectUI").GetComponent<UIScript>().PanelNoCoins.SetActive(true);
+            uiScript.PanelNoCoins.SetActive(true);
         }
     }
 
@@ -68,12 +71,12 @@ public class PanelBuyJokers : MonoBehaviour
         if (PlayerPrefs.GetInt("CoinsNumber") >= 20)
         {
             PlayerPrefs.SetInt("CoinsNumber", PlayerPrefs.GetInt("CoinsNumber") - 20);
-            GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>().UpdateCoins();
+            panelUserInfo.UpdateCoins();
             quizManager.ShowCluePanel();
             quizManager.OnClickShowJokersPanel();
         } else
         {
-            GameObject.Find("GameObjectUI").GetComponent<UIScript>().PanelNoCoins.SetActive(true);
+            uiScript.PanelNoCoins.SetActive(true);
         }
     }
 

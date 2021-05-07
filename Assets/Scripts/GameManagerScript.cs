@@ -8,11 +8,15 @@ using System;
 public class GameManagerScript : MonoBehaviour
 {
     [SerializeField] GameObject music;
+    PanelUserInfo panelUserInfo;
+    SoundManager soundManager;
 
+    //All the about the current lvl is stored here
     public LevelData LevelData;
 
     private void Awake()
     {
+        //removing unnecessary GameManagerScript
         int numGameManager = FindObjectsOfType<GameManagerScript>().Length;
         if (numGameManager != 1)
         {
@@ -23,6 +27,17 @@ public class GameManagerScript : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
 
+        //init music
+        if (!GameObject.FindGameObjectWithTag("Music"))
+        {
+            Instantiate(music);
+        }
+
+        //Caching objects
+        panelUserInfo = GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>();
+        soundManager = GameObject.FindGameObjectWithTag("Music").GetComponent<SoundManager>();
+
+        //Testing if player first connexion
         if (string.IsNullOrEmpty(PlayerPrefs.GetString("RewardClaimDatetime")))
         {
             PlayerPrefs.SetString("RewardClaimDatetime", DateTime.Now.ToString());
@@ -36,22 +51,19 @@ public class GameManagerScript : MonoBehaviour
     }
     void Start()
     {
-        //init music
-        if (!GameObject.FindGameObjectWithTag("Music"))
-        {
-            Instantiate(music);
-        }
-
+        //Initializing callback for active scene changes
         SceneManager.activeSceneChanged += changedActiveScene;
 
-        PanelUserInfo panelUserInfo = GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>();
+        //Updating user UI
         panelUserInfo.UpdateHearts();
         panelUserInfo.UpdateCoins();
         panelUserInfo.UpdateCurrentLvl();
 
+        //Using player prefs to mute or not the audio
         Mute(PlayerPrefs.GetInt("mute") == 1);
     }
 
+    //This function can be called to mute the all audio sources
     public void Mute(bool val)
     {
         AudioSource[] sources;
@@ -62,9 +74,9 @@ public class GameManagerScript : MonoBehaviour
         }
     }
 
+    //Callback used in order to stop the music if we are not in levels map
     void changedActiveScene(Scene current, Scene next)
     {
-        SoundManager soundManager = GameObject.FindGameObjectWithTag("Music").GetComponent<SoundManager>();
         if (next.buildIndex > 0)
         {
             soundManager.StopMusic();

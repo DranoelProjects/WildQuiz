@@ -8,7 +8,11 @@ public class SelectionTicTacToe : MonoBehaviour
 {
     GameManagerTicTacToe gm;
     GameManagerScript gameManagerScript;
+    PanelUserInfo panelUserInfo;
 
+    private void Awake() {
+        panelUserInfo = GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>(); 
+    }
     private void Start()
     {
         gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
@@ -29,7 +33,7 @@ public class SelectionTicTacToe : MonoBehaviour
                 gm.PanelNextScene.GetComponent<NextSceneScript>().ActiveWinningCoins(true);
                 PlayerPrefs.SetInt("NumberWonLevels", PlayerPrefs.GetInt("NumberWonLevels") + 1);
                 PlayerPrefs.SetInt("CoinsNumber", PlayerPrefs.GetInt("CoinsNumber") + 10);
-                GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>().UpdateCoins();
+                panelUserInfo.UpdateCoins();
             }
             gm.PanelNextScene.GetComponentInChildren<PanelNextScene>().GoToNextLevel = 1;
             gm.PanelNextScene.SetActive(true);

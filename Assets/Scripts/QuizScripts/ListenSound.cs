@@ -15,7 +15,6 @@ public class ListenSound : MonoBehaviour
     public void PlaySound()
     {
         audioSource.Stop();
-        //GameObject.FindGameObjectWithTag("Music").GetComponent<MusicScript>().StopMusic();
         audioSource.PlayOneShot(Sound);
         StartCoroutine(WaitForSound());
     }
@@ -23,6 +22,5 @@ public class ListenSound : MonoBehaviour
     IEnumerator WaitForSound()
     {
         yield return new WaitUntil(() => audioSource.isPlaying == false);
-        //GameObject.FindGameObjectWithTag("Music").GetComponent<MusicScript>().PlayMusic();
     }
 }

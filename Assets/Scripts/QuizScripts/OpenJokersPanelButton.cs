@@ -11,7 +11,6 @@ public class OpenJokersPanelButton : MonoBehaviour
 
     private void Start()
     {
-        //jokersPanel = GameObject.Find("PanelBuyJokers").gameObject;
         imageShowJokersPanel = gameObject.GetComponent<Image>();
         jokersPanel.SetActive(false);
     }

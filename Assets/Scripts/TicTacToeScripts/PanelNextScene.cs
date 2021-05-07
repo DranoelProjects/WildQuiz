@@ -7,10 +7,16 @@ using System;
 
 public class PanelNextScene : MonoBehaviour
 {
+    GameManagerScript gameManagerScript;
+    UIScript uiScript;
     [SerializeField] Button btnNextLevel;
     Text result;
     public int GoToNextLevel = 0;
 
+    private void Awake() {
+        gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
+        uiScript = GameObject.Find("GameObjectUI").GetComponent<UIScript>();
+    }
     private void Start()
     {
         result = GetComponentInChildren<Text>();
@@ -33,7 +39,6 @@ public class PanelNextScene : MonoBehaviour
 
     public void NextLevel()
     {
-        GameManagerScript gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
         LevelData levelData = gameManagerScript.LevelData;
         LevelData nextLevelData = levelData.NextLevelData;
         if (PlayerPrefs.GetInt("HeartsNumber") > 0)
@@ -63,7 +68,7 @@ public class PanelNextScene : MonoBehaviour
         }
         else
         {
-            GameObject.Find("GameObjectUI").GetComponent<UIScript>().PanelNoHeart.SetActive(true);
+            uiScript.PanelNoHeart.SetActive(true);
         }
     }
 

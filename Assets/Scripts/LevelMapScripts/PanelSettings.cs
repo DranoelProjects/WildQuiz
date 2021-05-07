@@ -13,9 +13,12 @@ public class PanelSettings : MonoBehaviour
     AudioSource audioSource;
     [SerializeField] AudioClip sndClick;
 
+    private void Awake() {
+        audioSource = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
+    }
+
     public void OnClickShowStats()
     {
-        audioSource = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
         audioSource.PlayOneShot(sndClick);
         if (!isShowingStats)
         {
@@ -36,7 +39,6 @@ public class PanelSettings : MonoBehaviour
 
     public void OnClickShowCredits()
     {
-        audioSource = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
         audioSource.PlayOneShot(sndClick);
         if (!isShowingsCredits)
         {
@@ -55,14 +57,12 @@ public class PanelSettings : MonoBehaviour
 
     public void OnClickOpenDiscord()
     {
-        audioSource = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
         audioSource.PlayOneShot(sndClick);
         Application.OpenURL("https://discord.gg/mB3dBWfg8K");
     }
 
     public void OnClickShowHelpPanel()
     {
-        audioSource = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
         audioSource.PlayOneShot(sndClick);
         bool isHelpPanelActive = !helpPanel.gameObject.activeInHierarchy;
         helpPanel.gameObject.SetActive(isHelpPanelActive);

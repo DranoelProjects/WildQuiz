@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class UIScript : MonoBehaviour
 {
     GameManagerScript gameManagerScript;
+    WatchAd watchAd;
     private LevelData levelData;
     [SerializeField] Toggle muteToggle;
     [SerializeField] GameObject panelSettings, dailyRewardPanel, btnOverallRanking;
@@ -16,9 +17,14 @@ public class UIScript : MonoBehaviour
     AudioSource audioSource;
     [SerializeField] AudioClip sndClick;
 
+    private void Awake() {
+        GameObject gameManager = GameObject.Find("GameManager");
+        gameManagerScript = gameManager.GetComponent<GameManagerScript>();
+        watchAd = GameObject.Find("GameManager").GetComponent<WatchAd>();
+    }
+
     private void Start()
     {
-        gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
         levelData = gameManagerScript.LevelData;
         if (SceneManager.GetActiveScene().name == "LevelMap")
         {
@@ -43,7 +49,6 @@ public class UIScript : MonoBehaviour
 
     public void OnClickMuteToggle()
     {
-        gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
         audioSource = GetComponent<AudioSource>();
         audioSource.PlayOneShot(sndClick);
         if (muteToggle.isOn)
@@ -60,6 +65,6 @@ public class UIScript : MonoBehaviour
 
     public void ShowRewardedVideo()
     {
-        GameObject.Find("GameManager").GetComponent<WatchAd>().ShowRewardedVideo("rewardedVideo");
+        watchAd.ShowRewardedVideo("rewardedVideo");
     }
 }

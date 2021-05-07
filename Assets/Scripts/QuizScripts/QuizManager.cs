@@ -27,6 +27,7 @@ public class QuizManager : MonoBehaviour
     float timeLeft = 40.0f;
     bool isTimerActivate = true;
     bool shouldStartTimer = false;
+    PanelUserInfo panelUserInfo;
     [SerializeField] Text textTimer;
     AudioSource audioSource;
     [SerializeField] AudioClip sndWrong, sndWin, sndSardoche;
@@ -43,6 +44,7 @@ public class QuizManager : MonoBehaviour
 
     private void Awake()
     {
+        panelUserInfo = GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>();
         gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
         result = panelNextScene.GetComponentInChildren<Text>();
         levelData = gameManagerScript.LevelData;
@@ -74,7 +76,7 @@ public class QuizManager : MonoBehaviour
                     }
                     audioSource.PlayOneShot(sndWrong);
                     PlayerPrefs.SetInt("HeartsNumber", PlayerPrefs.GetInt("HeartsNumber") - 1);
-                    GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>().UpdateHearts();
+                    panelUserInfo.UpdateHearts();
                     WriteResult("Temps écoulé !");
                     RevealAnswer();
                 }
@@ -283,7 +285,7 @@ public class QuizManager : MonoBehaviour
                     ShowWinningCoins(true);
                     GameData.Coins += 10;
                 }
-                GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>().UpdateCoins();
+                panelUserInfo.UpdateCoins();
             }
             WriteResult("Bonne réponse !");
         }
@@ -303,11 +305,10 @@ public class QuizManager : MonoBehaviour
                 audioSource.PlayOneShot(sndWrong);
             }
             PlayerPrefs.SetInt("HeartsNumber", PlayerPrefs.GetInt("HeartsNumber") - 1);
-            GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>().UpdateHearts();
+            panelUserInfo.UpdateHearts();
             WriteResult("Mauvaise réponse !");
         }
         RevealAnswer();
-        PanelUserInfo panelUserInfo = GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>();
         panelUserInfo.UpdateCurrentLvl();
     }
 

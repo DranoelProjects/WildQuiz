@@ -14,7 +14,7 @@ public class GameManagerTicTacToe : MonoBehaviour
     [SerializeField] Image imageShowJokersPanel;
     [SerializeField] Sprite spriteClose, spriteOpen;
     GameManagerScript gameManagerScript;
-
+    PanelUserInfo panelUserInfo;
     AudioSource audioSource;
     [SerializeField] AudioClip sndWin, sndLoose;
 
@@ -23,6 +23,7 @@ public class GameManagerTicTacToe : MonoBehaviour
     private void Awake()
     {
         gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
+        panelUserInfo = GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>();
     }
     private void Start()
     {
@@ -48,7 +49,7 @@ public class GameManagerTicTacToe : MonoBehaviour
             PanelNextScene.GetComponent<NextSceneScript>().ActiveWinningCoins(false);
             PanelNextScene.GetComponentInChildren<PanelNextScene>().GoToNextLevel = 2;
             PlayerPrefs.SetInt("HeartsNumber", PlayerPrefs.GetInt("HeartsNumber") - 1);
-            GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>().UpdateHearts();
+            panelUserInfo.UpdateHearts();
             PanelNextScene.SetActive(true);
             return;
         }
@@ -132,7 +133,6 @@ public class GameManagerTicTacToe : MonoBehaviour
         for (int i=0; i < Tab.Length; i++)
         {
             GameObject.Find(i.ToString()).GetComponent<Button>().GetComponent<Image>().color = Color.blue;
-
         }
     }
 
@@ -166,7 +166,6 @@ public class GameManagerTicTacToe : MonoBehaviour
             audioSource.PlayOneShot(sndWin);
             PlayerPrefs.SetInt("CoinsNumber", PlayerPrefs.GetInt("CoinsNumber") - 150);
             PlayerPrefs.SetInt("NumberWonLevels", PlayerPrefs.GetInt("NumberWonLevels") + 1);
-            PanelUserInfo panelUserInfo = GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>();
             panelUserInfo.UpdateCoins();
             PanelNextScene.GetComponent<NextSceneScript>().ActiveWinningCoins(false);
             OnClickShowJokersPanel();

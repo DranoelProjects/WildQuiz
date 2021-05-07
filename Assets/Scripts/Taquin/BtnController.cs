@@ -15,7 +15,6 @@ public class BtnController : MonoBehaviour {
         emptyBtn = GameObject.Find("16").gameObject.transform;
         panel = GameObject.Find("Panel").gameObject;
         taquinManager = GameObject.Find("Canvas").GetComponent<TaquinManager>();
-        //gameObject.transform.SetSiblingIndex(Random.Range(0,16));
     }
 
     public void OnClickSwapWithEmpty()

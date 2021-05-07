@@ -8,7 +8,11 @@ public class PanelUserInfo : MonoBehaviour
     [SerializeField] Text heartsNumber, coinsNumber, outputCurrentLvl;
     [SerializeField] Image heart;
     [SerializeField] Sprite redHeart, greyHeart;
+    WatchAd watchAd;
 
+    private void Awake() {
+        watchAd = GameObject.Find("GameManager").GetComponent<WatchAd>();
+    }
     private void Start()
     {
         UpdateCoins();
@@ -47,6 +51,6 @@ public class PanelUserInfo : MonoBehaviour
     //Reward : Heart
     public void OnClickShowRewardedVideo()
     {
-        GameObject.Find("GameManager").GetComponent<WatchAd>().ShowRewardedVideo("rewardedVideo");
+        watchAd.ShowRewardedVideo("rewardedVideo");
     }
 }

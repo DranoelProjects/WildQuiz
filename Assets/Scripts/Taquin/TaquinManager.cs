@@ -14,11 +14,20 @@ public class TaquinManager : MonoBehaviour
     LevelData levelData;
     GameManagerScript gameManagerScript;
     Transform emptyBtn;
+    PanelUserInfo panelUserInfo;
+    UIScript uiScript;
+    GameObject panel;
+    Button[] childrens;
 
     private void Awake()
     {
         gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
+        panelUserInfo = GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>();
+        uiScript = GameObject.Find("GameObjectUI").GetComponent<UIScript>();
+        panel = GameObject.Find("Panel").gameObject;
+        childrens = panel.GetComponentsInChildren<Button>();
         emptyBtn = GameObject.Find("16").gameObject.transform;
+        
         levelData = gameManagerScript.LevelData;
         audioSource = gameObject.GetComponent<AudioSource>();
         initGame();
@@ -43,7 +52,6 @@ public class TaquinManager : MonoBehaviour
             audioSource.PlayOneShot(sndWin);
             PlayerPrefs.SetInt("CoinsNumber", PlayerPrefs.GetInt("CoinsNumber") - 150);
             PlayerPrefs.SetInt("NumberWonLevels", PlayerPrefs.GetInt("NumberWonLevels") + 1);
-            PanelUserInfo panelUserInfo = GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>();
             panelUserInfo.UpdateCoins();
             OnClickShowJokersPanel();
             YouWin();
@@ -52,7 +60,7 @@ public class TaquinManager : MonoBehaviour
         }
         else
         {
-            GameObject.Find("GameObjectUI").GetComponent<UIScript>().PanelNoCoins.SetActive(true);
+            uiScript.PanelNoCoins.SetActive(true);
         }
     }
 
@@ -78,8 +86,6 @@ public class TaquinManager : MonoBehaviour
 
     private void initGame()
     {
-        GameObject panel = GameObject.Find("Panel").gameObject; ;
-        Button[] childrens = panel.GetComponentsInChildren<Button>();
         List<Button> allButtons = new List<Button>();
         foreach (Button btn in childrens)
         {

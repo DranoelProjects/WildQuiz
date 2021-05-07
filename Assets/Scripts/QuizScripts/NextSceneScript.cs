@@ -10,12 +10,19 @@ public class NextSceneScript : MonoBehaviour
     [SerializeField] Button nextLvlButton;
     [SerializeField] Text textOuputCoinsValue, textMultiplier;
     GameManagerScript gameManagerScript;
+    WatchAd watchAdScript;
+    UIScript uiScript;
     int randomMultiplier = 0;
     int numberOfCoinsWon = 10;
 
+    private void Awake() {
+        GameObject gameManager = GameObject.Find("GameManager");
+        gameManagerScript = gameManager.GetComponent<GameManagerScript>();
+        watchAdScript = gameManager.GetComponent<WatchAd>();
+        uiScript = GameObject.Find("GameObjectUI").GetComponent<UIScript>();
+    }
     public void Start()
     {
-        gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
         if (PlayerPrefs.GetInt("NextLevel") == 86 && gameManagerScript.LevelData.Level == 85)
         {
             nextLvlButton.interactable = false;
@@ -58,7 +65,7 @@ public class NextSceneScript : MonoBehaviour
         }
         else
         {
-            GameObject.Find("GameObjectUI").GetComponent<UIScript>().PanelNoHeart.SetActive(true);
+            uiScript.PanelNoHeart.SetActive(true);
         }
     }
 
@@ -70,7 +77,7 @@ public class NextSceneScript : MonoBehaviour
     public void OnClickWatchAd()
     {
         watchAd.SetActive(false);
-        GameObject.Find("GameManager").GetComponent<WatchAd>().ShowRewardedVideo("coinsMultiplierRewardedVideo");
+        watchAdScript.ShowRewardedVideo("coinsMultiplierRewardedVideo");
     }
 
     public void OnAdFinished()
