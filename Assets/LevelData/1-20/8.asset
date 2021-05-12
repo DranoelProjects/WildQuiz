@@ -32,7 +32,7 @@ MonoBehaviour:
   NeedText: 0
   NeedImage: 0
   NeedBtnListen: 1
-  Sound: {fileID: 8300000, guid: 21492459499673945bbc619f0f67ac80, type: 3}
+  Sound: {fileID: 8300000, guid: a369fa9541a87004cbfda6d5caf056a3, type: 3}
   TextLevel: 
   OtherAcceptedAnswer1: zebre
   OtherAcceptedAnswer2: 

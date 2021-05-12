@@ -30,7 +30,7 @@ public class QuizManager : MonoBehaviour
     PanelUserInfo panelUserInfo;
     [SerializeField] Text textTimer;
     AudioSource audioSource;
-    [SerializeField] AudioClip sndWrong, sndWin, sndSardoche, sndBtn;
+    [SerializeField] AudioClip sndWrong, sndWin, sndBtn;
 
     [Header("Answer mode")]
     [SerializeField] GameObject panelAnswerMode;
@@ -305,11 +305,6 @@ public class QuizManager : MonoBehaviour
             if (levelData.Level == PlayerPrefs.GetInt("NextLevel"))
             {
                 PlayerPrefs.SetInt("NumberLostLevels", PlayerPrefs.GetInt("NumberLostLevels") + 1);
-            }
-            int random = Random.Range(1, 6);
-            if (random == 1)
-            {
-                audioSource.PlayOneShot(sndSardoche);
             }
             else
             {
