@@ -19,6 +19,7 @@ public class UIScript : MonoBehaviour
 
     private void Awake() {
         GameObject gameManager = GameObject.Find("GameManager");
+        audioSource = GetComponent<AudioSource>();
         gameManagerScript = gameManager.GetComponent<GameManagerScript>();
         watchAd = GameObject.Find("GameManager").GetComponent<WatchAd>();
     }
@@ -26,6 +27,7 @@ public class UIScript : MonoBehaviour
     private void Start()
     {
         levelData = gameManagerScript.LevelData;
+        // Disabling or not objects of the GameObjectUI
         if (SceneManager.GetActiveScene().name == "LevelMap")
         {
             CurrentLevel.SetActive(false);
@@ -39,18 +41,18 @@ public class UIScript : MonoBehaviour
         }
     }
 
+    // On click top right button to open/close settings
     public void OnClickShowSettingsPanel()
     {
         panelSettings.SetActive(!panelSettings.activeSelf);
-        audioSource = GetComponent<AudioSource>();
-        audioSource.PlayOneShot(sndClick);
+        OnClickPlaySound();
         muteToggle.SetIsOnWithoutNotify(PlayerPrefs.GetInt("mute") == 0);
     }
 
+    // Toggle used to mute or unmute the game
     public void OnClickMuteToggle()
     {
-        audioSource = GetComponent<AudioSource>();
-        audioSource.PlayOneShot(sndClick);
+        OnClickPlaySound();
         if (muteToggle.isOn)
         {
             PlayerPrefs.SetInt("mute", 0);
@@ -63,6 +65,13 @@ public class UIScript : MonoBehaviour
         }
     }
 
+    // Play on click btn sound
+    public void OnClickPlaySound(){
+        audioSource.PlayOneShot(sndClick);
+    }
+
+    // Show rewarded video
+    // The reward is one heart
     public void ShowRewardedVideo()
     {
         watchAd.ShowRewardedVideo("rewardedVideo");

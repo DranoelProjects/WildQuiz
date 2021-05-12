@@ -8,9 +8,9 @@ public class WatchAd : MonoBehaviour, IUnityAdsListener
 {
     string gameId = "3885299";
     bool testMode = true;
-    string rewardedVideoId = "rewardedVideo";
-    string coinsRewardedVideoId = "coinsMultiplierRewardedVideo";
-    string videoAfterXLevelsId = "videoAfterXLevels";
+    string rewardedVideoId = "rewardedVideo"; // One heart rewarded video
+    string coinsRewardedVideoId = "coinsMultiplierRewardedVideo"; // Coins multiplier at the end of a level
+    string videoAfterXLevelsId = "videoAfterXLevels"; // Ad after x levels
     PanelUserInfo panelUserInfo;
     NextSceneScript panelNextSceneScript;
 
@@ -50,7 +50,6 @@ public class WatchAd : MonoBehaviour, IUnityAdsListener
     }
 
     // Implement IUnityAdsListener interface methods:
-
     public void OnUnityAdsDidFinish(string placementId, ShowResult showResult)
     {
         // Define conditional logic for each ad completion status:
@@ -59,10 +58,12 @@ public class WatchAd : MonoBehaviour, IUnityAdsListener
             // Reward the user for watching the ad to completion.
             if(placementId == rewardedVideoId)
             {
+                //Heart
                 PlayerPrefs.SetInt("HeartsNumber", PlayerPrefs.GetInt("HeartsNumber") + 1);
                 panelUserInfo.UpdateHearts();
             } else if (placementId == coinsRewardedVideoId)
             {
+                //Coins 
                 panelNextSceneScript = GameObject.Find("PanelNextScene").GetComponent<NextSceneScript>();
                 panelNextSceneScript.OnAdFinished();
             }

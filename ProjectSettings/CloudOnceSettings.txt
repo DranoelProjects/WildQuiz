@@ -4,13 +4,13 @@
 		{
 			"InternalID":"Leaderboard",
 			"AppleID":"",
-			"GoogleID":"CgkIp-OCrv0QEAIQAA"
+			"GoogleID":"CgkI54LlrKETEAIQAA"
 		}
 	],
 	"CloudVariables":[],
 	"AppleSupported":false,
 	"GoogleSupported":true,
-	"GoogleAppID":"583406760359",
+	"GoogleAppID":"661787328871",
 	"GoogleSetupRun":true,
 	"DebugModeEnabled":false,
 	"Version":"2.7.1",

@@ -30,7 +30,7 @@ public class QuizManager : MonoBehaviour
     PanelUserInfo panelUserInfo;
     [SerializeField] Text textTimer;
     AudioSource audioSource;
-    [SerializeField] AudioClip sndWrong, sndWin, sndSardoche;
+    [SerializeField] AudioClip sndWrong, sndWin, sndSardoche, sndBtn;
 
     [Header("Answer mode")]
     [SerializeField] GameObject panelAnswerMode;
@@ -314,6 +314,7 @@ public class QuizManager : MonoBehaviour
 
     public void OnClickBtnProposals()
     {
+        OnClickPlayBtnSound();
         shouldStartTimer = true;
         isDirectlyAnswerMode = false;
         panelAnswerMode.SetActive(false);
@@ -321,6 +322,7 @@ public class QuizManager : MonoBehaviour
 
     public void OnClickBtnDirectly()
     {
+        OnClickPlayBtnSound();
         shouldStartTimer = true;
         isDirectlyAnswerMode = true;
         panelAnswerMode.SetActive(false);
@@ -328,6 +330,10 @@ public class QuizManager : MonoBehaviour
         panelInputAnswer.SetActive(true);
         btnOneWrong.gameObject.SetActive(false);
         btnTwoWrongs.gameObject.SetActive(false);
+    }
+
+    public void OnClickPlayBtnSound(){
+        audioSource.PlayOneShot(sndBtn);
     }
 
     private void OnDestroy()
