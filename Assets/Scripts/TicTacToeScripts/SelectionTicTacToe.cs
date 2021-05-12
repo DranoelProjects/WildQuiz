@@ -19,6 +19,7 @@ public class SelectionTicTacToe : MonoBehaviour
         gm = GameObject.Find("GameManagerTicTacToe").GetComponent<GameManagerTicTacToe>();
     }
 
+    // If the player clicks on a button write an X on it
     public void WriteX()
     {
         GetComponentInChildren<Text>().text = "X";

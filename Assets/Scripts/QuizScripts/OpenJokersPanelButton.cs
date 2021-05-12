@@ -14,6 +14,8 @@ public class OpenJokersPanelButton : MonoBehaviour
         imageShowJokersPanel = gameObject.GetComponent<Image>();
         jokersPanel.SetActive(false);
     }
+
+    // This script allows to us to manage the icon when the user clicks to display the wildcard panel
     public void OnClickShowJokersPanel()
     {
         jokersPanel.SetActive(!jokersPanel.activeSelf);

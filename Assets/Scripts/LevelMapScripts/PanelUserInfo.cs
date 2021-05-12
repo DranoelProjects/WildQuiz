@@ -20,6 +20,7 @@ public class PanelUserInfo : MonoBehaviour
         UpdateCurrentLvl();
     }
 
+    // Can be called to update the hearts number
     public void UpdateHearts()
     {
         if (!heartsNumber)
@@ -38,11 +39,13 @@ public class PanelUserInfo : MonoBehaviour
         }
     }
 
+    // Can be called to update the coins number
     public void UpdateCoins()
     {
         coinsNumber.text = PlayerPrefs.GetInt("CoinsNumber").ToString();
     }
 
+    // Can be called to update the current lvl number
     public void UpdateCurrentLvl()
     {
         outputCurrentLvl.text = PlayerPrefs.GetInt("NextLevel").ToString();

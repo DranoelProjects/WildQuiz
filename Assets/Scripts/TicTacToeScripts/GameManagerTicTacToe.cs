@@ -31,6 +31,8 @@ public class GameManagerTicTacToe : MonoBehaviour
         int turn = Random.Range(0, 2);
         if (turn == 0) ComputerPlay();
     }
+
+    // It's the AI's turn to play
     public void ComputerPlay()
     {
         int button = ai.BestPosition(gameManagerScript.LevelData.Difficulty);
@@ -64,6 +66,7 @@ public class GameManagerTicTacToe : MonoBehaviour
         }
     }
 
+    // Check if there is a winner
     public bool IsWinner(string p)
     {
         if(Tab[0] == p && Tab[1] == p && Tab[2] == p)
@@ -111,6 +114,7 @@ public class GameManagerTicTacToe : MonoBehaviour
         return false;
     }
 
+    // Check for a tie
     public bool ArrayIsFull()
     {
         for (int i=0; i<Tab.Length; i++)
@@ -121,6 +125,7 @@ public class GameManagerTicTacToe : MonoBehaviour
         return true;
     }
 
+    // Color the result
     private void colorRed(int c1, int c2, int c3)
     {
         GameObject.Find(c1.ToString()).GetComponent<Button>().GetComponent<Image>().color = Color.yellow;
@@ -128,6 +133,7 @@ public class GameManagerTicTacToe : MonoBehaviour
         GameObject.Find(c3.ToString()).GetComponent<Button>().GetComponent<Image>().color = Color.yellow;
     }
 
+    // Color blue for a tie
     public void ColorBlue()
     {
         for (int i=0; i < Tab.Length; i++)
@@ -136,6 +142,7 @@ public class GameManagerTicTacToe : MonoBehaviour
         }
     }
 
+    // This function allows us to manage the icon when the user clicks to display the wildcard panel
     public void OnClickShowJokersPanel()
     {
         jokersPanel.SetActive(!jokersPanel.activeSelf);
@@ -152,12 +159,14 @@ public class GameManagerTicTacToe : MonoBehaviour
         }
     }
 
+    // Activation or deactivation of the help panel
     public void OnClickShowHelpPanel()
     {
         bool isHelpPanelActive = !helpPanel.gameObject.activeInHierarchy;
         helpPanel.gameObject.SetActive(isHelpPanelActive);
     }
 
+    // Buy a wildcard to go to next level
     public void BuyGoToNextLevel()
     {
         if (PlayerPrefs.GetInt("CoinsNumber") >= 150)
@@ -183,15 +192,19 @@ public class GameManagerTicTacToe : MonoBehaviour
         }
     }
 
+    // Play winning sound
     public void PlayWinningSound()
     {
         audioSource.PlayOneShot(sndWin);
     }
 
+    // Play losing sound
     public void PlayLosingSound()
     {
         audioSource.PlayOneShot(sndLoose);
     }
+
+    // Increments the number of levels before a new add is played
     private void OnDestroy()
     {
         GameData.CurrentNumberOfLevelsBeforeAd++;

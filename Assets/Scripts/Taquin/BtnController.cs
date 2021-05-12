@@ -17,6 +17,7 @@ public class BtnController : MonoBehaviour {
         taquinManager = GameObject.Find("Canvas").GetComponent<TaquinManager>();
     }
 
+    // If possible swap the current button with the empty button
     public void OnClickSwapWithEmpty()
     {
         int emptyIndex = emptyBtn.GetSiblingIndex();
@@ -52,6 +53,7 @@ public class BtnController : MonoBehaviour {
             checkIfPlayerWon();
     }
 
+    // After swaping the two buttons check if the "taquin" is solved
     void checkIfPlayerWon()
     {
         allButtons = panel.GetComponentsInChildren<Button>();

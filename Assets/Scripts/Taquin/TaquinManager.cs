@@ -33,6 +33,7 @@ public class TaquinManager : MonoBehaviour
         initGame();
     }
 
+    // When the player win the level
     public void YouWin()
     {
         ShowWinningCoins(true);
@@ -44,6 +45,7 @@ public class TaquinManager : MonoBehaviour
         }
     }
 
+    // If the player buy a wildcard to go directly to next level
     public void BuyGoToNextLevel()
     {
         if (PlayerPrefs.GetInt("CoinsNumber") >= 150)
@@ -64,11 +66,13 @@ public class TaquinManager : MonoBehaviour
         }
     }
 
+    // If this the current level for this player display the winning coins
     public void ShowWinningCoins(bool active)
     {
         panelNextScene.GetComponent<NextSceneScript>().ActiveWinningCoins(active);
     }
 
+    // This function allows us to manage the icon when the user clicks to display the wildcard panel
     public void OnClickShowJokersPanel()
     {
         jokersPanel.SetActive(!jokersPanel.activeSelf);
@@ -84,6 +88,8 @@ public class TaquinManager : MonoBehaviour
         }
     }
 
+    // Initializes "Taquin" Game
+    // From a resolvable instance, perform transformations to initalize the game
     private void initGame()
     {
         List<Button> allButtons = new List<Button>();
@@ -112,6 +118,7 @@ public class TaquinManager : MonoBehaviour
         }
     }
 
+    // Used to initialize the game
     private void swapWithEmptyIfPossible(Button btn)
     {
         int emptyIndex = emptyBtn.GetSiblingIndex();
@@ -145,6 +152,7 @@ public class TaquinManager : MonoBehaviour
         }
     }
 
+    // Increments the number of levels before a new add is played
     private void OnDestroy()
     {
         GameData.CurrentNumberOfLevelsBeforeAd++;

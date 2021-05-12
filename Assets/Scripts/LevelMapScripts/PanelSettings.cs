@@ -17,6 +17,7 @@ public class PanelSettings : MonoBehaviour
         audioSource = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
     }
 
+    // Display statistics 
     public void OnClickShowStats()
     {
         audioSource.PlayOneShot(sndClick);
@@ -37,6 +38,7 @@ public class PanelSettings : MonoBehaviour
         isShowingStats = !isShowingStats;
     }
 
+    // Display credits
     public void OnClickShowCredits()
     {
         audioSource.PlayOneShot(sndClick);
@@ -55,12 +57,14 @@ public class PanelSettings : MonoBehaviour
         isShowingsCredits = !isShowingsCredits;
     }
 
+    // Link to the discord of the game
     public void OnClickOpenDiscord()
     {
         audioSource.PlayOneShot(sndClick);
         Application.OpenURL("https://discord.gg/mB3dBWfg8K");
     }
 
+    // Help
     public void OnClickShowHelpPanel()
     {
         audioSource.PlayOneShot(sndClick);

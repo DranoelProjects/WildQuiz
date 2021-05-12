@@ -19,6 +19,7 @@ public class PanelBuyJokers : MonoBehaviour
         audioSource = quizManager.GetComponent<AudioSource>();
     }
     
+    // Buy delete one wrong answer wildcard
     public void BuyDeleteOneWrongJoker()
     {
         if (PlayerPrefs.GetInt("CoinsNumber") >= 20)
@@ -34,6 +35,7 @@ public class PanelBuyJokers : MonoBehaviour
 
     }
 
+    // Buy delete two wrong answers wildcard
     public void BuyDeleteTwoWrongJoker()
     {
         if (PlayerPrefs.GetInt("CoinsNumber") >= 35)
@@ -48,6 +50,7 @@ public class PanelBuyJokers : MonoBehaviour
         }
     }
 
+    // Buy the level
     public void BuyGoToNextLevel()
     {
         if (PlayerPrefs.GetInt("CoinsNumber") >= 150)
@@ -66,6 +69,7 @@ public class PanelBuyJokers : MonoBehaviour
         }
     }
 
+    // Buy clue
     public void BuyClue()
     {
         if (PlayerPrefs.GetInt("CoinsNumber") >= 20)

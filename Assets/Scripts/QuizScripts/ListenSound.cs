@@ -7,6 +7,7 @@ public class ListenSound : MonoBehaviour
     public AudioClip Sound;
     AudioSource audioSource;
 
+    // Actually this script is used by Quiz Manager for Input Quiz with sound 
     private void Start()
     {
         audioSource = GameObject.Find("QuizManager").GetComponent<AudioSource>();

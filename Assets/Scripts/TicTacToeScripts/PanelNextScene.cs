@@ -13,6 +13,8 @@ public class PanelNextScene : MonoBehaviour
     Text result;
     public int GoToNextLevel = 0;
 
+    // This script is like the NextSceneScript but there is a new case for TicTacToe with tie
+    // It's not really justified to have 2 scripts for that
     private void Awake() {
         gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
         uiScript = GameObject.Find("GameObjectUI").GetComponent<UIScript>();

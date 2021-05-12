@@ -10,6 +10,7 @@ public class LevelButton : MonoBehaviour
     [SerializeField] AudioClip sndClick;
     private void Start()
     {
+        // Init color of the button
         if (!PlayerPrefs.HasKey("NextLevel"))
         {
             PlayerPrefs.SetInt("NextLevel", 1);
@@ -32,6 +33,7 @@ public class LevelButton : MonoBehaviour
     }
     public void StartSceneLevel(LevelData levelData)
     {
+        // Starts the corresponding scene 
         audioSource = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
         audioSource.PlayOneShot(sndClick);
         if (PlayerPrefs.GetInt("HeartsNumber") > 0)
@@ -57,6 +59,7 @@ public class LevelButton : MonoBehaviour
         }
         else
         {
+            // Display the panel "PanelNoHeart" if the user don't have enough hearts
             if (!GameObject.FindGameObjectWithTag("Alert"))
             {         
                 GameObject.Find("GameObjectUI").GetComponent<UIScript>().PanelNoHeart.SetActive(true);

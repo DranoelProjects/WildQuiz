@@ -59,6 +59,7 @@ public class QuizManager : MonoBehaviour
 
     void Update()
     {
+        // Timer of the level
         if (shouldStartTimer)
         {
             if (isTimerActivate)
@@ -89,6 +90,7 @@ public class QuizManager : MonoBehaviour
         }
     }
 
+    // Loads the data of the level according to type
     void loadLevelData()
     {
         gameObjectAnswerWas.SetActive(false);
@@ -151,6 +153,7 @@ public class QuizManager : MonoBehaviour
         clue.text = levelData.Clue;
     }
 
+    // Reveals the answer of the level
     public void RevealAnswer()
     {
         isTimerActivate = false;
@@ -185,6 +188,7 @@ public class QuizManager : MonoBehaviour
         StartCoroutine(nextScene());
     }
 
+    // Wait 2 sec then display the following scene panel
     IEnumerator nextScene()
     {
         yield return new WaitForSeconds(2f);
@@ -192,6 +196,7 @@ public class QuizManager : MonoBehaviour
         gameObjectAnswerWas.SetActive(true);
     }
 
+    // Reveals X wrong answers
     public void DeleteWrongAnswers(int x)
     {
         foreach (Button btn in allButtons)
@@ -206,17 +211,19 @@ public class QuizManager : MonoBehaviour
         }
     }
 
+    // Winning coins of the following scene 
     public void ShowWinningCoins(bool active, int value=10)
     {
         panelNextScene.GetComponent<NextSceneScript>().ActiveWinningCoins(active, value);
     }
 
+    // Display the result on the panel next scene 
     public void WriteResult(string text)
     {
         result.text = text;
     }
 
-
+    // This function allows us to manage the icon when the user clicks to display the wildcard panel
     public void OnClickShowJokersPanel()
     {
         jokersPanel.SetActive(!jokersPanel.activeSelf);
@@ -232,6 +239,7 @@ public class QuizManager : MonoBehaviour
         }
     }
 
+    // The user can't buy a wildcard again so it disables these buttons 
     public void DisableBuyButton()
     {
         btnOneWrong.interactable = false;
@@ -243,6 +251,7 @@ public class QuizManager : MonoBehaviour
         OnClickShowJokersPanel();
     }
 
+    // Activation or deactivation of the clue panel
     public void ShowCluePanel()
     {
         bool isCluePanelActive = !cluePanel.gameObject.activeInHierarchy;
@@ -256,11 +265,13 @@ public class QuizManager : MonoBehaviour
         }
     }
 
+    // For input quiz or directly mode, get the answer
     public void OnClickCheckInput() {
         InputField inputField = answerInput.GetComponent<InputField>();
         CheckAnswer(inputField.text);
     }
 
+    // For input quiz or directly mode, check the answer
     public void CheckAnswer(string playerAnswer)
     {
         audioSource.Stop();
@@ -312,6 +323,7 @@ public class QuizManager : MonoBehaviour
         panelUserInfo.UpdateCurrentLvl();
     }
 
+    // Choose between 4 answers mode
     public void OnClickBtnProposals()
     {
         OnClickPlayBtnSound();
@@ -320,6 +332,7 @@ public class QuizManager : MonoBehaviour
         panelAnswerMode.SetActive(false);
     }
 
+    // Answer directly mode with input field
     public void OnClickBtnDirectly()
     {
         OnClickPlayBtnSound();
@@ -332,10 +345,12 @@ public class QuizManager : MonoBehaviour
         btnTwoWrongs.gameObject.SetActive(false);
     }
 
+    // Used to play the btn click sound
     public void OnClickPlayBtnSound(){
         audioSource.PlayOneShot(sndBtn);
     }
 
+    // Increments the number of levels before a new add is played
     private void OnDestroy()
     {
         GameData.CurrentNumberOfLevelsBeforeAd++;

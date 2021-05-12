@@ -10,7 +10,7 @@ public class AI {
 
     public int BestPosition(string difficulty)
     {
-        //Récuperation du tableau
+        // Recovery of the table
         string[] source = GameObject.Find("GameManagerTicTacToe").GetComponent<GameManagerTicTacToe>().Tab;
         Array.Copy(source, TabAI, source.Length);
 
@@ -23,7 +23,7 @@ public class AI {
         switch (difficulty)
         {
             case "Hard":
-                //Coup gagnant
+                // Winning shot
                 for (int i = 0; i < TabAI.Length; i++)
                 {
                     if (TabAI[i] == String.Empty)
@@ -37,7 +37,7 @@ public class AI {
                     }
                 }
 
-                //Défense
+                // Defense
                 for (int i = 0; i < TabAI.Length; i++)
                 {
                     if (TabAI[i] == String.Empty)
@@ -51,10 +51,10 @@ public class AI {
                     }
                 }
 
-                //Aléatoire
+                // Random
                 return choice[UnityEngine.Random.Range(0, choice.Count)];
             case "Medium":
-                //Défense
+                // Defense
                 for (int i = 0; i < TabAI.Length; i++)
                 {
                     if (TabAI[i] == String.Empty)
@@ -68,17 +68,18 @@ public class AI {
                     }
                 }
 
-                //Aléatoire
+                //Random
                 return choice[UnityEngine.Random.Range(0, choice.Count)];
             case "Easy":
-                //Aléatoire
+                // Random
                 return choice[UnityEngine.Random.Range(0, choice.Count)];
             default:
-                //Aléatoire
+                // Random
                 return choice[UnityEngine.Random.Range(0, choice.Count)];
         }
     }
 
+    // Check if there is a winner
     bool isWinner(string p)
     {
         if ( TabAI[0] == p && TabAI[1] == p && TabAI[2] == p ||

@@ -28,6 +28,8 @@ public class NextSceneScript : MonoBehaviour
             nextLvlButton.interactable = false;
         }
     }
+
+    // Winning coins are just the number of coins that we display in the following scene panel
     public void ActiveWinningCoins(bool active, int value= 10)
     {
         textOuputCoinsValue.text = "+ " + value.ToString();
@@ -37,6 +39,7 @@ public class NextSceneScript : MonoBehaviour
         textMultiplier.text = randomMultiplier.ToString();
     }
 
+    // On click start the next level
     public void StartNextSceneLevel()
     {
         
@@ -69,17 +72,20 @@ public class NextSceneScript : MonoBehaviour
         }
     }
 
+    // Go back to level map
     public void BackToMenu()
     {
         SceneManager.LoadScene(0);
     }
 
+    // Watch rewarded ad with coins multiplier
     public void OnClickWatchAd()
     {
         watchAd.SetActive(false);
         watchAdScript.ShowRewardedVideo("coinsMultiplierRewardedVideo");
     }
 
+    // After the ad the player wins more coins
     public void OnAdFinished()
     {
         GameData.Coins += numberOfCoinsWon * (randomMultiplier - 1);

@@ -23,6 +23,7 @@ public class MainCanvas : MonoBehaviour
         GameObject.FindGameObjectWithTag("Music").GetComponent<SoundManager>().PlayMusic();
     }
 
+    // Used to follow with the camera
     public void SnapTo(RectTransform target)
     {
         Canvas.ForceUpdateCanvases();

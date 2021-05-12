@@ -7,6 +7,7 @@ using DailyRewardSystem;
 [CreateAssetMenu(fileName = "RewardsDB", menuName = "Daily Rewards System/Rewards Database")]
 public class RewardsDatabase : ScriptableObject
 {
+    // Used to store data about rewards
     public Reward[] rewards;
 
     public int rewardsCount
