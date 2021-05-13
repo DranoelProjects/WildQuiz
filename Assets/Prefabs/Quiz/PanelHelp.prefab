@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 17, y: -821}
+  m_AnchoredPosition: {x: 17, y: -1195}
   m_SizeDelta: {x: 3820.4521, y: 1600}
   m_Pivot: {x: 0.5, y: 0.52868587}
 --- !u!222 &4470176202617471328
@@ -65,7 +65,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: b0bc1bf8ec5959c4d8aa7dd6a87bfd6b, type: 3}
     m_FontSize: 220
     m_FontStyle: 0
     m_BestFit: 0
@@ -77,11 +77,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Il faut gagner le  jeu de logique pour passer au niveau suivant. Si vous
-    perdez vous pouvez rejouer mais vous perdez un point de vie. Si il y a \xE9galit\xE9
-    (comme par exemple le Morpion) vous ne perdez rien et vous pouvez rejouer. Un
-    seul joker est disponible pour passer au niveau suivant. Vous gagnez 10 pi\xE8ces
-    si vous remportez la partie. (uniquement pour un niveau jamais effectu\xE9)."
+  m_Text: "- Il faut gagner le  jeu de logique pour passer au niveau suivant. \n-
+    Si vous perdez vous pouvez rejouer mais vous perdez un point de vie. Si il y
+    a \xE9galit\xE9 (comme par exemple le TicTacToe) vous ne perdez rien et vous
+    pouvez rejouer. \n- Un seul joker est disponible pour passer au niveau suivant.
+    \n- Vous gagnez 10 pi\xE8ces si vous remportez la partie (uniquement pour un
+    niveau jamais effectu\xE9). Ces 10 pi\xE8ces peuvent \xEAtre multipli\xE9es en
+    regardant une courte pub."
 --- !u!1 &4470176202742608308
 GameObject:
   m_ObjectHideFlags: 0
@@ -155,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 17, y: -70}
+  m_AnchoredPosition: {x: 17, y: -399}
   m_SizeDelta: {x: 3820.4521, y: 1600}
   m_Pivot: {x: 0.5, y: 0.52868587}
 --- !u!222 &4470176202909301659
@@ -186,7 +188,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: b0bc1bf8ec5959c4d8aa7dd6a87bfd6b, type: 3}
     m_FontSize: 220
     m_FontStyle: 0
     m_BestFit: 0
@@ -198,13 +200,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Pour chaque question, 4 r\xE9ponses vous sont propos\xE9es. Une seule
-    r\xE9ponse est correcte. Que votre r\xE9ponse soit correcte ou non vous passez
-    au niveau suivant. \nPlusieurs jokers sont achetables, vous pouvez acheter un
-    indice, r\xE9v\xE9ler une ou deux r\xE9ponses fausses et passer directement au
-    niveau suivant.\nVous perdez un point de vie pour une mauvaise r\xE9ponse et
-    gagnez 10 pi\xE8ces pour une bonne r\xE9ponse. (uniquement pour un niveau jamais
-    effectu\xE9).\n"
+  m_Text: "- Pour chaque question, vous pouvez r\xE9pondre directement ou demander
+    4 propositions. \n- Une seule r\xE9ponse est correcte. \n- Que votre r\xE9ponse
+    soit correcte ou non vous passez au niveau suivant. \n- Plusieurs jokers sont
+    achetables, vous pouvez acheter un indice, r\xE9v\xE9ler une ou deux mauvaises
+    r\xE9ponses et passer directement au niveau suivant.\n- Vous perdez un point
+    de vie pour une mauvaise r\xE9ponse.\n- Vous gagnez 10 pi\xE8ces pour une bonne
+    r\xE9ponse (uniquement pour un niveau jamais effectu\xE9). Ces 10 pi\xE8ces peuvent
+    \xEAtre multipli\xE9es en regardant une courte pub.\n"
 --- !u!1 &4470176203767726295
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,7 +242,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.000034332, y: -352}
+  m_AnchoredPosition: {x: -0.000034332, y: -600}
   m_SizeDelta: {x: 3820.4521, y: 1600}
   m_Pivot: {x: 0.5, y: 0.52868587}
 --- !u!222 &4470176203767726312
@@ -270,7 +273,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: d2efbd93cf7016a4da0f3b4a414ea348, type: 3}
+    m_Font: {fileID: 12800000, guid: 1edbd621502ac5145956f47b04bf50d9, type: 3}
     m_FontSize: 300
     m_FontStyle: 0
     m_BestFit: 0
@@ -426,7 +429,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.000034332, y: 567}
+  m_AnchoredPosition: {x: -0.000034332, y: 515}
   m_SizeDelta: {x: 3820.4521, y: 1600}
   m_Pivot: {x: 0.5, y: 0.52868587}
 --- !u!222 &8568677372940539836
@@ -457,7 +460,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: d2efbd93cf7016a4da0f3b4a414ea348, type: 3}
+    m_Font: {fileID: 12800000, guid: 1edbd621502ac5145956f47b04bf50d9, type: 3}
     m_FontSize: 300
     m_FontStyle: 0
     m_BestFit: 0
@@ -469,7 +472,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "R\xE8gles des jeux\n\nQuiz\n\n"
+  m_Text: "R\xE8gles des jeux\nQuiz\n\n"
 --- !u!1001 &8553208619321806321
 PrefabInstance:
   m_ObjectHideFlags: 0

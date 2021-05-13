@@ -61,7 +61,6 @@ namespace DailyRewardSystem
         }
         void Start()
         {
-            //PlayerPrefs.DeleteAll();
             initialize();
             //Check for rewards
             StopAllCoroutines();

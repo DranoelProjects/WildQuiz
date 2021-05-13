@@ -71,44 +71,44 @@ public class GameManagerTicTacToe : MonoBehaviour
     {
         if(Tab[0] == p && Tab[1] == p && Tab[2] == p)
         {
-            colorRed(0, 1, 2);
+            colorResult(0, 1, 2);
             return true;
         }
         if (Tab[3] == p && Tab[4] == p && Tab[5] == p)
         {
-            colorRed(3, 4, 5);
+            colorResult(3, 4, 5);
             return true;
         }
         if (Tab[6] == p && Tab[7] == p && Tab[8] == p)
         {
-            colorRed(6, 7, 8);
+            colorResult(6, 7, 8);
             return true;
         }
 
         if (Tab[0] == p && Tab[3] == p && Tab[6] == p)
         {
-            colorRed(0, 3, 6);
+            colorResult(0, 3, 6);
             return true;
         }
         if (Tab[1] == p && Tab[4] == p && Tab[7] == p)
         {
-            colorRed(1, 4, 7);
+            colorResult(1, 4, 7);
             return true;
         }
         if (Tab[2] == p && Tab[5] == p && Tab[8] == p)
         {
-            colorRed(2, 5, 8);
+            colorResult(2, 5, 8);
             return true;
         }
 
         if (Tab[0] == p && Tab[4] == p && Tab[8] == p)
         {
-            colorRed(0, 4, 8);
+            colorResult(0, 4, 8);
             return true;
         }
         if (Tab[2] == p && Tab[4] == p && Tab[6] == p)
         {
-            colorRed(2, 4, 6);
+            colorResult(2, 4, 6);
             return true;
         }
         return false;
@@ -126,7 +126,7 @@ public class GameManagerTicTacToe : MonoBehaviour
     }
 
     // Color the result
-    private void colorRed(int c1, int c2, int c3)
+    private void colorResult(int c1, int c2, int c3)
     {
         GameObject.Find(c1.ToString()).GetComponent<Button>().GetComponent<Image>().color = Color.yellow;
         GameObject.Find(c2.ToString()).GetComponent<Button>().GetComponent<Image>().color = Color.yellow;

@@ -1,8 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.Advertisements;
 using System;
 
 public class GameManagerScript : MonoBehaviour
@@ -37,11 +34,12 @@ public class GameManagerScript : MonoBehaviour
         panelUserInfo = GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>();
         soundManager = GameObject.FindGameObjectWithTag("Music").GetComponent<SoundManager>();
 
-        //Testing if player first connexion
+        //PlayerPrefs.DeleteAll();
+        //Testing if this is the player first connexion
         if (string.IsNullOrEmpty(PlayerPrefs.GetString("RewardClaimDatetime")))
         {
             PlayerPrefs.SetString("RewardClaimDatetime", DateTime.Now.ToString());
-            PlayerPrefs.SetInt("NextLevel", 85);
+            PlayerPrefs.SetInt("NextLevel", 1);
             PlayerPrefs.SetInt("HeartsNumber", 20);
             PlayerPrefs.SetInt("CoinsNumber", 1000);
             PlayerPrefs.SetInt("NumberLostLevels", 0);
