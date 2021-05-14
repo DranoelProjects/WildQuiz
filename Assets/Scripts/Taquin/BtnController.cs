@@ -20,37 +20,39 @@ public class BtnController : MonoBehaviour {
     // If possible swap the current button with the empty button
     public void OnClickSwapWithEmpty()
     {
-        int emptyIndex = emptyBtn.GetSiblingIndex();
-        int btnIndex = gameObject.transform.GetSiblingIndex();
-        int difference = emptyIndex - btnIndex;
+            if(!taquinManager.IsGameOver){
+            int emptyIndex = emptyBtn.GetSiblingIndex();
+            int btnIndex = gameObject.transform.GetSiblingIndex();
+            int difference = emptyIndex - btnIndex;
 
-        switch (difference)
-        {
-            case 1:
-                if(btnIndex != 3 && btnIndex != 7 && btnIndex != 11)
-                {
+            switch (difference)
+            {
+                case 1:
+                    if(btnIndex != 3 && btnIndex != 7 && btnIndex != 11)
+                    {
+                        gameObject.transform.SetSiblingIndex(emptyIndex);
+                    }
+                    break;
+                case 4:
                     gameObject.transform.SetSiblingIndex(emptyIndex);
-                }
-                break;
-            case 4:
-                gameObject.transform.SetSiblingIndex(emptyIndex);
-                emptyBtn.SetSiblingIndex(btnIndex);
-                break;
-            case -1:
-                if(btnIndex != 4 && btnIndex != 8 && btnIndex != 12)
-                {
+                    emptyBtn.SetSiblingIndex(btnIndex);
+                    break;
+                case -1:
+                    if(btnIndex != 4 && btnIndex != 8 && btnIndex != 12)
+                    {
+                        gameObject.transform.SetSiblingIndex(emptyIndex);
+                    }
+                    break;
+                case -4:
                     gameObject.transform.SetSiblingIndex(emptyIndex);
-                }
-                break;
-            case -4:
-                gameObject.transform.SetSiblingIndex(emptyIndex);
-                emptyBtn.SetSiblingIndex(btnIndex);
-                break;
-            default:
-                break;
+                    emptyBtn.SetSiblingIndex(btnIndex);
+                    break;
+                default:
+                    break;
+            }
+            if(!InitializingGame)
+                checkIfPlayerWon();
         }
-        if(!InitializingGame)
-            checkIfPlayerWon();
     }
 
     // After swaping the two buttons check if the "taquin" is solved

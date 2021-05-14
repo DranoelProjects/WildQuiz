@@ -18,6 +18,7 @@ public class TaquinManager : MonoBehaviour
     UIScript uiScript;
     GameObject panel;
     Button[] childrens;
+    public bool IsGameOver = false;
 
     private void Awake()
     {
@@ -36,6 +37,7 @@ public class TaquinManager : MonoBehaviour
     // When the player win the level
     public void YouWin()
     {
+        IsGameOver = true;
         ShowWinningCoins(true);
         panelNextScene.SetActive(true);
         int nextLevel = levelData.Level + 1;
@@ -84,7 +86,7 @@ public class TaquinManager : MonoBehaviour
         else
         {
             imageShowJokersPanel.sprite = spriteOpen;
-            imageShowJokersPanel.color = new Color(255 / 255f, 255 / 255f, 52 / 255f); ;
+            imageShowJokersPanel.color = new Color(255/255f, 255/255f, 52/255f);
         }
     }
 

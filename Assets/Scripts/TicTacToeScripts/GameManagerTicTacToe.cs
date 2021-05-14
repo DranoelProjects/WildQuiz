@@ -20,6 +20,8 @@ public class GameManagerTicTacToe : MonoBehaviour
 
     AI ai = new AI();
 
+    public bool IsGameOver = false;
+
     private void Awake()
     {
         gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
@@ -43,6 +45,7 @@ public class GameManagerTicTacToe : MonoBehaviour
 
         if (IsWinner("O"))
         {
+            IsGameOver = true;
             PlayLosingSound();
             if (gameManagerScript.LevelData.Level == PlayerPrefs.GetInt("NextLevel"))
             {
@@ -58,6 +61,7 @@ public class GameManagerTicTacToe : MonoBehaviour
 
         if (ArrayIsFull())
         {
+            IsGameOver = true;
             PanelNextScene.SetActive(true);
             PanelNextScene.GetComponentInChildren<PanelNextScene>().GoToNextLevel = 0;
             PanelNextScene.GetComponent<NextSceneScript>().ActiveWinningCoins(false);
@@ -155,7 +159,7 @@ public class GameManagerTicTacToe : MonoBehaviour
         else
         {
             imageShowJokersPanel.sprite = spriteOpen;
-            imageShowJokersPanel.color = Color.white;
+            imageShowJokersPanel.color = new Color(255/255f, 255/255f, 52/255f);
         }
     }
 

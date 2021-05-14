@@ -20,11 +20,6 @@ public class LevelButton : MonoBehaviour
             gameObject.GetComponent<Button>().interactable = false;
             gameObject.GetComponent<Image>().color = Color.grey;
 
-            if(int.Parse(gameObject.name) % 25 == 0)
-            {
-                gameObject.GetComponent<Image>().color = Color.red;
-            }
-
             if (int.Parse(gameObject.name) % 4 == 0)
             {
                 gameObject.GetComponent<Image>().color = Color.blue;
