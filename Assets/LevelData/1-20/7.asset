@@ -16,8 +16,8 @@ MonoBehaviour:
   Type: Quiz
   Theme: Histoire
   RightAnswer: 1789
-  SpriteWithQuestion: {fileID: 21300000, guid: ab13dc1db8c6ad64393ea7cb436243de, type: 3}
-  ImageScale: 9.182155
+  SpriteWithQuestion: {fileID: 21300000, guid: 91da715530fe13349b81b2b73eccd2f1, type: 3}
+  ImageScale: 8.5
   Clue: "1815 : Congr\xE8s de Vienne. Apr\xE8s la d\xE9faite de Napol\xE9on 1er,
     les pays vainqueurs se r\xE9unissent pour \xE9tablir les conditions de la paix
     et redessiner les fronti\xE8res."
