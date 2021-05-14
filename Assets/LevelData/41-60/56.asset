@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: Devinettes
   RightAnswer: 3
   SpriteWithQuestion: {fileID: 0}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: Les autres ne sont pas morts.
   Info: "M\xEAme mort le poisson est rest\xE9 dans le seau, la r\xE9ponse est donc
     3!"

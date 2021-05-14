@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: "G\xE9ographie"
   RightAnswer: Asie
   SpriteWithQuestion: {fileID: 21300000, guid: 09b91ef3ed9229f438a77a05454b31b5, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: "Le Y\xE9men n'est pas situ\xE9 sur le continent Africain."
   Info: "En 2018, le Y\xE9men \xE9tait class\xE9 178\xE8me sur 189 pays \xE0 l'indice
     de d\xE9veloppement humain. Le Y\xE9men a une population totale de plus de 28

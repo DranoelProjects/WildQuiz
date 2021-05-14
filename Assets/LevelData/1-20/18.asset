@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: Arts
   RightAnswer: "Eug\xE8ne Delacroix"
   SpriteWithQuestion: {fileID: 21300000, guid: dac6c4f422fb29d479ce0184d8aceab4, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: "Cette \u0153uvre a \xE9t\xE9 r\xE9alis\xE9 en 1830."
   Info: "Cette \u0153uvre est expos\xE9e au Mus\xE9e du Louvre et a \xE9t\xE9 reprise
     de nombreuses fois comme symbole de la R\xE9publique fran\xE7aise et de la d\xE9mocratie."

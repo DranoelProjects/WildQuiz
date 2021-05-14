@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: Devinettes
   RightAnswer: dent
   SpriteWithQuestion: {fileID: 0}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: "Je n'habite pas le m\xEAme type de palais qu'un roi ou une reine. "
   Info: "Le nombre total de dents est en principe de 20 \xE0 32."
   NextLevelData: {fileID: 11400000, guid: 4a271a3355bdfd44d8ffd203a9283d40, type: 2}

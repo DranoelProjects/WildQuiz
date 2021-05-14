@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: "G\xE9ographie"
   RightAnswer: Asie
   SpriteWithQuestion: {fileID: 21300000, guid: b76446396bcfbf14f8549fb26db52ad3, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: La langue reconnue au Cambodge est le Khmer.
   Info: "Le Cambodge est aussi appel\xE9 \"Pays des Khmers\". Situ\xE9 en Asie du
     Sud-Est et peupl\xE9 de 17 millions d'habitants."

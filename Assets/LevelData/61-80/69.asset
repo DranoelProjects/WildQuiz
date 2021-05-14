@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: Sciences
   RightAnswer: 800 000
   SpriteWithQuestion: {fileID: 21300000, guid: 01a7b7dc43dc8704a98c40dcae52efc1, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: Attention on parle bien des plus gros cumulonimbus.
   Info: "Un cumulonimbus (nuage d\u2019orage) peut peser de 50 000 \xE0 300 000 tonnes
     d\u2019eau. Ils peuvent atteindre 800 000 tonnes pour les plus gros."

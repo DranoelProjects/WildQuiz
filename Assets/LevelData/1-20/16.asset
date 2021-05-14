@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: Orthographe
   RightAnswer: Rhododendron
   SpriteWithQuestion: {fileID: 0}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: Il y a un h dans le mot.
   Info: "Le rhododendron est un arbuste poussant naturellement en montagne. Ses fleurs
     sont tr\xE8s recherch\xE9es pour leur beaut\xE9."

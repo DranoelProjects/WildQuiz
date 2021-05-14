@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: Histoire
   RightAnswer: 1492
   SpriteWithQuestion: {fileID: 21300000, guid: 4be3f102087dd6748ab5beab5aefe1e7, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: "Christophe Colomb a v\xE9cu au XV\xE8me sic\xE8cle"
   Info: "Christophe Colomb n'aura jamais su qu'il venait de d\xE9couvir un nouveau
     continent. Il pensait qu'il se trouvait aux Indes."

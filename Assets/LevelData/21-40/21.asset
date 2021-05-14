@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: Environnement
   RightAnswer: 200
   SpriteWithQuestion: {fileID: 21300000, guid: b11b9044892867a429146de541a90732, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: Ce n'est pas 80 litres d'eau.
   Info: "En moyenne 200 litres d'eau pour remplir enti\xE8rement une baignoire. Contre
     environ 12 L/min pour une douche."

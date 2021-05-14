@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: Environnement
   RightAnswer: "Oc\xE9an Pacifique"
   SpriteWithQuestion: {fileID: 21300000, guid: 4326daf6de0a9f143bc4204905f2cbbe, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: "Ce point est situ\xE9 dans la fosse des Mariannes."
   Info: "Le point le plus profond au monde est appel\xE9 le Challenger Deep. Situ\xE9
     dans la fosse des Mariannes, le Challenger Deep est un point \xE0 10 924 m de

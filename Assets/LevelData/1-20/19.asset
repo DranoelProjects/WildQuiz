@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: Histoire
   RightAnswer: "Val\xE9ry Giscard d'Estaing"
   SpriteWithQuestion: {fileID: 21300000, guid: 2af6960ca858e814dac18b50b928d32f, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: "Georges Pompidou \xE9tait pr\xE9sident de la r\xE9publique fran\xE7aise
     de 1969 \xE0 1974."
   Info: "Son mandat a notamment \xE9t\xE9 marqu\xE9 par l'abaissement du droit de

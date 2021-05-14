@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: Art
   RightAnswer: Auguste Rodin
   SpriteWithQuestion: {fileID: 21300000, guid: 83997fa6a5d3eda49ab7f58e177a1bc5, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: "Son pr\xE9nom commence par un A."
   Info: "Le penseur est une sculpture en bronze d'Auguste Rodin. R\xE9alis\xE9e en
     1880 et situ\xE9e au Mus\xE9e Rodin \xE0 Paris."

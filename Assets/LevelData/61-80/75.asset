@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: Histoire
   RightAnswer: 1957
   SpriteWithQuestion: {fileID: 21300000, guid: 30433a966c26a274296807c1c4e4e26e, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: "Ce trait\xE9 est aussi appel\xE9 : Trait\xE9 instituant la Communaut\xE9
     \xE9conomique europ\xE9enne."
   Info: "Le trait\xE9 de Rome a \xE9t\xE9 sign\xE9 en 1957 et mis en application

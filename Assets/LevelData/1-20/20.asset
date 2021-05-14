@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: "R\xE9bus"
   RightAnswer: Tulipe
   SpriteWithQuestion: {fileID: 21300000, guid: e415149d3b832f84fb10fb3da807150a, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: C'est une fleur.
   Info: "Il existe environ 75 esp\xE8ces de tulipes et plusieurs milliers de vari\xE9t\xE9s."
   NextLevelData: {fileID: 11400000, guid: 529bbe29db34b7b46b23bac3319dbd62, type: 2}

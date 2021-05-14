@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: Sport
   RightAnswer: Qatar
   SpriteWithQuestion: {fileID: 21300000, guid: 105b6677cab1c064abca2d7c77767933, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: "La coupe du monde de 2018 s'est d\xE9roul\xE9e en Russie."
   Info: "Elle se d\xE9roulera au Qatar du 21 novembre au 18 d\xE9cembre 2022. Cette
     p\xE9riode \xE9tant choisie pour \xE9viter les trop fortes chaleurs du Qatar

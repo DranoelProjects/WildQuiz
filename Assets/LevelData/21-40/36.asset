@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: Devinettes
   RightAnswer: 0
   SpriteWithQuestion: {fileID: 0}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: Je suis une note.
   Info: "Le z\xE9ro est le point de d\xE9part des nombres. L'\xE9colier craint le
     z\xE9ro. Et un z\xE9ro point\xE9 c'est que l'on a pas travaill\xE9."

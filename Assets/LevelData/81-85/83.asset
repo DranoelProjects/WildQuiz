@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: Sciences
   RightAnswer: "9 461 milliards de kilom\xE8tres"
   SpriteWithQuestion: {fileID: 21300000, guid: 5edde290e31b06c48bc642806e2878ea, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: "La r\xE9ponse n'est pas en millions de kilom\xE8tres."
   Info: "L'ann\xE9e lumi\xE8re est une unit\xE9 astronomique correspondant \xE0 la
     distance parcourue par la lumi\xE8re en une ann\xE9e. Il faudrait approximativement

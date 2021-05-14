@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: 
   RightAnswer: 
   SpriteWithQuestion: {fileID: 0}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: 
   Info: 
   NextLevelData: {fileID: 11400000, guid: aa52edfc41042ae449dbbb67ec2fbd3f, type: 2}

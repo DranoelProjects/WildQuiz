@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: "Cin\xE9ma"
   RightAnswer: Emilia Clarke
   SpriteWithQuestion: {fileID: 21300000, guid: 380262f8e13c86649b3a95c8bdb3767d, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: "Natalie Portman est connue notamment pour avoir jou\xE9 dans Star Wars"
   Info: "Emilia Clarke est n\xE9e le 23 octobre 1986 \xE0 Londres. Elle est devenue
     l'une des actrices les plus c\xE9l\xE8bres et les mieux pay\xE9es d'Holywood."

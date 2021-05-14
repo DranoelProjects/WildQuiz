@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: Sport
   RightAnswer: 6
   SpriteWithQuestion: {fileID: 21300000, guid: 90840e9261a7e764d977694d8e70fafc, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: "La France a d\xE9j\xE0 \xE9t\xE9 championne du monde de handball masculin."
   Info: "C'est bien 6 fois que l'\xE9quipe de france masculine de handball a remport\xE9
     les championnats du monde de handball : 1995, 2001, 2009, 2011, 2015, 2017."

@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: Orthographe
   RightAnswer: Accueil
   SpriteWithQuestion: {fileID: 0}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: Il y a deux C.
   Info: "L'erreur courrante est d'\xE9crire \"acceuil\"."
   NextLevelData: {fileID: 11400000, guid: a47e4fa3328901748bd3851b84ced0ed, type: 2}

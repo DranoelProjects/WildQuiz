@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: Animaux
   RightAnswer: Chiot
   SpriteWithQuestion: {fileID: 21300000, guid: 7e86b4c43afe00740b51807c85edae77, type: 3}
-  ImageScale: 5
+  ImageScale: 6
   Clue: Le chaton est le petit du chat.
   Info: "Le petit de l'otarie est bien le chiot. Une otarie \xE0 crini\xE8re adulte
     p\xE8se en moyenne 190 kgs pour 2,1 m de longueur."

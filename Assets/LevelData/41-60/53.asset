@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: "G\xE9ographie"
   RightAnswer: Chine
   SpriteWithQuestion: {fileID: 21300000, guid: 5a13986b968f8c54aa93a6b20ac54b4d, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: "Ce n'est pas la Ta\xEFwan."
   Info: "Connue \xE9galement sous les noms de palais ancien et mus\xE9e du palais,
     la cit\xE9 interdite est situ\xE9e dans la ville de P\xE9kin. Sa construction

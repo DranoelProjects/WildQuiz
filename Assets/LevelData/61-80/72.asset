@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: "Culture g\xE9n\xE9rale"
   RightAnswer: SNCF
   SpriteWithQuestion: {fileID: 0}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: "Ce jingle est embl\xE9matique. C'est le jingle d'une entreprise fran\xE7aise
     de chemins de fer."
   Info: "La SNCF est une soci\xE9t\xE9 qui a \xE9t\xE9 cr\xE9\xE9 en 1937 par convention

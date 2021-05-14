@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: Art
   RightAnswer: Michel-Ange
   SpriteWithQuestion: {fileID: 21300000, guid: fb98cf469a9ec764d94965232d8a683a, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: "Elle date du 16\xE8me si\xE8cle."
   Info: "La cr\xE9ation d'Adam est une fresque peinte par Michel-Ange. Elle est l'une
     des 9 fresques inspir\xE9es du livre de la Gen\xE8se (premier livre de la bible).

@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: Sciences
   RightAnswer: Stephen Hawking
   SpriteWithQuestion: {fileID: 21300000, guid: d22635802993dc144bf60e17ffa57ef3, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: "Stephen King est un \xE9crivain am\xE9ricain. Il a vendu plus de 350 millions
     d'exemplaires."
   Info: "Stephen Hawking est d\xE9c\xE9d\xE9 \xE0 76 ans le 14 mars 2018. Depuis

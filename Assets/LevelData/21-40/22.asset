@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: "Math\xE9matiques"
   RightAnswer: Dividende
   SpriteWithQuestion: {fileID: 21300000, guid: 847275ccfabbed9499ddda666012701a, type: 3}
-  ImageScale: 6
+  ImageScale: 7
   Clue: B est le diviseur.
   Info: A est le dividende, B le diviseur, C le reste et D le quotient
   NextLevelData: {fileID: 11400000, guid: 15e6bf9506bca3b4491d8f276288cb57, type: 2}

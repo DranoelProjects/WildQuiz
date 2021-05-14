@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: "Math\xE9matiques"
   RightAnswer: 48
   SpriteWithQuestion: {fileID: 21300000, guid: 66b7da534be372249b4bcc0e8d58251c, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: La multiplication est prioritaire
   Info: "Si il n'y a pas de parenth\xE8ses, la multiplication et la division sont
     prioritaires par rapport \xE0 l'addition et la soustraction."

@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: "Multim\xE9dia"
   RightAnswer: 1920 x 1080
   SpriteWithQuestion: {fileID: 21300000, guid: 0ce579121c94b684f9060c3611f701d1, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: "2 560 \xD7 1 440 est la QUAD HD."
   Info: "Full High Definition (full HD) autrement dit 1920x1080 cela repr\xE9sente
     2 millions de pixels!"

@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: "G\xE9ographie"
   RightAnswer: Italie
   SpriteWithQuestion: {fileID: 21300000, guid: 0928f89411c8c3b469ff436e448232fc, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: "Ce monument est un  immense amphith\xE9\xE2tre  nomm\xE9 \"Le Colis\xE9e\""
   Info: "Cet amphith\xE9\xE2tre Flavien est situ\xE9 \xE0 Rome (Italie). Construit
     de 72 \xE0 80 apr. J.C. Il est rest\xE9 en service 500 ans."

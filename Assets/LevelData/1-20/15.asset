@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: "Culture g\xE9n\xE9rale"
   RightAnswer: Wim Hof
   SpriteWithQuestion: {fileID: 21300000, guid: 1d012e606fa19a14eb77da2c087896c7, type: 3}
-  ImageScale: 7.383835
+  ImageScale: 9
   Clue: "Jean Moulin \xE9tait un  haut fonctionnaire et  r\xE9sistant fran\xE7ais"
   Info: "Wim Hof est connu pour avoir battu plusieurs records du Guinness d'exposition
     au froid extr\xEAme. Il a \xE9galement sa propre m\xE9thode de m\xE9ditation

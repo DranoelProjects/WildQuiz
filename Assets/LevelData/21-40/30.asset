@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: Animaux
   RightAnswer: Choupisson
   SpriteWithQuestion: {fileID: 21300000, guid: 86e84549e317eef4da324e25a74ea903, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: "Tiote b\xEAte c'est une blague?"
   Info: "Le petit du h\xE9risson n'a pas de nom sp\xE9cifique mais certains l'appellent
     le choupisson ou le h\xE9rissonneau."

@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: Sport
   RightAnswer: "Un footballeur fran\xE7ais"
   SpriteWithQuestion: {fileID: 21300000, guid: 105b6677cab1c064abca2d7c77767933, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: Ce n'est pas un footballeur allemand.
   Info: "Kylian Mbapp\xE9 est actuellement le joueur le plus cher du monde selon
     plusieurs cabinets d'estimation qui l'estime \xE0 plus de 200 M\u20AC. Il est

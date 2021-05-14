@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: "G\xE9ographie"
   RightAnswer: New York
   SpriteWithQuestion: {fileID: 21300000, guid: 6772a3d81d23b9848835239b1f240154, type: 3}
-  ImageScale: 6
+  ImageScale: 7
   Clue: "Cette ville est situ\xE9e sur la c\xF4te Est \xC9tats-Unis."
   Info: "Cette statue a \xE9t\xE9 offerte par la France en signe d'amiti\xE9 et pour
     c\xE9l\xE9brer le centenaire de la D\xE9claration d'ind\xE9pendance am\xE9ricaine."

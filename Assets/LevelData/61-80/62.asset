@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: Environnement
   RightAnswer: 4000
   SpriteWithQuestion: {fileID: 21300000, guid: c47641f0b8147bf4581c4e9ff5501dcd, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: Ce n'est pas 10 000 ans.
   Info: "A titre de comparaison la d\xE9composition d'une bouteille en plastique
     est estim\xE9e entre 100 et 1000 ans. La d\xE9composition d'un sac platique elle,

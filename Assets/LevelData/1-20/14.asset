@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: Sport
   RightAnswer: 8
   SpriteWithQuestion: {fileID: 21300000, guid: a316e2eb89f6a814a91f50681698060e, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: "Roger Federer a remport\xE9 Wimbledon moins de 10 fois."
   Info: "Roger Federer a remport\xE9 8 fois Wimbledon et a disput\xE9 12 finales
     de ce tournoi."

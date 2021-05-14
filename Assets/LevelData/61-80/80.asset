@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: Devinettes
   RightAnswer: et
   SpriteWithQuestion: {fileID: 0}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: "Ne pas chercher trop compliqu\xE9."
   Info: "C'est un pi\xE8ge que l'on retrouve souvent dans les devinettes et les jeux
     de mots."

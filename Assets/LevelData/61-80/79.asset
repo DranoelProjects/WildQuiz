@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: "Multim\xE9dia"
   RightAnswer: Nintendo Switch
   SpriteWithQuestion: {fileID: 21300000, guid: 8529044cdd0ec5645b50ca8e4f6c238a, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: La Nintendo Switch 2 n'existe pas.
   Info: "La Nintendo Switch est sortie mondialement le 3 mars 2017. Au total environ
     80 millions d'exemplaires ont \xE9t\xE9 vendus."

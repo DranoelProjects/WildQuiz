@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: "G\xE9ographie"
   RightAnswer: Dublin
   SpriteWithQuestion: {fileID: 21300000, guid: 7e758dc7d49d4914a85bea20f45e7805, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: Lisbonne est la capitale du Portugal.
   Info: 'Dublin est la capitale de l''Irlande avec une population de 1,388 million
     en 2019 sur 4,904 millions d''habitants en Irlande.  '

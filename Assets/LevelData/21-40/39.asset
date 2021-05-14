@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: Sciences
   RightAnswer: James Watt
   SpriteWithQuestion: {fileID: 21300000, guid: 95d2ad6b1256ac846bd57e0d7f589a4c, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: "Thomas Alva Edison est consid\xE9r\xE9 comme \xE9tant l'inventeur de l'\xE9lectricit\xE9"
   Info: "Le travail de James Watt sur les machines \xE0 vapeur a \xE9t\xE9 une \xE9tape
     cl\xE9 de la r\xE9volution industrielle. Il est n\xE9 le 19 janvier 1736 en \xC9cosse

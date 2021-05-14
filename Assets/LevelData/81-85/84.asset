@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: Orthographe
   RightAnswer: Coccyx
   SpriteWithQuestion: {fileID: 0}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: Il y a trois "c"
   Info: "Il faut \xE9crire \"Coccyx\". Plusieurs erreurs sont \xE0 \xE9viter : ne
     pas oublier les deux \"c\", le \"y\" et le \"x\" \xE0 la fin."

@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: Sport
   RightAnswer: Usain Bolt
   SpriteWithQuestion: {fileID: 21300000, guid: 7de87cd5ebed14c4bb2e962ea24cd23d, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: "Hicham El Guerrouj d\xE9tient le record du monde sur 1500 m gr\xE2ce \xE0
     un temps de 3 min 26 s."
   Info: "Usain Bolt d\xE9tient le record du monde de sprint sur 100 m avec un temps

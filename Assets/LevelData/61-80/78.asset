@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: "Math\xE9matiques"
   RightAnswer: 34
   SpriteWithQuestion: {fileID: 21300000, guid: 37a8a41127a1a6b4686e8b3eac1b862b, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: "Faire l'exc\xE9ption pour les deux premiers termes."
   Info: "Vous l'avez probablement reconnue c'est la suite de Fibonacci. Chaque terme
     est \xE9gal \xE0 la somme des deux pr\xE9c\xE9dents. La suite est donc infinie."

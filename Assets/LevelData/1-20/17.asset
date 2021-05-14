@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: Animaux
   RightAnswer: "Ta\xEFpan du d\xE9sert"
   SpriteWithQuestion: {fileID: 21300000, guid: fbcc2a4fae17b8f459728dac5e0341a6, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: Le crotale diamantin est environ 100 fois moins toxique que le serpent le
     plus venimeux du monde.
   Info: "Le ta\xEFpan du d\xE9sert se trouve en Australie dans des regions arides.

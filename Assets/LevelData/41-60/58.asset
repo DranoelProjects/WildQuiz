@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: Animaux
   RightAnswer: Cria
   SpriteWithQuestion: {fileID: 21300000, guid: 654734a9b861dfc4284bedca8fce1b35, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: "Le lamentin est un mammif\xE8re aquatique herbivore."
   Info: "Le petit du lama est appel\xE9 \"cria\". Le lama crache pour sa d\xE9fense
     sur l'objet de sa col\xE8re (rarement sur l'homme)."

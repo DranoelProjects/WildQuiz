@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: Histoire
   RightAnswer: Temps modernes
   SpriteWithQuestion: {fileID: 21300000, guid: d0c5e3ef31c18df4fbc2b84c01c749b1, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: "Notre \xE9poque actuelle est l'\xE9poque contemporaire."
   Info: "L'\xE9poque moderne d\xE9bute en 1453 avec la chute de Constantinople ou
     en 1492 avec la d\xE9couverte de l'Am\xE9rique par Christophe Colomb et se termine

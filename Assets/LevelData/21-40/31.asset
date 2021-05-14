@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: Art
   RightAnswer: Mona Lisa
   SpriteWithQuestion: {fileID: 21300000, guid: bc91cdf8c0f5a8243bdb5c6920445f18, type: 3}
-  ImageScale: 5.5
+  ImageScale: 6.5
   Clue: L'autre nom de la Joconde n'est certainement pas la Joconde.
   Info: "Tableau du peintre italien L\xE9onard de Vinci, la Joconde est aussi connue
     sous le nom de \"Portait de Mona Lisa\". Ce tableau a \xE9t\xE9 r\xE9alis\xE9

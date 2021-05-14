@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: "Multim\xE9dia"
   RightAnswer: 230
   SpriteWithQuestion: {fileID: 21300000, guid: 5a3061a8ea33fc64daeb84520930630a, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: 120 V est la tension aux USA.
   Info: "La tension du courant \xE9lectrique en France est de 230 V, contre 120 aux
     USA et 100 au Japon."

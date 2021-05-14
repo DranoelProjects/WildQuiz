@@ -11,7 +11,7 @@ public class LevelData : ScriptableObject
     public string Theme; //used for Quiz and InputQuiz to know the theme of the question
     public string RightAnswer; //first answer accepted
     public Sprite SpriteWithQuestion; //sprite used to illustrate the question
-    public float ImageScale = 7.51158f; //used to reduce or enlarge the previous sprite
+    public float ImageScale = 9.182155f; //used to reduce or enlarge the previous sprite
     public string Clue; //clue is used to help the user if he buy the corresponding trump card.
     public string Info; //used to show informations about the question at the end of the Quiz
 

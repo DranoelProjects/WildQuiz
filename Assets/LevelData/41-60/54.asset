@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: Sciences
   RightAnswer: 340 m/s
   SpriteWithQuestion: {fileID: 21300000, guid: 743614b92441e0f4485478b128c9a277, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: "La vitesse du son est inf\xE9rieur \xE0 3643 km/h."
   Info: "La vitesse du son \xE0 15 \xB0C au niveau de la mer est d'environ 340 m/s
     donc environ 1224 km/h. Le son se propage 4 fois plus rapidement dans l'eau."

@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: Sport
   RightAnswer: 2006
   SpriteWithQuestion: {fileID: 21300000, guid: 105b6677cab1c064abca2d7c77767933, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: "La France a gagn\xE9 la coupe du monde de football en 1998."
   Info: "C'\xE9tait le 9 juillet 2006, il y a quatorze ans que l'Italie s'est imposait
     face \xE0 la France en finale de la Coupe du monde \xE0 Berlin (1-1, 5-3 aux

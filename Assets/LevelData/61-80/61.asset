@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: Histoire
   RightAnswer: 800
   SpriteWithQuestion: {fileID: 21300000, guid: b5390a76c59d8d846b8262aaee49c0bb, type: 3}
-  ImageScale: 5
+  ImageScale: 6
   Clue: "Charlemagne appartient \xE0 la dynastie des Carolingiens"
   Info: "Charlemagne est mort en 814 \xE0 Aix-la-Chapelle. Il est roi des Francs
     d\xE8s l'an 768. D\xE8s 806 il pr\xE9voit de r\xE9partir son territoire entre

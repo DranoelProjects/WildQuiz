@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: "Cin\xE9ma"
   RightAnswer: James Cameron
   SpriteWithQuestion: {fileID: 21300000, guid: 0496a181ece8f2e408ad8fa536f85b02, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: Ce n'est pas Quentin Tarantino.
   Info: "Le premier Avatar est sorti en 2009. James Cameron avait d\xE9j\xE0 commenc\xE9
     \xE0 l'\xE9crire en 1994 mais il a estim\xE9 que la technologie n\xE9cessaire

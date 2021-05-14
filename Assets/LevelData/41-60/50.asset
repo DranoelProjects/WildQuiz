@@ -17,7 +17,7 @@ MonoBehaviour:
   Theme: "Multim\xE9dia"
   RightAnswer: Calculer
   SpriteWithQuestion: {fileID: 21300000, guid: 88799ad1d69e8c945b0ea56eb52018fd, type: 3}
-  ImageScale: 7.51158
+  ImageScale: 9.182155
   Clue: "En anglais le processeur est appel\xE9 CPU pour Central Processing Unit."
   Info: "C'est une pi\xE8ce d'ordinateur existant depuis les premiers ordinateur.
     Elle sert \xE0 ex\xE9cuter les instructions machine des programmes informatiques."
