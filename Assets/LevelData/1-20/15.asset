@@ -23,8 +23,7 @@ MonoBehaviour:
     au froid extr\xEAme. Il a \xE9galement sa propre m\xE9thode de m\xE9ditation
     et de ma\xEEtrise de respiration."
   NextLevelData: {fileID: 11400000, guid: 2416315908bf5994d942b8553582619b, type: 2}
-  Question: "Parmi ces propositions, qui est  surnomm\xE9 \xAB l'homme de glace \xBB
-    ?"
+  Question: "Qui est  surnomm\xE9 \xAB l'homme de glace \xBB ?"
   FontSizeBtnAnswers: 150
   Answer1: Jean Moulin
   Answer2: Mike Horn

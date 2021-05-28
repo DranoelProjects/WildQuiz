@@ -26,9 +26,9 @@ public class QuizManager : MonoBehaviour
     [Header("Timer")]
     float timeLeft = 40.0f;
     bool isTimerActivate = true;
-    bool shouldStartTimer = false;
+
     PanelUserInfo panelUserInfo;
-    [SerializeField] Text textTimer;
+    [SerializeField] Text textTimer, textTimer2;
     AudioSource audioSource;
     [SerializeField] AudioClip sndWrong, sndWin, sndBtn;
 
@@ -60,33 +60,32 @@ public class QuizManager : MonoBehaviour
     void Update()
     {
         // Timer of the level
-        if (shouldStartTimer)
+        if (isTimerActivate)
         {
-            if (isTimerActivate)
+            timeLeft -= Time.deltaTime;
+            textTimer.text = (timeLeft).ToString("0");
+            textTimer2.text = (timeLeft).ToString("0");
+            if (timeLeft < 0)
             {
-                timeLeft -= Time.deltaTime;
-                textTimer.text = (timeLeft).ToString("0");
-                if (timeLeft < 0)
+                isTimerActivate = false;
+                audioSource.Stop();
+                ShowWinningCoins(false);
+                if (levelData.Level == PlayerPrefs.GetInt("NextLevel"))
                 {
-                    isTimerActivate = false;
-                    audioSource.Stop();
-                    ShowWinningCoins(false);
-                    if (levelData.Level == PlayerPrefs.GetInt("NextLevel"))
-                    {
-                        PlayerPrefs.SetInt("NumberLostLevels", PlayerPrefs.GetInt("NumberLostLevels") + 1);
-                    }
-                    audioSource.PlayOneShot(sndWrong);
-                    PlayerPrefs.SetInt("HeartsNumber", PlayerPrefs.GetInt("HeartsNumber") - 1);
-                    panelUserInfo.UpdateHearts();
-                    WriteResult("Temps écoulé !");
-                    RevealAnswer();
+                    PlayerPrefs.SetInt("NumberLostLevels", PlayerPrefs.GetInt("NumberLostLevels") + 1);
                 }
+                audioSource.PlayOneShot(sndWrong);
+                PlayerPrefs.SetInt("HeartsNumber", PlayerPrefs.GetInt("HeartsNumber") - 1);
+                panelUserInfo.UpdateHearts();
+                WriteResult("Temps écoulé !");
+                RevealAnswer();
             }
-            else
-            {
-                timeLeft = 0.0f;
-                textTimer.text = (timeLeft).ToString("0");
-            }
+        }
+        else
+        {
+            timeLeft = 0.0f;
+            textTimer.text = (timeLeft).ToString("0");
+            textTimer2.text = (timeLeft).ToString("0");
         }
     }
 
@@ -112,9 +111,9 @@ public class QuizManager : MonoBehaviour
             answer4.fontSize = levelData.FontSizeBtnAnswers;
             imageWithQuestion.sprite = levelData.SpriteWithQuestion;
             imageWithQuestion.GetComponent<RectTransform>().localScale = new Vector3(levelData.ImageScale, levelData.ImageScale, levelData.ImageScale);
-        } else if (levelData.Type == "InputQuiz")
+        }
+        else if (levelData.Type == "InputQuiz")
         {
-            shouldStartTimer = true;
             panelAnswerMode.SetActive(false);
             questionText.enabled = false;
             panelAnswersButtons.SetActive(false);
@@ -157,7 +156,7 @@ public class QuizManager : MonoBehaviour
     public void RevealAnswer()
     {
         isTimerActivate = false;
-        if(levelData.Type == "Quiz")
+        if (levelData.Type == "Quiz")
         {
             foreach (Button btn in allButtons)
             {
@@ -212,7 +211,7 @@ public class QuizManager : MonoBehaviour
     }
 
     // Winning coins of the following scene 
-    public void ShowWinningCoins(bool active, int value=10)
+    public void ShowWinningCoins(bool active, int value = 10)
     {
         panelNextScene.GetComponent<NextSceneScript>().ActiveWinningCoins(active, value);
     }
@@ -235,7 +234,7 @@ public class QuizManager : MonoBehaviour
         else
         {
             imageShowJokersPanel.sprite = spriteOpen;
-            imageShowJokersPanel.color = new Color(255/255f, 255/255f, 52/255f);
+            imageShowJokersPanel.color = new Color(255 / 255f, 255 / 255f, 52 / 255f);
         }
     }
 
@@ -266,7 +265,8 @@ public class QuizManager : MonoBehaviour
     }
 
     // For input quiz or directly mode, get the answer
-    public void OnClickCheckInput() {
+    public void OnClickCheckInput()
+    {
         InputField inputField = answerInput.GetComponent<InputField>();
         CheckAnswer(inputField.text);
     }
@@ -277,9 +277,9 @@ public class QuizManager : MonoBehaviour
         audioSource.Stop();
         ShowWinningCoins(false);
         playerAnswer = playerAnswer.ToLower();
-        if (levelData.RightAnswer.ToLower() == playerAnswer 
+        if (levelData.RightAnswer.ToLower() == playerAnswer
             || (levelData.OtherAcceptedAnswer1 != "" && levelData.OtherAcceptedAnswer1.ToLower() == playerAnswer)
-            || (levelData.OtherAcceptedAnswer2 != "" && levelData.OtherAcceptedAnswer2.ToLower() == playerAnswer) 
+            || (levelData.OtherAcceptedAnswer2 != "" && levelData.OtherAcceptedAnswer2.ToLower() == playerAnswer)
             || (levelData.OtherAcceptedAnswer3 != "" && levelData.OtherAcceptedAnswer3.ToLower() == playerAnswer))
         {
             audioSource.PlayOneShot(sndWin);
@@ -322,7 +322,6 @@ public class QuizManager : MonoBehaviour
     public void OnClickBtnProposals()
     {
         OnClickPlayBtnSound();
-        shouldStartTimer = true;
         isDirectlyAnswerMode = false;
         panelAnswerMode.SetActive(false);
     }
@@ -331,7 +330,6 @@ public class QuizManager : MonoBehaviour
     public void OnClickBtnDirectly()
     {
         OnClickPlayBtnSound();
-        shouldStartTimer = true;
         isDirectlyAnswerMode = true;
         panelAnswerMode.SetActive(false);
         panelAnswersButtons.SetActive(false);
@@ -341,7 +339,8 @@ public class QuizManager : MonoBehaviour
     }
 
     // Used to play the btn click sound
-    public void OnClickPlayBtnSound(){
+    public void OnClickPlayBtnSound()
+    {
         audioSource.PlayOneShot(sndBtn);
     }
 
