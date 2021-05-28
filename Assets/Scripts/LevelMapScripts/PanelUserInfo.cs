@@ -48,7 +48,9 @@ public class PanelUserInfo : MonoBehaviour
     // Can be called to update the current lvl number
     public void UpdateCurrentLvl()
     {
-        outputCurrentLvl.text = PlayerPrefs.GetInt("NextLevel").ToString();
+        int levels = PlayerPrefs.GetInt("NextLevel");
+        outputCurrentLvl.text = levels.ToString();
+        CloudOnceServices.instance.SubmitLevelsToLeaderboard(levels-1);
     }
 
     //Reward : Heart

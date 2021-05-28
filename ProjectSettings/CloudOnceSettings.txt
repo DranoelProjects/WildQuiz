@@ -2,9 +2,14 @@
 	"AchievementIDs":[],
 	"LeaderboardIDs":[
 		{
-			"InternalID":"Leaderboard",
+			"InternalID":"hightestLevels",
 			"AppleID":"",
 			"GoogleID":"CgkI54LlrKETEAIQAA"
+		},
+		{
+			"InternalID":"coinsLeaderboard",
+			"AppleID":"",
+			"GoogleID":"CgkI54LlrKETEAIQAw"
 		}
 	],
 	"CloudVariables":[],

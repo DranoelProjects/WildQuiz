@@ -14,19 +14,34 @@ namespace CloudOnce
     /// </summary>
     public static class Leaderboards
     {
-        private static readonly UnifiedLeaderboard s_leaderboard = new UnifiedLeaderboard("Leaderboard",
+        private static readonly UnifiedLeaderboard s_hightestLevels = new UnifiedLeaderboard("hightestLevels",
 #if !UNITY_EDITOR && (UNITY_IOS || UNITY_TVOS)
             ""
 #elif !UNITY_EDITOR && UNITY_ANDROID && CLOUDONCE_GOOGLE
             "CgkI54LlrKETEAIQAA"
 #else
-            "Leaderboard"
+            "hightestLevels"
 #endif
             );
 
-        public static UnifiedLeaderboard Leaderboard
+        public static UnifiedLeaderboard hightestLevels
         {
-            get { return s_leaderboard; }
+            get { return s_hightestLevels; }
+        }
+
+        private static readonly UnifiedLeaderboard s_coinsLeaderboard = new UnifiedLeaderboard("coinsLeaderboard",
+#if !UNITY_EDITOR && (UNITY_IOS || UNITY_TVOS)
+            ""
+#elif !UNITY_EDITOR && UNITY_ANDROID && CLOUDONCE_GOOGLE
+            "CgkI54LlrKETEAIQAw"
+#else
+            "coinsLeaderboard"
+#endif
+            );
+
+        public static UnifiedLeaderboard coinsLeaderboard
+        {
+            get { return s_coinsLeaderboard; }
         }
 
         public static string GetPlatformID(string internalId)
@@ -38,7 +53,8 @@ namespace CloudOnce
 
         private static readonly Dictionary<string, UnifiedLeaderboard> s_leaderboardDictionary = new Dictionary<string, UnifiedLeaderboard>
         {
-            { "Leaderboard", s_leaderboard },
+            { "hightestLevels", s_hightestLevels },
+            { "coinsLeaderboard", s_coinsLeaderboard },
         };
     }
 }

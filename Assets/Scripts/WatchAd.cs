@@ -7,7 +7,7 @@ using UnityEngine.Advertisements;
 public class WatchAd : MonoBehaviour, IUnityAdsListener
 {
     string gameId = "3885299";
-    bool testMode = true;
+    bool testMode = false;
     string rewardedVideoId = "rewardedVideo"; // One heart rewarded video
     string coinsRewardedVideoId = "coinsMultiplierRewardedVideo"; // Coins multiplier at the end of a level
     string videoAfterXLevelsId = "videoAfterXLevels"; // Ad after x levels

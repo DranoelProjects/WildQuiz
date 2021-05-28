@@ -40,8 +40,8 @@ public class GameManagerScript : MonoBehaviour
         {
             PlayerPrefs.SetString("RewardClaimDatetime", DateTime.Now.ToString());
             PlayerPrefs.SetInt("NextLevel", 1);
-            PlayerPrefs.SetInt("HeartsNumber", 20);
-            PlayerPrefs.SetInt("CoinsNumber", 1000);
+            PlayerPrefs.SetInt("HeartsNumber", 10);
+            PlayerPrefs.SetInt("CoinsNumber", 100);
             PlayerPrefs.SetInt("NumberLostLevels", 0);
             PlayerPrefs.SetInt("NumberWonLevels", 0);
             PlayerPrefs.SetInt("mute", 0);

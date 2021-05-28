@@ -6,7 +6,7 @@ public static class GameData
 {
     private static int hearts = 0;
     private static int coins = 0;
-    private static int numberOfLevelsBeforeAd = 6;
+    private static int numberOfLevelsBeforeAd = 8;
     private static int currentNumberOfLevels; 
 
     //Data recovery from player prefs about hearts, coins and the number of levels done without AD
@@ -34,6 +34,7 @@ public static class GameData
         set {
             PlayerPrefs.SetInt("CoinsNumber", (coins = value));
             GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>().UpdateCoins();
+            CloudOnceServices.instance.SubmitCoinsToLeaderboard(coins);
         }
     }
 

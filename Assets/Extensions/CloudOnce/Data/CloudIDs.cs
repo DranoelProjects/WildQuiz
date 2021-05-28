@@ -27,7 +27,7 @@ namespace CloudOnce
         /// </summary>
         public static class LeaderboardIDs
         {
-            public static string Leaderboard
+            public static string hightestLevels
             {
                 get
                 {
@@ -40,7 +40,27 @@ namespace CloudOnce
 #elif (UNITY_IOS || UNITY_TVOS) && !UNITY_EDITOR
                     return "";
 #elif UNITY_EDITOR
-                    return "Leaderboard";
+                    return "hightestLevels";
+#else
+                    return string.Empty;
+#endif
+                }
+            }
+
+            public static string coinsLeaderboard
+            {
+                get
+                {
+#if UNITY_ANDROID && !UNITY_EDITOR
+#if CLOUDONCE_GOOGLE
+                    return "CgkI54LlrKETEAIQAw";
+#else
+                    return string.Empty;
+#endif
+#elif (UNITY_IOS || UNITY_TVOS) && !UNITY_EDITOR
+                    return "";
+#elif UNITY_EDITOR
+                    return "coinsLeaderboard";
 #else
                     return string.Empty;
 #endif
