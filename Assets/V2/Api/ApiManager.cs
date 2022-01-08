@@ -1,3 +1,4 @@
+using System;
 using Firebase.Database;
 using UnityEngine;
 using Firebase.Extensions; // for ContinueWithOnMainThread
@@ -6,12 +7,12 @@ public class ApiManager : MonoBehaviour
 {
     private FirebaseDatabase _database;
     private const string DATABASE_URL = "https://wildquiz-41011941-default-rtdb.europe-west1.firebasedatabase.app/";
-    // [SerializeField] LevelData[] levelDatas;
+    //[SerializeField] LevelData[] levelDatas;
 
     void Awake()
     {
         _database = FirebaseDatabase.GetInstance(DATABASE_URL);
-        /* foreach (LevelData levelData in levelDatas)
+        /*foreach (LevelData levelData in levelDatas)
         {
             setLevel(levelData);
         }*/
@@ -47,12 +48,12 @@ public class ApiManager : MonoBehaviour
         level.OtherAcceptedAnswer3 = levelData.OtherAcceptedAnswer3;
 
         string json = JsonUtility.ToJson(level);
-        _database.GetReference("pages").Child("5").Child("levels").Child(levelData.Level.ToString()).SetRawJsonValueAsync(json);
+        _database.GetReference("levels").Child(levelData.Level.ToString()).SetRawJsonValueAsync(json);
     }*/
 
-    void getString()
+    /*void getLevelsForCurrentPage(int currentPage)
     {
-        _database.GetReference("pages").Child("levels")
+        _database.GetReference("pages").Child(currentPage.ToString()).Child("levels")
           .GetValueAsync().ContinueWithOnMainThread(task => {
               if (task.IsFaulted)
               {
@@ -63,9 +64,33 @@ public class ApiManager : MonoBehaviour
                   DataSnapshot snapshot = task.Result;
                   string json = JsonUtility.ToJson(snapshot);
                   Debug.Log(snapshot);
-                  _database.GetReference("pages").Child("1").Child("levels").SetRawJsonValueAsync(json);
               }
           });
+    }*/
+
+    public Level GetLevel(int levelIndex)
+    {
+        Level level = new Level();
+        _database.GetReference("levels").Child(levelIndex.ToString())
+         .GetValueAsync().ContinueWithOnMainThread(task => {
+             if (task.IsFaulted)
+             {
+                 Debug.Log("error0");
+             }
+             else if (task.IsCompleted)
+             {
+                 try
+                 {
+                     DataSnapshot snapshot = task.Result;
+                     level = LevelMapper.LevelMapperWithFirebaseSnapshot(snapshot);
+                 } catch (Exception e)
+                 {
+                     Debug.LogError(e);
+                 }
+             }
+         });
+        return level;
     }
+
     
 }
