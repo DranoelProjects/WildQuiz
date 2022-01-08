@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "661787328871",
+    "project_id": "wildquiz-41011941",
+    "storage_bucket": "wildquiz-41011941.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:661787328871:android:0e693ce40fd921e0fb6fc2",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.WildQuiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "661787328871-g44k4ut7pc3q2mj06jm56e8sl39hhsih.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAS-0L1Zwon9JyGvIMdIwNJQlkjAu1h350"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "661787328871-g44k4ut7pc3q2mj06jm56e8sl39hhsih.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
