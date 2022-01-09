@@ -1,6 +1,7 @@
 using System;
 using Firebase.Database;
 using UnityEngine;
+using System.Threading.Tasks;
 using Firebase.Extensions; // for ContinueWithOnMainThread
 
 public class ApiManager : MonoBehaviour
@@ -68,14 +69,14 @@ public class ApiManager : MonoBehaviour
           });
     }*/
 
-    public Level GetLevel(int levelIndex)
+    public async Task GetLevel(int levelIndex)
     {
         Level level = new Level();
-        _database.GetReference("levels").Child(levelIndex.ToString())
+        await _database.GetReference("levels").Child(levelIndex.ToString())
          .GetValueAsync().ContinueWithOnMainThread(task => {
              if (task.IsFaulted)
              {
-                 Debug.Log("error0");
+                 Debug.Log("Can't find level with index : " + levelIndex);
              }
              else if (task.IsCompleted)
              {
@@ -83,14 +84,13 @@ public class ApiManager : MonoBehaviour
                  {
                      DataSnapshot snapshot = task.Result;
                      level = LevelMapper.LevelMapperWithFirebaseSnapshot(snapshot);
+                     GameDataV2.CurrentLevelData = level;
                  } catch (Exception e)
                  {
                      Debug.LogError(e);
                  }
              }
          });
-        return level;
+        return;
     }
-
-    
 }
