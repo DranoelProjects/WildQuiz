@@ -21,13 +21,11 @@ public class QuizManager : MonoBehaviour
     public Level levelData;
     [SerializeField] Text questionText, answer1, answer2, answer3, answer4, clue, theme;
     [SerializeField] Image imageWithQuestion;
-    GameManagerScript gameManagerScript;
 
     [Header("Timer")]
     float timeLeft = 40.0f;
     bool isTimerActivate = true;
 
-    PanelUserInfo panelUserInfo;
     [SerializeField] Text textTimer, textTimer2;
     AudioSource audioSource;
     [SerializeField] AudioClip sndWrong, sndWin, sndBtn;
@@ -44,8 +42,6 @@ public class QuizManager : MonoBehaviour
 
     private void Awake()
     {
-        panelUserInfo = GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>();
-        gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
         result = panelNextScene.GetComponentInChildren<Text>();
         levelData = GameDataV2.CurrentLevelData;
         audioSource = gameObject.GetComponent<AudioSource>();
@@ -70,13 +66,12 @@ public class QuizManager : MonoBehaviour
                 isTimerActivate = false;
                 audioSource.Stop();
                 ShowWinningCoins(false);
-                if (levelData.Index == PlayerPrefs.GetInt("NextLevel"))
+                if (levelData.Index == GameDataV2.NextLevel)
                 {
                     PlayerPrefs.SetInt("NumberLostLevels", PlayerPrefs.GetInt("NumberLostLevels") + 1);
                 }
                 audioSource.PlayOneShot(sndWrong);
-                PlayerPrefs.SetInt("HeartsNumber", PlayerPrefs.GetInt("HeartsNumber") - 1);
-                panelUserInfo.UpdateHearts();
+
                 WriteResult("Temps écoulé !");
                 RevealAnswer();
             }
@@ -173,9 +168,9 @@ public class QuizManager : MonoBehaviour
             }
         }
         int nextLevel = levelData.Index + 1;
-        if (PlayerPrefs.GetInt("NextLevel") < nextLevel)
+        if (GameDataV2.NextLevel < nextLevel)
         {
-            PlayerPrefs.SetInt("NextLevel", nextLevel);
+            GameDataV2.NextLevel = nextLevel;
         }
         clue.text = levelData.Info;
         textAnswerWas.text = levelData.RightAnswer;
@@ -283,26 +278,23 @@ public class QuizManager : MonoBehaviour
             || (levelData.OtherAcceptedAnswer3 != "" && levelData.OtherAcceptedAnswer3.ToLower() == playerAnswer))
         {
             audioSource.PlayOneShot(sndWin);
-            if (levelData.Index == PlayerPrefs.GetInt("NextLevel"))
+            if (levelData.Index == GameDataV2.NextLevel)
             {
                 PlayerPrefs.SetInt("NumberWonLevels", PlayerPrefs.GetInt("NumberWonLevels") + 1);
                 if (isDirectlyAnswerMode)
                 {
                     ShowWinningCoins(true, 30);
-                    GameData.Coins += 30;
                 }
                 else
                 {
                     ShowWinningCoins(true);
-                    GameData.Coins += 10;
                 }
-                panelUserInfo.UpdateCoins();
             }
             WriteResult("Bonne réponse !");
         }
         else
         {
-            if (levelData.Index == PlayerPrefs.GetInt("NextLevel"))
+            if (levelData.Index == GameDataV2.NextLevel)
             {
                 PlayerPrefs.SetInt("NumberLostLevels", PlayerPrefs.GetInt("NumberLostLevels") + 1);
             }
@@ -310,12 +302,9 @@ public class QuizManager : MonoBehaviour
             {
                 audioSource.PlayOneShot(sndWrong);
             }
-            PlayerPrefs.SetInt("HeartsNumber", PlayerPrefs.GetInt("HeartsNumber") - 1);
-            panelUserInfo.UpdateHearts();
             WriteResult("Mauvaise réponse !");
         }
         RevealAnswer();
-        panelUserInfo.UpdateCurrentLvl();
     }
 
     // Choose between 4 answers mode
@@ -344,9 +333,4 @@ public class QuizManager : MonoBehaviour
         audioSource.PlayOneShot(sndBtn);
     }
 
-    // Increments the number of levels before a new add is played
-    private void OnDestroy()
-    {
-        GameData.CurrentNumberOfLevelsBeforeAd++;
-    }
 }

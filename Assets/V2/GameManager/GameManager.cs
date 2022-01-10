@@ -34,11 +34,9 @@ public class GameManager : MonoBehaviour
         audioSource = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
         audioSource.PlayOneShot(sndClick);
 
-        Debug.Log("Selected level : " + levelIndex);
         await apiManager.GetLevel(levelIndex);
         Level level = GameDataV2.CurrentLevelData;
 
-        Debug.Log("Level Type : " + level.Type);
         // Starts the corresponding scene 
         switch (level.Type)
         {
@@ -58,6 +56,7 @@ public class GameManager : MonoBehaviour
                 break;
         }
     }
+
     private void OnDestroy()
     {
         PlayerPrefs.SetInt("CurrentPage", GameDataV2.CurrentPage);

@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class UIScript : MonoBehaviour
 {
     GameManagerScript gameManagerScript;
-    WatchAd watchAd;
     private Level levelData;
     [SerializeField] Toggle muteToggle;
     [SerializeField] GameObject panelSettings, dailyRewardPanel, btnOverallRanking;
@@ -21,7 +20,6 @@ public class UIScript : MonoBehaviour
         GameObject gameManager = GameObject.Find("GameManager");
         audioSource = GetComponent<AudioSource>();
         gameManagerScript = gameManager.GetComponent<GameManagerScript>();
-        watchAd = GameObject.Find("GameManager").GetComponent<WatchAd>();
     }
 
     private void Start()
@@ -68,12 +66,5 @@ public class UIScript : MonoBehaviour
     // Play on click btn sound
     public void OnClickPlaySound(){
         audioSource.PlayOneShot(sndClick);
-    }
-
-    // Show rewarded video
-    // The reward is one heart
-    public void ShowRewardedVideo()
-    {
-        watchAd.ShowRewardedVideo("rewardedVideo");
     }
 }

@@ -8,11 +8,7 @@ public class PanelUserInfo : MonoBehaviour
     [SerializeField] Text heartsNumber, coinsNumber, outputCurrentLvl;
     [SerializeField] Image heart;
     [SerializeField] Sprite redHeart, greyHeart;
-    WatchAd watchAd;
 
-    private void Awake() {
-        watchAd = GameObject.Find("GameManager").GetComponent<WatchAd>();
-    }
     private void Start()
     {
         UpdateCoins();
@@ -50,12 +46,5 @@ public class PanelUserInfo : MonoBehaviour
     {
         int levels = PlayerPrefs.GetInt("NextLevel");
         outputCurrentLvl.text = levels.ToString();
-        CloudOnceServices.instance.SubmitLevelsToLeaderboard(levels-1);
-    }
-
-    //Reward : Heart
-    public void OnClickShowRewardedVideo()
-    {
-        watchAd.ShowRewardedVideo("rewardedVideo");
     }
 }

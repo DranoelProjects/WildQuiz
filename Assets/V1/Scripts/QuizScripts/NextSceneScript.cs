@@ -10,7 +10,6 @@ public class NextSceneScript : MonoBehaviour
     [SerializeField] Button nextLvlButton;
     [SerializeField] Text textOuputCoinsValue, textMultiplier;
     GameManagerScript gameManagerScript;
-    WatchAd watchAdScript;
     UIScript uiScript;
     int randomMultiplier = 0;
     int numberOfCoinsWon = 10;
@@ -18,7 +17,6 @@ public class NextSceneScript : MonoBehaviour
     private void Awake() {
         GameObject gameManager = GameObject.Find("GameManager");
         gameManagerScript = gameManager.GetComponent<GameManagerScript>();
-        watchAdScript = gameManager.GetComponent<WatchAd>();
         uiScript = GameObject.Find("GameObjectUI").GetComponent<UIScript>();
     }
     public void Start()
@@ -42,7 +40,6 @@ public class NextSceneScript : MonoBehaviour
     // On click start the next level
     public void StartNextSceneLevel()
     {
-        
         LevelData levelData = gameManagerScript.LevelData;
         LevelData nextLevelData = levelData.NextLevelData;
         if (PlayerPrefs.GetInt("HeartsNumber") > 0)
@@ -76,19 +73,5 @@ public class NextSceneScript : MonoBehaviour
     public void BackToMenu()
     {
         SceneManager.LoadScene(0);
-    }
-
-    // Watch rewarded ad with coins multiplier
-    public void OnClickWatchAd()
-    {
-        watchAd.SetActive(false);
-        watchAdScript.ShowRewardedVideo("coinsMultiplierRewardedVideo");
-    }
-
-    // After the ad the player wins more coins
-    public void OnAdFinished()
-    {
-        GameData.Coins += numberOfCoinsWon * (randomMultiplier - 1);
-        textOuputCoinsValue.text = (numberOfCoinsWon * randomMultiplier).ToString();
     }
 }

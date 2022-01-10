@@ -207,10 +207,4 @@ public class GameManagerTicTacToe : MonoBehaviour
     {
         audioSource.PlayOneShot(sndLoose);
     }
-
-    // Increments the number of levels before a new add is played
-    private void OnDestroy()
-    {
-        GameData.CurrentNumberOfLevelsBeforeAd++;
-    }
 }

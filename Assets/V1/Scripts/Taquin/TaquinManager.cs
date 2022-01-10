@@ -153,10 +153,4 @@ public class TaquinManager : MonoBehaviour
                 break;
         }
     }
-
-    // Increments the number of levels before a new add is played
-    private void OnDestroy()
-    {
-        GameData.CurrentNumberOfLevelsBeforeAd++;
-    }
 }

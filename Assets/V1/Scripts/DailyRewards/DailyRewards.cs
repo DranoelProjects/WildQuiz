@@ -134,12 +134,10 @@ namespace DailyRewardSystem
             //check reward type
             if(reward.Type == RewardType.Hearts)
             {
-                GameData.Hearts += reward.Amount;
                 panelUserInfo.UpdateHearts();
             }
             else if (reward.Type == RewardType.Coins)
             {
-                GameData.Coins += reward.Amount;
                 panelUserInfo.UpdateCoins();
             }
             fx.Play();
