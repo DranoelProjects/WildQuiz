@@ -21,7 +21,7 @@ public class ApiManager : MonoBehaviour
 
     /*void setLevel(LevelData levelData)
     {
-        Level level = new Level();
+        LevelOutput level = new LevelOutput();
         level.Index = levelData.Level;
         level.Type = levelData.Type;
         level.Theme = levelData.Theme;

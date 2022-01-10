@@ -18,7 +18,7 @@ public class QuizManager : MonoBehaviour
     [SerializeField] Button btnOneWrong, btnTwoWrongs, btnBuyClue;
 
     [Header("Load quiz data")]
-    public LevelData levelData;
+    public Level levelData;
     [SerializeField] Text questionText, answer1, answer2, answer3, answer4, clue, theme;
     [SerializeField] Image imageWithQuestion;
     GameManagerScript gameManagerScript;
@@ -47,7 +47,7 @@ public class QuizManager : MonoBehaviour
         panelUserInfo = GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>();
         gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
         result = panelNextScene.GetComponentInChildren<Text>();
-        levelData = gameManagerScript.LevelData;
+        levelData = GameDataV2.CurrentLevelData;
         audioSource = gameObject.GetComponent<AudioSource>();
     }
 
@@ -70,7 +70,7 @@ public class QuizManager : MonoBehaviour
                 isTimerActivate = false;
                 audioSource.Stop();
                 ShowWinningCoins(false);
-                if (levelData.Level == PlayerPrefs.GetInt("NextLevel"))
+                if (levelData.Index == PlayerPrefs.GetInt("NextLevel"))
                 {
                     PlayerPrefs.SetInt("NumberLostLevels", PlayerPrefs.GetInt("NumberLostLevels") + 1);
                 }
@@ -172,7 +172,7 @@ public class QuizManager : MonoBehaviour
                 btn.GetComponent<Button>().interactable = false;
             }
         }
-        int nextLevel = levelData.Level + 1;
+        int nextLevel = levelData.Index + 1;
         if (PlayerPrefs.GetInt("NextLevel") < nextLevel)
         {
             PlayerPrefs.SetInt("NextLevel", nextLevel);
@@ -283,7 +283,7 @@ public class QuizManager : MonoBehaviour
             || (levelData.OtherAcceptedAnswer3 != "" && levelData.OtherAcceptedAnswer3.ToLower() == playerAnswer))
         {
             audioSource.PlayOneShot(sndWin);
-            if (levelData.Level == PlayerPrefs.GetInt("NextLevel"))
+            if (levelData.Index == PlayerPrefs.GetInt("NextLevel"))
             {
                 PlayerPrefs.SetInt("NumberWonLevels", PlayerPrefs.GetInt("NumberWonLevels") + 1);
                 if (isDirectlyAnswerMode)
@@ -302,7 +302,7 @@ public class QuizManager : MonoBehaviour
         }
         else
         {
-            if (levelData.Level == PlayerPrefs.GetInt("NextLevel"))
+            if (levelData.Index == PlayerPrefs.GetInt("NextLevel"))
             {
                 PlayerPrefs.SetInt("NumberLostLevels", PlayerPrefs.GetInt("NumberLostLevels") + 1);
             }

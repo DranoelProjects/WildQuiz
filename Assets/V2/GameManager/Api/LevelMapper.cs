@@ -12,7 +12,7 @@ public static class LevelMapper
         level.Type = snapshot.Child("type").GetValue(true).ToString();
         level.Theme = snapshot.Child("theme").GetValue(true).ToString();
         level.RightAnswer = snapshot.Child("rightAnswer").GetValue(true).ToString();
-        level.SpriteWithQuestionName = snapshot.Child("spriteWithQuestionName").GetValue(true).ToString();
+        level.SpriteWithQuestion = Resources.Load<Sprite>("Images/QuizSprites/" + snapshot.Child("spriteWithQuestionName").GetValue(true).ToString());
         level.ImageScale = float.Parse(snapshot.Child("imageScale").GetValue(true).ToString());
         level.Clue = snapshot.Child("clue").GetValue(true).ToString();
         level.Info = snapshot.Child("info").GetValue(true).ToString();
@@ -26,7 +26,7 @@ public static class LevelMapper
         level.NeedText = snapshot.Child("needText").GetValue(true).ToString() == "true";
         level.NeedImage = snapshot.Child("needImage").GetValue(true).ToString() == "true";
         level.NeedBtnListen = snapshot.Child("needBtnListen").GetValue(true).ToString() == "true";
-        level.SoundName = snapshot.Child("soundName").GetValue(true).ToString();
+        level.Sound = Resources.Load<AudioClip>("Sounds/QuizSounds/" + snapshot.Child("soundName").GetValue(true).ToString());
         level.TextLevel = snapshot.Child("textLevel").GetValue(true).ToString();
         level.OtherAcceptedAnswer1 = snapshot.Child("otherAcceptedAnswer1").GetValue(true).ToString();
         level.OtherAcceptedAnswer2 = snapshot.Child("otherAcceptedAnswer2").GetValue(true).ToString();

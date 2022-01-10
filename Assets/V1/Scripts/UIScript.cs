@@ -8,7 +8,7 @@ public class UIScript : MonoBehaviour
 {
     GameManagerScript gameManagerScript;
     WatchAd watchAd;
-    private LevelData levelData;
+    private Level levelData;
     [SerializeField] Toggle muteToggle;
     [SerializeField] GameObject panelSettings, dailyRewardPanel, btnOverallRanking;
     public GameObject PanelNoHeart, PanelNoCoins, CurrentLevel;
@@ -26,7 +26,7 @@ public class UIScript : MonoBehaviour
 
     private void Start()
     {
-        levelData = gameManagerScript.LevelData;
+        levelData = GameDataV2.CurrentLevelData;
         // Disabling or not objects of the GameObjectUI
         if (SceneManager.GetActiveScene().name == "LevelMap")
         {
@@ -37,7 +37,7 @@ public class UIScript : MonoBehaviour
             CurrentLevel.SetActive(true);
             dailyRewardPanel.SetActive(false);
             btnOverallRanking.SetActive(false);
-            outputCurrentLevel.text = levelData.Level.ToString();
+            outputCurrentLevel.text = levelData.Index.ToString();
         }
     }
 
