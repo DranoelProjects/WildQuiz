@@ -20,8 +20,8 @@ MonoBehaviour:
   ImageScale: 9.182155
   Clue: Ce n'est pas 10 000 ans.
   Info: "A titre de comparaison la d\xE9composition d'une bouteille en plastique
-    est estim\xE9e entre 100 et 1000 ans. La d\xE9composition d'un sac platique elle,
-    est estim\xE9e \xE0 450 ans."
+    est estim\xE9e entre 100 et 1000 ans. La d\xE9composition d'un sac plastique
+    elle, est estim\xE9e \xE0 450 ans."
   NextLevelData: {fileID: 11400000, guid: 2012179db9f2f014dbc396df61d23a5b, type: 2}
   Question: "A combien de temps est estim\xE9e la d\xE9gradation d\u2019une bouteille
     en verre ? (en ann\xE9es)"

@@ -10,14 +10,12 @@ public class NextSceneScript : MonoBehaviour
     [SerializeField] Button nextLvlButton;
     [SerializeField] Text textOuputCoinsValue, textMultiplier;
     GameManagerScript gameManagerScript;
-    UIScript uiScript;
     int randomMultiplier = 0;
     int numberOfCoinsWon = 10;
 
     private void Awake() {
         GameObject gameManager = GameObject.Find("GameManager");
         gameManagerScript = gameManager.GetComponent<GameManagerScript>();
-        uiScript = GameObject.Find("GameObjectUI").GetComponent<UIScript>();
     }
     public void Start()
     {
@@ -62,10 +60,6 @@ public class NextSceneScript : MonoBehaviour
                 default:
                     break;
             }
-        }
-        else
-        {
-            uiScript.PanelNoHeart.SetActive(true);
         }
     }
 

@@ -73,7 +73,7 @@ public class QuizManager : MonoBehaviour
                 audioSource.PlayOneShot(sndWrong);
 
                 WriteResult("Temps écoulé !");
-                RevealAnswer();
+                RevealAnswer(false);
             }
         }
         else
@@ -147,8 +147,8 @@ public class QuizManager : MonoBehaviour
         clue.text = levelData.Clue;
     }
 
-    // Reveals the answer of the level
-    public void RevealAnswer()
+    // Reveals selected btn
+    public void RevealAnswer(bool isRightAnswer)
     {
         isTimerActivate = false;
         if (levelData.Type == "Quiz")
@@ -156,11 +156,11 @@ public class QuizManager : MonoBehaviour
             foreach (Button btn in allButtons)
             {
                 string btnAnswer = btn.GetComponentInChildren<Text>().text;
-                if (levelData.RightAnswer == btnAnswer)
+                if ((levelData.RightAnswer == btnAnswer) && isRightAnswer)
                 {
                     btn.GetComponent<Image>().color = Color.green;
                 }
-                else
+                else if (isRightAnswer)
                 {
                     btn.GetComponent<Image>().color = Color.red;
                 }
@@ -269,14 +269,16 @@ public class QuizManager : MonoBehaviour
     // For input quiz or directly mode, check the answer
     public void CheckAnswer(string playerAnswer)
     {
+        bool isRightAnswer = false;
         audioSource.Stop();
         ShowWinningCoins(false);
-        playerAnswer = playerAnswer.ToLower();
-        if (levelData.RightAnswer.ToLower() == playerAnswer
-            || (levelData.OtherAcceptedAnswer1 != "" && levelData.OtherAcceptedAnswer1.ToLower() == playerAnswer)
-            || (levelData.OtherAcceptedAnswer2 != "" && levelData.OtherAcceptedAnswer2.ToLower() == playerAnswer)
-            || (levelData.OtherAcceptedAnswer3 != "" && levelData.OtherAcceptedAnswer3.ToLower() == playerAnswer))
+        double threshold = 0.8;
+        if ((Levenshtein.ComputeCorrelation(levelData.RightAnswer, playerAnswer, false) > threshold)
+            || (Levenshtein.ComputeCorrelation(levelData.OtherAcceptedAnswer1, playerAnswer, false) > threshold)
+            || (Levenshtein.ComputeCorrelation(levelData.OtherAcceptedAnswer2, playerAnswer, false) > threshold)
+            || (Levenshtein.ComputeCorrelation(levelData.OtherAcceptedAnswer3, playerAnswer, false) > threshold))
         {
+            isRightAnswer = true;
             audioSource.PlayOneShot(sndWin);
             if (levelData.Index == GameDataV2.NextLevel)
             {
@@ -304,7 +306,7 @@ public class QuizManager : MonoBehaviour
             }
             WriteResult("Mauvaise réponse !");
         }
-        RevealAnswer();
+        RevealAnswer(isRightAnswer);
     }
 
     // Choose between 4 answers mode
