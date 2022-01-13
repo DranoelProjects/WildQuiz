@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Level: 28
   Type: InputQuiz
-  Theme: "Culture g\xE9n\xE9rale"
+  Theme: Culture
+  ThemeInBase: logic
   RightAnswer: Cri Wilhelm
   SpriteWithQuestion: {fileID: 0}
   ImageScale: 9.182155
