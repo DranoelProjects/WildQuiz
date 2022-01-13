@@ -9,6 +9,7 @@ public class LevelData : ScriptableObject
     public int Level; //level number
     public string Type = "Quiz"; //used to launch the corresponding scene it can be : Quiz, InputQuiz, TicTacToe or Taquin
     public string Theme; //used for Quiz and InputQuiz to know the theme of the question
+    public string ThemeInBase = "logic";
     public string RightAnswer; //first answer accepted
     public Sprite SpriteWithQuestion; //sprite used to illustrate the question
     public float ImageScale = 9.182155f; //used to reduce or enlarge the previous sprite

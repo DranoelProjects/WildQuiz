@@ -15,6 +15,7 @@ MonoBehaviour:
   Level: 5
   Type: Quiz
   Theme: Sport
+  ThemeInBase: sport
   RightAnswer: Allemagne
   SpriteWithQuestion: {fileID: 21300000, guid: 105b6677cab1c064abca2d7c77767933, type: 3}
   ImageScale: 9.182155

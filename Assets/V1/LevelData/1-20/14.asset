@@ -15,6 +15,7 @@ MonoBehaviour:
   Level: 14
   Type: Quiz
   Theme: Sport
+  ThemeInBase: sport
   RightAnswer: 8
   SpriteWithQuestion: {fileID: 21300000, guid: a316e2eb89f6a814a91f50681698060e, type: 3}
   ImageScale: 9.182155

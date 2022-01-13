@@ -15,6 +15,7 @@ MonoBehaviour:
   Level: 12
   Type: InputQuiz
   Theme: Devinettes
+  ThemeInBase: riddles
   RightAnswer: dent
   SpriteWithQuestion: {fileID: 0}
   ImageScale: 9.182155

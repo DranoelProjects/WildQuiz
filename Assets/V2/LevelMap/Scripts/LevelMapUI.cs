@@ -23,9 +23,9 @@ public class LevelMapUI : MonoBehaviour
         initNextLevelColor();
     }
 
-    public void OnClickLevelButton()
+    public void OnClickLevelButton(int selectedLevel, string theme)
     {
-        gameManager.StartLevel(int.Parse(EventSystem.current.currentSelectedGameObject.name));
+        gameManager.StartLevel(selectedLevel, theme);
     }
 
     void initNextLevelColor()
@@ -35,28 +35,30 @@ public class LevelMapUI : MonoBehaviour
         if (nextLevel == 86)
         {
             nextLevel--;
-            nextLevelAnimator = GameObject.Find((nextLevel).ToString()).GetComponent<Animator>();
+            GameObject nextLevelGameObject = GameObject.Find((nextLevel).ToString());
+            nextLevelAnimator = nextLevelGameObject.GetComponent<Animator>();
             nextLevelAnimator.SetBool("isNextLevel", false);
 
             //init next level color
-            nextLevelImage = GameObject.Find(nextLevel.ToString()).GetComponent<Image>();
+            nextLevelImage = nextLevelGameObject.GetComponent<Image>();
             nextLevelImage.color = Color.yellow;
 
             //init scroll rect target
-            scrollRectTarget = GameObject.Find(nextLevel.ToString()).GetComponent<RectTransform>();
+            scrollRectTarget = nextLevelGameObject.GetComponent<RectTransform>();
             SnapTo(scrollRectTarget);
         }
         else
         {
-            nextLevelAnimator = GameObject.Find(nextLevel.ToString()).GetComponent<Animator>();
+            GameObject nextLevelGameObject = GameObject.Find((nextLevel).ToString());
+            nextLevelAnimator = nextLevelGameObject.GetComponent<Animator>();
             nextLevelAnimator.SetBool("isNextLevel", true);
 
             //init next level color
-            nextLevelImage = GameObject.Find(nextLevel.ToString()).GetComponent<Image>();
+            nextLevelImage = nextLevelGameObject.GetComponent<Image>();
             nextLevelImage.color = Color.green;
 
             //init scroll rect target
-            scrollRectTarget = GameObject.Find(nextLevel.ToString()).GetComponent<RectTransform>();
+            scrollRectTarget = nextLevelGameObject.GetComponent<RectTransform>();
             SnapTo(scrollRectTarget);
         }
     }

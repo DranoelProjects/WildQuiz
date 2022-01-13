@@ -15,6 +15,7 @@ MonoBehaviour:
   Level: 3
   Type: Quiz
   Theme: "G\xE9ographie"
+  ThemeInBase: geography
   RightAnswer: Italie
   SpriteWithQuestion: {fileID: 21300000, guid: 0928f89411c8c3b469ff436e448232fc, type: 3}
   ImageScale: 9.182155

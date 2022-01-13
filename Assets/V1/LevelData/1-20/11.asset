@@ -15,6 +15,7 @@ MonoBehaviour:
   Level: 11
   Type: Quiz
   Theme: Sciences
+  ThemeInBase: science
   RightAnswer: Stephen Hawking
   SpriteWithQuestion: {fileID: 21300000, guid: d22635802993dc144bf60e17ffa57ef3, type: 3}
   ImageScale: 9.182155

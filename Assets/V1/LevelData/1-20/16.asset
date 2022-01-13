@@ -15,6 +15,7 @@ MonoBehaviour:
   Level: 16
   Type: InputQuiz
   Theme: Orthographe
+  ThemeInBase: spelling
   RightAnswer: Rhododendron
   SpriteWithQuestion: {fileID: 0}
   ImageScale: 9.182155

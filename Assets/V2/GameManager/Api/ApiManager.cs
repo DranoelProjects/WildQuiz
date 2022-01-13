@@ -49,30 +49,14 @@ public class ApiManager : MonoBehaviour
         level.OtherAcceptedAnswer3 = levelData.OtherAcceptedAnswer3;
 
         string json = JsonUtility.ToJson(level);
-        _database.GetReference("levels").Child(levelData.Level.ToString()).SetRawJsonValueAsync(json);
+        _database.GetReference("levels").Child(levelData.Level.ToString()).Child(levelData.ThemeInBase).SetRawJsonValueAsync(json);
     }*/
 
-    /*void getLevelsForCurrentPage(int currentPage)
-    {
-        _database.GetReference("pages").Child(currentPage.ToString()).Child("levels")
-          .GetValueAsync().ContinueWithOnMainThread(task => {
-              if (task.IsFaulted)
-              {
-                  Debug.Log("error0");
-              }
-              else if (task.IsCompleted)
-              {
-                  DataSnapshot snapshot = task.Result;
-                  string json = JsonUtility.ToJson(snapshot);
-                  Debug.Log(snapshot);
-              }
-          });
-    }*/
-
-    public async Task GetLevel(int levelIndex)
+    public async Task GetLevel(int levelIndex, string theme)
     {
         Level level = new Level();
-        await _database.GetReference("levels").Child(levelIndex.ToString())
+        string themeInBase = ThemeDico.GetThemeInBaseFromTheme(theme);
+        await _database.GetReference("levels").Child(levelIndex.ToString()).Child(themeInBase)
          .GetValueAsync().ContinueWithOnMainThread(task => {
              if (task.IsFaulted)
              {

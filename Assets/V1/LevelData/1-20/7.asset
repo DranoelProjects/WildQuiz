@@ -15,6 +15,7 @@ MonoBehaviour:
   Level: 7
   Type: Quiz
   Theme: Histoire
+  ThemeInBase: history
   RightAnswer: 1789
   SpriteWithQuestion: {fileID: 21300000, guid: 91da715530fe13349b81b2b73eccd2f1, type: 3}
   ImageScale: 8.5

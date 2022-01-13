@@ -15,6 +15,7 @@ MonoBehaviour:
   Level: 19
   Type: Quiz
   Theme: Histoire
+  ThemeInBase: history
   RightAnswer: "Val\xE9ry Giscard d'Estaing"
   SpriteWithQuestion: {fileID: 21300000, guid: 2af6960ca858e814dac18b50b928d32f, type: 3}
   ImageScale: 9.182155

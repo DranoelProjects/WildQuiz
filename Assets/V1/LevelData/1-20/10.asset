@@ -15,6 +15,7 @@ MonoBehaviour:
   Level: 10
   Type: Quiz
   Theme: "Multim\xE9dia"
+  ThemeInBase: multimedia
   RightAnswer: Personal computer
   SpriteWithQuestion: {fileID: 21300000, guid: 98e287a105fdabe488f4aa1389a136ea, type: 3}
   ImageScale: 9.182155

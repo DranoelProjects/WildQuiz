@@ -15,6 +15,7 @@ MonoBehaviour:
   Level: 13
   Type: Quiz
   Theme: "G\xE9ographie"
+  ThemeInBase: geography
   RightAnswer: Asie
   SpriteWithQuestion: {fileID: 21300000, guid: 09b91ef3ed9229f438a77a05454b31b5, type: 3}
   ImageScale: 9.182155

@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Level: 6
   Type: Quiz
-  Theme: "Math\xE9matiques"
+  Theme: mathematics
+  ThemeInBase: logic
   RightAnswer: 48
   SpriteWithQuestion: {fileID: 21300000, guid: 66b7da534be372249b4bcc0e8d58251c, type: 3}
   ImageScale: 9.182155

@@ -15,6 +15,7 @@ MonoBehaviour:
   Level: 20
   Type: InputQuiz
   Theme: "R\xE9bus"
+  ThemeInBase: rebus
   RightAnswer: Tulipe
   SpriteWithQuestion: {fileID: 21300000, guid: e415149d3b832f84fb10fb3da807150a, type: 3}
   ImageScale: 9.182155

@@ -29,12 +29,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public async void StartLevel(int levelIndex)
+    public async void StartLevel(int levelIndex, string theme)
     {
         audioSource = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
         audioSource.PlayOneShot(sndClick);
 
-        await apiManager.GetLevel(levelIndex);
+        await apiManager.GetLevel(levelIndex, theme);
         Level level = GameDataV2.CurrentLevelData;
 
         // Starts the corresponding scene 
