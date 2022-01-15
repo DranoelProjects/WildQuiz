@@ -33,7 +33,7 @@ public class ThemeDico
             case "Multimédia":
                 themeInBase = "multimedia";
                 break;
-            case "Culture":
+            case "Culture G.":
                 themeInBase = "general_culture";
                 break;
             case "Animaux":

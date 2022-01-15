@@ -9,7 +9,7 @@ public class LevelButton : MonoBehaviour
     [SerializeField] string themeLabel;
     [SerializeField] GameObject themeBackgroundPanel;
     [SerializeField] GameObject btnLabel;
-    [SerializeField] GameObject playIcon;
+    [SerializeField] GameObject playIcon, helpIcon;
     private int clickCounter = 0;
 
     private void Start()
@@ -21,7 +21,6 @@ public class LevelButton : MonoBehaviour
         }
         if (GameDataV2.NextLevel < int.Parse(gameObject.name))
         {
-            gameObject.GetComponent<Button>().interactable = false;
             gameObject.GetComponent<Image>().color = Color.black;
         }
     }
@@ -31,17 +30,26 @@ public class LevelButton : MonoBehaviour
         clickCounter++;
         if(clickCounter == 1)
         {
+            btnLabel.SetActive(false);
             themeBackgroundPanel.SetActive(true);
             themeBackgroundPanel.GetComponentInChildren<Text>().text = themeLabel;
-            if (!(int.Parse(gameObject.name) == GameDataV2.NextLevel))
+            if (int.Parse(gameObject.name) < GameDataV2.NextLevel)
             {
                 gameObject.GetComponent<Image>().color = Color.blue;
+                playIcon.SetActive(true);
+            } else if (int.Parse(gameObject.name) > GameDataV2.NextLevel)
+            {
+                gameObject.GetComponent<Image>().color = Color.red;
+                gameObject.GetComponent<Button>().interactable = false;
+                helpIcon.SetActive(true);
+            } else
+            {
+                // Case next level
+                playIcon.SetActive(true);
             }
-            playIcon.SetActive(true);
-            btnLabel.SetActive(false);
             Animator nextLevelAnimator = gameObject.GetComponent<Animator>();
             nextLevelAnimator.SetBool("isNextLevel", true);
-        } else if (clickCounter == 2)
+        } else if (clickCounter == 2 && (int.Parse(gameObject.name) <= GameDataV2.NextLevel))
         {
             themeBackgroundPanel.SetActive(false);
             gameObject.GetComponentInParent<LevelMapUI>().OnClickLevelButton(int.Parse(gameObject.name), themeLabel);
@@ -53,7 +61,6 @@ public class LevelButton : MonoBehaviour
     IEnumerator restButton()
     {
         yield return new WaitForSeconds(6f);
-        playIcon.SetActive(false);
         btnLabel.SetActive(true);
         themeBackgroundPanel.SetActive(false);
         clickCounter = 0;
@@ -63,10 +70,18 @@ public class LevelButton : MonoBehaviour
         {
             //init next level color
             gameObject.GetComponent<Image>().color = Color.green;
-        } else
+            playIcon.SetActive(false);
+        } else if (int.Parse(gameObject.name) < GameDataV2.NextLevel)
         {
             nextLevelAnimator.SetBool("isNextLevel", false);
             gameObject.GetComponent<Image>().color = new Color(113f / 255f, 105f / 255f, 105f / 255f);
+            playIcon.SetActive(false);
+        } else
+        {
+            helpIcon.SetActive(false);
+            nextLevelAnimator.SetBool("isNextLevel", false);
+            gameObject.GetComponent<Image>().color = Color.black;
+            gameObject.GetComponent<Button>().interactable = true;
         }
     }
 }
