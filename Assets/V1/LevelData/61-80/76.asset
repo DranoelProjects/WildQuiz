@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Level: 76
   Type: TicTacToe
-  Theme: 
+  Theme: Logique
+  ThemeInBase: logic
   RightAnswer: 
   SpriteWithQuestion: {fileID: 0}
   ImageScale: 7.51158

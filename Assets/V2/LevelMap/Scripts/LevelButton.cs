@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class LevelButton : MonoBehaviour
 {
     [SerializeField] string themeLabel;
-    [SerializeField] GameObject themeOutput;
+    [SerializeField] GameObject themeBackgroundPanel;
     [SerializeField] GameObject btnLabel;
     [SerializeField] GameObject playIcon;
     private int clickCounter = 0;
@@ -31,8 +31,8 @@ public class LevelButton : MonoBehaviour
         clickCounter++;
         if(clickCounter == 1)
         {
-            themeOutput.SetActive(true);
-            themeOutput.GetComponent<Text>().text = themeLabel;
+            themeBackgroundPanel.SetActive(true);
+            themeBackgroundPanel.GetComponentInChildren<Text>().text = themeLabel;
             if (!(int.Parse(gameObject.name) == GameDataV2.NextLevel))
             {
                 gameObject.GetComponent<Image>().color = Color.blue;
@@ -43,7 +43,7 @@ public class LevelButton : MonoBehaviour
             nextLevelAnimator.SetBool("isNextLevel", true);
         } else if (clickCounter == 2)
         {
-            themeOutput.SetActive(false);
+            themeBackgroundPanel.SetActive(false);
             gameObject.GetComponentInParent<LevelMapUI>().OnClickLevelButton(int.Parse(gameObject.name), themeLabel);
             clickCounter = 0;
         }
@@ -55,7 +55,7 @@ public class LevelButton : MonoBehaviour
         yield return new WaitForSeconds(6f);
         playIcon.SetActive(false);
         btnLabel.SetActive(true);
-        themeOutput.SetActive(false);
+        themeBackgroundPanel.SetActive(false);
         clickCounter = 0;
 
         Animator nextLevelAnimator = gameObject.GetComponent<Animator>();

@@ -49,7 +49,7 @@ public class ApiManager : MonoBehaviour
         level.OtherAcceptedAnswer3 = levelData.OtherAcceptedAnswer3;
 
         string json = JsonUtility.ToJson(level);
-        _database.GetReference("levels").Child(levelData.Level.ToString()).Child(levelData.ThemeInBase).SetRawJsonValueAsync(json);
+        _database.GetReference("levels").Child(levelData.Level.ToString()).Child(ThemeDico.GetThemeInBaseFromTheme(level.Theme)).SetRawJsonValueAsync(json);
     }*/
 
     public async Task GetLevel(int levelIndex, string theme)

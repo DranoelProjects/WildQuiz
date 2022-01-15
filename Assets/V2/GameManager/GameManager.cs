@@ -59,7 +59,6 @@ public class GameManager : MonoBehaviour
 
     private void OnDestroy()
     {
-        PlayerPrefs.SetInt("CurrentPage", GameDataV2.CurrentPage);
         PlayerPrefs.SetInt("NextLevel", GameDataV2.NextLevel);
     }
 }
