@@ -13,10 +13,9 @@ public class GameManagerTicTacToe : MonoBehaviour
 
     [SerializeField] Image imageShowJokersPanel;
     [SerializeField] Sprite spriteClose, spriteOpen;
-    GameManagerScript gameManagerScript;
-    PanelUserInfo panelUserInfo;
     AudioSource audioSource;
     [SerializeField] AudioClip sndWin, sndLoose;
+    Level levelData;
 
     AI ai = new AI();
 
@@ -24,8 +23,7 @@ public class GameManagerTicTacToe : MonoBehaviour
 
     private void Awake()
     {
-        gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
-        panelUserInfo = GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>();
+        levelData = GameDataV2.CurrentLevelData;
     }
     private void Start()
     {
@@ -37,7 +35,7 @@ public class GameManagerTicTacToe : MonoBehaviour
     // It's the AI's turn to play
     public void ComputerPlay()
     {
-        int button = ai.BestPosition(gameManagerScript.LevelData.Difficulty);
+        int button = ai.BestPosition(levelData.Difficulty);
         Button btn = GameObject.Find(button.ToString()).GetComponent<Button>();
         btn.interactable = false;
         btn.GetComponentInChildren<Text>().text = "O";
@@ -47,14 +45,13 @@ public class GameManagerTicTacToe : MonoBehaviour
         {
             IsGameOver = true;
             PlayLosingSound();
-            if (gameManagerScript.LevelData.Level == PlayerPrefs.GetInt("NextLevel"))
+            if (levelData.Index == GameDataV2.NextLevel)
             {
-                PlayerPrefs.SetInt("NumberLostLevels", PlayerPrefs.GetInt("NumberLostLevels") + 1);
+                GameDataV2.NumberLostLevels++;
             }
             PanelNextScene.GetComponent<NextSceneScript>().ActiveWinningCoins(false);
             PanelNextScene.GetComponentInChildren<PanelNextScene>().GoToNextLevel = 2;
-            PlayerPrefs.SetInt("HeartsNumber", PlayerPrefs.GetInt("HeartsNumber") - 1);
-            panelUserInfo.UpdateHearts();
+            GameDataV2.Hearts--;
             PanelNextScene.SetActive(true);
             return;
         }
@@ -177,19 +174,17 @@ public class GameManagerTicTacToe : MonoBehaviour
         {
             audioSource.Stop();
             audioSource.PlayOneShot(sndWin);
-            PlayerPrefs.SetInt("CoinsNumber", PlayerPrefs.GetInt("CoinsNumber") - 150);
-            PlayerPrefs.SetInt("NumberWonLevels", PlayerPrefs.GetInt("NumberWonLevels") + 1);
-            panelUserInfo.UpdateCoins();
+            GameDataV2.Coins -= 150;
+            GameDataV2.NumberWonLevels++;
             PanelNextScene.GetComponent<NextSceneScript>().ActiveWinningCoins(false);
             OnClickShowJokersPanel();
             PanelNextScene.GetComponentInChildren<PanelNextScene>().GoToNextLevel = 1;
             PanelNextScene.SetActive(true);
-            int nextLevel = gameManagerScript.LevelData.Level + 1;
+            int nextLevel = levelData.Index + 1;
             if (PlayerPrefs.GetInt("NextLevel") < nextLevel)
             {
                 PlayerPrefs.SetInt("NextLevel", nextLevel);
             }
-            panelUserInfo.UpdateCurrentLvl();
         } else
         {
             GameObject.Find("GameObjectUI").GetComponent<UIScript>().PanelNoCoins.SetActive(true);

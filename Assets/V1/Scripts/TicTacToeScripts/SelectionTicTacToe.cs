@@ -7,15 +7,9 @@ using UnityEngine.SceneManagement;
 public class SelectionTicTacToe : MonoBehaviour
 {
     GameManagerTicTacToe gm;
-    GameManagerScript gameManagerScript;
-    PanelUserInfo panelUserInfo;
 
-    private void Awake() {
-        panelUserInfo = GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>(); 
-    }
     private void Start()
     {
-        gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
         gm = GameObject.Find("GameManagerTicTacToe").GetComponent<GameManagerTicTacToe>();
     }
 
@@ -28,22 +22,22 @@ public class SelectionTicTacToe : MonoBehaviour
             gm.Tab[int.Parse(gameObject.name)] = "X";
             if (gm.IsWinner("X"))
             {
+                Level levelData = GameDataV2.CurrentLevelData;
                 gm.IsGameOver = true;
                 gm.PanelNextScene.GetComponent<NextSceneScript>().ActiveWinningCoins(false);
                 gm.PlayWinningSound();
-                if (gameManagerScript.LevelData.Level == PlayerPrefs.GetInt("NextLevel"))
+                if (levelData.Index == GameDataV2.NextLevel)
                 {
                     gm.PanelNextScene.GetComponent<NextSceneScript>().ActiveWinningCoins(true);
-                    PlayerPrefs.SetInt("NumberWonLevels", PlayerPrefs.GetInt("NumberWonLevels") + 1);
-                    PlayerPrefs.SetInt("CoinsNumber", PlayerPrefs.GetInt("CoinsNumber") + 10);
-                    panelUserInfo.UpdateCoins();
+                    GameDataV2.NumberWonLevels++;
+                    GameDataV2.Coins += 10;
                 }
                 gm.PanelNextScene.GetComponentInChildren<PanelNextScene>().GoToNextLevel = 1;
                 gm.PanelNextScene.SetActive(true);
-                int nextLevel = gameManagerScript.LevelData.Level + 1;
-                if (PlayerPrefs.GetInt("NextLevel") < nextLevel)
+                int nextLevel = GameDataV2.NextLevel + 1;
+                if (levelData.Index < nextLevel)
                 {
-                    PlayerPrefs.SetInt("NextLevel", nextLevel);
+                    GameDataV2.NextLevel++;
                 }
             }
             else if (gm.ArrayIsFull())

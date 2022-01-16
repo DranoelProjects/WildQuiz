@@ -23,9 +23,9 @@ public static class LevelMapper
         level.Answer3 = snapshot.Child("answer3").GetValue(true).ToString();
         level.Answer4 = snapshot.Child("answer4").GetValue(true).ToString();
         level.Difficulty = snapshot.Child("difficulty").GetValue(true).ToString();
-        level.NeedText = snapshot.Child("needText").GetValue(true).ToString() == "true";
-        level.NeedImage = snapshot.Child("needImage").GetValue(true).ToString() == "true";
-        level.NeedBtnListen = snapshot.Child("needBtnListen").GetValue(true).ToString() == "true";
+        level.NeedText = snapshot.Child("needText").GetValue(true).ToString() == "True";
+        level.NeedImage = snapshot.Child("needImage").GetValue(true).ToString() == "True";
+        level.NeedBtnListen = snapshot.Child("needBtnListen").GetValue(true).ToString() == "True";
         level.Sound = Resources.Load<AudioClip>("Sounds/QuizSounds/" + snapshot.Child("soundName").GetValue(true).ToString());
         level.TextLevel = snapshot.Child("textLevel").GetValue(true).ToString();
         level.OtherAcceptedAnswer1 = snapshot.Child("otherAcceptedAnswer1").GetValue(true).ToString();

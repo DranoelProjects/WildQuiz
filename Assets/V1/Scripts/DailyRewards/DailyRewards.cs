@@ -46,18 +46,18 @@ namespace DailyRewardSystem
         [Space]
         [Header("Timing")]
         //next reward wait delay
-        [SerializeField] double nextRewardDelay = 24f;
+        [SerializeField] double nextRewardDelay = 0.5f;
         [SerializeField] float checkForRewardDelay = 60f;
 
         //Used in order to update user hearts and coins 
-        PanelUserInfo panelUserInfo;
+        UIScript uiScript;
 
         private int nextRewardIndex;
         private bool isRewardReady = false;
 
         private void Awake()
         {
-            panelUserInfo = GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>();
+            uiScript = GameObject.Find("GameObjectUI").GetComponent<UIScript>();
         }
         void Start()
         {
@@ -134,11 +134,11 @@ namespace DailyRewardSystem
             //check reward type
             if(reward.Type == RewardType.Hearts)
             {
-                panelUserInfo.UpdateHearts();
+                uiScript.UpdateHearts();
             }
             else if (reward.Type == RewardType.Coins)
             {
-                panelUserInfo.UpdateCoins();
+                uiScript.UpdateCoins();
             }
             fx.Play();
             isRewardReady = false;

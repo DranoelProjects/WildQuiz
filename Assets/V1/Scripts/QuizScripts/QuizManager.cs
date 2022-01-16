@@ -26,6 +26,7 @@ public class QuizManager : MonoBehaviour
     float timeLeft = 40.0f;
     bool isTimerActivate = true;
 
+    UIScript uiScript;
     [SerializeField] Text textTimer, textTimer2;
     AudioSource audioSource;
     [SerializeField] AudioClip sndWrong, sndWin, sndBtn;
@@ -42,6 +43,7 @@ public class QuizManager : MonoBehaviour
 
     private void Awake()
     {
+        uiScript = GameObject.Find("GameObjectUI").GetComponent<UIScript>();
         result = panelNextScene.GetComponentInChildren<Text>();
         levelData = GameDataV2.CurrentLevelData;
         audioSource = gameObject.GetComponent<AudioSource>();
@@ -68,9 +70,11 @@ public class QuizManager : MonoBehaviour
                 ShowWinningCoins(false);
                 if (levelData.Index == GameDataV2.NextLevel)
                 {
-                    PlayerPrefs.SetInt("NumberLostLevels", PlayerPrefs.GetInt("NumberLostLevels") + 1);
+                    GameDataV2.NumberLostLevels++;
                 }
                 audioSource.PlayOneShot(sndWrong);
+                GameDataV2.Hearts--;
+                uiScript.UpdateHearts();
 
                 WriteResult("Temps écoulé !");
                 RevealAnswer(false);
@@ -282,15 +286,18 @@ public class QuizManager : MonoBehaviour
             audioSource.PlayOneShot(sndWin);
             if (levelData.Index == GameDataV2.NextLevel)
             {
-                PlayerPrefs.SetInt("NumberWonLevels", PlayerPrefs.GetInt("NumberWonLevels") + 1);
+                GameDataV2.NumberWonLevels++;
                 if (isDirectlyAnswerMode)
                 {
                     ShowWinningCoins(true, 30);
+                    GameDataV2.Coins += 30;
                 }
                 else
                 {
                     ShowWinningCoins(true);
+                    GameDataV2.Coins += 10;
                 }
+                uiScript.UpdateCoins();
             }
             WriteResult("Bonne réponse !");
         }
@@ -298,12 +305,14 @@ public class QuizManager : MonoBehaviour
         {
             if (levelData.Index == GameDataV2.NextLevel)
             {
-                PlayerPrefs.SetInt("NumberLostLevels", PlayerPrefs.GetInt("NumberLostLevels") + 1);
+                GameDataV2.NumberLostLevels++;
             }
             else
             {
                 audioSource.PlayOneShot(sndWrong);
             }
+            GameDataV2.Hearts--;
+            uiScript.UpdateHearts();
             WriteResult("Mauvaise réponse !");
         }
         RevealAnswer(isRightAnswer);

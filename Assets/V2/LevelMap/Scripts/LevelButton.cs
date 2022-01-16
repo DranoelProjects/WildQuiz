@@ -51,6 +51,7 @@ public class LevelButton : MonoBehaviour
             nextLevelAnimator.SetBool("isNextLevel", true);
         } else if (clickCounter == 2 && (int.Parse(gameObject.name) <= GameDataV2.NextLevel))
         {
+            gameObject.GetComponent<Button>().interactable = false;
             themeBackgroundPanel.SetActive(false);
             gameObject.GetComponentInParent<LevelMapUI>().OnClickLevelButton(int.Parse(gameObject.name), themeLabel);
             clickCounter = 0;
@@ -81,7 +82,7 @@ public class LevelButton : MonoBehaviour
             helpIcon.SetActive(false);
             nextLevelAnimator.SetBool("isNextLevel", false);
             gameObject.GetComponent<Image>().color = Color.black;
-            gameObject.GetComponent<Button>().interactable = true;
         }
+        gameObject.GetComponent<Button>().interactable = true;
     }
 }

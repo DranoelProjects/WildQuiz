@@ -11,10 +11,8 @@ public class TaquinManager : MonoBehaviour
     [SerializeField] Sprite spriteClose, spriteOpen;
     AudioSource audioSource;
     [SerializeField] AudioClip sndWin;
-    LevelData levelData;
-    GameManagerScript gameManagerScript;
+    Level levelData;
     Transform emptyBtn;
-    PanelUserInfo panelUserInfo;
     UIScript uiScript;
     GameObject panel;
     Button[] childrens;
@@ -22,14 +20,12 @@ public class TaquinManager : MonoBehaviour
 
     private void Awake()
     {
-        gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
-        panelUserInfo = GameObject.Find("PanelUserInfo").GetComponent<PanelUserInfo>();
         uiScript = GameObject.Find("GameObjectUI").GetComponent<UIScript>();
         panel = GameObject.Find("Panel").gameObject;
         childrens = panel.GetComponentsInChildren<Button>();
         emptyBtn = GameObject.Find("16").gameObject.transform;
         
-        levelData = gameManagerScript.LevelData;
+        levelData = GameDataV2.CurrentLevelData;
         audioSource = gameObject.GetComponent<AudioSource>();
         initGame();
     }
@@ -40,27 +36,26 @@ public class TaquinManager : MonoBehaviour
         IsGameOver = true;
         ShowWinningCoins(true);
         panelNextScene.SetActive(true);
-        int nextLevel = levelData.Level + 1;
-        if (PlayerPrefs.GetInt("NextLevel") < nextLevel)
+        int nextLevel = levelData.Index + 1;
+        if (GameDataV2.NextLevel < nextLevel)
         {
-            PlayerPrefs.SetInt("NextLevel", nextLevel);
+            GameDataV2.NextLevel++;
         }
     }
 
     // If the player buy a wildcard to go directly to next level
     public void BuyGoToNextLevel()
     {
-        if (PlayerPrefs.GetInt("CoinsNumber") >= 150)
+        if (GameDataV2.Coins >= 150)
         {
             audioSource.Stop();
             audioSource.PlayOneShot(sndWin);
-            PlayerPrefs.SetInt("CoinsNumber", PlayerPrefs.GetInt("CoinsNumber") - 150);
-            PlayerPrefs.SetInt("NumberWonLevels", PlayerPrefs.GetInt("NumberWonLevels") + 1);
-            panelUserInfo.UpdateCoins();
+            GameDataV2.Coins -= 150;
+            GameDataV2.NumberWonLevels++;
+            uiScript.UpdateCoins();
             OnClickShowJokersPanel();
             YouWin();
             ShowWinningCoins(false);
-            panelUserInfo.UpdateCurrentLvl();
         }
         else
         {
