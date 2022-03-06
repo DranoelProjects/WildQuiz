@@ -13,7 +13,7 @@ public class QuizManager : MonoBehaviour
     Text result;
 
     [SerializeField] Image imageShowJokersPanel;
-    [SerializeField] Sprite spriteClose, spriteOpen;
+    [SerializeField] Sprite spriteClose, spriteOpen, spriteGoodAnswer, spriteWrongAnswer;
 
     [SerializeField] Button btnOneWrong, btnTwoWrongs, btnBuyClue;
 
@@ -159,10 +159,12 @@ public class QuizManager : MonoBehaviour
         {
             if ((selectedButton != null) && isRightAnswer)
             {
-                selectedButton.GetComponent<Image>().color = Color.green;
+                selectedButton.GetComponent<Image>().sprite = spriteGoodAnswer;
+                selectedButton.GetComponent<Image>().color = Color.white;
             } else if(selectedButton != null)
             {
-                selectedButton.GetComponent<Image>().color = Color.red;
+                selectedButton.GetComponent<Image>().sprite = spriteWrongAnswer;
+                selectedButton.GetComponent<Image>().color = Color.white;
             }
             foreach (Button btn in allButtons)
             {
@@ -170,7 +172,8 @@ public class QuizManager : MonoBehaviour
                 string btnAnswer = btn.GetComponentInChildren<Text>().text;
                 if (isJoker && (btnAnswer == GameDataV2.CurrentLevelData.rightAnswer))
                 {
-                    btn.GetComponent<Image>().color = Color.green;
+                    btn.GetComponent<Image>().sprite = spriteGoodAnswer;
+                    selectedButton.GetComponent<Image>().color = Color.white;
                 }
             }
         }
