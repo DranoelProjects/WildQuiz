@@ -61,6 +61,7 @@ public class ApiManager : MonoBehaviour
              if (task.IsFaulted)
              {
                  Debug.Log("Can't find level with index : " + levelIndex);
+                 throw new Exception("Can't find level with index : " + levelIndex);
              }
              else if (task.IsCompleted)
              {
@@ -72,6 +73,7 @@ public class ApiManager : MonoBehaviour
                  } catch (Exception e)
                  {
                      Debug.LogError(e);
+                     throw new Exception("Can't get level with index : " + levelIndex);
                  }
              }
          });

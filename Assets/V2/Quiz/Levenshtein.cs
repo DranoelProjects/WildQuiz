@@ -60,7 +60,6 @@ public static class Levenshtein
         int distance = ComputeDistance(a, b, caseSensitive);
         int longest = Max(a.Length, b.Length);
         double coef = 1 - (double)distance / longest;
-        Debug.Log("Le coef de Levenshtein vaut : " + coef);
         return coef;
     }
 

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine.SceneManagement;
 using UnityEngine;
@@ -36,7 +37,6 @@ public class GameManager : MonoBehaviour
     {
         //Initializing callback for active scene changes
         SceneManager.activeSceneChanged += changedActiveScene;
-
         Mute(GameDataV2.Mute);
     }
 
@@ -45,8 +45,16 @@ public class GameManager : MonoBehaviour
         audioSource = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
         audioSource.PlayOneShot(sndClick);
 
-        await apiManager.GetLevel(levelIndex, theme);
-        StartCoroutine(waitDuringApiCallToGetLevel());
+        try
+        {
+            await apiManager.GetLevel(levelIndex, theme);
+            StartCoroutine(waitDuringApiCallToGetLevel());
+        } catch (Exception e)
+        {
+            Debug.LogError(e);
+            UIScript uiScript = GameObject.FindGameObjectWithTag("GameObjectUI").GetComponent<UIScript>();
+            uiScript.HandleRequestError(e.Message);
+        }
     }
 
     //This function can be called to mute the all audio sources
@@ -96,6 +104,7 @@ public class GameManager : MonoBehaviour
             default:
                 break;
         }
+
     }
 
     private void OnDestroy()

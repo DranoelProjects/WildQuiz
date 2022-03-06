@@ -9,11 +9,15 @@ public class UIScript : MonoBehaviour
     GameManager gameManager;
     private Level levelData;
     [SerializeField] Toggle muteToggle;
-    [SerializeField] GameObject panelSettings, dailyRewardPanel, btnOverallRanking;
+    [SerializeField] GameObject panelSettings, dailyRewardPanel, btnOverallRanking, panelHandleRequest;
     public GameObject PanelNoHeart, PanelNoCoins;
-
     AudioSource audioSource;
     [SerializeField] AudioClip sndClick;
+
+    [Header("Handle request panel")]
+    [SerializeField] Sprite errorSprite;
+    [SerializeField] Image loadingImage;
+    private bool loading;
 
     [Header("Panel User Info")]
     [SerializeField] Text heartsNumber;
@@ -150,5 +154,23 @@ public class UIScript : MonoBehaviour
         audioSource.PlayOneShot(sndClick);
         bool isHelpPanelActive = !helpPanel.gameObject.activeInHierarchy;
         helpPanel.gameObject.SetActive(isHelpPanelActive);
+    }
+
+    // Show loading panel
+    public void SetLoadingPanelVisibility()
+    {
+        bool isHandleRequestPanelActive = !panelHandleRequest.gameObject.activeInHierarchy;
+        if(!loading)
+            panelHandleRequest.gameObject.SetActive(isHandleRequestPanelActive);
+        if (isHandleRequestPanelActive)
+            loading = true;
+    }
+
+    public void HandleRequestError(string error)
+    {
+        loading = false;
+        Text text = panelHandleRequest.GetComponentInChildren<Text>();
+        loadingImage.sprite = errorSprite;
+        text.text = "Une erreur est survenue, veuillez réessayer plus tard (vérifiez votre connexion internet) :\n" + error;
     }
 }

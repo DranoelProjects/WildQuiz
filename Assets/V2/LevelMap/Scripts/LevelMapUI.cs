@@ -1,7 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class LevelMapUI : MonoBehaviour
@@ -11,11 +9,13 @@ public class LevelMapUI : MonoBehaviour
     Image nextLevelImage;
     RectTransform scrollRectTarget;
     ScrollRect scrollRect;
+    private UIScript uiScript;
 
     void Awake()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         scrollRect = gameObject.GetComponent<ScrollRect>();
+        uiScript = gameObject.GetComponentInChildren<UIScript>();
     }
 
     void Start()
@@ -25,7 +25,17 @@ public class LevelMapUI : MonoBehaviour
 
     public void OnClickLevelButton(int selectedLevel, string theme)
     {
-        gameManager.StartLevel(selectedLevel, theme);
+        try
+        {
+            uiScript.SetLoadingPanelVisibility();
+            gameManager.StartLevel(selectedLevel, theme);
+        }
+        catch (Exception e)
+        {
+            Debug.Log("ici");
+            uiScript.SetLoadingPanelVisibility();
+            Debug.LogError(e);
+        }
     }
 
     void initNextLevelColor()
