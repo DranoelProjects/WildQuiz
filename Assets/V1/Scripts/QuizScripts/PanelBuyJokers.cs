@@ -56,7 +56,7 @@ public class PanelBuyJokers : MonoBehaviour
             GameDataV2.NumberWonLevels++;
             uiScript.UpdateCoins();
             quizManager.ShowWinningCoins(false);
-            quizManager.RevealAnswer(true);
+            quizManager.RevealAnswer(true, null, true);
             quizManager.OnClickShowJokersPanel();
         } else
         {

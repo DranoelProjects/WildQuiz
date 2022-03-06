@@ -17,7 +17,7 @@ public class Selection : MonoBehaviour
     public void CheckAnswer()
     {
         string playerAnswer = GetComponentInChildren<Text>().text;
-        quizManager.CheckAnswer(playerAnswer);
+        quizManager.CheckAnswer(playerAnswer, gameObject);
     }
 
 }

@@ -77,7 +77,7 @@ public class QuizManager : MonoBehaviour
                 uiScript.UpdateHearts();
 
                 WriteResult("Temps écoulé !");
-                RevealAnswer(false);
+                RevealAnswer(false, null, false);
             }
         }
         else
@@ -152,23 +152,26 @@ public class QuizManager : MonoBehaviour
     }
 
     // Reveals selected btn
-    public void RevealAnswer(bool isRightAnswer)
+    public void RevealAnswer(bool isRightAnswer, GameObject selectedButton, bool isJoker)
     {
         isTimerActivate = false;
         if (levelData.Type == "Quiz")
         {
+            if ((selectedButton != null) && isRightAnswer)
+            {
+                selectedButton.GetComponent<Image>().color = Color.green;
+            } else if(selectedButton != null)
+            {
+                selectedButton.GetComponent<Image>().color = Color.red;
+            }
             foreach (Button btn in allButtons)
             {
+                btn.GetComponent<Button>().interactable = false;
                 string btnAnswer = btn.GetComponentInChildren<Text>().text;
-                if ((levelData.RightAnswer == btnAnswer) && isRightAnswer)
+                if (isJoker && (btnAnswer == GameDataV2.CurrentLevelData.rightAnswer))
                 {
                     btn.GetComponent<Image>().color = Color.green;
                 }
-                else if (isRightAnswer)
-                {
-                    btn.GetComponent<Image>().color = Color.red;
-                }
-                btn.GetComponent<Button>().interactable = false;
             }
         }
         int nextLevel = levelData.Index + 1;
@@ -267,11 +270,11 @@ public class QuizManager : MonoBehaviour
     public void OnClickCheckInput()
     {
         InputField inputField = answerInput.GetComponent<InputField>();
-        CheckAnswer(inputField.text);
+        CheckAnswer(inputField.text, null);
     }
 
     // For input quiz or directly mode, check the answer
-    public void CheckAnswer(string playerAnswer)
+    public void CheckAnswer(string playerAnswer, GameObject selectedButton)
     {
         bool isRightAnswer = false;
         audioSource.Stop();
@@ -315,7 +318,7 @@ public class QuizManager : MonoBehaviour
             uiScript.UpdateHearts();
             WriteResult("Mauvaise réponse !");
         }
-        RevealAnswer(isRightAnswer);
+        RevealAnswer(isRightAnswer, selectedButton, false);
     }
 
     // Choose between 4 answers mode
