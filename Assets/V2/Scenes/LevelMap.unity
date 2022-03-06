@@ -21352,6 +21352,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5005650087490653334}
     m_Modifications:
+    - target: {fileID: 2259921000111963917, guid: d38be1c444c185641a386596e7680619,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4187494327002736034, guid: d38be1c444c185641a386596e7680619,
         type: 3}
       propertyPath: m_Pivot.x
@@ -21466,6 +21471,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7770004608746645876, guid: d38be1c444c185641a386596e7680619,
+        type: 3}
+      propertyPath: m_Text
+      value: Plus assez de bananes!
       objectReference: {fileID: 0}
     - target: {fileID: 8858873236729265269, guid: d38be1c444c185641a386596e7680619,
         type: 3}
