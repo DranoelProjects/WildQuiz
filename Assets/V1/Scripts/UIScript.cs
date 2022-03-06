@@ -16,6 +16,7 @@ public class UIScript : MonoBehaviour
 
     [Header("Handle request panel")]
     [SerializeField] Sprite errorSprite;
+    [SerializeField] Sprite loadingSprite;
     [SerializeField] Image loadingImage;
     private bool loading;
 
@@ -163,14 +164,22 @@ public class UIScript : MonoBehaviour
         if(!loading)
             panelHandleRequest.gameObject.SetActive(isHandleRequestPanelActive);
         if (isHandleRequestPanelActive)
-            loading = true;
+            handleRequestLoading();
     }
 
     public void HandleRequestError(string error)
     {
         loading = false;
         Text text = panelHandleRequest.GetComponentInChildren<Text>();
-        loadingImage.sprite = errorSprite;
         text.text = "Une erreur est survenue, veuillez réessayer plus tard (vérifiez votre connexion internet) :\n" + error;
+        loadingImage.sprite = errorSprite;
+    }
+
+    void handleRequestLoading()
+    {
+        loading = true;
+        Text text = panelHandleRequest.GetComponentInChildren<Text>();
+        text.text = "Chargement...";
+        loadingImage.sprite = loadingSprite;
     }
 }
