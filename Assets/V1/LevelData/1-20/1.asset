@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 1
   m_EditorClassIdentifier: 
   Level: 1
+  NextLevelTheme: Histoire
   Type: Quiz
   Theme: "G\xE9ographie"
   ThemeInBase: sport

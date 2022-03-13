@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: 30
   m_EditorClassIdentifier: 
   Level: 30
+  NextLevelTheme: Art
   Type: Quiz
   Theme: Animaux
+  ThemeInBase: logic
   RightAnswer: Choupisson
   SpriteWithQuestion: {fileID: 21300000, guid: 86e84549e317eef4da324e25a74ea903, type: 3}
   ImageScale: 9.182155

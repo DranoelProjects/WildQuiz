@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: 84
   m_EditorClassIdentifier: 
   Level: 84
+  NextLevelTheme: Sport
   Type: InputQuiz
   Theme: Orthographe
+  ThemeInBase: logic
   RightAnswer: Coccyx
   SpriteWithQuestion: {fileID: 0}
   ImageScale: 9.182155

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 60
   m_EditorClassIdentifier: 
   Level: 60
+  NextLevelTheme: Histoire
   Type: TicTacToe
   Theme: Logique
   ThemeInBase: logic

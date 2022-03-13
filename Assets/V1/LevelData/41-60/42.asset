@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: 42
   m_EditorClassIdentifier: 
   Level: 42
+  NextLevelTheme: Animaux
   Type: Quiz
-  Theme: Culture
+  Theme: Culture G.
   ThemeInBase: logic
   RightAnswer: Jair Bolsonaro
   SpriteWithQuestion: {fileID: 21300000, guid: ea14c8307e259fc4f9643793af058dd7, type: 3}

@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: 50
   m_EditorClassIdentifier: 
   Level: 50
+  NextLevelTheme: "Cin\xE9ma"
   Type: Quiz
   Theme: "Multim\xE9dia"
+  ThemeInBase: logic
   RightAnswer: Calculer
   SpriteWithQuestion: {fileID: 21300000, guid: 88799ad1d69e8c945b0ea56eb52018fd, type: 3}
   ImageScale: 9.182155

@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: 73
   m_EditorClassIdentifier: 
   Level: 73
+  NextLevelTheme: Art
   Type: Quiz
   Theme: Animaux
+  ThemeInBase: logic
   RightAnswer: Chiot
   SpriteWithQuestion: {fileID: 21300000, guid: 7e86b4c43afe00740b51807c85edae77, type: 3}
   ImageScale: 6

@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: 26
   m_EditorClassIdentifier: 
   Level: 26
+  NextLevelTheme: Sport
   Type: Quiz
   Theme: Sciences
+  ThemeInBase: logic
   RightAnswer: Pascal
   SpriteWithQuestion: {fileID: 21300000, guid: 1b4c0f1ebff37554da92c4b534dd1ad7, type: 3}
   ImageScale: 9.182155

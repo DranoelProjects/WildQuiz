@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: 65
   m_EditorClassIdentifier: 
   Level: 65
+  NextLevelTheme: "Cin\xE9ma"
   Type: Quiz
   Theme: "Multim\xE9dia"
+  ThemeInBase: logic
   RightAnswer: 1920 x 1080
   SpriteWithQuestion: {fileID: 21300000, guid: 0ce579121c94b684f9060c3611f701d1, type: 3}
   ImageScale: 9.182155

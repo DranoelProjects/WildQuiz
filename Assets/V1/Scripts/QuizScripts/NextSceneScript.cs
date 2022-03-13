@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Collections;
 
 public class NextSceneScript : MonoBehaviour
 {
@@ -9,6 +10,14 @@ public class NextSceneScript : MonoBehaviour
     [SerializeField] Text textOuputCoinsValue, textMultiplier;
     int randomMultiplier = 0;
     int numberOfCoinsWon = 10;
+    private GameManager gameManager;
+    private UIScript uiScript;
+
+    private void Awake()
+    {
+        uiScript = GameObject.Find("GameObjectUI").GetComponent<UIScript>();
+        gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+    }
 
     public void Start()
     {
@@ -32,5 +41,34 @@ public class NextSceneScript : MonoBehaviour
     public void BackToMenu()
     {
         SceneManager.LoadScene(0);
+    }
+
+    // On click start the next level
+    public void StartNextSceneLevel()
+    {
+        string btnLabel = nextLvlButton.GetComponentInChildren<Text>().text;
+        if (GameDataV2.Hearts > 0)
+        {
+            if (btnLabel == "Rejouer")
+            {
+                SceneManager.LoadScene("TicTacToe");
+            }
+            else
+            {
+                gameManager.StartLevel(GameDataV2.CurrentLevelData.Index + 1, GameDataV2.CurrentLevelData.NextLevelTheme);
+            }
+        }
+        else
+        {
+            uiScript.PanelNoHeart.SetActive(true);
+            StartCoroutine(forceBackToMenu());
+        }
+    }
+
+    // Wait 1 sec and then force back to menu
+    IEnumerator forceBackToMenu()
+    {
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene("LevelMap");
     }
 }

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 16
   m_EditorClassIdentifier: 
   Level: 16
+  NextLevelTheme: Animaux
   Type: InputQuiz
   Theme: Orthographe
   ThemeInBase: spelling

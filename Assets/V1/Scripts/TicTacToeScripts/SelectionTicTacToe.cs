@@ -17,12 +17,12 @@ public class SelectionTicTacToe : MonoBehaviour
     public void WriteX()
     {
         if(!gm.IsGameOver){
+            Level levelData = GameDataV2.CurrentLevelData;
             GetComponentInChildren<Text>().text = "X";
             GetComponent<Button>().interactable = false;
             gm.Tab[int.Parse(gameObject.name)] = "X";
             if (gm.IsWinner("X"))
             {
-                Level levelData = GameDataV2.CurrentLevelData;
                 gm.IsGameOver = true;
                 gm.PanelNextScene.GetComponent<NextSceneScript>().ActiveWinningCoins(false);
                 gm.PlayWinningSound();
@@ -34,10 +34,11 @@ public class SelectionTicTacToe : MonoBehaviour
                 }
                 gm.PanelNextScene.GetComponentInChildren<PanelNextScene>().GoToNextLevel = 1;
                 gm.PanelNextScene.SetActive(true);
-                int nextLevel = GameDataV2.NextLevel + 1;
-                if (levelData.Index < nextLevel)
+
+                int nextLevel = levelData.Index + 1;
+                if (GameDataV2.NextLevel < nextLevel)
                 {
-                    GameDataV2.NextLevel++;
+                    GameDataV2.NextLevel = nextLevel;
                 }
             }
             else if (gm.ArrayIsFull())

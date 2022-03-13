@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 3
   m_EditorClassIdentifier: 
   Level: 3
+  NextLevelTheme: Logique
   Type: Quiz
   Theme: "G\xE9ographie"
   ThemeInBase: geography

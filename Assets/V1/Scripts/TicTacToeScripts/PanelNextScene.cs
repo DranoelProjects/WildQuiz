@@ -31,9 +31,4 @@ public class PanelNextScene : MonoBehaviour
             btnNextLevel.GetComponentInChildren<Text>().text = "Rejouer";
         }
     }
-
-    public void BackToMenu()
-    {
-        SceneManager.LoadScene(0);
-    }
 }

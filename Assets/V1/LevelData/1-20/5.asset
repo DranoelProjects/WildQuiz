@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 5
   m_EditorClassIdentifier: 
   Level: 5
+  NextLevelTheme: Maths
   Type: Quiz
   Theme: Sport
   ThemeInBase: sport

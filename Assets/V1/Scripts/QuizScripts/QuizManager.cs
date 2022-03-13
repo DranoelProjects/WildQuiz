@@ -7,18 +7,17 @@ using GooglePlayGames.BasicApi;
 
 public class QuizManager : MonoBehaviour
 {
-    [SerializeField] GameObject panelNextScene, jokersPanel, cluePanel, panelAnswersButtons, panelInputAnswer;
+    [SerializeField] GameObject jokersPanel, cluePanel, panelAnswersButtons, panelInputAnswer;
 
     Button[] allButtons;
-    Text result;
 
     [SerializeField] Image imageShowJokersPanel;
     [SerializeField] Sprite spriteClose, spriteOpen, spriteGoodAnswer, spriteWrongAnswer;
-
     [SerializeField] Button btnOneWrong, btnTwoWrongs, btnBuyClue;
 
     [Header("Load quiz data")]
     public Level levelData;
+    [SerializeField] GameObject gameObjectQuestion;
     [SerializeField] Text questionText, answer1, answer2, answer3, answer4, clue, theme;
     [SerializeField] Image imageWithQuestion;
 
@@ -41,18 +40,33 @@ public class QuizManager : MonoBehaviour
     [SerializeField] InputField answerInput;
     [SerializeField] Text textAnswerWas;
 
+    [Header("ResultPanel")]
+    int randomMultiplier = 0;
+    int numberOfCoinsWon = 10;
+    [SerializeField] Button nextLvlButton;
+    [SerializeField] GameObject resultPanel, winningCoins, resultImage;
+    [SerializeField] Text textOuputCoinsValue, textMultiplier, result, info;
+    [SerializeField] Sprite sadCat;
+
+    private GameManager gameManager;
+
     private void Awake()
     {
         uiScript = GameObject.Find("GameObjectUI").GetComponent<UIScript>();
-        result = panelNextScene.GetComponentInChildren<Text>();
         levelData = GameDataV2.CurrentLevelData;
         audioSource = gameObject.GetComponent<AudioSource>();
+        gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
     }
 
     private void Start()
     {
         allButtons = GameObject.Find("PanelAnswersButtons").GetComponentsInChildren<Button>();
         loadLevelData();
+
+        if (GameDataV2.NextLevel == 86 && GameDataV2.CurrentLevelData.Index == 85)
+        {
+            nextLvlButton.interactable = false;
+        }
     }
 
     void Update()
@@ -114,7 +128,7 @@ public class QuizManager : MonoBehaviour
         else if (levelData.Type == "InputQuiz")
         {
             panelAnswerMode.SetActive(false);
-            questionText.enabled = false;
+            gameObjectQuestion.SetActive(false);
             panelAnswersButtons.SetActive(false);
             panelInputAnswer.SetActive(true);
             btnOneWrong.gameObject.SetActive(false);
@@ -159,12 +173,11 @@ public class QuizManager : MonoBehaviour
         {
             if ((selectedButton != null) && isRightAnswer)
             {
-                selectedButton.GetComponent<Image>().sprite = spriteGoodAnswer;
-                selectedButton.GetComponent<Image>().color = Color.white;
-            } else if(selectedButton != null)
+                setQuizResultPanelForRightAnswer(selectedButton);
+            }
+            else if (selectedButton != null)
             {
-                selectedButton.GetComponent<Image>().sprite = spriteWrongAnswer;
-                selectedButton.GetComponent<Image>().color = Color.white;
+                setQuizResultPanelForWrongAnswer(selectedButton);
             }
             foreach (Button btn in allButtons)
             {
@@ -174,7 +187,19 @@ public class QuizManager : MonoBehaviour
                 {
                     btn.GetComponent<Image>().sprite = spriteGoodAnswer;
                     selectedButton.GetComponent<Image>().color = Color.white;
+                    resultPanel.GetComponent<Image>().color = new Color(21 / 255f, 89 / 255f, 9 / 255f);
                 }
+            }
+        } else
+        {
+            if (isRightAnswer)
+            {
+                resultPanel.GetComponent<Image>().color = new Color(21 / 255f, 89 / 255f, 9 / 255f);
+            } else
+            {
+                resultPanel.GetComponent<Image>().color = Color.red;
+                resultImage.GetComponent<Image>().sprite = sadCat;
+                resultImage.GetComponent<Animator>().enabled = false;
             }
         }
         int nextLevel = levelData.Index + 1;
@@ -182,22 +207,36 @@ public class QuizManager : MonoBehaviour
         {
             GameDataV2.NextLevel = nextLevel;
         }
-        clue.text = levelData.Info;
+        info.text = levelData.Info;
         textAnswerWas.text = levelData.RightAnswer;
         textAnswerWas.color = Color.green;
-        if (!cluePanel.gameObject.activeInHierarchy)
-        {
-            ShowCluePanel();
-        }
         StartCoroutine(nextScene());
     }
 
-    // Wait 2 sec then display the following scene panel
+    // Wait 1 sec then display the following scene panel
     IEnumerator nextScene()
     {
-        yield return new WaitForSeconds(2f);
-        panelNextScene.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        resultPanel.SetActive(true);
         gameObjectAnswerWas.SetActive(true);
+    }
+
+    // show result panel with right answer theme
+    private void setQuizResultPanelForRightAnswer(GameObject selectedButton)
+    {
+        selectedButton.GetComponent<Image>().sprite = spriteGoodAnswer;
+        selectedButton.GetComponent<Image>().color = Color.white;
+        resultPanel.GetComponent<Image>().color = new Color(21 / 255f, 89 / 255f, 9 / 255f);
+    }
+
+    // show result panel with wrong answer theme
+    private void setQuizResultPanelForWrongAnswer(GameObject selectedButton)
+    {
+        selectedButton.GetComponent<Image>().sprite = spriteWrongAnswer;
+        selectedButton.GetComponent<Image>().color = Color.white;
+        resultPanel.GetComponent<Image>().color = Color.red;
+        resultImage.GetComponent<Image>().sprite = sadCat;
+        resultImage.GetComponent<Animator>().enabled = false;
     }
 
     // Reveals X wrong answers
@@ -218,7 +257,7 @@ public class QuizManager : MonoBehaviour
     // Winning coins of the following scene 
     public void ShowWinningCoins(bool active, int value = 10)
     {
-        panelNextScene.GetComponent<NextSceneScript>().ActiveWinningCoins(active, value);
+        activeWinningCoins(active, value);
     }
 
     // Display the result on the panel next scene 
@@ -350,4 +389,40 @@ public class QuizManager : MonoBehaviour
         audioSource.PlayOneShot(sndBtn);
     }
 
+    // Winning coins are just the number of coins that we display in the following scene panel
+    private void activeWinningCoins(bool active, int value = 10)
+    {
+        textOuputCoinsValue.text = "+ " + value.ToString();
+        winningCoins.SetActive(active);
+        numberOfCoinsWon = value;
+        randomMultiplier = Random.Range(2, 5);
+        textMultiplier.text = randomMultiplier.ToString();
+    }
+
+    // Go back to level map
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    // On click start the next level
+    public void StartNextSceneLevel()
+    {
+        if (GameDataV2.Hearts > 0)
+        {
+            gameManager.StartLevel(GameDataV2.CurrentLevelData.Index + 1, GameDataV2.CurrentLevelData.NextLevelTheme);
+        } else
+        {
+            resultPanel.SetActive(false);
+            uiScript.PanelNoHeart.SetActive(true);
+            StartCoroutine(forceBackToMenu());
+        }
+    }
+
+    // Wait 1 sec and then force back to menu
+    IEnumerator forceBackToMenu()
+    {
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene("LevelMap");
+    }
 }

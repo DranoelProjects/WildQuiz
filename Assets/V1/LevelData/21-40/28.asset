@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 28
   m_EditorClassIdentifier: 
   Level: 28
+  NextLevelTheme: Culture
   Type: InputQuiz
   Theme: Culture
   ThemeInBase: logic

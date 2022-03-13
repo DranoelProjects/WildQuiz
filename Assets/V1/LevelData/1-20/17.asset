@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 17
   m_EditorClassIdentifier: 
   Level: 17
+  NextLevelTheme: Art
   Type: Quiz
   Theme: Animaux
   ThemeInBase: animals

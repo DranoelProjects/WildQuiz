@@ -8,21 +8,22 @@ public class ApiManager : MonoBehaviour
 {
     private FirebaseDatabase _database;
     private const string DATABASE_URL = "https://wildquiz-41011941-default-rtdb.europe-west1.firebasedatabase.app/";
-    //[SerializeField] LevelData[] levelDatas;
+    [SerializeField] LevelData[] levelDatas;
 
     void Awake()
     {
         _database = FirebaseDatabase.GetInstance(DATABASE_URL);
-        /*foreach (LevelData levelData in levelDatas)
+        foreach (LevelData levelData in levelDatas)
         {
             setLevel(levelData);
-        }*/
+        }
     }
 
-    /*void setLevel(LevelData levelData)
+    void setLevel(LevelData levelData)
     {
         LevelOutput level = new LevelOutput();
         level.Index = levelData.Level;
+        level.NextLevelTheme = levelData.NextLevelTheme;
         level.Type = levelData.Type;
         level.Theme = levelData.Theme;
         level.RightAnswer = levelData.RightAnswer;
@@ -50,7 +51,7 @@ public class ApiManager : MonoBehaviour
 
         string json = JsonUtility.ToJson(level);
         _database.GetReference("levels").Child(levelData.Level.ToString()).Child(ThemeDico.GetThemeInBaseFromTheme(level.Theme)).SetRawJsonValueAsync(json);
-    }*/
+    }
 
     public async Task GetLevel(int levelIndex, string theme)
     {

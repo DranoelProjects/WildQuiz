@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: 36
   m_EditorClassIdentifier: 
   Level: 36
+  NextLevelTheme: "Multim\xE9dia"
   Type: InputQuiz
   Theme: Devinettes
+  ThemeInBase: logic
   RightAnswer: 0
   SpriteWithQuestion: {fileID: 0}
   ImageScale: 9.182155

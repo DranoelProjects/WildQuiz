@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: 38
   m_EditorClassIdentifier: 
   Level: 38
+  NextLevelTheme: Sciences
   Type: Quiz
   Theme: "G\xE9ographie"
+  ThemeInBase: logic
   RightAnswer: New York
   SpriteWithQuestion: {fileID: 21300000, guid: 6772a3d81d23b9848835239b1f240154, type: 3}
   ImageScale: 7

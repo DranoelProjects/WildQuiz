@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 19
   m_EditorClassIdentifier: 
   Level: 19
+  NextLevelTheme: "R\xE9bus"
   Type: Quiz
   Theme: Histoire
   ThemeInBase: history

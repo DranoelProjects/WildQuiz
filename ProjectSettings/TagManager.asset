@@ -9,6 +9,7 @@ TagManager:
   - Sound Effects
   - FX
   - GameObjectUI
+  - GameManager
   layers:
   - Default
   - TransparentFX

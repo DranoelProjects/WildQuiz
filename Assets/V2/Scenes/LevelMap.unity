@@ -17909,6 +17909,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0450cdaa20af9cc4ba06a9ba91708891, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelDatas:
+  - {fileID: 11400000, guid: f933ad3d1cd7feb448d4a870ab5cee6a, type: 2}
+  - {fileID: 11400000, guid: 30b10cf622d68a349ab31d99abe9680c, type: 2}
 --- !u!1 &435026633922015064
 GameObject:
   m_ObjectHideFlags: 0
@@ -17922,7 +17925,7 @@ GameObject:
   - component: {fileID: 435026633922015065}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: GameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

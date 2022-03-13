@@ -9,6 +9,7 @@ public static class LevelMapper
     {
         Level level = new Level();
         level.Index = int.Parse(snapshot.Child("index").GetValue(true).ToString());
+        level.NextLevelTheme = snapshot.Child("nextLevelTheme").GetValue(true).ToString();
         level.Type = snapshot.Child("type").GetValue(true).ToString();
         level.Theme = snapshot.Child("theme").GetValue(true).ToString();
         level.RightAnswer = snapshot.Child("rightAnswer").GetValue(true).ToString();

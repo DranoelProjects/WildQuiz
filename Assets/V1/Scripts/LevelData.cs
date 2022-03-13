@@ -7,6 +7,7 @@ public class LevelData : ScriptableObject
 {
     [Header("Common data")]
     public int Level; //level number
+    public string NextLevelTheme; //used to launch next level
     public string Type = "Quiz"; //used to launch the corresponding scene it can be : Quiz, InputQuiz, TicTacToe or Taquin
     public string Theme; //used for Quiz and InputQuiz to know the theme of the question
     public string ThemeInBase = "logic";

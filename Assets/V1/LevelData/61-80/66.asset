@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: 66
   m_EditorClassIdentifier: 
   Level: 66
+  NextLevelTheme: "G\xE9ographie"
   Type: Quiz
   Theme: "Cin\xE9ma"
+  ThemeInBase: logic
   RightAnswer: Emilia Clarke
   SpriteWithQuestion: {fileID: 21300000, guid: 380262f8e13c86649b3a95c8bdb3767d, type: 3}
   ImageScale: 9.182155

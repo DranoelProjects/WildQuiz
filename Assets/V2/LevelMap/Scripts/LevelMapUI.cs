@@ -27,8 +27,15 @@ public class LevelMapUI : MonoBehaviour
     {
         try
         {
-            uiScript.SetLoadingPanelVisibility();
-            gameManager.StartLevel(selectedLevel, theme);
+            if (GameDataV2.Hearts > 0)
+            {
+                uiScript.SetLoadingPanelVisibility();
+                gameManager.StartLevel(selectedLevel, theme);
+            }
+            else
+            {
+                uiScript.PanelNoHeart.SetActive(true);
+            }
         }
         catch (Exception e)
         {

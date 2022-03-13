@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 22
   m_EditorClassIdentifier: 
   Level: 22
+  NextLevelTheme: "Multim\xE9dia"
   Type: Quiz
   Theme: Maths
   ThemeInBase: logic

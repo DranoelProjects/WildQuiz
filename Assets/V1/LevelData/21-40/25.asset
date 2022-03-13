@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: 25
   m_EditorClassIdentifier: 
   Level: 25
+  NextLevelTheme: Sciences
   Type: Quiz
   Theme: "G\xE9ographie"
+  ThemeInBase: logic
   RightAnswer: 330
   SpriteWithQuestion: {fileID: 21300000, guid: c4aadf3d2bfa2c743a82d846c9926870, type: 3}
   ImageScale: 9.182155

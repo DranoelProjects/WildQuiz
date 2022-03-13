@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 35
   m_EditorClassIdentifier: 
   Level: 35
+  NextLevelTheme: Devinettes
   Type: Quiz
   Theme: Maths
   ThemeInBase: logic

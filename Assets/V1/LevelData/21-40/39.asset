@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: 39
   m_EditorClassIdentifier: 
   Level: 39
+  NextLevelTheme: Orthographe
   Type: Quiz
   Theme: Sciences
+  ThemeInBase: logic
   RightAnswer: James Watt
   SpriteWithQuestion: {fileID: 21300000, guid: 95d2ad6b1256ac846bd57e0d7f589a4c, type: 3}
   ImageScale: 9.182155

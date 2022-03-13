@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 32
   m_EditorClassIdentifier: 
   Level: 32
+  NextLevelTheme: Histoire
   Type: Taquin
   Theme: Logique
   ThemeInBase: logic

@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: 75
   m_EditorClassIdentifier: 
   Level: 75
+  NextLevelTheme: Logique
   Type: Quiz
   Theme: Histoire
+  ThemeInBase: logic
   RightAnswer: 1957
   SpriteWithQuestion: {fileID: 21300000, guid: 30433a966c26a274296807c1c4e4e26e, type: 3}
   ImageScale: 9.182155

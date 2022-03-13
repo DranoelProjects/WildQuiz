@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: 23
   m_EditorClassIdentifier: 
   Level: 23
+  NextLevelTheme: Logique
   Type: Quiz
   Theme: "Multim\xE9dia"
+  ThemeInBase: logic
   RightAnswer: Minecraft
   SpriteWithQuestion: {fileID: 21300000, guid: 881affae65ae76547b6eeb3089f893f7, type: 3}
   ImageScale: 9.182155

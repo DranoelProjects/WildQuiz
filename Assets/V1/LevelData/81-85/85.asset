@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: 85
   m_EditorClassIdentifier: 
   Level: 85
+  NextLevelTheme: Culture G.
   Type: Quiz
   Theme: Sport
+  ThemeInBase: logic
   RightAnswer: 2006
   SpriteWithQuestion: {fileID: 21300000, guid: 105b6677cab1c064abca2d7c77767933, type: 3}
   ImageScale: 9.182155

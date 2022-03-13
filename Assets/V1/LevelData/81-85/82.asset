@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: 82
   m_EditorClassIdentifier: 
   Level: 82
+  NextLevelTheme: Sciences
   Type: Quiz
   Theme: "G\xE9ographie"
+  ThemeInBase: logic
   RightAnswer: Mont Fuji
   SpriteWithQuestion: {fileID: 21300000, guid: cb7cfaf8758650442882564a55d4a2f4, type: 3}
   ImageScale: 9.182155

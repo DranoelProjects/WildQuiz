@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 24
   m_EditorClassIdentifier: 
   Level: 24
+  NextLevelTheme: "G\xE9ographie"
   Type: TicTacToe
   Theme: Logique
   ThemeInBase: logic

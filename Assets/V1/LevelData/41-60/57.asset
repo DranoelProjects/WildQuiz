@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: 57
   m_EditorClassIdentifier: 
   Level: 57
+  NextLevelTheme: Animaux
   Type: Quiz
-  Theme: Culture
+  Theme: Culture G.
   ThemeInBase: logic
   RightAnswer: Ram Nath Kovind
   SpriteWithQuestion: {fileID: 21300000, guid: 612567ef29dda9649a46395bc4ccf8ac, type: 3}

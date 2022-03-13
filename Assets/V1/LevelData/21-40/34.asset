@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: 34
   m_EditorClassIdentifier: 
   Level: 34
+  NextLevelTheme: Maths
   Type: Quiz
   Theme: Environnement
+  ThemeInBase: logic
   RightAnswer: 71%
   SpriteWithQuestion: {fileID: 21300000, guid: d2925aecaa83c2f4e995f1750d6ec8cc, type: 3}
   ImageScale: 9.182155

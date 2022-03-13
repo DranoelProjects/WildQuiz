@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: 77
   m_EditorClassIdentifier: 
   Level: 77
+  NextLevelTheme: Maths
   Type: Quiz
   Theme: Environnement
+  ThemeInBase: logic
   RightAnswer: "Oc\xE9an Pacifique"
   SpriteWithQuestion: {fileID: 21300000, guid: 4326daf6de0a9f143bc4204905f2cbbe, type: 3}
   ImageScale: 9.182155

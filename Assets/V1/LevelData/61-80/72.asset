@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: 72
   m_EditorClassIdentifier: 
   Level: 72
+  NextLevelTheme: Animaux
   Type: InputQuiz
-  Theme: Culture
+  Theme: Culture G.
   ThemeInBase: logic
   RightAnswer: SNCF
   SpriteWithQuestion: {fileID: 0}

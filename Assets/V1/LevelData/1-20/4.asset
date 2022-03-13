@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: 4
   m_EditorClassIdentifier: 
   Level: 4
+  NextLevelTheme: Sport
   Type: TicTacToe
-  Theme: 
+  Theme: Logique
+  ThemeInBase: logic
   RightAnswer: 
   SpriteWithQuestion: {fileID: 0}
   ImageScale: 9.182155

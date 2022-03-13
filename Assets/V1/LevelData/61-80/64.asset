@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: 64
   m_EditorClassIdentifier: 
   Level: 64
+  NextLevelTheme: "Multim\xE9dia"
   Type: InputQuiz
   Theme: Orthographe
+  ThemeInBase: logic
   RightAnswer: Reblochon
   SpriteWithQuestion: {fileID: 0}
   ImageScale: 7.51158

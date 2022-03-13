@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: 52
   m_EditorClassIdentifier: 
   Level: 52
+  NextLevelTheme: "G\xE9ographie"
   Type: InputQuiz
   Theme: Animaux
+  ThemeInBase: logic
   RightAnswer: Rouge-gorge
   SpriteWithQuestion: {fileID: 0}
   ImageScale: 9.182155

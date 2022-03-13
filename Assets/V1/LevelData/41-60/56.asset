@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: 56
   m_EditorClassIdentifier: 
   Level: 56
+  NextLevelTheme: Culture G.
   Type: InputQuiz
   Theme: Devinettes
+  ThemeInBase: logic
   RightAnswer: 3
   SpriteWithQuestion: {fileID: 0}
   ImageScale: 9.182155

@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: 71
   m_EditorClassIdentifier: 
   Level: 71
+  NextLevelTheme: Culture G.
   Type: Quiz
-  Theme: Culture
+  Theme: Culture G.
   ThemeInBase: logic
   RightAnswer: Xi Jinping
   SpriteWithQuestion: {fileID: 21300000, guid: f3391a2205a712d44baf4c317c3982b4, type: 3}

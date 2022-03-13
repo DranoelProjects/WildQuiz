@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: 43
   m_EditorClassIdentifier: 
   Level: 43
+  NextLevelTheme: Logique
   Type: Quiz
   Theme: Animaux
+  ThemeInBase: logic
   RightAnswer: 15
   SpriteWithQuestion: {fileID: 21300000, guid: 70c3f4c02b460204eb484dde31111af7, type: 3}
   ImageScale: 9.182155

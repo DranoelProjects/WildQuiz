@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 44
   m_EditorClassIdentifier: 
   Level: 44
+  NextLevelTheme: Art
   Type: TicTacToe
   Theme: Logique
   ThemeInBase: logic

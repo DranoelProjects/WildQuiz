@@ -7,6 +7,7 @@ public class LevelOutput
     // Used to send levels to firebase only
 
     public int index; //level number
+    public string nextLevelTheme; //used to launch next level
     public string type; //used to launch the corresponding scene it can be : Quiz, InputQuiz, TicTacToe or Taquin
     public string theme; //used for Quiz and InputQuiz to know the theme of the question
     public string rightAnswer; //first answer accepted
@@ -41,6 +42,7 @@ public class LevelOutput
     }
 
     public int Index { get => index; set => index = value; }
+    public string NextLevelTheme { get => nextLevelTheme; set => nextLevelTheme = value; }
     public string Type { get => type; set => type = value; }
     public string Theme { get => theme; set => theme = value; }
     public string RightAnswer { get => rightAnswer; set => rightAnswer = value; }

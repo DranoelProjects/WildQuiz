@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: 80
   m_EditorClassIdentifier: 
   Level: 80
+  NextLevelTheme: "Cin\xE9ma"
   Type: InputQuiz
   Theme: Devinettes
+  ThemeInBase: logic
   RightAnswer: et
   SpriteWithQuestion: {fileID: 0}
   ImageScale: 9.182155

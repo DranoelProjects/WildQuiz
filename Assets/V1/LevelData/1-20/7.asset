@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 7
   m_EditorClassIdentifier: 
   Level: 7
+  NextLevelTheme: Animaux
   Type: Quiz
   Theme: Histoire
   ThemeInBase: history
