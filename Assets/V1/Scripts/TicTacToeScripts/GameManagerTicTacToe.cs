@@ -17,12 +17,16 @@ public class GameManagerTicTacToe : MonoBehaviour
     [SerializeField] AudioClip sndWin, sndLoose;
     Level levelData;
 
+    //Used in order to update user hearts and coins 
+    UIScript uiScript;
+
     AI ai = new AI();
 
     public bool IsGameOver = false;
 
     private void Awake()
     {
+        uiScript = GameObject.Find("GameObjectUI").GetComponent<UIScript>();
         levelData = GameDataV2.CurrentLevelData;
     }
     private void Start()
@@ -175,15 +179,16 @@ public class GameManagerTicTacToe : MonoBehaviour
             audioSource.Stop();
             audioSource.PlayOneShot(sndWin);
             GameDataV2.Coins -= 150;
+            uiScript.UpdateCoins();
             GameDataV2.NumberWonLevels++;
             PanelNextScene.GetComponent<NextSceneScript>().ActiveWinningCoins(false);
             OnClickShowJokersPanel();
             PanelNextScene.GetComponentInChildren<PanelNextScene>().GoToNextLevel = 1;
             PanelNextScene.SetActive(true);
             int nextLevel = levelData.Index + 1;
-            if (PlayerPrefs.GetInt("NextLevel") < nextLevel)
+            if (GameDataV2.NextLevel < nextLevel)
             {
-                PlayerPrefs.SetInt("NextLevel", nextLevel);
+                GameDataV2.NextLevel = nextLevel;
             }
         } else
         {

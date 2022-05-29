@@ -127,17 +127,19 @@ namespace DailyRewardSystem
             rewardsInfo.SetActive(false);
         }
 
-        void onClaimButtonClick()
+        public void onClaimButtonClick()
         {
             Reward reward = rewardsDB.GetReward(nextRewardIndex);
 
             //check reward type
             if(reward.Type == RewardType.Hearts)
             {
+                GameDataV2.Hearts += reward.Amount;
                 uiScript.UpdateHearts();
             }
             else if (reward.Type == RewardType.Coins)
             {
+                GameDataV2.Coins += reward.Amount;
                 uiScript.UpdateCoins();
             }
             fx.Play();

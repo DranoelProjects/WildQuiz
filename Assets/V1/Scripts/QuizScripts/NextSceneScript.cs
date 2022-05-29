@@ -5,18 +5,20 @@ using System.Collections;
 
 public class NextSceneScript : MonoBehaviour
 {
-    [SerializeField] GameObject winningCoins;
+    [SerializeField] GameObject winningCoins, watchAd;
     [SerializeField] Button nextLvlButton;
     [SerializeField] Text textOuputCoinsValue, textMultiplier;
     int randomMultiplier = 0;
     int numberOfCoinsWon = 10;
     private GameManager gameManager;
     private UIScript uiScript;
+    WatchAd watchAdScript;
 
     private void Awake()
     {
         uiScript = GameObject.Find("GameObjectUI").GetComponent<UIScript>();
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        watchAdScript = gameManager.GetComponent<WatchAd>();
     }
 
     public void Start()
@@ -70,5 +72,20 @@ public class NextSceneScript : MonoBehaviour
     {
         yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene("LevelMap");
+    }
+
+    public void OnClickWatchAd()
+    {
+        GameDataV2.ServiceCallingWatchAd = "NextSceneScript";
+        watchAd.SetActive(false);
+        watchAdScript.ShowRewardedVideo("coinsMultiplierRewardedVideo");
+    }
+
+    // After the ad the player wins more coins
+    public void OnAdFinished()
+    {
+        Debug.Log("ici");
+        GameDataV2.Coins += numberOfCoinsWon * (randomMultiplier - 1);
+        textOuputCoinsValue.text = (numberOfCoinsWon * randomMultiplier).ToString();
     }
 }

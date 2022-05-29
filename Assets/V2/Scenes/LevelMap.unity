@@ -17909,9 +17909,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0450cdaa20af9cc4ba06a9ba91708891, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelDatas:
-  - {fileID: 11400000, guid: f933ad3d1cd7feb448d4a870ab5cee6a, type: 2}
-  - {fileID: 11400000, guid: 30b10cf622d68a349ab31d99abe9680c, type: 2}
+  levelDatas: []
 --- !u!1 &435026633922015064
 GameObject:
   m_ObjectHideFlags: 0
@@ -17923,6 +17921,7 @@ GameObject:
   - component: {fileID: 435026633922015062}
   - component: {fileID: 435026633922015063}
   - component: {fileID: 435026633922015065}
+  - component: {fileID: 435026633922015066}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameManager
@@ -17944,6 +17943,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   music: {fileID: 3932791051664754305, guid: ac0c9cebf7c57f844b58aa995b08de94, type: 3}
   sndClick: {fileID: 8300000, guid: 70e02441ad3cd8f488092b6a4933e446, type: 3}
+--- !u!114 &435026633922015066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435026633922015064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4c8dfa10b82edc4e96a14eb9fca4de6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &500611386695967908
 GameObject:
   m_ObjectHideFlags: 0
@@ -21360,6 +21371,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2721646254391871863, guid: d38be1c444c185641a386596e7680619,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 54.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721646254391871863, guid: d38be1c444c185641a386596e7680619,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 46.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721646254391871863, guid: d38be1c444c185641a386596e7680619,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1.7999878
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721646254391871863, guid: d38be1c444c185641a386596e7680619,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1.7999878
+      objectReference: {fileID: 0}
     - target: {fileID: 4187494327002736034, guid: d38be1c444c185641a386596e7680619,
         type: 3}
       propertyPath: m_Pivot.x
@@ -21469,6 +21500,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6178449621245269596, guid: d38be1c444c185641a386596e7680619,
+        type: 3}
+      propertyPath: checkForRewardDelay
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 6776492606768525108, guid: d38be1c444c185641a386596e7680619,
         type: 3}

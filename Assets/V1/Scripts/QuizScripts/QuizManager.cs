@@ -7,13 +7,13 @@ using GooglePlayGames.BasicApi;
 
 public class QuizManager : MonoBehaviour
 {
-    [SerializeField] GameObject jokersPanel, cluePanel, panelAnswersButtons, panelInputAnswer;
+    [SerializeField] GameObject jokersPanel, cluePanel, panelAnswersButtons, panelInputAnswer, watchAdGameObject;
 
     Button[] allButtons;
 
     [SerializeField] Image imageShowJokersPanel;
     [SerializeField] Sprite spriteClose, spriteOpen, spriteGoodAnswer, spriteWrongAnswer;
-    [SerializeField] Button btnOneWrong, btnTwoWrongs, btnBuyClue;
+    [SerializeField] Button btnOneWrong, btnTwoWrongs, btnBuyClue, btnCheckAnswerInDirectMode;
 
     [Header("Load quiz data")]
     public Level levelData;
@@ -49,13 +49,16 @@ public class QuizManager : MonoBehaviour
     [SerializeField] Sprite sadCat;
 
     private GameManager gameManager;
+    private WatchAd watchAd;
 
     private void Awake()
     {
         uiScript = GameObject.Find("GameObjectUI").GetComponent<UIScript>();
         levelData = GameDataV2.CurrentLevelData;
         audioSource = gameObject.GetComponent<AudioSource>();
-        gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        GameObject gameManagerObject = GameObject.FindGameObjectWithTag("GameManager");
+        gameManager = gameManagerObject.GetComponent<GameManager>();
+        watchAd = gameManagerObject.GetComponent<WatchAd>();
     }
 
     private void Start()
@@ -312,7 +315,16 @@ public class QuizManager : MonoBehaviour
     public void OnClickCheckInput()
     {
         InputField inputField = answerInput.GetComponent<InputField>();
-        CheckAnswer(inputField.text, null);
+        if(inputField.text == "" || inputField.text == null)
+        {
+            inputField.GetComponentInChildren<Text>().text = "Réponse vide";
+            inputField.GetComponentInChildren<Text>().color = Color.red;
+            Debug.Log("empty");
+        } else
+        {
+            btnCheckAnswerInDirectMode.interactable = false;
+            CheckAnswer(inputField.text, null);
+        }
     }
 
     // For input quiz or directly mode, check the answer
@@ -424,5 +436,19 @@ public class QuizManager : MonoBehaviour
     {
         yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene("LevelMap");
+    }
+
+    public void OnClickWatchAd()
+    {
+        GameDataV2.ServiceCallingWatchAd = "QuizManager";
+        watchAdGameObject.SetActive(false);
+        watchAd.ShowRewardedVideo("coinsMultiplierRewardedVideo");
+    }
+
+    // After the ad the player wins more coins
+    public void OnAdFinished()
+    {
+        GameDataV2.Coins += numberOfCoinsWon * (randomMultiplier - 1);
+        textOuputCoinsValue.text = (numberOfCoinsWon * randomMultiplier).ToString();
     }
 }

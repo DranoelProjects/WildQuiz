@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 27
   m_EditorClassIdentifier: 
   Level: 27
-  NextLevelTheme: Culture
+  NextLevelTheme: Culture G.
   Type: Quiz
   Theme: Sport
   ThemeInBase: logic

@@ -9,14 +9,19 @@ public static class GameDataV2
     private static int currentLevel; // Loaded level => Can be already played
     private static Level currentLevelData;
 
-    // utils
+    // user utils
     private static bool mute;
     private static int coins;
     private static int hearts;
 
+    // technicals utils
+    private static string serviceCallingWatchAd;
+
     // Stats
     private static int numberLostLevels;
     private static int numberWonLevels;
+
+
 
     static GameDataV2()
     {
@@ -54,6 +59,8 @@ public static class GameDataV2
     public static bool Mute { get => mute; set => mute = value; }
     public static int Coins { get => coins; set => coins = value; }
     public static int Hearts { get => hearts; set => hearts = value; }
+
+    public static string ServiceCallingWatchAd { get => serviceCallingWatchAd; set => serviceCallingWatchAd = value; }
     public static int NumberLostLevels { get => numberLostLevels; set => numberLostLevels = value; }
     public static int NumberWonLevels { get => numberWonLevels; set => numberWonLevels = value; }
 

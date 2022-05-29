@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: 28
   m_EditorClassIdentifier: 
   Level: 28
-  NextLevelTheme: Culture
+  NextLevelTheme: Culture G.
   Type: InputQuiz
-  Theme: Culture
+  Theme: Culture G.
   ThemeInBase: logic
   RightAnswer: Cri Wilhelm
   SpriteWithQuestion: {fileID: 0}

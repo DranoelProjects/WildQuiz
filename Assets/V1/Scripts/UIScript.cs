@@ -33,9 +33,12 @@ public class UIScript : MonoBehaviour
     [SerializeField] Button btnShowStats, btnShowCredits;
     bool isShowingStats = false, isShowingsCredits = false;
 
+    WatchAd watchAd;
+
     private void Awake() 
     {
         audioSource = GetComponent<AudioSource>();
+        watchAd = GameObject.Find("GameManager").GetComponent<WatchAd>();
     }
 
     private void Start()
@@ -181,5 +184,11 @@ public class UIScript : MonoBehaviour
         Text text = panelHandleRequest.GetComponentInChildren<Text>();
         text.text = "Chargement...";
         loadingImage.sprite = loadingSprite;
+    }
+
+    //Reward : Heart
+    public void OnClickShowRewardedVideo()
+    {
+        watchAd.ShowRewardedVideo("rewardedVideo");
     }
 }
