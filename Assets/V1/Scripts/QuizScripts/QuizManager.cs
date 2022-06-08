@@ -334,10 +334,18 @@ public class QuizManager : MonoBehaviour
         audioSource.Stop();
         ShowWinningCoins(false);
         double threshold = 0.8;
-        if ((Levenshtein.ComputeCorrelation(levelData.RightAnswer, playerAnswer, false) > threshold)
+        bool isThemeEqualToSpelling = levelData.Theme.Equals("Orthographe");
+        if (!isThemeEqualToSpelling && (
+            (Levenshtein.ComputeCorrelation(levelData.RightAnswer, playerAnswer, false) > threshold)
             || (Levenshtein.ComputeCorrelation(levelData.OtherAcceptedAnswer1, playerAnswer, false) > threshold)
             || (Levenshtein.ComputeCorrelation(levelData.OtherAcceptedAnswer2, playerAnswer, false) > threshold)
-            || (Levenshtein.ComputeCorrelation(levelData.OtherAcceptedAnswer3, playerAnswer, false) > threshold))
+            || (Levenshtein.ComputeCorrelation(levelData.OtherAcceptedAnswer3, playerAnswer, false) > threshold)
+            ) || (isThemeEqualToSpelling && (
+                (levelData.RightAnswer.Equals(playerAnswer))
+                || (levelData.OtherAcceptedAnswer1.Equals(playerAnswer))
+                || (levelData.OtherAcceptedAnswer2.Equals(playerAnswer))
+                || (levelData.OtherAcceptedAnswer3.Equals(playerAnswer))
+                )))
         {
             isRightAnswer = true;
             audioSource.PlayOneShot(sndWin);
