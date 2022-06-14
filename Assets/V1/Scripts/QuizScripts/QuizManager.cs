@@ -174,23 +174,35 @@ public class QuizManager : MonoBehaviour
         isTimerActivate = false;
         if (levelData.Type == "Quiz")
         {
-            if ((selectedButton != null) && isRightAnswer)
+            if (isDirectlyAnswerMode)
             {
-                setQuizResultPanelForRightAnswer(selectedButton);
-            }
-            else if (selectedButton != null)
-            {
-                setQuizResultPanelForWrongAnswer(selectedButton);
-            }
-            foreach (Button btn in allButtons)
-            {
-                btn.GetComponent<Button>().interactable = false;
-                string btnAnswer = btn.GetComponentInChildren<Text>().text;
-                if (isJoker && (btnAnswer == GameDataV2.CurrentLevelData.rightAnswer))
+                if (isRightAnswer)
                 {
-                    btn.GetComponent<Image>().sprite = spriteGoodAnswer;
-                    selectedButton.GetComponent<Image>().color = Color.white;
-                    resultPanel.GetComponent<Image>().color = new Color(21 / 255f, 89 / 255f, 9 / 255f);
+                    setQuizResultPanelForRightAnswer(null);
+                } else
+                {
+                    setQuizResultPanelForWrongAnswer(null);
+                }
+            } else
+            {
+                if ((selectedButton != null) && isRightAnswer)
+                {
+                    setQuizResultPanelForRightAnswer(selectedButton);
+                }
+                else if (selectedButton != null)
+                {
+                    setQuizResultPanelForWrongAnswer(selectedButton);
+                }
+                foreach (Button btn in allButtons)
+                {
+                    btn.GetComponent<Button>().interactable = false;
+                    string btnAnswer = btn.GetComponentInChildren<Text>().text;
+                    if (isJoker && (btnAnswer == GameDataV2.CurrentLevelData.rightAnswer))
+                    {
+                        btn.GetComponent<Image>().sprite = spriteGoodAnswer;
+                        selectedButton.GetComponent<Image>().color = Color.white;
+                        resultPanel.GetComponent<Image>().color = new Color(21 / 255f, 89 / 255f, 9 / 255f);
+                    }
                 }
             }
         } else
@@ -227,16 +239,22 @@ public class QuizManager : MonoBehaviour
     // show result panel with right answer theme
     private void setQuizResultPanelForRightAnswer(GameObject selectedButton)
     {
-        selectedButton.GetComponent<Image>().sprite = spriteGoodAnswer;
-        selectedButton.GetComponent<Image>().color = Color.white;
+        if (!isDirectlyAnswerMode)
+        {
+            selectedButton.GetComponent<Image>().sprite = spriteGoodAnswer;
+            selectedButton.GetComponent<Image>().color = Color.white;
+        }
         resultPanel.GetComponent<Image>().color = new Color(21 / 255f, 89 / 255f, 9 / 255f);
     }
 
     // show result panel with wrong answer theme
     private void setQuizResultPanelForWrongAnswer(GameObject selectedButton)
     {
-        selectedButton.GetComponent<Image>().sprite = spriteWrongAnswer;
-        selectedButton.GetComponent<Image>().color = Color.white;
+        if (!isDirectlyAnswerMode)
+        {
+            selectedButton.GetComponent<Image>().sprite = spriteWrongAnswer;
+            selectedButton.GetComponent<Image>().color = Color.white;
+        }
         resultPanel.GetComponent<Image>().color = Color.red;
         resultImage.GetComponent<Image>().sprite = sadCat;
         resultImage.GetComponent<Animator>().enabled = false;
@@ -319,7 +337,6 @@ public class QuizManager : MonoBehaviour
         {
             inputField.GetComponentInChildren<Text>().text = "Réponse vide";
             inputField.GetComponentInChildren<Text>().color = Color.red;
-            Debug.Log("empty");
         } else
         {
             btnCheckAnswerInDirectMode.interactable = false;
