@@ -32,7 +32,7 @@ public static class GameDataV2
             PlayerPrefs.SetString("RewardClaimDatetime", DateTime.Now.ToString());
             PlayerPrefs.SetInt("NextLevel", 1);
             nextLevel = 1;
-            PlayerPrefs.SetInt("HeartsNumber", 20);
+            PlayerPrefs.SetInt("HeartsNumber", 10);
             Hearts = 20;
             PlayerPrefs.SetInt("CoinsNumber", 100);
             coins = 100;

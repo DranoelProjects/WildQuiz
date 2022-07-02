@@ -44,15 +44,16 @@ public class GameManager : MonoBehaviour
     {
         audioSource = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
         audioSource.PlayOneShot(sndClick);
+        UIScript uiScript = GameObject.FindGameObjectWithTag("GameObjectUI").GetComponent<UIScript>();
 
         try
         {
+            uiScript.SetLoadingPanelVisibility(false);
             await apiManager.GetLevel(levelIndex, theme);
             StartCoroutine(waitDuringApiCallToGetLevel());
         } catch (Exception e)
         {
             Debug.LogError(e);
-            UIScript uiScript = GameObject.FindGameObjectWithTag("GameObjectUI").GetComponent<UIScript>();
             uiScript.HandleRequestError(e.Message);
         }
     }

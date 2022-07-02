@@ -1182,6 +1182,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1925877721}
     m_Modifications:
+    - target: {fileID: 642684423721751340, guid: fbee0fecab8cb1644972f2e10838ed32,
+        type: 3}
+      propertyPath: watchAd
+      value: 
+      objectReference: {fileID: 1112200441}
     - target: {fileID: 1141990196959692654, guid: fbee0fecab8cb1644972f2e10838ed32,
         type: 3}
       propertyPath: m_Name
@@ -1447,6 +1452,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a51d36c243cd5640b6a9a394163d936, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1112200441 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3558929312362201230, guid: fbee0fecab8cb1644972f2e10838ed32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1112200434}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1169371800
 PrefabInstance:
   m_ObjectHideFlags: 0

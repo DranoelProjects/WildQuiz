@@ -29,7 +29,6 @@ public class LevelMapUI : MonoBehaviour
         {
             if (GameDataV2.Hearts > 0)
             {
-                uiScript.SetLoadingPanelVisibility();
                 gameManager.StartLevel(selectedLevel, theme);
             }
             else
@@ -39,8 +38,6 @@ public class LevelMapUI : MonoBehaviour
         }
         catch (Exception e)
         {
-            Debug.Log("ici");
-            uiScript.SetLoadingPanelVisibility();
             Debug.LogError(e);
         }
     }

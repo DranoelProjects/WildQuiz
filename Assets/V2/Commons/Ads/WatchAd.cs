@@ -29,10 +29,10 @@ public class WatchAd : MonoBehaviour, IUnityAdsListener
         StartCoroutine(ShowRewardedAdWhenReady(type));
     }
 
-    public void ShowVideoAfterXLevels()
+    /*public void ShowVideoAfterXLevels()
     {
         StartCoroutine(ShowAdWhenReady());
-    }
+    }*/
 
     IEnumerator ShowRewardedAdWhenReady(string type)
     {

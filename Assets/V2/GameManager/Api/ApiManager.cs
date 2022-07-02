@@ -13,10 +13,11 @@ public class ApiManager : MonoBehaviour
     void Awake()
     {
         _database = FirebaseDatabase.GetInstance(DATABASE_URL);
-        foreach (LevelData levelData in levelDatas)
-        {
-            setLevel(levelData);
-        }
+
+        /*        foreach (LevelData levelData in levelDatas)
+                {
+                    setLevel(levelData);
+                }*/
     }
 
     void setLevel(LevelData levelData)

@@ -5365,6 +5365,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 647446636}
   m_CullTransparentMesh: 0
+--- !u!1 &649820514 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1274077303859798647, guid: d38be1c444c185641a386596e7680619,
+    type: 3}
+  m_PrefabInstance: {fileID: 6254013318322498356}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &651002742
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15200,6 +15206,12 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 494157916}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1715221334 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1650652266555399859, guid: d38be1c444c185641a386596e7680619,
+    type: 3}
+  m_PrefabInstance: {fileID: 6254013318322498356}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1740475192
 GameObject:
   m_ObjectHideFlags: 0
@@ -21366,7 +21378,32 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5005650087490653334}
     m_Modifications:
+    - target: {fileID: 336827192152109863, guid: d38be1c444c185641a386596e7680619,
+        type: 3}
+      propertyPath: PanelNoCoins
+      value: 
+      objectReference: {fileID: 649820514}
+    - target: {fileID: 336827192152109863, guid: d38be1c444c185641a386596e7680619,
+        type: 3}
+      propertyPath: PanelNoHeart
+      value: 
+      objectReference: {fileID: 1715221334}
+    - target: {fileID: 1274077303859798647, guid: d38be1c444c185641a386596e7680619,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1650652266555399859, guid: d38be1c444c185641a386596e7680619,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2259921000111963917, guid: d38be1c444c185641a386596e7680619,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2618805001954223795, guid: d38be1c444c185641a386596e7680619,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -21501,6 +21538,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5428875376102153590, guid: d38be1c444c185641a386596e7680619,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6178449621245269596, guid: d38be1c444c185641a386596e7680619,
         type: 3}
       propertyPath: checkForRewardDelay
@@ -21515,6 +21557,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: Plus assez de bananes!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560304031395661942, guid: d38be1c444c185641a386596e7680619,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8858873236729265269, guid: d38be1c444c185641a386596e7680619,
         type: 3}

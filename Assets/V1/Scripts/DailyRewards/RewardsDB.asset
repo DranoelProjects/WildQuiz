@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rewards:
   - Type: 0
-    Amount: 5
+    Amount: 3

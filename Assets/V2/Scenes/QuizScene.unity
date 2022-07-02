@@ -6713,7 +6713,7 @@ PrefabInstance:
         type: 3}
       propertyPath: watchAdGameObject
       value: 
-      objectReference: {fileID: 4609767073081957924}
+      objectReference: {fileID: 3471394542847103327}
     - target: {fileID: 5352507616375689251, guid: bf5ee699a61f7ab4896e5260a3d50a3b,
         type: 3}
       propertyPath: gameObjectQuestion
@@ -6739,6 +6739,16 @@ PrefabInstance:
       propertyPath: imageShowJokersPanel
       value: 
       objectReference: {fileID: 2142287280322314840}
+    - target: {fileID: 5352507616375689251, guid: bf5ee699a61f7ab4896e5260a3d50a3b,
+        type: 3}
+      propertyPath: winningCoinsDirectly
+      value: 
+      objectReference: {fileID: 4346017100298508403}
+    - target: {fileID: 5352507616375689251, guid: bf5ee699a61f7ab4896e5260a3d50a3b,
+        type: 3}
+      propertyPath: winningCoinsProposals
+      value: 
+      objectReference: {fileID: 4346017099748758995}
     - target: {fileID: 5352507616375689251, guid: bf5ee699a61f7ab4896e5260a3d50a3b,
         type: 3}
       propertyPath: btnCheckAnswerInDirectMode

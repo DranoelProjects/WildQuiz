@@ -84,8 +84,8 @@ public class NextSceneScript : MonoBehaviour
     // After the ad the player wins more coins
     public void OnAdFinished()
     {
-        Debug.Log("ici");
         GameDataV2.Coins += numberOfCoinsWon * (randomMultiplier - 1);
         textOuputCoinsValue.text = (numberOfCoinsWon * randomMultiplier).ToString();
+        uiScript.UpdateCoins();
     }
 }

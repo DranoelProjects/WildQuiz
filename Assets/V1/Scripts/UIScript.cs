@@ -108,7 +108,8 @@ public class UIScript : MonoBehaviour
     // Can be called to update the coins number
     public void UpdateCoins()
     {
-        coinsNumber.text = GameDataV2.Coins.ToString();
+        if(coinsNumber)
+            coinsNumber.text = GameDataV2.Coins.ToString();
     }
 
     // Display statistics 
@@ -161,11 +162,16 @@ public class UIScript : MonoBehaviour
     }
 
     // Show loading panel
-    public void SetLoadingPanelVisibility()
+    public void SetLoadingPanelVisibility(bool userAction)
     {
         bool isHandleRequestPanelActive = !panelHandleRequest.gameObject.activeInHierarchy;
-        if(!loading)
+        if (!loading)
+        {
             panelHandleRequest.gameObject.SetActive(isHandleRequestPanelActive);
+            Scene scene = SceneManager.GetActiveScene();
+            if(scene.buildIndex > 0 && userAction)
+                SceneManager.LoadScene(0);
+        }
         if (isHandleRequestPanelActive)
             handleRequestLoading();
     }

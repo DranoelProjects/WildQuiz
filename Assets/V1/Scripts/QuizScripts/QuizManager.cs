@@ -32,6 +32,7 @@ public class QuizManager : MonoBehaviour
 
     [Header("Answer mode")]
     [SerializeField] GameObject panelAnswerMode;
+    [SerializeField] GameObject winningCoinsProposals, winningCoinsDirectly;
     bool isDirectlyAnswerMode = false;
 
     [Header("InputQuiz")]
@@ -69,6 +70,12 @@ public class QuizManager : MonoBehaviour
         if (GameDataV2.NextLevel == 86 && GameDataV2.CurrentLevelData.Index == 85)
         {
             nextLvlButton.interactable = false;
+        }
+
+        if (GameDataV2.NextLevel != GameDataV2.CurrentLevelData.Index)
+        {
+            winningCoinsProposals.SetActive(false);
+            winningCoinsDirectly.SetActive(false);
         }
     }
 
@@ -200,7 +207,7 @@ public class QuizManager : MonoBehaviour
                     if (isJoker && (btnAnswer == GameDataV2.CurrentLevelData.rightAnswer))
                     {
                         btn.GetComponent<Image>().sprite = spriteGoodAnswer;
-                        selectedButton.GetComponent<Image>().color = Color.white;
+                        btn.GetComponent<Image>().color = Color.white;
                         resultPanel.GetComponent<Image>().color = new Color(21 / 255f, 89 / 255f, 9 / 255f);
                     }
                 }
@@ -269,7 +276,7 @@ public class QuizManager : MonoBehaviour
             if (levelData.RightAnswer != btnAnswer && x > 0)
             {
                 x--;
-                btn.GetComponent<Image>().color = Color.red;
+                btn.GetComponent<Image>().color = Color.black;
                 btn.interactable = false;
             }
         }
@@ -445,12 +452,12 @@ public class QuizManager : MonoBehaviour
     // On click start the next level
     public void StartNextSceneLevel()
     {
+        resultPanel.SetActive(false);
         if (GameDataV2.Hearts > 0)
         {
             gameManager.StartLevel(GameDataV2.CurrentLevelData.Index + 1, GameDataV2.CurrentLevelData.NextLevelTheme);
         } else
         {
-            resultPanel.SetActive(false);
             uiScript.PanelNoHeart.SetActive(true);
             StartCoroutine(forceBackToMenu());
         }

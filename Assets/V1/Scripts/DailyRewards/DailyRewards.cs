@@ -22,10 +22,10 @@ namespace DailyRewardSystem
     {
         [Header("Reward UI")]
         [SerializeField] GameObject rewardsCanvas;
-        [SerializeField] Button openButton;
+        [SerializeField] Button openButton, openButtonPanelNoHeart;
         [SerializeField] Button closeButton;
         [SerializeField] Image rewardImage;
-        [SerializeField] Text rewardAmountText;
+        [SerializeField] Text rewardAmountText, rewardDelay;
         [SerializeField] Button claimButton;
         [SerializeField] GameObject rewardsNotification;
         [SerializeField] GameObject noMoreRewardsPanel, rewardsInfo;
@@ -46,7 +46,7 @@ namespace DailyRewardSystem
         [Space]
         [Header("Timing")]
         //next reward wait delay
-        [SerializeField] double nextRewardDelay = 0.5f;
+        [SerializeField] double nextRewardDelay = 1f;
         [SerializeField] float checkForRewardDelay = 60f;
 
         //Used in order to update user hearts and coins 
@@ -75,6 +75,9 @@ namespace DailyRewardSystem
             openButton.onClick.RemoveAllListeners();
             openButton.onClick.AddListener(onOpenButtonClick);
 
+            openButtonPanelNoHeart.onClick.RemoveAllListeners();
+            openButtonPanelNoHeart.onClick.AddListener(onOpenButtonClick);
+
             closeButton.onClick.RemoveAllListeners();
             closeButton.onClick.AddListener(onCloseButtonClick);
 
@@ -92,11 +95,16 @@ namespace DailyRewardSystem
                     DateTime rewardClaimDatetime = DateTime.Parse(PlayerPrefs.GetString("RewardClaimDatetime", currentDatetime.ToString()));
 
                     double elapsedHours = (currentDatetime - rewardClaimDatetime).TotalHours;
+                    double timeToDisplay = (nextRewardDelay - elapsedHours) * 60;
+
+                    rewardDelay.text = "Disponible dans " + Mathf.RoundToInt((float)timeToDisplay) + " minute(s).";
 
                     if (elapsedHours >= nextRewardDelay)
                         activateReward();
                     else
+                    {
                         desactivateReward();
+                    }
                 }
                 yield return new WaitForSeconds(checkForRewardDelay);
             }
@@ -132,7 +140,7 @@ namespace DailyRewardSystem
             Reward reward = rewardsDB.GetReward(nextRewardIndex);
 
             //check reward type
-            if(reward.Type == RewardType.Hearts)
+            if (reward.Type == RewardType.Hearts)
             {
                 GameDataV2.Hearts += reward.Amount;
                 uiScript.UpdateHearts();
@@ -153,6 +161,7 @@ namespace DailyRewardSystem
 
             PlayerPrefs.SetString("RewardClaimDatetime", DateTime.Now.ToString());
             desactivateReward();
+            StartCoroutine(CheckForRewards());
         }
 
         //Open / Close rewards panel
