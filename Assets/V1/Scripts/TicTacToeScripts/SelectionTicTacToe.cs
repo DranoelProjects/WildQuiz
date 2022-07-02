@@ -7,10 +7,13 @@ using UnityEngine.SceneManagement;
 public class SelectionTicTacToe : MonoBehaviour
 {
     GameManagerTicTacToe gm;
+    //Used in order to update user hearts, coins and nextLevel
+    UIScript uiScript;
 
     private void Start()
     {
         gm = GameObject.Find("GameManagerTicTacToe").GetComponent<GameManagerTicTacToe>();
+        uiScript = GameObject.Find("GameObjectUI").GetComponent<UIScript>();
     }
 
     // If the player clicks on a button write an X on it
@@ -39,6 +42,7 @@ public class SelectionTicTacToe : MonoBehaviour
                 if (GameDataV2.NextLevel < nextLevel)
                 {
                     GameDataV2.NextLevel = nextLevel;
+                    uiScript.UpdateNextLevel();
                 }
             }
             else if (gm.ArrayIsFull())

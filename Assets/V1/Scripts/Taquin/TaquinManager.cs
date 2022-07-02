@@ -40,6 +40,7 @@ public class TaquinManager : MonoBehaviour
         if (GameDataV2.NextLevel < nextLevel)
         {
             GameDataV2.NextLevel++;
+            uiScript.UpdateNextLevel();
         }
     }
 

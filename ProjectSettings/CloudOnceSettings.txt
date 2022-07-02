@@ -1,17 +1,6 @@
 {
 	"AchievementIDs":[],
-	"LeaderboardIDs":[
-		{
-			"InternalID":"hightestLevels",
-			"AppleID":"",
-			"GoogleID":"CgkI54LlrKETEAIQAA"
-		},
-		{
-			"InternalID":"coinsLeaderboard",
-			"AppleID":"",
-			"GoogleID":"CgkI54LlrKETEAIQAw"
-		}
-	],
+	"LeaderboardIDs":[],
 	"CloudVariables":[],
 	"AppleSupported":false,
 	"GoogleSupported":true,

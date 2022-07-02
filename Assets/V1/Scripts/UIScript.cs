@@ -23,13 +23,14 @@ public class UIScript : MonoBehaviour
     [Header("Panel User Info")]
     [SerializeField] Text heartsNumber;
     [SerializeField] Text coinsNumber;
+    [SerializeField] Text nextLevelNumber;
     [SerializeField] Image heart;
 
     [Header("Panel Settings")]
     [SerializeField] Text currentLevelNumber;
     [SerializeField] Text lostLevelsNumber;
     [SerializeField] Text wonLevelsNumber;
-    [SerializeField] GameObject gameObjectStats, textCredits, helpPanel;
+    [SerializeField] GameObject gameObjectStats, textCredits;
     [SerializeField] Button btnShowStats, btnShowCredits;
     bool isShowingStats = false, isShowingsCredits = false;
 
@@ -55,6 +56,7 @@ public class UIScript : MonoBehaviour
         }
 
         // Init
+        UpdateNextLevel();
         UpdateCoins();
         UpdateHearts();
     }
@@ -112,13 +114,18 @@ public class UIScript : MonoBehaviour
             coinsNumber.text = GameDataV2.Coins.ToString();
     }
 
+    public void UpdateNextLevel()
+    {
+        nextLevelNumber.text = GameDataV2.NextLevel.ToString();
+    }
+
     // Display statistics 
     public void OnClickShowStats()
     {
         audioSource.PlayOneShot(sndClick);
         if (!isShowingStats)
         {
-            btnShowStats.GetComponent<Image>().color = Color.green;
+            btnShowStats.GetComponent<Image>().color = new Color(255 / 255f, 246 / 255f, 0 / 255f);
             gameObjectStats.SetActive(true);
             currentLevelNumber.text = GameDataV2.NextLevel.ToString();
             lostLevelsNumber.text = GameDataV2.NumberLostLevels.ToString();
@@ -140,7 +147,7 @@ public class UIScript : MonoBehaviour
         audioSource.PlayOneShot(sndClick);
         if (!isShowingsCredits)
         {
-            btnShowCredits.GetComponent<Image>().color = Color.green;
+            btnShowCredits.GetComponent<Image>().color = new Color(255 / 255f, 246 / 255f, 0 / 255f);
             textCredits.SetActive(true);
             isShowingStats = true;
             OnClickShowStats();
@@ -151,14 +158,6 @@ public class UIScript : MonoBehaviour
             textCredits.SetActive(false);
         }
         isShowingsCredits = !isShowingsCredits;
-    }
-
-    // Help
-    public void OnClickShowHelpPanel()
-    {
-        audioSource.PlayOneShot(sndClick);
-        bool isHelpPanelActive = !helpPanel.gameObject.activeInHierarchy;
-        helpPanel.gameObject.SetActive(isHelpPanelActive);
     }
 
     // Show loading panel

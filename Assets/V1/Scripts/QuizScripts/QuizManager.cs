@@ -228,6 +228,7 @@ public class QuizManager : MonoBehaviour
         if (GameDataV2.NextLevel < nextLevel)
         {
             GameDataV2.NextLevel = nextLevel;
+            uiScript.UpdateNextLevel();
         }
         info.text = levelData.Info;
         textAnswerWas.text = levelData.RightAnswer;

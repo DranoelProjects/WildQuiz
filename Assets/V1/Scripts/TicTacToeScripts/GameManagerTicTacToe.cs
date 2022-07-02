@@ -189,6 +189,7 @@ public class GameManagerTicTacToe : MonoBehaviour
             if (GameDataV2.NextLevel < nextLevel)
             {
                 GameDataV2.NextLevel = nextLevel;
+                uiScript.UpdateNextLevel();
             }
         } else
         {
