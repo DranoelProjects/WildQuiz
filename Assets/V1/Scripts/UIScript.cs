@@ -9,7 +9,7 @@ public class UIScript : MonoBehaviour
     GameManager gameManager;
     private Level levelData;
     [SerializeField] Toggle muteToggle;
-    [SerializeField] GameObject panelSettings, dailyRewardPanel, btnOverallRanking, panelHandleRequest;
+    [SerializeField] GameObject panelSettings, dailyRewardPanel, panelHandleRequest;
     public GameObject PanelNoHeart, PanelNoCoins;
     AudioSource audioSource;
     [SerializeField] AudioClip sndClick;
@@ -52,7 +52,6 @@ public class UIScript : MonoBehaviour
         } else
         {
             dailyRewardPanel.SetActive(false);
-            btnOverallRanking.SetActive(false);
         }
 
         // Init

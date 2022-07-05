@@ -105,6 +105,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -784,6 +785,34 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      TilesTilted_HD_24: 21300048
+      TilesTilted_HD_0: 21300000
+      TilesTilted_HD_9: 21300018
+      TilesTilted_HD_4: 21300008
+      TilesTilted_HD_16: 21300032
+      TilesTilted_HD_26: 21300052
+      TilesTilted_HD_22: 21300044
+      TilesTilted_HD_2: 21300004
+      TilesTilted_HD_20: 21300040
+      TilesTilted_HD_14: 21300028
+      TilesTilted_HD_21: 21300042
+      TilesTilted_HD_17: 21300034
+      TilesTilted_HD_12: 21300024
+      TilesTilted_HD_8: 21300016
+      TilesTilted_HD_11: 21300022
+      TilesTilted_HD_13: 21300026
+      TilesTilted_HD_25: 21300050
+      TilesTilted_HD_6: 21300012
+      TilesTilted_HD_1: 21300002
+      TilesTilted_HD_7: 21300014
+      TilesTilted_HD_18: 21300036
+      TilesTilted_HD_15: 21300030
+      TilesTilted_HD_3: 21300006
+      TilesTilted_HD_19: 21300038
+      TilesTilted_HD_10: 21300020
+      TilesTilted_HD_5: 21300010
+      TilesTilted_HD_23: 21300046
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

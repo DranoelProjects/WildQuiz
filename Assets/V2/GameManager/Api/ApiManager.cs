@@ -56,8 +56,10 @@ public class ApiManager : MonoBehaviour
 
     public async Task GetLevel(int levelIndex, string theme)
     {
+        Debug.Log("Leonard - GetLevel " + levelIndex);
         Level level = new Level();
         string themeInBase = ThemeDico.GetThemeInBaseFromTheme(theme);
+        Debug.Log("Leonard - GetLevel 2 " + levelIndex);
         await _database.GetReference("levels").Child(levelIndex.ToString()).Child(themeInBase)
          .GetValueAsync().ContinueWithOnMainThread(task => {
              if (task.IsFaulted)
@@ -69,6 +71,7 @@ public class ApiManager : MonoBehaviour
              {
                  try
                  {
+                     Debug.Log("Leonard - GetLevel task isCompleted" + levelIndex);
                      DataSnapshot snapshot = task.Result;
                      level = LevelMapper.LevelMapperWithFirebaseSnapshot(snapshot);
                      GameDataV2.CurrentLevelData = level;
